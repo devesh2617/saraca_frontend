@@ -119,9 +119,10 @@ const Industry = () => {
           Our Service Offerings
         </h1>
         <div className='flex flex-col gap-12 mt-24'>
-          {ServiceOfferings.map((data: object, index: number) => (
+          {ServiceOfferings.map((data, index: number) => (
             <ServiceOfferingsCards
               cardsData={data}
+              imageSrc={data.imageSrc}
               imagePosition={index % 2 === 0 ? "left" : "right"}
             />
           ))}

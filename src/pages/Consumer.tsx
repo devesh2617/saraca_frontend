@@ -140,9 +140,10 @@ const Industry = () => {
         <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">
           Our Service Offerings
         </h1>
-        {ServiceOfferings.map((data: object, index: number) => (
+        {ServiceOfferings.map((data, index: number) => (
           <ServiceOfferingsCards
             cardsData={data}
+            imageSrc={data.imageSrc}
             imagePosition={index % 2 === 0 ? "left" : "right"}
           />
         ))}
