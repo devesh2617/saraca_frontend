@@ -399,7 +399,7 @@ const AboutUs = () => {
         </div>
 
       </div>
-      <div aria-label="Our-Culture" className="min-h-[100vh] py-24">
+      <div aria-label="Our-Culture" className="min-h-[10vh] py-24">
         <h1 className="text-5xl text-black font-semibold text-center mb-24">Our Culture</h1>
         <div className="flex flex-col 2xl:flex-row container flex-wrap mx-auto gap-4">
           <div aria-label="left-section" className="h-[44rem] flex-1 flex gap-[1rem] flex-wrap">

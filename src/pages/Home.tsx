@@ -250,7 +250,7 @@ const Home = () => {
           <>
             <div
               aria-label="overlay-container"
-              className="bg-gradient-to-r from-black to-transparent absolute z-10 w-full aspect-[16/9] xl:h-[100vh] xl:aspect-auto text-white"
+              className="bg-gradient-to-r from-black to-transparent absolute z-10 w-full inset-0 text-white"
             >
               <div className="md:w-2/3 h-full flex justify-center items-center p-24">
                 <div aria-label="content" className="md:text-left">
@@ -266,16 +266,16 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div key={index} className="relative">
+            <div key={index} className="relative w-screen aspect-[16/9] xl:aspect-auto xl:h-screen">
               {media.type === "image" ? (
                 <img
                   src={`${import.meta.env.VITE_REACT_APP_API_URL}/` + media.name}
-                  style={{ height: "100vh", width: "100%", objectFit: "cover" }}
+                  style={{ height: "100%", width: "100%", objectFit: "cover" }}
                   className=" "
                 />
               ) : (
                 <video
-                  style={{ height: "100vh", width: "100%", objectFit: "cover" }}
+                  style={{ height: "100%", width: "100%", objectFit: "cover" }}
                   className=" "
                   autoPlay
                   loop
