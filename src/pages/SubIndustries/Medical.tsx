@@ -1,6 +1,7 @@
-import { useState } from 'react';
-import DiscoverMoreCards from '../../components/DiscoverMoreCards';
+// import { useState } from 'react';
+// import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 import IndustryCards from "../../components/IndustryCards";
+import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
 
 type medicalCardsData = {
   title: string,
@@ -8,15 +9,15 @@ type medicalCardsData = {
   imageSrc: string
 }
 
-type DiscoverMoreCardsData = {
-  imageSrc: string,
-  link: string
-}
+// type DiscoverMoreCardsData = {
+//   imageSrc: string,
+//   link: string
+// }
 
-type ServicesOfferingsData = {
-  title: string,
-  content: string[]
-}
+// type ServicesOfferingsData = {
+//   title: string,
+//   content: string[]
+// }
 
 const medicalCardsData = [{
   title: "Orthopaedic, Spine, and Trauma",
@@ -58,21 +59,21 @@ const medicalCardsData = [{
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-modern-hospital-physical-therapy-patient-with-injury-walks-wearing-advanced-robotic-exoskeleton-2029416683.jpg`
 }]
 
-const DiscoverMoreCardsData = [{
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-  link: "#"
-},
-{
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-  link: "#"
-},
-{
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-  link: "#"
-}]
+// const DiscoverMoreCardsData = [{
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   link: "#"
+// },
+// {
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   link: "#"
+// },
+// {
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   link: "#"
+// }]
 
 
-const medicalServiceOfferings = [
+const ServiceOfferings = [
   { 
     title: "Quality Management System",
     content: [
@@ -249,10 +250,10 @@ const medicalServiceOfferings = [
 ]
 const Medical = () => {
 
-  const [selectedServicesOffering, setSelectedServicesOffering] = useState<ServicesOfferingsData | null>(null)
-  const handleSelect = (data: ServicesOfferingsData) => {
-    setSelectedServicesOffering(data)
-  }
+  // const [selectedServicesOffering, setSelectedServicesOffering] = useState<ServicesOfferingsData | null>(null)
+  // const handleSelect = (data: ServicesOfferingsData) => {
+  //   setSelectedServicesOffering(data)
+  // }
   return (
     <div>
       <div aria-label='landing-image' className="h-[100vh] w-full relative">
@@ -294,9 +295,19 @@ const Medical = () => {
           })}
         </div>
       </div>
+      <div aria-label="Our Service Offerings" className="my-24 flex flex-col gap-12">
+        <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">
+          Our Service Offerings
+        </h1>
+        {ServiceOfferings.map((data: object, index: number) => (
+          <ServiceOfferingsCards
+            cardsData={data}
+            imagePosition={index % 2 === 0 ? "left" : "right"}
+          />
+        ))}
+      </div>
 
-
-      <div aria-label='medical-device-service-offerings' className='min-h-[120vh] w-full flex justify-center items-center relative'>
+      {/* <div aria-label='medical-device-service-offerings' className='min-h-[120vh] w-full flex justify-center items-center relative'>
         <div aria-label='content-section' className={` ${selectedServicesOffering ? "relative" : "hidden"} top-0 left-0 w-full h-full z-[2] transition-all duration-500 ease-linear flex justify-center items-center`}>
           <div className='container'>
           <h1 className='container text-black font-semibold text-5xl text-center mx-auto relative'>Medical Devices Services Offerings
@@ -335,7 +346,7 @@ const Medical = () => {
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <div aria-label="discover more section" className="min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24">
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-8">

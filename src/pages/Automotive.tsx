@@ -46,23 +46,23 @@ const ServiceOfferings = [
 const medicalCardsData = [{
   title: "Passenger Car",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car.jpg`,
-  link: "#"
+  link: "/Industry/Automotive/PassengerCar"
 },
 
 {
   title: "Trucks & Buses",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Truck & Buses.jpg`,
-  link: "#"
+  link: "/Industry/Automotive/TruckandBuses"
 },
 {
   title: "Off-Highway Vehicles",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Off-Highway.jpg`,
-  link: "#"
+  link: "/Industry/Automotive/OffHighwayVehicles"
 },
 {
   title: "Electric Vehicle",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Electric Vehcile.jpg`,
-  link: "#"
+  link: "/Industry/Automotive/ElectricVehicles"
 },
 ]
 
@@ -93,7 +93,7 @@ const Industry = () => {
                    Automotive
                   </h1>
                   <p className="text-white text-3xl mt-16 w-full hidden lg:block leading-normal">
-                   Driving Innovation, Powering Performance: Your Automotive Engineering Partner 
+                  SARACA: Your Automotive Engineering Partner
                   </p>
                 </div>
               </div>
@@ -108,8 +108,14 @@ const Industry = () => {
           Next-Gen Solutions that inspire tomorrow
         </h1>
         <p className='container text-3xl mx-auto px-8 text-gray-600 mt-24 leading-normal'>
-        In today's fast-paced digital era, the automotive industry is undergoing a significant transformation. Software has emerged as a key driver, prompting all industry players to rethink their approach to subsystem ownership. With our comprehensive suite of automotive engineering services and solutions, backed by years of experience partnering with automotive OEMs, Tier1 suppliers, we're here to help you navigate the evolving landscape of mobility.
-</p>
+        Software is becoming increasingly essential in establishing, maintaining, and improving several elements of vehicle functioning. Additionally, this dynamic shift guarantees unmatched safety, optimal performance, and a positive user experience. As a result, the worldwide automotive sector is experiencing a significant transformation, with a unified push to utilize an advanced, centralized computer system utilizing domain-controller-based architecture, aimed at unlocking the capabilities of software-defined vehicles (SDVs).
+        <br />
+        <br />
+        Our team work closely with OEMs, technology providers, and artificial intelligent disrupters to find new solutions, resolve current challenges, and create strong value frameworks that last for the duration of the automobile lifecycle.
+        <br />
+        <br />
+        To take advantage of the expanding opportunities brought forth by new technologies like electrification, C2X, digital cockpit, and autonomous driving, automakers and suppliers are looking for engineering services partners. SARACA is equipped to adapt to shifting market demands and provide value to your product development process with our wide variety of automotive engineering and design services, products, and solution accelerators.
+        </p>
         </div>
       </div>
 

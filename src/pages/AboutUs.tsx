@@ -206,29 +206,43 @@ const AboutUs = () => {
         </video>
 
       </div>
-      <div aria-label="vision and mission" className=" min-h-[20rem] flex flex-col 2xl:flex-row gap-12 my-24 w-[95%] mx-auto">
-        <div className=" about_us_mission group-hover:translate-y-2 duration-500 transition-all flex-1 text-center relative">
-          <div className="absolute z-1 left-0 group bottom-full h-[20rem] text-xl leading-normal tracking-wide p-8  overflow-hidden">
+      <div aria-label='what-we-do' className='w-full pt-24'>
+        <div>
+        <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+        SARACA is a global IT consulting and engineering R&D services company with Fortune 500 customers. 80% of our customers are based in the United States of America (USA) with a 95% recurring business. We provide services in medical technology, aerospace, defence, rail transportation, and automotive industries.
+        <br />
+        <br />
+        We offer services in the areas of software development and testing, mechanical design, embedded software and hardware development, technical publications, quality assurance, and regulatory affairs. We have expertise in software development and testing with a core focus on niche technologies including Python, C++, C#, Angular JS, React JS, Qt, QML, WPF, Big Data, .NET framework, and cloud.
+        <br />
+        <br />
+        Our service-oriented team possess extensive industry experience and has a keen understanding of the challenges faced by modern organizations. This understanding helps us in providing you cost-effective and customized solutions.
+        </p>
+        </div>
+       
+      </div>
+      <div aria-label="vision and mission" className="container min-h-[20rem] mx-auto flex flex-col lg:flex-row text-white py-24 gap-8">
+        <div className="text-center flex-1">
+          <div className="min-h-[20rem] text-xl leading-normal tracking-wide p-8 rounded-lg bg-[#6C22A6]">
             <h1 className="font-semibold text-5xl"> Our Vision</h1>
             <div className="flex">
               <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Vision.svg`} alt="" className="w-[12rem] aspect-square" />
-              <p className=" mt-12 three_line_text hidden md:block">Our mission is to provide the best-in-class level of customer service by ensuring the quality of our work and listening patiently to the needs of our clients.</p>
+              <p className=" mt-12">Achieve success in helping our customer's businesses grow faster and enabling them to lead the industry they serve.</p>
             </div>
           </div>
         </div>
-        <div className="about_us_vision group-hover:-translate-y-2 duration-500 transition-all flex-1 text-center relative">
-          <div className="absolute z-1 left-0 h-[20rem] top-full group text-xl leading-normal tracking-wide p-8  overflow-hiddens">
+        <div className="text-center flex-1">
+          <div className="h-[20rem] rounded-lg text-xl leading-normal tracking-wide p-8 bg-[#0D9276]">
             <h1 className="font-semibold text-5xl"> Our Mission</h1>
-            <div className="flex">
+            <div className="flex direction-reverse">
 
-              <p className=" mt-12 three_line_text hidden md:block">Our mission is to provide the best-in-class level of customer service by ensuring the quality of our work and listening patiently to the needs of our clients.</p>
+              <p className=" mt-12">Our mission is to provide the best-in-class level of customer service by ensuring the quality of our work and listening patiently to the needs of our clients.</p>
               <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Mission.svg`} alt="" className="w-[12rem] aspect-square" />
             </div>
           </div>
         </div>
       </div>
-      <div aria-label="Our Leaders" className="bg-blue-100">
-        <div className="container mx-auto py-24">
+      <div aria-label="Our Leaders" className="bg-blue-100 py-24">
+        <div className="container mx-auto pb-24">
           <h1 className="text-sky-500 font-semibold text-5xl">Our Leaders</h1>
           <p className="text-xl mt-4">
             Leaders instill in their people a hope for success and a belief in themselves.
@@ -258,7 +272,7 @@ const AboutUs = () => {
         </div>
         <div className="container mx-auto">
           <Swiper
-            slidesPerView={screenSize==="sm"?1:4}
+            slidesPerView={screenSize==="sm"?1:screenSize==="md"?2:4}
             effect={"coverflow"}
             autoplay={{
               delay: 2500,
@@ -280,13 +294,13 @@ const AboutUs = () => {
               ourLeadersCardsData.map((data: ourLeadersCardsData, index: number) => {
                 return (
                   <SwiperSlide key={index}>
-                    <div className="w-full aspect-[10/12] rounded-lg overflow-hidden flex flex-col bg-[#535C91]">
+                    <div className="w-full aspect-[10/12] rounded-lg overflow-hidden flex flex-col bg-[#535C91] justify-around">
                       <img src={data.imageSrc} alt="image" className="w-[60%] aspect-square rounded-full mx-auto my-4 object-cover p-2 border-white border-4" />
                       <div className="w-full bg-[#232D3F] bg-opacity-60 py-4">
-                        <h1 className="text-center text-3xl uppercase font-semibold text-white">
+                        <h1 className="text-center text-4xl uppercase font-semibold text-white">
                           {data.name}
                         </h1>
-                        <p className="uppercase text-center mt-4 text-white text-md">{data.designation}</p>
+                        <p className="uppercase text-center mt-4 text-white text-xl">{data.designation}</p>
                         <div className="flex justify-center items-center mt-4">
                           {data.links.map((link: any, index: number) => {
                             return (
@@ -325,7 +339,9 @@ const AboutUs = () => {
           GILITY {" "}
         </marquee>
       </div>
-      <div aria-label="Timeline" className="min-h-[20rem] lg:py-24 py-8 bg-[url('../../Timeline_Background.svg')] bg-cover">
+      <div aria-label="Timeline" className="min-h-[20rem] lg:py-24 py-8 bg-cover"
+      style={{ backgroundImage: `url('${import.meta.env.VITE_REACT_APP_API_URL}/Timeline_Background.svg')` }}
+      >
         <h1 className="mb-24 text-7xl font-semibold text-center">Timeline</h1>
         <div>
           <Swiper
@@ -374,8 +390,6 @@ const AboutUs = () => {
                           {data.tagline}
                         </p>
                       </div>
-
-
                     </div>
                   </SwiperSlide>
                 )

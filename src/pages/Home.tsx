@@ -250,14 +250,14 @@ const Home = () => {
           <>
             <div
               aria-label="overlay-container"
-              className="bg-gradient-to-r from-black to-transparent absolute z-10 w-full h-[100vh] text-white"
+              className="bg-gradient-to-r from-black to-transparent absolute z-10 w-full aspect-[16/9] xl:h-[100vh] xl:aspect-auto text-white"
             >
               <div className="md:w-2/3 h-full flex justify-center items-center p-24">
                 <div aria-label="content" className="md:text-left">
-                  <h1 className="text-white text-4xl md:text-7xl lg:text-9xl font-semibold text-left">
+                  <h1 className="text-white text-3xl md:text-7xl lg:text-9xl font-semibold text-left">
                     {media.heading}
                   </h1>
-                  <p className="text-white text-3xl mt-16 w-3/4 hidden lg:block leading-normal">
+                  <p className="text-white text-xl lg:text-3xl mt-16 w-3/4 hidden lg:block leading-normal">
                     {media.subheading}
                   </p>
                   <button className=" bg-gradient-to-r from-blue-400 to-blue-700 px-8 py-4 rounded-full text-xl text-white mt-8 mx-auto font-semibold">
@@ -316,7 +316,6 @@ const Home = () => {
           Client Testimonials
         </h1>
         <Carousel
-          
           ariaLabel="testimonials"
           autoPlay
           autoFocus

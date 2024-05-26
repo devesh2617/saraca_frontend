@@ -14,7 +14,7 @@ const IndustryCards:FC<medicalCardsData> = (props) => {
          {props.title}
         </h1>
         <div className="mt-8 px-12 text-left text-black">
-          <ul className="list-disc">
+          {props.points.length>1?(<ul className="list-disc">
             {
              props.points.map((point:string, index:number)=>{
                 return(
@@ -22,7 +22,9 @@ const IndustryCards:FC<medicalCardsData> = (props) => {
                 )
              })
             }
-          </ul>
+          </ul>):(
+            <p className="lg:my-4 my-2 text-lg lg:text-xl text-gray-600">{props.points[0]}</p>
+          )}
         </div>
     </div>
     </div>
