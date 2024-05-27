@@ -233,6 +233,7 @@ const Home = () => {
   //     loop:true
   //   });
     window.addEventListener("resize", handleScreenSize)
+    handleScreenSize()
   }, [])
 
   return (
@@ -339,7 +340,7 @@ const Home = () => {
         </h1>
         <div aria-label="insights-cards" className="flex flex-col gap-32 mb-32">
           {
-            insightsCards.map((data: any, index: number) => (<NewsBlogsCards category={data.category} title={data.title} text={data.text} link={data.link} imageSrc={data.imageSrc} imgPosition={index % 2 === 0 ? "left" : "right"} date={data.date} />))
+            insightsCards.map((data, index: number) => (<NewsBlogsCards category={data.category} title={data.title} text={data.text} link={data.link} imageSrc={data.imageSrc} imgPosition={index % 2 === 0 ? "left" : "right"} date={data.date} />))
           }
         </div>
       </div>
