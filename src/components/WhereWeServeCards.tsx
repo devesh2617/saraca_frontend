@@ -8,8 +8,8 @@ type medicalCardsData = {
 const IndustryCards:FC<medicalCardsData> = (props) => {
   return (
     <a href={props.link} className="cursor-pointer">
-    <div className="min-h-[50vh] w-[22rem]">
-    <div className="h-[45vh] w-full rounded-2xl overflow-hidden shadow-2xl group">
+    <div className="h-[35rem] w-[34rem]">
+    <div className="h-[30rem] w-full rounded-2xl overflow-hidden shadow-2xl group">
     <img className="h-full w-full object-cover rounded-2xl" src={props.imageSrc}/>
 
     </div>

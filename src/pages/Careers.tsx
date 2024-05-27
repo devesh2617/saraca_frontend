@@ -183,6 +183,7 @@ const AboutUs = () => {
     }
 
     window.addEventListener("resize", handleScreenSize)
+    handleScreenSize()
     return ()=>{
       getApi(`api/get_regions`).then(res=>{
         if(res?.data?.message){
