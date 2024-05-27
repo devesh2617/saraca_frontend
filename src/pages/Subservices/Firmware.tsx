@@ -154,7 +154,7 @@ const Industry = () => {
                   playsInline
                   muted
                 >
-                  <source src={`${import.meta.env.VITE_REACT_APP_API_URL}/Services/Embedded/Firmware/Landing.mp4" type="video/mp4`} />
+                  <source src={`${import.meta.env.VITE_REACT_APP_API_URL}/Services/Embedded/Firmware/Landing.mp4`} type="video/mp4"/>
                 </video>
 
             </div>
