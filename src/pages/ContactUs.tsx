@@ -67,7 +67,7 @@ const ContactUs = () => {
         setLoading(true)
         const formData = objectToFormData(contactUsData);
         try {
-            const res = await axios.post("http://localhost:5000/contact_us", formData)
+            const res = await axios.post(`${import.meta.env.VITE_REACT_APP_API_URL}/contact_us`, formData)
 
             if (res.status === 200) {
                 setContactUsData(prev => ({
