@@ -12,10 +12,10 @@ const Card: FC<CardProps> = ({cardsData}) => {
   
   return (
     <div
-      className={`flex flex-col items-center container mx-auto bg-[#DDE6ED] px-2 rounded-3xl md:flex-row sm:min-h-24 hover:-translate-y-1 hover:shadow-xl transition-all duration-500` }
+      className={`flex flex-col items-start container mx-auto bg-[#DDE6ED] px-2 rounded-3xl md:flex-row sm:min-h-24 hover:shadow-xl transition-all duration-500` }
     >
-      <div aria-label="image" className="md:h-full h-[15rem] w-[20rem] p-8 flex md:flex-col md:items-start flex-row items-end gap-4">
-        <img src={cardsData.imageSrc} className=" aspect-square md:aspect-[10/11] w-full object-cover rounded-xl" />
+      <div aria-label="image" className="h-[20rem] p-8 flex md:flex-col md:items-start flex-row items-end gap-2">
+        <img src={cardsData.imageSrc} className=" aspect-square md:aspect-[9/11] h-full object-cover rounded-xl" />
         <a href={cardsData.link}><img src={`${import.meta.env.VITE_REACT_APP_API_URL}/linkedin.svg`} alt="" className="h-16 aspect-square"/></a>
       </div>
       <div aria-label="content" className={`md:flex-1 w-full text-left flex justify-center items-center py-12 px-8 md:text-left`}>
