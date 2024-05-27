@@ -92,7 +92,7 @@ const Industry = () => {
                    Aerospace & Defence
                   </h1>
                   <p className="text-white text-3xl mt-16 w-full hidden lg:block leading-normal">
-                   Elevating Excellence: Engineering the future of Aerospace, Defence & Space
+                  Aviate, Navigate, Communicate
                   </p>
                   
                 </div>
@@ -105,11 +105,15 @@ const Industry = () => {
       <div aria-label='what-we-do' className='w-full py-24'>
         <div>
         <h1 className='text-5xl font-semibold text-center'>
-          Aviate, Navigate, Communicate
+        Engineering the future of Aerospace, Defence & Space
+          
         </h1>
         <p className='container text-3xl mx-auto px-8 text-gray-600 mt-24 leading-normal'>
-SARACA is a global leader in engineering services, prioritizing innovative and cost-effective solutions tailored to ensure customer satisfaction. With a specialized focus on Aerospace, Défense, and space industries, we excel in mechanical, embedded systems, software development, and testing, leveraging niche technologies.
-Our exceptional team comprises experienced engineers and designers who understand the unique challenges faced by modern Aerospace and Défense companies. This expertise allows us to deliver customized solutions that meet diverse customer needs.         </p>
+        With over a decade of experience, SARACA is a global leader in engineering services, offering innovative and cost-effective solutions. We specialize in the Aerospace, Defense, and Space industries, excelling in mechanical engineering, embedded systems, software development, and testing. Our team of experienced engineers and designers understands the unique challenges of modern Aerospace and Defense companies, enabling us to deliver customized solutions that meet diverse customer needs. 
+        <br />
+        <br />
+        In the Aerospace, Defense, and Space industry, we provide full-service support from product development and design to manufacturing and assembly operations. We focus on "Right First Time" processes, ensuring quality and efficiency from concept to product launch.
+       </p>
         </div>
       </div>
 

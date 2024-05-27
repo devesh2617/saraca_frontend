@@ -32,10 +32,10 @@ const medicalCardsData = [{
     "Internal and Lead Auditor",
     "ICH Q9: Quality Risk Management",
     "Regulatory Compliance per WHO, USFDA, SAHPRA, MHRA, TGA, Health Canada and EMEA"
-    ],
+  ],
   imageSrc: "QMS.png"
 },
- 
+
 {
   title: "Regulatory Affairs",
   points: [
@@ -46,7 +46,7 @@ const medicalCardsData = [{
     "Regulatory dossier preparation and compilation for new product registration (CTD, ACTD)",
     "Computer system validation (CSV) per US FDA 21 CFR Part 11 and Canadian requirements",
     "Resolution for FDA 483"
-    ],
+  ],
   imageSrc: "Regulatory.png"
 },
 {
@@ -60,7 +60,7 @@ const medicalCardsData = [{
     "Facility modification and documentation (HVAC qualification)",
     "Facility qualification and temperature mapping",
     "Aseptic technique SOP"
-    ],
+  ],
   imageSrc: "remedastion.png"
 }]
 
@@ -84,38 +84,38 @@ const ServiceOfferings = [
     content: [
       "From initial concept to feasibility analysis, we offer comprehensive services to help you define and refine your pharmaceutical projects with precision and foresight."
     ],
-    imageSrc:"feasibility.svg"
+    imageSrc: "../../../public/Industries/LifeSciences/Pharmaceuticals/Feasibility.jpg"
   },
   {
     title: "Process Engineering",
     content: [
       "Our team of seasoned engineers excels in designing, optimizing, and implementing pharmaceutical processes to ensure efficiency, compliance, and product integrity throughout the production lifecycle."
     ],
-    imageSrc:"Process.svg"
+    imageSrc: "../../../public/Industries/LifeSciences/Pharmaceuticals/Process.jpg"
   },
   {
     title: "Equipment Selection and Validation",
     content: [
       "Leveraging our expertise and industry insights, we assist in selecting the most suitable equipment and validating their performance to meet the stringent regulatory requirements of the pharmaceutical sector."
     ],
-    imageSrc:"Equipment.svg"
+    imageSrc: "../../../public/Industries/LifeSciences/Pharmaceuticals/Equipment.jpg"
   },
   {
     title: "Facility Design and Commissioning",
     content: [
       "Whether it's the design of a new facility or the renovation of an existing one, we provide end-to-end solutions for facility design, commissioning, and qualification to meet the highest standards of safety, functionality, and compliance."
     ],
-    imageSrc:"Facility.svg"
+    imageSrc: "../../../public/Industries/LifeSciences/Pharmaceuticals/Facility.jpg"
   },
   {
     title: "Regulatory Compliance and Documentation",
     content: [
       "Stay ahead of regulatory challenges with our specialized services in compliance assurance and documentation management, ensuring that your pharmaceutical operations adhere to global regulatory standards."
     ],
-    imageSrc:"Regulatory.svg"
+    imageSrc: "../../../public/Industries/LifeSciences/Pharmaceuticals/Regulatory.jpg"
   }
- 
- 
+
+
 ]
 const Medical = () => {
   // const [selectedServicesOffering, setSelectedServicesOffering] = useState<ServicesOfferingsData | null>(null)
@@ -126,59 +126,55 @@ const Medical = () => {
     <div>
       <div aria-label='landing-image' className="h-[100vh] w-full relative">
         <div className="absolute z-[1] w-full h-full">
-          <div className="h-full absolute w-full left-0 text-9xl text-black flex justify-center items-center p-36 font-semibold text-center">Catalyzing Discovery: Engineering the Essence of Pharmaceuticals!</div>
+          <div className="h-full absolute w-1/2 bg-gradient-to-r from-black to-transparent left-0 text-9xl text-white flex justify-center items-center p-36 font-semibold text-left">Catalyzing Discovery: Engineering the Essence of Pharmaceuticals!</div>
         </div>
-        
-        <video  
-                  
-                  className="h-full w-full object-cover brightness-70"
-                  autoPlay={true}
-                  loop
-                  playsInline
-                  muted
-                >
-                  <source src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Landing2.mp4`} type="video/mp4" />
-                </video>  
-      
+
+        <img
+          className="h-full w-full object-cover"
+          src={`../../../public/Industries/LifeSciences/Pharmaceuticals/Pharma.jpg`}
+        >
+
+        </img>
+
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
         <div>
-        <h1 className='text-5xl font-semibold text-center pb-24'>
-          Pharmaceuticals
-        </h1>
-        <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        In this era of AI, pharmaceutical engineering plays a crucial role in optimizing processes, enhancing efficiency, and ensuring regulatory compliance throughout the drug development and manufacturing lifecycle. With the advent of advanced technologies such as artificial intelligence, data analytics, and automation, pharmaceutical companies have unprecedented opportunities to innovate and streamline their operations.
-        <br/>
-        <br/>
+          <h1 className='text-5xl font-semibold text-center pb-24'>
+            Pharmaceuticals
+          </h1>
+          <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+            In this era of AI, pharmaceutical engineering plays a crucial role in optimizing processes, enhancing efficiency, and ensuring regulatory compliance throughout the drug development and manufacturing lifecycle. With the advent of advanced technologies such as artificial intelligence, data analytics, and automation, pharmaceutical companies have unprecedented opportunities to innovate and streamline their operations.
+            <br />
+            <br />
           </p>
         </div>
         <div>
-        <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
-          What We Do
-        </h1>
-        <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        At Saraca, we are committed to driving progress in the pharmaceutical sector by leveraging our expertise in engineering and digital technologies. Here's how we contribute to our customers in this sector:
-        <br />
-        <br />
-1. <strong>Process Optimization:</strong> We harness the power of digital tools and analytics to optimize pharmaceutical manufacturing processes, minimizing waste, reducing cycle times, and maximizing yield.
-<br/>
-<br />
-2. <strong>Quality Assurance:</strong> Our rigorous quality assurance practices and advanced monitoring systems ensure that pharmaceutical products meet stringent regulatory requirements and adhere to the highest quality standards.
-<br />
-<br />
-3. <strong>Technology Integration:</strong> We integrate cutting-edge technologies such as IoT sensors, predictive modeling, and real-time monitoring systems into pharmaceutical facilities to enable data-driven decision-making and proactive maintenance.
-<br />
-<br />
-4. <strong>Innovation and R&D:</strong> We collaborate with pharmaceutical companies to drive innovation and accelerate the development of novel drug delivery systems, formulations, and manufacturing processes, bringing life-changing therapies to market faster and more efficiently.
-<br />
-<br />
-5. <strong>Sustainability and Environmental Stewardship:</strong> We are committed to promoting sustainable practices in the pharmaceutical industry, helping our customers minimize their environmental footprint and embrace eco-friendly manufacturing processes.
-<br />
-<br />
-6. <strong>Compliance and Regulatory Support:</strong> We provide comprehensive support to ensure regulatory compliance at every stage of the pharmaceutical lifecycle, helping our customers navigate complex regulatory landscapes with confidence.
-        </p>
+          <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
+            What We Do
+          </h1>
+          <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+            At Saraca, we are committed to driving progress in the pharmaceutical sector by leveraging our expertise in engineering and digital technologies. Here's how we contribute to our customers in this sector:
+            <br />
+            <br />
+            1. <strong>Process Optimization:</strong> We harness the power of digital tools and analytics to optimize pharmaceutical manufacturing processes, minimizing waste, reducing cycle times, and maximizing yield.
+            <br />
+            <br />
+            2. <strong>Quality Assurance:</strong> Our rigorous quality assurance practices and advanced monitoring systems ensure that pharmaceutical products meet stringent regulatory requirements and adhere to the highest quality standards.
+            <br />
+            <br />
+            3. <strong>Technology Integration:</strong> We integrate cutting-edge technologies such as IoT sensors, predictive modeling, and real-time monitoring systems into pharmaceutical facilities to enable data-driven decision-making and proactive maintenance.
+            <br />
+            <br />
+            4. <strong>Innovation and R&D:</strong> We collaborate with pharmaceutical companies to drive innovation and accelerate the development of novel drug delivery systems, formulations, and manufacturing processes, bringing life-changing therapies to market faster and more efficiently.
+            <br />
+            <br />
+            5. <strong>Sustainability and Environmental Stewardship:</strong> We are committed to promoting sustainable practices in the pharmaceutical industry, helping our customers minimize their environmental footprint and embrace eco-friendly manufacturing processes.
+            <br />
+            <br />
+            6. <strong>Compliance and Regulatory Support:</strong> We provide comprehensive support to ensure regulatory compliance at every stage of the pharmaceutical lifecycle, helping our customers navigate complex regulatory landscapes with confidence.
+          </p>
         </div>
-       
+
       </div>
 
       <div aria-label="medical-device-segments" className="min-h-[100vh] w-full bg-gradient-to-r from-cyan-950 to-cyan-700 py-24">
@@ -186,7 +182,7 @@ const Medical = () => {
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-16 mt-24">
           {medicalCardsData.map((data: medicalCardsData, index: number) => {
             return (
-              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/`+data.imageSrc} />
+              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/` + data.imageSrc} />
             )
           })}
         </div>
@@ -199,7 +195,7 @@ const Medical = () => {
         {ServiceOfferings.map((data, index: number) => (
           <ServiceOfferingsCards
             cardsData={data}
-            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/${data.imageSrc}`}
+            imageSrc={data.imageSrc}
             imagePosition={index % 2 === 0 ? "left" : "right"}
           />
         ))}
@@ -244,7 +240,7 @@ const Medical = () => {
           </div>
         </div>
       </div> */}
-      
+
       {/* <div aria-label="discover more section" className="min-h-[80vh] w-full bg-cyan-900 bg-[url('../../public/cube-background.svg')] py-24">
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-8">

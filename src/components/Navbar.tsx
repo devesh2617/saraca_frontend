@@ -61,15 +61,15 @@ const Navbar = () => {
             ], link: "/Industry/Semiconductor"
           }
         },
-        {
-          "Industrial": {
-            sublinks: [
-              { name: "Oil & Gas", link: "/Industry/Industrial/Oil&Gas" },
-              { name: "Infrastructure", link: "/Industry/Industrial/Infrastructure" },
-              { name: "Renewables", link: "/Industry/Industrial/Renewables" }
-            ], link: "/Industry/Industrial"
-          }
-        },
+        // {
+        //   "Industrial": {
+        //     sublinks: [
+        //       { name: "Oil & Gas", link: "/Industry/Industrial/Oil&Gas" },
+        //       { name: "Infrastructure", link: "/Industry/Industrial/Infrastructure" },
+        //       { name: "Renewables", link: "/Industry/Industrial/Renewables" }
+        //     ], link: "/Industry/Industrial"
+        //   }
+        // },
         {
           "Rail Transportation": {
             sublinks: [
@@ -82,7 +82,7 @@ const Navbar = () => {
           "Consumer": {
             sublinks: [
               { name: "Appliances", link: "/Industry/Consumer/Appliances" },
-              { name: "Smart Homes", link: "/Industry/Consumer/SmartHomes" }
+              // { name: "Smart Homes", link: "/Industry/Consumer/SmartHomes" }
             ], link: "/Industry/Consumer"
           }
         }

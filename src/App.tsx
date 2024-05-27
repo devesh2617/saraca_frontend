@@ -104,7 +104,7 @@ import CaseStudy from "./pages/CaseStudy";
 import WhitePaper from "./pages/WhitePaper";
 import SearchPage from "./pages/SearchPage";
 import EFlexPine from "./pages/EFlexSpine"
-
+import HealthcareApplications from "./pages/SubIndustries/HealthcareApplications"
 function App() {
   
 
@@ -193,7 +193,7 @@ function App() {
             <Route path="/Industry/Industrial/Renewables" element={<Renewables />} />
             <Route path="/Industry/LifeSciences/MedicalDevices" element={<MedicalDevices />} />
             <Route path="/Industry/LifeSciences/Pharmaceuticals" element={<Pharmaceuticals />} />
-            <Route path="/Industry/LifeSciences/HealthcareApplications" element={<MedicalDevices />} />
+            <Route path="/Industry/LifeSciences/HealthcareApplications" element={<HealthcareApplications />} />
             <Route path="/Service/Digital" element={<Digital />} />
             <Route path="/Service/Digital/Cybersecurity" element={<Cybersecurity />} />
             <Route path="/Service/Digital/IOT" element={<IOT />} />

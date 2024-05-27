@@ -191,32 +191,10 @@ const Medical = () => {
           Aerospace Engineering
         </h1>
         <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        Aerospace Engineering encompasses the design, development, testing, and maintenance of aircraft, spacecraft, and related systems. It involves a multidisciplinary approach that integrates principles of mechanical, electrical, and materials engineering to create innovative solutions for aviation and space exploration.
-        <br/>
-        <br/>
-        In today's digital world, Aerospace Engineering plays a crucial role in advancing technology and shaping the future of transportation and exploration.       
-          </p>
-        </div>
-        <div>
-        <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
-          What We Do
-        </h1>
-        <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        we are committed to driving innovation and excellence in the aerospace industry. Here's how we contribute to our customers' success:
-        <br />
-        <br />
-1. <strong>Expertise and Experience:</strong> Our team of experienced aerospace engineers brings deep domain expertise and hands-on experience in designing, testing, and certifying aerospace systems and components.
-<br/>
-<br />
-2.<strong>Advanced Technologies:</strong> We leverage cutting-edge technologies and industry best practices to develop next-generation aerospace solutions that meet the highest standards of safety, reliability, and performance.
-<br />
-<br />
-3.<strong>Customized Solutions:</strong> We work closely with our customers to understand their unique requirements and challenges, delivering customized engineering solutions that address their specific needs and objectives.
-<br />
-<br />
-4.<strong>Quality and Compliance:</strong> We adhere to rigorous quality standards and regulatory requirements to ensure compliance with industry regulations and certifications, maintaining the highest levels of safety and reliability in our aerospace solutions.
+        Aerospace engineering involves the design, development, testing, and maintenance of aircraft, spacecraft, and related systems. It integrates mechanical, electrical, and materials engineering to create innovative solutions for aviation and space exploration. In today’s digital world, aerospace engineering is essential for advancing technology and shaping the future of transportation and exploration. It drives innovation by developing advanced materials and sophisticated propulsion systems, enhancing the safety, efficiency, and performance of aerospace vehicles. Aerospace engineering also enables global connectivity through air travel and satellite communications, supports space exploration by developing spacecraft and launch vehicles, and contributes to national security by creating military aircraft and surveillance systems.     
         </p>
         </div>
+      
        
       </div>
 

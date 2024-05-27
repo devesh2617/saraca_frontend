@@ -130,18 +130,11 @@ const Medical = () => {
     <div>
       <div aria-label='landing-image' className="h-[100vh] w-full relative">
         <div className="absolute z-[1] w-full h-full">
-          <div className="h-full absolute w-full left-0 text-9xl text-white flex justify-center items-center p-36 font-semibold text-center">Transforming Off-Road Challenges into Engineering Triumphs</div>
+          <div className="h-full absolute w-1/2 left-0 text-9xl bg-gradient-to-r from-black to-transparent text-white flex justify-center items-center p-36 font-semibold text-left">Transforming Off-Road Challenges into Engineering Triumphs</div>
         </div>
-        <video
-
-          className="h-full w-full object-cover brightness-75"
-          autoPlay={true}
-          loop
-          playsInline
-          muted
-        >
-          <source src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Off-Highway/Landing.mp4" type="video/mp4`} />
-        </video>
+        <img className="h-full w-full object-cover"
+          src={`../../../public/Industries/Automotive/Off-Highway/Off Highway Landing.jpg`}
+        />  
 
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>

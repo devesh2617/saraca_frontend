@@ -52,19 +52,20 @@ const ServiceOfferings = [
 const medicalCardsData = [{
   title: "Medical Devices",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
-  link: "#"
+  link: "/Industry/LifeSciences/MedicalDevices"
 },
 
 {
   title: "Pharmaceutical",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharma.jpg`,
-  link: "#"
+  link: "/Industry/LifeSciences/Pharmaceuticals"
 },
 {
   title: "Healthcare Applications",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Healthcare Application.jpg`,
-  link: "#"
+  link: "/Industry/LifeSciences/HealthcareApplications"
 }]
+
 const DiscoverMoreCardsData = [{
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
   link: "#"

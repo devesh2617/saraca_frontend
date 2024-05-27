@@ -46,35 +46,35 @@ type medicalCardsData = {
 const medicalCardsData = [
   {
     title: "Digital Benchmarking", 
-    imageSrc:"Embedded.svg"
+    imageSrc:"../../../public/Industries/Automotive/Passenger Car/Benchmarking.jpg"
   },
   {
     title: "Finite Element Analysis (FEA)",  
-    imageSrc:"TechPub.svg"
+    imageSrc:"../../../public/Industries/Automotive/Passenger Car/FEA.jpg"
   },
   {
     title: "Database management",  
-    imageSrc:"Manufacturing.svg"
+    imageSrc:"../../../public/Industries/Automotive/Passenger Car/Database.jpg"
   },
   {
     title: "Testing",
-    imageSrc:"Mechnaical.svg"
+    imageSrc:"../../../public/Industries/Automotive/Passenger Car/Testing.jpg"
   },
   {
     title: "Product digitalization and automation",
-    imageSrc:"Software.svg"
+    imageSrc:"../../../public/Industries/Automotive/Passenger Car/Automation.jpg"
   },
   {
     title: "CAE Solutions",
-    imageSrc:"Quality.svg"
+    imageSrc:"../../../public/Industries/Automotive/Passenger Car/CAE.jpg"
   },
   {
     title: "Motion simulation",
-    imageSrc:"Quality.svg"
+    imageSrc:"../../../public/Industries/Automotive/Passenger Car/Motion.jpg"
   },
   {
     title: "Flow & Thermal characterization (CFD)",
-    imageSrc:"Quality.svg"
+    imageSrc:"../../../public/Industries/Automotive/Passenger Car/Thermal.jpg"
   }
  
 ]

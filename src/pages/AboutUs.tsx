@@ -153,17 +153,11 @@ const AboutUs = () => {
   const ref = useRef<HTMLVideoElement | null>(null)
   const [index, setIndex] = useState(1)
   const [activeIndex, setActiveIndex] = useState(null)
-  const [screenSize, setScreenSize] = useState()
+  const [screenSize, setScreenSize] = useState<string | null>(null)
   useEffect(() => {
-    const handleScreenSize = () => {
-      if (window.innerWidth < 768) {
-        setScreenSize("sm")
-      } else if (window.innerWidth >= 768 && window.innerWidth < 1300) {
-        setScreenSize("md")
-      } else setScreenSize("lg")
-    }
+    
 
-    window.addEventListener("resize", handleScreenSize)
+    
     const intervalId = setInterval(() => {
       if (index >= 18) {
         setIndex(1); // Reset to 1 when index is greater than or equal to 18
@@ -174,7 +168,19 @@ const AboutUs = () => {
     }, 8000);
 
     // Cleanup the interval on component unmount
-    return () => clearInterval(intervalId);
+    return () => {
+      clearInterval(intervalId)
+      const handleScreenSize = () => {
+        if (window.innerWidth < 768) {
+          setScreenSize("sm")
+        } else if (window.innerWidth >= 768 && window.innerWidth < 1300) {
+          setScreenSize("md")
+        } else setScreenSize("lg")
+      }
+      window.addEventListener("resize", handleScreenSize)
+      handleScreenSize()
+    };
+    
   }, [index]); // Add index to the dependency array to avoid stale closures
   return (
     <div>
@@ -289,6 +295,7 @@ const AboutUs = () => {
             }}
             navigation
             className="min-h-[30rem]"
+            
           >
             {
               ourLeadersCardsData.map((data: ourLeadersCardsData, index: number) => {
@@ -345,13 +352,13 @@ const AboutUs = () => {
         <h1 className="mb-24 text-7xl font-semibold text-center">Timeline</h1>
         <div>
           <Swiper
-            slidesPerView={screenSize==="sm"?1:3}
+            slidesPerView={screenSize==="sm"?1:screenSize==="md"?2:3}
             spaceBetween={32}
             autoplay={{ delay: 3000 }}
             navigation={true}
             loop={true}
             modules={[Navigation, Autoplay]}
-            className="mySwiper container mx-auto lg:py-32 pt-12 pb-8"
+            className="mySwiper container mx-auto lg:py-32 pt-24 pb-8"
             centeredSlides
             onSlideChange={(swiper => {
               let currentIndex = swiper.activeIndex;

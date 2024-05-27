@@ -25,7 +25,7 @@ const medicalCardsData = [{
   ],
   imageSrc: "1.png"
 },
- 
+
 {
   title: "Land Systems",
   points: [
@@ -41,12 +41,12 @@ const medicalCardsData = [{
   imageSrc: "Avionics.png"
 },
 {
-    title: "Small Arms and Ammunition",
-    points: [
-      "Saraca specializes in the development and integration of ground control systems for unmanned aerial vehicles and drones. Our solutions encompass data analysis, application development, and hybris development to facilitate real-time monitoring, control, and mission management."
-    ],
-    imageSrc: "Digital.jpg"
-  }]
+  title: "Small Arms and Ammunition",
+  points: [
+    "Saraca specializes in the development and integration of ground control systems for unmanned aerial vehicles and drones. Our solutions encompass data analysis, application development, and hybris development to facilitate real-time monitoring, control, and mission management."
+  ],
+  imageSrc: "Digital.jpg"
+}]
 
 // const DiscoverMoreCardsData = [{
 //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
@@ -72,7 +72,7 @@ const ServiceOfferings = [
       "ADAS",
       "IOT Systems development"
     ],
-    imageSrc:"Embedded.svg"
+    imageSrc: "Embedded.svg"
   },
   {
     title: "Technical Publications",
@@ -81,7 +81,7 @@ const ServiceOfferings = [
       "Technical Authoring",
       "Multimedia"
     ],
-    imageSrc:"TechPub.svg"
+    imageSrc: "TechPub.svg"
   },
   {
     title: "Manufacturing Engineering",
@@ -93,7 +93,7 @@ const ServiceOfferings = [
       "Sourcing Activities",
       "Assembly Engineering"
     ],
-    imageSrc:"Manufacturing.svg"
+    imageSrc: "Manufacturing.svg"
   },
   {
     title: "Mechanical Engineering",
@@ -107,7 +107,7 @@ const ServiceOfferings = [
       "Systems Engineering",
       "Post Launch Follow-up"
     ],
-    imageSrc:"Mechnaical.svg"
+    imageSrc: "Mechnaical.svg"
   },
   {
     title: "Software Engineering",
@@ -119,7 +119,7 @@ const ServiceOfferings = [
       "Front and back end development",
       "Full Stack development"
     ],
-    imageSrc:"Software.svg"
+    imageSrc: "Software.svg"
   },
   {
     title: "Quality Engineering",
@@ -130,10 +130,10 @@ const ServiceOfferings = [
       "DHF Remediation",
       "Regulatory assessment"
     ],
-    imageSrc:"Quality.svg"
+    imageSrc: "Quality.svg"
   }
- 
- 
+
+
 ]
 const Medical = () => {
   // const [selectedServicesOffering, setSelectedServicesOffering] = useState<ServicesOfferingsData | null>(null)
@@ -146,29 +146,24 @@ const Medical = () => {
         <div className="absolute z-[1] w-full h-full">
           <div className="h-full absolute w-full left-0 text-9xl text-white flex justify-center items-center p-36 font-semibold text-center">Empowering Defense through Engineering Excellence</div>
         </div>
-        
+
         <img className="h-full w-full object-fill brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Defense/Landing.jpg`} />
-      
+
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
         <div>
-        <h1 className='text-5xl font-semibold text-center pb-24'>
-         Innovating the Future of Defense
-        </h1>
-        <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        We are highly proficient at working within regulated environments such as those imposed by the U.S. FDA, EU MDR, EU IVDR, ISO13485, 21 CFR Part 820 Quality Management systems along with ISO14971 and IEC62304. Our skills include software development and testing, Embedded Hardware and Firmware, mechanical Design, developing Design Dossiers (DHF/Tech Files), 510(k) applications, CER, PER, STED, UDI implementation, Remediation of Class I, II, and III products, and CAPA Management.
-        </p>
+          <h1 className='text-5xl font-semibold text-center pb-24'>
+            Innovating the Future of Defense
+          </h1>
+          <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+
+            Defence engineering involves applying engineering principles and technologies to design, develop, and maintain systems. Our services focus on the integration of advanced technologies like artificial intelligence, machine learning, cybersecurity, and data analytics to enhance defense systems' performance and resilience. We drive strategic innovation, developing next-generation defence platforms, weapons systems, communication networks, and surveillance technologies to maintain military superiority.
+            <br />
+            <br />
+            We equip defense forces with adaptive capabilities to anticipate, detect, and respond to emerging threats in real-time, ensuring proactive defense measures.  
+
+            </p>
         </div>
-        <div>
-        <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
-          What We Do
-        </h1>
-        <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        We have expertise in implementation of complex new regulations, including the EU MDR and IVDR and creation of CERs and PERs and strong clinical practice supporting EU requirements, providing strategies and turnkey approach to completion of CERs, PERs, and PMS-related deliverables (PSUR, SSCP, PMCF/PMPF plans and reports, PMCF/PMPF surveys).
-        has context menu.
-        </p>
-        </div>
-       
       </div>
 
       <div aria-label="medical-device-segments" className="min-h-[100vh] w-full bg-gradient-to-r from-cyan-950 to-cyan-700 py-24">
@@ -176,7 +171,7 @@ const Medical = () => {
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-16 mt-24">
           {medicalCardsData.map((data: medicalCardsData, index: number) => {
             return (
-              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/`+data.imageSrc} />
+              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/` + data.imageSrc} />
             )
           })}
         </div>
