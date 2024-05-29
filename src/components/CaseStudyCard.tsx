@@ -3,7 +3,7 @@ import { FC } from "react"
 const CaseStudyCard:FC = ({data}) => {
   return (
     <div className="container mx-auto min-h-[30rem] flex flex-col-reverse md:flex-row bg-[#DDE6ED] shadow-lg rounded-lg md:border-sky-500 md:border-b-4">     
-      <div className={` flex-[3] p-12`}>
+      <div className={` flex-1 p-12`}>
                     <div className="h-full flex flex-col gap-2">
                         <h1 className="lg:text-4xl text-4xl font-bold group-hover:text-white leading-relaxed text-[#6A6A6A]">{data?.title}</h1>
                         <p dangerouslySetInnerHTML={{__html:data?.project_scope}} className="text-gray-500 mt-8 group-hover:text-white text-xl leading-relaxed"></p>
@@ -17,7 +17,7 @@ const CaseStudyCard:FC = ({data}) => {
                         </div>
                     </div>
                 </div>
-                <div className="flex-[2] my-auto aspect-[4/3]">
+                <div className="flex-1 my-auto aspect-[4/3]">
             <img src={import.meta.env.VITE_REACT_APP_API_URL+data?.img} alt="" className="object-cover mx-auto my-8 h-full w-full"/>
         </div>
     </div>
