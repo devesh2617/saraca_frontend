@@ -295,17 +295,19 @@ const Medical = () => {
           })}
         </div>
       </div>
-      <div aria-label="Our Service Offerings" className="my-24 flex flex-col gap-12">
+      <div aria-label="Our Service Offerings" className="my-24 container">
         <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">
           Our Service Offerings
         </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  mt-24 gap-12">
         {ServiceOfferings.map((data, index: number) => (
           <ServiceOfferingsCards
             cardsData={data}
-            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/${data.imageSrc}`}
+            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/${data.imageSrc}`}
             imagePosition={index % 2 === 0 ? "left" : "right"}
           />
         ))}
+        </div>   
       </div>
 
       {/* <div aria-label='medical-device-service-offerings' className='min-h-[120vh] w-full flex justify-center items-center relative'>

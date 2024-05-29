@@ -210,10 +210,11 @@ const Medical = () => {
       </div>
 
 
-      <div aria-label="Our Service Offerings" className="my-24 flex flex-col gap-12">
+      <div aria-label="Our Service Offerings" className="my-24 container">
         <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">
           Our Service Offerings
         </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  mt-24 gap-12">
         {ServiceOfferings.map((data, index: number) => (
           <ServiceOfferingsCards
             cardsData={data}
@@ -221,6 +222,7 @@ const Medical = () => {
             imagePosition={index % 2 === 0 ? "left" : "right"}
           />
         ))}
+        </div>   
       </div>
       {/* <div aria-label="discover more section" className="min-h-[80vh] w-full bg-cyan-900 bg-[url('../../public/cube-background.svg')] py-24">
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>

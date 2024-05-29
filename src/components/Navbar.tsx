@@ -83,7 +83,7 @@ const Navbar = () => {
             sublinks: [
               { name: "Appliances", link: "/Industry/Consumer/Appliances" },
               // { name: "Smart Homes", link: "/Industry/Consumer/SmartHomes" }
-            ], link: "/Industry/Consumer"
+            ], link: "#"
           }
         }
       ], link: "#"

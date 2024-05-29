@@ -1,12 +1,12 @@
 // import { useState } from 'react';
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
-import IndustryCards from "../../components/IndustryCards";
+// import IndustryCards from "../../components/IndustryCards";
 import ServiceOfferingsCards from '@/components/ServicesOfferingsCards';
-type medicalCardsData = {
-  title: string,
-  points: string[],
-  imageSrc: string
-}
+// type medicalCardsData = {
+//   title: string,
+//   points: string[],
+//   imageSrc: string
+// }
 
 // type DiscoverMoreCardsData = {
 //   imageSrc: string,
@@ -18,70 +18,70 @@ type medicalCardsData = {
 //   content: string[]
 // }
 
-const medicalCardsData = [{
-  title: "Avionics",
-  points: [
-    "Communications",
-    "Navigations",
-    "Monitoring",
-    "Flight Control System",
-    "Fuel Management Systems",
-    "Flight Recorders",
-    "Aircraft Management Systems",
-    "RADAR/Surveillance",
-    "Aircraft networks",
-    "Mission Computer",
-    "Power Control Systems"
-  ],
-  imageSrc: "Avionics.png"
-},
+// const medicalCardsData = [{
+//   title: "Avionics",
+//   points: [
+//     "Communications",
+//     "Navigations",
+//     "Monitoring",
+//     "Flight Control System",
+//     "Fuel Management Systems",
+//     "Flight Recorders",
+//     "Aircraft Management Systems",
+//     "RADAR/Surveillance",
+//     "Aircraft networks",
+//     "Mission Computer",
+//     "Power Control Systems"
+//   ],
+//   imageSrc: "Avionics.png"
+// },
  
-{
-  title: "Exteriors",
-  points: [
-    "Landing Gears",
-    "Doors and Actuations",
-    "Hydraulics",
-    "Lighting Systems",
-    "Aerostructures"
-  ],
-  imageSrc: "Digital.jpg"
-},
-{
-  title: "MRO",
-  points: [
-    "Aircraft Maintenance",
-    "Aircraft Repair",
-    "Assembly/Disassembly",
-    "Inspection",
-    "Process Improvement",
-    "Quality Control/Assurance",
-    "Manufacturing Engineering"
-  ],
-  imageSrc: "MRO.jpg"
-},
-{
-    title: "Digital",
-    points: [
-      "Data Analyst",
-      "Application Development",
-      "Hybris Development"
-    ],
-    imageSrc: "Digital.jpg"
-  },
-  {
-    title: "Interiors",
-    points: [
-      "Seating System",
-      "Lighting System",
-      "Video Systems",
-      "Harness and Cabling",
-      "Overhead Structures",
-      "Evacuation Systems",
-      "Technical Publications"
-    ],
-    imageSrc: "Interiors.png"
-  }]
+// {
+//   title: "Exteriors",
+//   points: [
+//     "Landing Gears",
+//     "Doors and Actuations",
+//     "Hydraulics",
+//     "Lighting Systems",
+//     "Aerostructures"
+//   ],
+//   imageSrc: "Digital.jpg"
+// },
+// {
+//   title: "MRO",
+//   points: [
+//     "Aircraft Maintenance",
+//     "Aircraft Repair",
+//     "Assembly/Disassembly",
+//     "Inspection",
+//     "Process Improvement",
+//     "Quality Control/Assurance",
+//     "Manufacturing Engineering"
+//   ],
+//   imageSrc: "MRO.jpg"
+// },
+// {
+//     title: "Digital",
+//     points: [
+//       "Data Analyst",
+//       "Application Development",
+//       "Hybris Development"
+//     ],
+//     imageSrc: "Digital.jpg"
+//   },
+//   {
+//     title: "Interiors",
+//     points: [
+//       "Seating System",
+//       "Lighting System",
+//       "Video Systems",
+//       "Harness and Cabling",
+//       "Overhead Structures",
+//       "Evacuation Systems",
+//       "Technical Publications"
+//     ],
+//     imageSrc: "Interiors.png"
+//   }]
 
 // const DiscoverMoreCardsData = [{
 //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
@@ -99,6 +99,81 @@ const medicalCardsData = [{
 
 const ServiceOfferings = [
   {
+    title: "Design for Testability (DFT) Services",
+    content: [
+      "Scan chain insertion",
+      "Boundary scan (JTAG) implementation",
+      "ATPG (Automatic Test Pattern Generation) development",
+      "Fault simulation and analysis",
+      "Testability analysis and optimization"
+    ],
+    imageSrc: "DFT.svg"
+  },
+  {
+    title: "Embedded Systems Development",
+    content: [
+      "Microcontroller and microprocessor-based system design",
+      "Firmware development",
+      "Device driver development",
+      "Real-time operating system (RTOS) integration",
+      "IoT (Internet of Things) device development"
+    ],
+    imageSrc: "EmbeddedSystems.svg"
+  },
+  {
+    title: "Electronic Hardware Design",
+    content: [
+      "Schematic capture and PCB layout",
+      "Analog and digital circuit design",
+      "Signal integrity analysis",
+      "EMC/EMI compliance testing",
+      "Prototyping and hardware debugging"
+    ],
+    imageSrc: "ElectronicHardware.svg"
+  },
+  {
+    title: "Software Development and Integration",
+    content: [
+      "Application software development",
+      "Middleware development",
+      "API development and integration",
+      "Database design and optimization",
+      "System integration and testing"
+    ],
+    imageSrc: "SoftwareDevelopment.svg"
+  },
+  {
+    title: "Machine Learning and AI Solutions",
+    content: [
+      "Data preprocessing and feature engineering",
+      "Model development and training",
+      "Deployment of ML/AI algorithms on embedded systems",
+      "Performance optimization for inference",
+      "Continuous model monitoring and updates"
+    ],
+    imageSrc: "MachineLearningAI.svg"
+  },
+  {
+    title: "Wireless Communication Solutions",
+    content: [
+      "RF circuit design",
+      "Protocol stack development",
+      "Wireless sensor network deployment",
+      "Antenna design and optimization",
+      "System-level simulation and testing"
+    ],
+    imageSrc: "WirelessCommunication.svg"
+  },
+  {
+    title: "Cybersecurity Services",
+    content: [
+      "Vulnerability assessment and testing",
+      "Security architecture design",
+      "Encryption and authentication implementation"
+    ],
+    imageSrc: "Cybersecurity.svg"
+  },
+  {
     title: "Embedded",
     content: [
       "New product development",
@@ -107,7 +182,7 @@ const ServiceOfferings = [
       "ADAS",
       "IOT Systems development"
     ],
-    imageSrc:"Embedded.svg"
+    imageSrc: "Embedded.svg"
   },
   {
     title: "Technical Publications",
@@ -116,7 +191,7 @@ const ServiceOfferings = [
       "Technical Authoring",
       "Multimedia"
     ],
-    imageSrc:"TechPub.svg"
+    imageSrc: "TechPub.svg"
   },
   {
     title: "Manufacturing Engineering",
@@ -128,7 +203,7 @@ const ServiceOfferings = [
       "Sourcing Activities",
       "Assembly Engineering"
     ],
-    imageSrc:"Manufacturing.svg"
+    imageSrc: "Manufacturing.svg"
   },
   {
     title: "Mechanical Engineering",
@@ -142,7 +217,7 @@ const ServiceOfferings = [
       "Systems Engineering",
       "Post Launch Follow-up"
     ],
-    imageSrc:"Mechnaical.svg"
+    imageSrc: "Mechnaical.svg"
   },
   {
     title: "Software Engineering",
@@ -154,7 +229,7 @@ const ServiceOfferings = [
       "Front and back end development",
       "Full Stack development"
     ],
-    imageSrc:"Software.svg"
+    imageSrc: "Software.svg"
   },
   {
     title: "Quality Engineering",
@@ -165,11 +240,11 @@ const ServiceOfferings = [
       "DHF Remediation",
       "Regulatory assessment"
     ],
-    imageSrc:"Quality.svg"
+    imageSrc: "Quality.svg"
   }
- 
- 
 ]
+
+
 const Medical = () => {
   // const [selectedServicesOffering, setSelectedServicesOffering] = useState<ServicesOfferingsData | null>(null)
   // const handleSelect = (data: ServicesOfferingsData) => {
@@ -191,13 +266,14 @@ const Medical = () => {
           Aerospace Engineering
         </h1>
         <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        Aerospace Engineering encompasses the design, development, testing, and maintenance of aircraft, spacecraft, and related systems. It involves a multidisciplinary approach that integrates principles of mechanical, electrical, and materials engineering to create innovative solutions for aviation and space exploration.
-        <br/>
-        <br/>
-        In today's digital world, Aerospace Engineering plays a crucial role in advancing technology and shaping the future of transportation and exploration.       
+        Our focus is on simplifying and optimizing the testing process for System on Chip (SoC) designs, which have become increasingly complex due to advancements in processes, shrinking circuit sizes, and strict power consumption limits.
+We understand the challenges posed by modern SoC designs, which often feature multiple memory components, mixed-signal blocks, and IPs sourced from various vendors. Our DFT solutions are specific to address these complexities and streamline the testing process.
+Utilizing a hybrid algorithm with a balanced compression ratio scan, we consistently achieve high pattern counts while minimizing testing overhead. Our approach includes thorough testing on standalone test benches, covering diagnostic, hard repair, soft repair, and BIST verification modes before integration into the SoC.
+Our comprehensive DFT methodology involves seamlessly inserting test structures into designs and integrating existing test structures embedded in IP. Through automation and careful design analysis, we minimize the need for extensive modifications to the front-end design.
+We support a wide range of industry-standard features such as IEEE 1687 IJTAG support, 1149.1/1149.6 boundary scan, memory BIST and repair, scan stitching, scan compression, core wrapper insertion, and more. Additionally, our advanced features include MBIST wrappers and logic insertion, clock conditioning and control integration, automated logical equivalence checking, and multi-pass test pattern generation for comprehensive coverage analysis.   
           </p>
         </div>
-        <div>
+        {/* <div>
         <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
           What We Do
         </h1>
@@ -216,11 +292,11 @@ const Medical = () => {
 <br />
 4.<strong>Quality and Compliance:</strong> We adhere to rigorous quality standards and regulatory requirements to ensure compliance with industry regulations and certifications, maintaining the highest levels of safety and reliability in our aerospace solutions.
         </p>
-        </div>
+        </div> */}
        
       </div>
 
-      <div aria-label="medical-device-segments" className="min-h-[100vh] w-full bg-gradient-to-r from-cyan-950 to-cyan-700 py-24">
+      {/* <div aria-label="medical-device-segments" className="min-h-[100vh] w-full bg-gradient-to-r from-cyan-950 to-cyan-700 py-24">
         <h1 className="text-white text-6xl text-center font-semibold">Aerospace Segments</h1>
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-16 mt-24">
           {medicalCardsData.map((data: medicalCardsData, index: number) => {
@@ -229,11 +305,12 @@ const Medical = () => {
             )
           })}
         </div>
-      </div>
-      <div aria-label="Our Service Offerings" className="my-24 flex flex-col gap-12">
+      </div> */}
+     <div aria-label="Our Service Offerings" className="my-24 container">
         <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">
           Our Service Offerings
         </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  mt-24 gap-12">
         {ServiceOfferings.map((data, index: number) => (
           <ServiceOfferingsCards
             cardsData={data}
@@ -241,6 +318,7 @@ const Medical = () => {
             imagePosition={index % 2 === 0 ? "left" : "right"}
           />
         ))}
+        </div>   
       </div>
 
       {/* <div aria-label='medical-device-service-offerings' className='min-h-[15=20vh]  w-full flex justify-center items-center relative my-24'>

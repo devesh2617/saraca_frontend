@@ -90,14 +90,14 @@ const ServiceOfferings = [
     content: [
       "Saraca provides a range of services, including consumer research, UI/UX design, AI, voice technology, extended reality, and transportation styling, to turn your vision into reality. Our experienced team has a wealth of expertise in collaborating with diverse clients to revolutionize the way individuals engage with their surroundings."
     ],
-    imageSrc:"Embedded.svg"
+    imageSrc: "PassengerExperience.svg"
   },
   {
     title: "Design and Styling",
     content: [
       "We offer design and styling consultation services to our clients, employing our comprehensive i-cube design approach, strong research skills, and end-to-end design and engineering capabilities—from concept to deployment."
     ],
-    imageSrc:"TechPub.svg"
+    imageSrc: "DesignAndStyling.svg"
   },
   {
     title: "HW/SW Development and Testing",
@@ -110,7 +110,7 @@ const ServiceOfferings = [
       "Application Software Development/ porting/ integration",
       "Board Support Package(BSP) for a variety of processors like ARM and OS for Linux, VxWorks, Android, and FreeRTOS"
     ],
-    imageSrc:"Manufacturing.svg"
+    imageSrc: "HW_SW_Development.svg"
   },
   {
     title: "Technical Documentation",
@@ -124,7 +124,7 @@ const ServiceOfferings = [
       "Authoring new technical content on IFUs and related processes, including translation and version control management systems",
       "Production phase- Print, CD Proofing, and release"
     ],
-    imageSrc:"Mechnaical.svg"
+    imageSrc: "TechnicalDocumentation.svg"
   },
   {
     title: "System Development",
@@ -136,18 +136,88 @@ const ServiceOfferings = [
       "System Verification and Validation",
       "Product Certifications"
     ],
-    imageSrc:"Software.svg"
+    imageSrc: "SystemDevelopment.svg"
   },
   {
     title: "Technical authoring and services engineering",
     content: [
       "Our comprehensive rail services engineering encompasses maintainability, technical authoring, and thorough spare parts management, providing improved outcomes without increasing capital expenditures and lowering maintenance costs."
     ],
-    imageSrc:"Quality.svg"
+    imageSrc: "TechnicalAuthoring.svg"
+  },
+  {
+    title: "Verification & Validation",
+    content: [
+      "Hardware-in-loop simulation"
+    ],
+    imageSrc: "VerificationValidation.svg"
+  },
+  {
+    title: "Cybersecurity",
+    content: [
+      "IEC 62443 for software & hardware",
+      "FMEA, FTA",
+      "Product Certification Management"
+    ],
+    imageSrc: "Cybersecurity.svg"
+  },
+  {
+    title: "Electronics",
+    content: [
+      "Test automation",
+      "Embedded software development",
+      "Hardware development"
+    ],
+    imageSrc: "Electronics.svg"
+  },
+  {
+    title: "AI/ML & Cloud",
+    content: [
+      "AI/ML solution development",
+      "Development of cloud applications"
+    ],
+    imageSrc: "AI_ML_Cloud.svg"
+  },
+  {
+    title: "Vehicle System Engineering",
+    content: [
+      "Standardization",
+      "System Validation",
+      "Functional Engineering"
+    ],
+    imageSrc: "VehicleSystemEngineering.svg"
+  },
+  {
+    title: "Physical Installation & Integration",
+    content: [
+      "Pipe routing & mounting",
+      "CAE validation",
+      "Driver desk",
+      "CAR body interiors & exteriors",
+      "DFA & DFM"
+    ],
+    imageSrc: "PhysicalInstallation.svg"
+  },
+  {
+    title: "Signaling System Engineering",
+    content: [
+      "SIL 3/4 product engineering EN 50126/8/9",
+      "CBTC",
+      "Electronic interlocking"
+    ],
+    imageSrc: "SignalingSystemEngineering.svg"
+  },
+  {
+    title: "Industrial Design",
+    content: [
+      "Visualization",
+      "Modelling",
+      "Passenger flow"
+    ],
+    imageSrc: "IndustrialDesign.svg"
   }
- 
- 
 ]
+
 const Medical = () => {
   // const [selectedServicesOffering, setSelectedServicesOffering] = useState<ServicesOfferingsData | null>(null)
   // const handleSelect = (data: ServicesOfferingsData) => {
@@ -175,16 +245,16 @@ const Medical = () => {
       <div aria-label='what-we-do' className='w-full py-24'>
         <div>
         <h1 className='text-5xl font-semibold text-center pb-24'>
-          Rolling Stock
+          Rolling Stock Segment
         </h1>
         <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        The digital age presents opportunities to cut operating costs by embracing fully automated, driverless operations. This shift can enhance system availability, expand network capacity, and boost operational efficiency to address current challenges. Automation in driverless trains also allows for a further reduction in headways.
-        <br/>
-        <br/>
-        As metro ridership continues to rise, train operators are exploring advanced signaling systems like CBTC to safely increase the throughput of existing networks. Additionally, technologies such as obstacle detection systems for trams and light rail vehicles, as well as wayside signal detection and processing for mainline operations, are being pursued to facilitate the move toward driverless operations.
+        Our services focus on designing, developing, and integrating signaling and communication engineering, train control systems, braking systems, automation, testing, and validation. We have a skilled team of mechanical and embedded hardware/software engineers who work on various aspects such as mechanical and electrical design, cabin simulation, retrofit/upgrades, and testing and commissioning support.
+ <br />
+ <br />
+We specialize in optimizing rolling stock design for interiors, car bodies, and subsystems, ensuring safety, reliability, and efficiency. With a commitment to innovation, we help our customers maximize railroad safety, improve passenger journeys, and increase operational efficiencies.
           </p>
         </div>
-        <div>
+        {/* <div>
         <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
           What We Do
         </h1>
@@ -200,7 +270,7 @@ const Medical = () => {
 <br />
 <strong>Safety and Compliance Solutions:</strong> Safeguard your operations and comply with industry regulations with Saraca's safety and compliance solutions. Our expertise in risk assessment, safety protocols, and regulatory compliance ensures that your rolling stock operations meet the highest standards of safety and reliability.
         </p>
-        </div>
+        </div> */}
        
       </div>
 
@@ -215,17 +285,19 @@ const Medical = () => {
         </div>
       </div>
 
-      <div aria-label="Our Service Offerings" className="my-24 flex flex-col gap-12">
+      <div aria-label="Our Service Offerings" className="my-24 container">
         <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">
           Our Service Offerings
         </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  mt-24 gap-12">
         {ServiceOfferings.map((data, index: number) => (
           <ServiceOfferingsCards
             cardsData={data}
-            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Rolling Stock/${data.imageSrc}`}
+            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/${data.imageSrc}`}
             imagePosition={index % 2 === 0 ? "left" : "right"}
           />
         ))}
+        </div>   
       </div>
       {/* <div aria-label='medical-device-service-offerings' className='min-h-[15=20vh]  w-full flex justify-center items-center relative my-24'>
         <div aria-label='content-section' className={` ${selectedServicesOffering ? "relative" : "hidden"} top-0 left-0 w-full h-full z-[2]  transition-all duration-500 ease-linear flex justify-center items-center`}>

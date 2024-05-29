@@ -36,7 +36,7 @@ const medicalCardsData = [{
   ],
   imageSrc: "Avionics.png"
 },
- 
+
 {
   title: "Exteriors",
   points: [
@@ -62,27 +62,27 @@ const medicalCardsData = [{
   imageSrc: "MRO.jpg"
 },
 {
-    title: "Digital",
-    points: [
-      "Data Analyst",
-      "Application Development",
-      "Hybris Development"
-    ],
-    imageSrc: "Digital.jpg"
-  },
-  {
-    title: "Interiors",
-    points: [
-      "Seating System",
-      "Lighting System",
-      "Video Systems",
-      "Harness and Cabling",
-      "Overhead Structures",
-      "Evacuation Systems",
-      "Technical Publications"
-    ],
-    imageSrc: "Interiors.png"
-  }]
+  title: "Digital",
+  points: [
+    "Data Analyst",
+    "Application Development",
+    "Hybris Development"
+  ],
+  imageSrc: "Digital.jpg"
+},
+{
+  title: "Interiors",
+  points: [
+    "Seating System",
+    "Lighting System",
+    "Video Systems",
+    "Harness and Cabling",
+    "Overhead Structures",
+    "Evacuation Systems",
+    "Technical Publications"
+  ],
+  imageSrc: "Interiors.png"
+}]
 
 // const DiscoverMoreCardsData = [{
 //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
@@ -108,7 +108,7 @@ const ServiceOfferings = [
       "ADAS",
       "IOT Systems development"
     ],
-    imageSrc:"Embedded.svg"
+    imageSrc: "Embedded.svg"
   },
   {
     title: "Technical Publications",
@@ -117,7 +117,7 @@ const ServiceOfferings = [
       "Technical Authoring",
       "Multimedia"
     ],
-    imageSrc:"TechPub.svg"
+    imageSrc: "TechPub.svg"
   },
   {
     title: "Manufacturing Engineering",
@@ -129,7 +129,7 @@ const ServiceOfferings = [
       "Sourcing Activities",
       "Assembly Engineering"
     ],
-    imageSrc:"Manufacturing.svg"
+    imageSrc: "Manufacturing.svg"
   },
   {
     title: "Mechanical Engineering",
@@ -143,7 +143,7 @@ const ServiceOfferings = [
       "Systems Engineering",
       "Post Launch Follow-up"
     ],
-    imageSrc:"Mechnaical.svg"
+    imageSrc: "Mechnaical.svg"
   },
   {
     title: "Software Engineering",
@@ -155,7 +155,7 @@ const ServiceOfferings = [
       "Front and back end development",
       "Full Stack development"
     ],
-    imageSrc:"Software.svg"
+    imageSrc: "Software.svg"
   },
   {
     title: "Quality Engineering",
@@ -166,10 +166,10 @@ const ServiceOfferings = [
       "DHF Remediation",
       "Regulatory assessment"
     ],
-    imageSrc:"Quality.svg"
+    imageSrc: "Quality.svg"
   }
- 
- 
+
+
 ]
 const Medical = () => {
   // const [selectedServicesOffering, setSelectedServicesOffering] = useState<ServicesOfferingsData | null>(null)
@@ -180,45 +180,67 @@ const Medical = () => {
     <div>
       <div aria-label='landing-image' className="h-[100vh] w-full relative">
         <div className="absolute z-[1] w-full h-full">
-          <div className="h-full absolute w-full left-0 text-9xl text-white flex justify-center items-center p-36 font-semibold text-center">Aviate, Navigate, Communicate</div>
+          <div className="h-full absolute w-full left-0 text-9xl text-white flex justify-center items-center p-36 font-semibold text-center">Smart Solutions for Illumination, Security, and Efficiency</div>
         </div>
-        
+
         <img className="h-full w-full object-cover brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/Landing.png`} />
-      
+
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
         <div>
-        <h1 className='text-5xl font-semibold text-center pb-24'>
-          Aerospace Engineering
-        </h1>
-        <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        Aerospace Engineering encompasses the design, development, testing, and maintenance of aircraft, spacecraft, and related systems. It involves a multidisciplinary approach that integrates principles of mechanical, electrical, and materials engineering to create innovative solutions for aviation and space exploration.
-        <br/>
-        <br/>
-        In today's digital world, Aerospace Engineering plays a crucial role in advancing technology and shaping the future of transportation and exploration.       
+          <h1 className='text-5xl font-semibold text-center pb-24'>
+            Appliances
+          </h1>
+          <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+            From initial concept and design to prototyping, testing, and final production, we are dedicated to ensuring that your consumer products meet the highest standards of quality, functionality, and market appeal. Whether you're developing household appliances, electronics, personal care products, or any other consumer goods, Saraca has the knowledge and experience to bring your vision to life.
           </p>
         </div>
         <div>
-        <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
-          What We Do
-        </h1>
-        <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        we are committed to driving innovation and excellence in the aerospace industry. Here's how we contribute to our customers' success:
-        <br />
-        <br />
-1. <strong>Expertise and Experience:</strong> Our team of experienced aerospace engineers brings deep domain expertise and hands-on experience in designing, testing, and certifying aerospace systems and components.
-<br/>
-<br />
-2.<strong>Advanced Technologies:</strong> We leverage cutting-edge technologies and industry best practices to develop next-generation aerospace solutions that meet the highest standards of safety, reliability, and performance.
-<br />
-<br />
-3.<strong>Customized Solutions:</strong> We work closely with our customers to understand their unique requirements and challenges, delivering customized engineering solutions that address their specific needs and objectives.
-<br />
-<br />
-4.<strong>Quality and Compliance:</strong> We adhere to rigorous quality standards and regulatory requirements to ensure compliance with industry regulations and certifications, maintaining the highest levels of safety and reliability in our aerospace solutions.
-        </p>
+          <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
+            What We Do
+          </h1>
+          <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+            <strong>Consumer Electronics:</strong>
+            <br />
+            Consumer electronics have become very common in our daily lives, seamlessly integrating into our homes, offices, and beyond. As these products evolve to become smarter, they are reshaping the way we interact with our environment. Saraca collaborates with consumer electronics companies, providing essential design, electronics, connectivity, and programming support to enhance digital interaction and user experience.
+            <br /><br />
+            <br />
+            <strong>Lighting:</strong><br />
+            Saraca empowers manufacturers of lamps and luminaires by:
+            <br />
+            <ul className=" list-disc list-inside">
+            <li>Implementing wired & wireless connectivity protocols such as DALI, DMX, Zigbee, BLE, 6LoPAN, WiFi, and PoE</li>
+            <li>Integration with diverse commercial and open-source home-automation IoT platforms</li>
+            <li>Development of mobile & web applications for control, monitoring, and analytics</li>
+            <li>Cloud enablement</li>
+            <li>Over-The-Air upgrades</li>
+            </ul><br /><br />
+            
+            <strong>Home Automation & Security:</strong><br />
+            Home automation systems streamline management of climate, lighting, security, entertainment, and more. Saraca collaborates with companies in this sector by:
+            <ul className=" list-disc list-inside">
+            <li>Integrating with various commercial and open-source home-automation IoT platforms</li>
+            <li>Enabling connectivity protocols like Zigbee, BLE, and WiFi</li>
+            <li>Developing mobile & web applications for control, monitoring, and analytics</li>
+            <li>Cloud enablement</li>
+            <li>Over-The-Air upgrades</li>
+            </ul>
+            <br />
+            <br />
+            <strong>Home & Industrial Appliances:</strong><br />
+            Saraca partners with manufacturers of home & commercial appliances for cooking, cleaning, and food preservation, facilitating:
+            <br />
+            <ul className=" list-inside list-disc">
+            <li>Development of mobile & web applications for control, monitoring, and analytics</li>
+            <li>Integration with Building Automation Systems</li>
+            <li>Integration with various commercial and open-source home-automation IoT platforms</li>
+            <li>Enablement of connectivity protocols like Zigbee, BLE, and WiFi</li>
+            <li>Cloud enablement</li>
+            <li>Over-The-Air upgrades</li>
+            </ul>
+          </p>
         </div>
-       
+
       </div>
 
       <div aria-label="medical-device-segments" className="min-h-[100vh] w-full bg-gradient-to-r from-cyan-950 to-cyan-700 py-24">
@@ -226,17 +248,18 @@ const Medical = () => {
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-16 mt-24">
           {medicalCardsData.map((data: medicalCardsData, index: number) => {
             return (
-              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/`+data.imageSrc} />
+              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/` + data.imageSrc} />
             )
           })}
         </div>
       </div>
 
 
-      <div aria-label="Our Service Offerings" className="my-24 flex flex-col gap-12">
+      <div aria-label="Our Service Offerings" className="my-24 container">
         <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">
           Our Service Offerings
         </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  mt-24 gap-12">
         {ServiceOfferings.map((data, index: number) => (
           <ServiceOfferingsCards
             cardsData={data}
@@ -244,6 +267,7 @@ const Medical = () => {
             imagePosition={index % 2 === 0 ? "left" : "right"}
           />
         ))}
+        </div>   
       </div>
       {/* <div aria-label="discover more section" className="min-h-[80vh] w-full bg-cyan-900 bg-[url('../../public/cube-background.svg')] py-24">
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>

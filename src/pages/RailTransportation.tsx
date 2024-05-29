@@ -15,33 +15,46 @@ type DiscoverMoreCardsData = {
 
 const ServiceOfferings = [
   {
-    heading: "Engineering Design and Analysis",
-    description:
-      "  We offer end-to-end product design and development services, from concept generation to prototyping and manufacturing support. Our iterative approach ensures that your product not only meets regulatory standards but also exceeds user expectations.",
-    link: "",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Engineering Services.svg`,
+    title: "HW/SW Development and Testing",
+    content: [
+      "Hardware Development and Testing across the life cycle including ASIC/FPGA design and redesign activities for cost/component optimization",
+      "Firmware Development",
+      "User Interface (UI) Design",
+      "3D modeling & rendering services and 3D product animation services",
+      "Finite Element Analysis — FEA services",
+      "Application Software Development/ porting/ integration",
+      "Board Support Package(BSP) for a variety of processors like ARM and OS for Linux, VxWorks, Android, and FreeRTOS"
+    ],
+    imageSrc: "HW_SW_Development.svg"
   },
   {
-    heading: "Prototype Development and Testing",
-    description:
-      "Through advanced process modeling, simulation, and optimization techniques, we help streamline manufacturing processes, enhance efficiency, and reduce costs without compromising quality or compliance.",
-    link: "",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/R&D.svg`,
+    title: "Technical Documentation",
+    content: [
+      "Create or modify illustrations, CAD file to Illustration",
+      "Raster to vector conversion; photo editing",
+      "Creation of Electronic and Illustrated Parts catalogs",
+      "Development of 3D Modelling and Animation",
+      "Legacy conversion/archive of documents",
+      "Language Translations",
+      "Authoring new technical content on IFUs and related processes, including translation and version control management systems",
+      "Production phase- Print, CD Proofing, and release"
+    ],
+    imageSrc: "TechnicalDocumentation.svg"
   },
   {
-    heading: "Technology Implementation and Integration",
-    description:
-      "Navigating the regulatory landscape can be daunting. Our team is well-versed in regulatory requirements and standards, ensuring that your products and processes meet the rigorous demands of regulatory agencies worldwide.",
-    link: "",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Digital.svg`,
+    title: "System Development",
+    content: [
+      "Software Development and Testing across the life cycle for a range of (sub-) system such as TCMS, HMI, displays, ATE/ATB, or simulators",
+      "RAMS Services as per EN 50126, EN 50128, and EN 50129 standards, including PHA, FMECA, RCM, RGA, and safety planning",
+      "Design and mock-up, analysis, and space management",
+      "Integration including build support and change management across systems",
+      "System Verification and Validation",
+      "Product Certifications"
+    ],
+    imageSrc: "SystemDevelopment.svg"
   },
-  {
-    heading: "Consulting",
-    description: "Whether you're facing technical challenges or seeking strategic guidance, our team is here to help. We offer expert technical consulting services tailored to your unique needs, providing insights and solutions that drive innovation and growth.",
-    link: "",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Consulting.svg`,
-  }
 ];
+
 
 const medicalCardsData = [{
   title: "Rolling Stock",
@@ -114,19 +127,19 @@ const Industry = () => {
           })}
         </div>
       </div>
-      <div aria-label="Our Service Offerings" className="py-24">
-        <h1 className="text-5xl md:text-5xl font-semibold text-black text-center">
-          Our Service Offerings
+      <div aria-label="Our Service Offerings" className="my-24 container">
+        <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">
+          What we do
         </h1>
-        <div className='flex flex-col gap-12 mt-24'>
-          {ServiceOfferings.map((data, index: number) => (
-            <ServiceOfferingsCards
-              cardsData={data}
-              imageSrc={data.imageSrc}
-              imagePosition={index % 2 === 0 ? "left" : "right"}
-            />
-          ))}
-        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  mt-24 gap-12">
+        {ServiceOfferings.map((data, index: number) => (
+          <ServiceOfferingsCards
+            cardsData={data}
+            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/${data.imageSrc}`}
+            imagePosition={index % 2 === 0 ? "left" : "right"}
+          />
+        ))}
+        </div>   
       </div>
       <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-900 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24`}>
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>

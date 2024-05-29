@@ -1,12 +1,12 @@
 // import { useState } from 'react';
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
-import IndustryCards from "../../components/IndustryCards";
-import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
-type medicalCardsData = {
-  title: string,
-  points: string[],
-  imageSrc: string
-}
+// import IndustryCards from "../../components/IndustryCards";
+// import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
+// type medicalCardsData = {
+//   title: string,
+//   points: string[],
+//   imageSrc: string
+// }
 
 // type DiscoverMoreCardsData = {
 //   imageSrc: string,
@@ -18,70 +18,70 @@ type medicalCardsData = {
 //   content: string[]
 // }
 
-const medicalCardsData = [{
-  title: "Avionics",
-  points: [
-    "Communications",
-    "Navigations",
-    "Monitoring",
-    "Flight Control System",
-    "Fuel Management Systems",
-    "Flight Recorders",
-    "Aircraft Management Systems",
-    "RADAR/Surveillance",
-    "Aircraft networks",
-    "Mission Computer",
-    "Power Control Systems"
-  ],
-  imageSrc: "Avionics.png"
-},
- 
-{
-  title: "Exteriors",
-  points: [
-    "Landing Gears",
-    "Doors and Actuations",
-    "Hydraulics",
-    "Lighting Systems",
-    "Aerostructures"
-  ],
-  imageSrc: "Digital.jpg"
-},
-{
-  title: "MRO",
-  points: [
-    "Aircraft Maintenance",
-    "Aircraft Repair",
-    "Assembly/Disassembly",
-    "Inspection",
-    "Process Improvement",
-    "Quality Control/Assurance",
-    "Manufacturing Engineering"
-  ],
-  imageSrc: "MRO.jpg"
-},
-{
-    title: "Digital",
-    points: [
-      "Data Analyst",
-      "Application Development",
-      "Hybris Development"
-    ],
-    imageSrc: "Digital.jpg"
-  },
-  {
-    title: "Interiors",
-    points: [
-      "Seating System",
-      "Lighting System",
-      "Video Systems",
-      "Harness and Cabling",
-      "Overhead Structures",
-      "Evacuation Systems",
-      "Technical Publications"
-    ],
-    imageSrc: "Interiors.png"
-  }]
+// const medicalCardsData = [{
+//   title: "Avionics",
+//   points: [
+//     "Communications",
+//     "Navigations",
+//     "Monitoring",
+//     "Flight Control System",
+//     "Fuel Management Systems",
+//     "Flight Recorders",
+//     "Aircraft Management Systems",
+//     "RADAR/Surveillance",
+//     "Aircraft networks",
+//     "Mission Computer",
+//     "Power Control Systems"
+//   ],
+//   imageSrc: "Avionics.png"
+// },
+
+// {
+//   title: "Exteriors",
+//   points: [
+//     "Landing Gears",
+//     "Doors and Actuations",
+//     "Hydraulics",
+//     "Lighting Systems",
+//     "Aerostructures"
+//   ],
+//   imageSrc: "Digital.jpg"
+// },
+// {
+//   title: "MRO",
+//   points: [
+//     "Aircraft Maintenance",
+//     "Aircraft Repair",
+//     "Assembly/Disassembly",
+//     "Inspection",
+//     "Process Improvement",
+//     "Quality Control/Assurance",
+//     "Manufacturing Engineering"
+//   ],
+//   imageSrc: "MRO.jpg"
+// },
+// {
+//   title: "Digital",
+//   points: [
+//     "Data Analyst",
+//     "Application Development",
+//     "Hybris Development"
+//   ],
+//   imageSrc: "Digital.jpg"
+// },
+// {
+//   title: "Interiors",
+//   points: [
+//     "Seating System",
+//     "Lighting System",
+//     "Video Systems",
+//     "Harness and Cabling",
+//     "Overhead Structures",
+//     "Evacuation Systems",
+//     "Technical Publications"
+//   ],
+//   imageSrc: "Interiors.png"
+// }]
 
 // const DiscoverMoreCardsData = [{
 //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
@@ -99,77 +99,68 @@ const medicalCardsData = [{
 
 const ServiceOfferings = [
   {
-    title: "Embedded",
-    content: [
-      "New product development",
-      "Low level development – BSP, DD",
-      "Application development",
-      "ADAS",
-      "IOT Systems development"
-    ],
-    imageSrc:"Embedded.svg"
+    title: "SoC/IP Functional Verification",
+    imageSrc: "Embedded.svg"
   },
   {
-    title: "Technical Publications",
-    content: [
-      "Technical illustrations",
-      "Technical Authoring",
-      "Multimedia"
-    ],
-    imageSrc:"TechPub.svg"
+    title: "ARM Cortex series Processor Verification",
+    imageSrc: "TechPub.svg"
   },
   {
-    title: "Manufacturing Engineering",
-    content: [
-      "Concurrent/Process Engineering",
-      "Tools, Jigs and Fixture Designing",
-      "Transfer of Technology (TOT)",
-      "Manufacturing Transfers",
-      "Sourcing Activities",
-      "Assembly Engineering"
-    ],
-    imageSrc:"Manufacturing.svg"
+    title: "Analog Mixed-Signal Verification",
+    imageSrc: "Manufacturing.svg"
   },
   {
-    title: "Mechanical Engineering",
-    content: [
-      "New Product Development",
-      "Value Engineering",
-      "Reverse Engineering",
-      "Finite Element Analysis",
-      "Sustenance Engineering",
-      "Structural Engineering",
-      "Systems Engineering",
-      "Post Launch Follow-up"
-    ],
-    imageSrc:"Mechnaical.svg"
+    title: "IP Development and Verification",
+    imageSrc: "Mechnaical.svg"
   },
   {
-    title: "Software Engineering",
-    content: [
-      "New product development",
-      "Safety critical software’s",
-      "HMI development",
-      "ATE Application development",
-      "Front and back end development",
-      "Full Stack development"
-    ],
-    imageSrc:"Software.svg"
+    title: "EDA Tool Validation",
+    imageSrc: "Software.svg"
   },
   {
-    title: "Quality Engineering",
-    content: [
-      "Product design control",
-      "Supplier quality assurance",
-      "QMS development",
-      "DHF Remediation",
-      "Regulatory assessment"
-    ],
-    imageSrc:"Quality.svg"
+    title: "FPGA Device Selection",
+    imageSrc: "Quality.svg"
+  },
+  {
+    title: "ASISC Prototyping",
+    imageSrc: "Embedded.svg"
+  },
+  {
+    title: "Synthesis & Optimization",
+    imageSrc: "TechPub.svg"
+  },
+  {
+    title: "SOC Integration",
+    imageSrc: "Manufacturing.svg"
+  },
+  {
+    title: "Functional Verification",
+    imageSrc: "Mechnaical.svg"
+  },
+  {
+    title: "FPGA Accelerator Implementation",
+    imageSrc: "Software.svg"
+  },
+  {
+    title: "FPGA Validation",
+    imageSrc: "Quality.svg"
   }
- 
- 
 ]
+
+
+const TrendingTechnologiesCards = (data) => {
+  return (
+      <div className='w-48 group'>
+          <div className='h-48 w-48 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300'>
+              <img src={data.imageSrc} className=' w-full h-full rounded-full object-cover' alt="" />
+          </div>
+          <h6 className='text-md text-white w-full text-center mt-4 group-hover:font-semibold transition-all duration-300'>{data.title}</h6>
+      </div>
+  )
+}
+
+
 const Medical = () => {
   // const [selectedServicesOffering, setSelectedServicesOffering] = useState<ServicesOfferingsData | null>(null)
   // const handleSelect = (data: ServicesOfferingsData) => {
@@ -179,59 +170,42 @@ const Medical = () => {
     <div>
       <div aria-label='landing-image' className="h-[100vh] w-full relative">
         <div className="absolute z-[1] w-full h-full">
-          <div className="h-full absolute w-full left-0 text-9xl text-white flex justify-center items-center p-36 font-semibold text-center">Aviate, Navigate, Communicate</div>
+          <div className="h-full absolute w-full left-0 text-9xl text-white flex justify-center items-center p-36 font-semibold text-center">Expert ASIC/FPGA Design for Every Industry</div>
         </div>
-        
+
         <img className="h-full w-full object-cover brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/Landing.png`} />
-      
+
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
         <div>
-        <h1 className='text-5xl font-semibold text-center pb-24'>
-          Aerospace Engineering
-        </h1>
-        <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        Aerospace Engineering encompasses the design, development, testing, and maintenance of aircraft, spacecraft, and related systems. It involves a multidisciplinary approach that integrates principles of mechanical, electrical, and materials engineering to create innovative solutions for aviation and space exploration.
-        <br/>
-        <br/>
-        In today's digital world, Aerospace Engineering plays a crucial role in advancing technology and shaping the future of transportation and exploration.       
+          <h1 className='text-5xl font-semibold text-center pb-24'>
+            Aerospace Engineering
+          </h1>
+          <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+            We specialize in assisting clients across various sectors, including AI-driven data centres, aerospace, automotive, networking, consumer electronics, industrial, medical, and IoT.
+            Our team excels in digital and mixed-signal ASIC design, as well as FPGA-SoC development, catering to the growing demand for high-performance, low-power consumption, and compact form-factor designs. We leverage our strong expertise in mixed-signal solutions, covering design, verification, physical design, and validation, to deliver cutting-edge designs even at lower geometry nodes.
+            With a proven track record, we have successfully taped-out over 250+ silicon designs, ranging from mature 180nm processes to cutting-edge 3nm and beyond. We take pride in being the first engineering services company to achieve tape-out at the revolutionary 7nm and 10nm nodes.
           </p>
         </div>
-        <div>
-        <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
-          What We Do
-        </h1>
-        <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        we are committed to driving innovation and excellence in the aerospace industry. Here's how we contribute to our customers' success:
-        <br />
-        <br />
-1. <strong>Expertise and Experience:</strong> Our team of experienced aerospace engineers brings deep domain expertise and hands-on experience in designing, testing, and certifying aerospace systems and components.
-<br/>
-<br />
-2.<strong>Advanced Technologies:</strong> We leverage cutting-edge technologies and industry best practices to develop next-generation aerospace solutions that meet the highest standards of safety, reliability, and performance.
-<br />
-<br />
-3.<strong>Customized Solutions:</strong> We work closely with our customers to understand their unique requirements and challenges, delivering customized engineering solutions that address their specific needs and objectives.
-<br />
-<br />
-4.<strong>Quality and Compliance:</strong> We adhere to rigorous quality standards and regulatory requirements to ensure compliance with industry regulations and certifications, maintaining the highest levels of safety and reliability in our aerospace solutions.
-        </p>
-        </div>
-       
       </div>
 
-      <div aria-label="medical-device-segments" className="min-h-[100vh] w-full bg-gradient-to-r from-cyan-950 to-cyan-700 py-24">
+      {/* <div aria-label="medical-device-segments" className="min-h-[100vh] w-full bg-gradient-to-r from-cyan-950 to-cyan-700 py-24">
         <h1 className="text-white text-6xl text-center font-semibold">Aerospace Segments</h1>
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-16 mt-24">
           {medicalCardsData.map((data: medicalCardsData, index: number) => {
             return (
-              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/`+data.imageSrc} />
+              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/` + data.imageSrc} />
             )
           })}
         </div>
-      </div>
-
-      <div aria-label="Our Service Offerings" className="my-24 flex flex-col gap-12">
+      </div> */}
+      <div aria-label="trending-technologies-section" className={`min-h-[30vh] w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.svg')] bg-cover`}>
+                <h1 className="text-white text-5xl font-semibold text-center">Service Offerings</h1>
+                <div className="container flex flex-wrap justify-center gap-8 items-start mt-24 mx-auto">
+                    {ServiceOfferings.map((data) => TrendingTechnologiesCards(data))}
+                </div>
+</div>
+      {/* <div aria-label="Our Service Offerings" className="my-24 flex flex-col gap-12">
         <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">
           Our Service Offerings
         </h1>
@@ -242,7 +216,7 @@ const Medical = () => {
             imagePosition={index % 2 === 0 ? "left" : "right"}
           />
         ))}
-      </div>
+      </div> */}
       {/* <div aria-label='medical-device-service-offerings' className='min-h-[15=20vh]  w-full flex justify-center items-center relative my-24'>
         <div aria-label='content-section' className={` ${selectedServicesOffering ? "relative" : "hidden"} top-0 left-0 w-full h-full z-[2]  transition-all duration-500 ease-linear flex justify-center items-center`}>
           <div className='container'>
