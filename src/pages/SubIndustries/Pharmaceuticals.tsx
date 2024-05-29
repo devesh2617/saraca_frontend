@@ -84,35 +84,35 @@ const ServiceOfferings = [
     content: [
       "From initial concept to feasibility analysis, we offer comprehensive services to help you define and refine your pharmaceutical projects with precision and foresight."
     ],
-    imageSrc: "../../../public/Industries/LifeSciences/Pharmaceuticals/Feasibility.jpg"
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Feasibility.jpg`
   },
   {
     title: "Process Engineering",
     content: [
       "Our team of seasoned engineers excels in designing, optimizing, and implementing pharmaceutical processes to ensure efficiency, compliance, and product integrity throughout the production lifecycle."
     ],
-    imageSrc: "../../../public/Industries/LifeSciences/Pharmaceuticals/Process.jpg"
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Process.jpg`
   },
   {
     title: "Equipment Selection and Validation",
     content: [
       "Leveraging our expertise and industry insights, we assist in selecting the most suitable equipment and validating their performance to meet the stringent regulatory requirements of the pharmaceutical sector."
     ],
-    imageSrc: "../../../public/Industries/LifeSciences/Pharmaceuticals/Equipment.jpg"
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Equipment.jpg`
   },
   {
     title: "Facility Design and Commissioning",
     content: [
       "Whether it's the design of a new facility or the renovation of an existing one, we provide end-to-end solutions for facility design, commissioning, and qualification to meet the highest standards of safety, functionality, and compliance."
     ],
-    imageSrc: "../../../public/Industries/LifeSciences/Pharmaceuticals/Facility.jpg"
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Facility.jpg`
   },
   {
     title: "Regulatory Compliance and Documentation",
     content: [
       "Stay ahead of regulatory challenges with our specialized services in compliance assurance and documentation management, ensuring that your pharmaceutical operations adhere to global regulatory standards."
     ],
-    imageSrc: "../../../public/Industries/LifeSciences/Pharmaceuticals/Regulatory.jpg"
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Regulatory.jpg`
   }
 
 
@@ -131,7 +131,7 @@ const Medical = () => {
 
         <img
           className="h-full w-full object-cover"
-          src={`../../../public/Industries/LifeSciences/Pharmaceuticals/Pharma.jpg`}
+          src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Pharma.jpg`}
         >
 
         </img>

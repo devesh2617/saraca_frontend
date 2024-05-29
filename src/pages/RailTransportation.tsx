@@ -46,13 +46,13 @@ const ServiceOfferings = [
 const medicalCardsData = [{
   title: "Rolling Stock",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Rolling Stock.jpg`,
-  link: "#"
+  link: "/Industry/RailTransportation/RollingStocks"
 },
 
 {
   title: "Signalling",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling.jpg`,
-  link: "#"
+  link: "/Industry/RailTransportation/Signalling"
 },
 
 ]

@@ -46,35 +46,35 @@ type medicalCardsData = {
 const medicalCardsData = [
   {
     title: "Digital Benchmarking", 
-    imageSrc:"../../../public/Industries/Automotive/Passenger Car/Benchmarking.jpg"
+    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Benchmarking.jpg`
   },
   {
     title: "Finite Element Analysis (FEA)",  
-    imageSrc:"../../../public/Industries/Automotive/Passenger Car/FEA.jpg"
+    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/FEA.jpg`
   },
   {
     title: "Database management",  
-    imageSrc:"../../../public/Industries/Automotive/Passenger Car/Database.jpg"
+    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Database.jpg`
   },
   {
     title: "Testing",
-    imageSrc:"../../../public/Industries/Automotive/Passenger Car/Testing.jpg"
+    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Testing.jpg`
   },
   {
     title: "Product digitalization and automation",
-    imageSrc:"../../../public/Industries/Automotive/Passenger Car/Automation.jpg"
+    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Automation.jpg`
   },
   {
     title: "CAE Solutions",
-    imageSrc:"../../../public/Industries/Automotive/Passenger Car/CAE.jpg"
+    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/CAE.jpg`
   },
   {
     title: "Motion simulation",
-    imageSrc:"../../../public/Industries/Automotive/Passenger Car/Motion.jpg"
+    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Motion.jpg`
   },
   {
     title: "Flow & Thermal characterization (CFD)",
-    imageSrc:"../../../public/Industries/Automotive/Passenger Car/Thermal.jpg"
+    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Thermal.jpg`
   }
  
 ]
@@ -96,7 +96,7 @@ const Medical = () => {
       <div aria-label='what-we-do' className='w-full py-24'>
         <div>
         <h1 className='text-5xl font-semibold text-center pb-24'>
-          Passenger Cars
+          Passenger Car
         </h1>
         <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
         Our Automotive Engineering Services Offering is designed to support clients throughout the product development lifecycle. From comprehensive product design support utilizing optimized CAD/CAE environments to specialized product validation employing best practice methods, we ensure efficient and accurate development processes.      
@@ -191,7 +191,7 @@ const Medical = () => {
                 <div className="container flex flex-wrap justify-evenly items-start mt-24 mx-auto">
                     {medicalCardsData.map((data) => TrendingTechnologiesCards(data))}
                 </div>
-            </div>
+</div>
     </div>
   )
 }

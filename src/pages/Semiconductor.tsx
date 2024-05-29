@@ -47,23 +47,23 @@ const ServiceOfferings = [
 const medicalCardsData = [{
   title: "ASIC/FPGA Design & Development",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/ASIC.jpg`,
-  link: "#"
+  link: "/Industry/Semiconductor/ASICFPGADesignDevelopment"
 },
 
 {
   title: "Verification & Validation",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/V&V.jpg`,
-  link: "#"
+  link: "/Industry/Semiconductor/Verification&Validation"
 },
 {
   title: "Physical Design",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/Physical Design.jpg`,
-  link: "#"
+  link: "/Industry/Semiconductor/PhysicalDesign"
 },
 {
   title: "DFT",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/Physical Design.jpg`,
-  link: "#"
+  link: "/Industry/Semiconductor/DFT"
 }
 ]
 
@@ -98,7 +98,7 @@ const Industry = () => {
                    Semiconductor
                   </h1>
                   <p className="text-white text-3xl mt-16 w-full hidden lg:block leading-normal">
-                   Empowering Semiconductors, Engineering Tomorrow
+                  Transforming Ideas into Integrated Circuits
                   </p>
                   
                 </div>
@@ -120,11 +120,14 @@ const Industry = () => {
       <div aria-label='what-we-do' className='w-full py-24'>
         <div>
         <h1 className='text-5xl font-semibold text-center'>
-          Crafting Tomorrow's Technology
+        Fusing Science with Silicon
         </h1>
         <p className='container text-3xl mx-auto px-8 text-gray-600 mt-24 leading-normal'>
-SARACA is a global leader in engineering services, prioritizing innovative and cost-effective solutions tailored to ensure customer satisfaction. With a specialized focus on Aerospace, Défense, and space industries, we excel in mechanical, embedded systems, software development, and testing, leveraging niche technologies.
-Our exceptional team comprises experienced engineers and designers who understand the unique challenges faced by modern Aerospace and Défense companies. This expertise allows us to deliver customized solutions that meet diverse customer needs.         </p>
+        With over a decade of deep expertise in the semiconductor industry, SARACA offers comprehensive engineering services for custom SoCs (Systems on Chip) and ASICs (Application Specific Integrated Circuits). Our expertise in AI, Machine Learning, and Natural Language Processing fuels expansion in the semiconductor and electronic product market. We provide end-to-end, ensuring high performance and reliability.
+        <br />
+        <br />
+        We support the United Nations Sustainable Development Goals (SDG 9) by promoting resilient infrastructure, sustainable industrialization, and innovation.
+        </p>
         </div>
       </div>
 

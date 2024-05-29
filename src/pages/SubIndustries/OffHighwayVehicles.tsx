@@ -65,60 +65,61 @@ const medicalCardsData = [{
 
 const ServiceOfferings = [
   {
-    title: "New Product Development",
+    title: "Autonomous Off-Highway Vehicles",
     content: [
-      "Detail design",
-      "Systems definition and engineering",
-      "Design validation",
-      "Prototype testing services"
+      "Autonomous technology revolutionizes Off-Highway Vehicle operations. Saraca develops safety-critical systems and autonomous solutions, enhancing safety, efficiency, and productivity on job sites with collision avoidance and autonomous operation capabilities."
     ],
     imageSrc: "Embedded.svg"
   },
   {
-    title: "Product Localization",
+    title: "Connected Systems for Off-Highway Vehicles",
     content: [
-      "Deep understanding and strong insights about emerging markets",
-      "Expertise in identifying challenges & studying market conditions",
-      "A vast network of customers and critical suppliers"
+      "Seamless connectivity optimizes Off-Highway Vehicle performance. Saraca integrates IoT sensors, telematics systems, and data analytics platforms for real-time monitoring, remote diagnostics, and predictive maintenance, empowering informed decision-making."
     ],
     imageSrc: "TechPub.svg"
   },
   {
-    title: "Embedded Engineering",
+    title: "Displays and Information",
     content: [
-      "System Architecture Development",
-      "System Test Plan",
-      "Software Design & Architecture",
-      "SW Component/Model Development",
-      "Manual & Auto Coding",
-      "Schematics & Layout Design",
-      "BOM Development & Optimization",
-      "HW & SW Integration",
-      "Functional Testing"
+      "Clear, intuitive information enhances operator control. Saraca designs and integrates advanced display systems and information interfaces, providing real-time feedback, diagnostic information, and control functionality for improved operator productivity and safety.",
     ],
     imageSrc: "Manufacturing.svg"
   },
   {
     title: "Sustenance & Value Engineering",
     content: [
-      "Product improvement & enhancements",
-      "Change management",
-      "Value Engineering",
-      "Engineering Procurement Services"
+      "Continuous improvement sustains competitiveness. Saraca optimizes product lifecycle management, enhances reliability, and maximizes value through systematic analysis, innovation, and process refinement, ensuring long-term success for our partners."
     ],
     imageSrc: "Mechnaical.svg"
   },
   {
     title: "Polymer Engineering",
     content: [
-      "DESIGN & DEVELOPMENT",
-      "BENCHMARKING",
-      "TESTING",
-      "FINITE ELEMENT ANALYSIS"
+      "Polymer materials enhance Off-Highway Vehicle performance and sustainability. Saraca's expertise in advanced polymer solutions ensures superior mechanical properties and environmental performance in demanding operating conditions."
+    ],
+    imageSrc: "Software.svg"
+  },
+  {
+    title: "Off-Highway Vehicle Electrification",
+    content: [
+      "Electric and hybrid powertrains are the future. Saraca pioneers electrification solutions for Off-Highway Vehicles, delivering enhanced performance, efficiency, and environmental sustainability through advanced technology and engineering."
+    ],
+    imageSrc: "Software.svg"
+  },
+  {
+    title: "Embedded Engineering",
+    content: [
+      "Embedded systems enhance Off-Highway Vehicle functionality and intelligence. Saraca's solutions encompass advanced electronics and software, enabling real-time monitoring, control, and optimization for superior performance and efficiency in challenging environments."
+    ],
+    imageSrc: "Software.svg"
+  },
+  {
+    title: "Powertrain",
+    content: [
+      "Efficient powertrains are essential for high-performance Off-Highway Vehicles. Saraca specializes in designing and optimizing robust, fuel-efficient propulsion systems, minimizing emissions and operating costs while meeting heavy-duty application demands."
     ],
     imageSrc: "Software.svg"
   }
-
 
 ]
 const Medical = () => {
@@ -133,8 +134,8 @@ const Medical = () => {
           <div className="h-full absolute w-1/2 left-0 text-9xl bg-gradient-to-r from-black to-transparent text-white flex justify-center items-center p-36 font-semibold text-left">Transforming Off-Road Challenges into Engineering Triumphs</div>
         </div>
         <img className="h-full w-full object-cover"
-          src={`../../../public/Industries/Automotive/Off-Highway/Off Highway Landing.jpg`}
-        />  
+          src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Off-Highway/Off Highway Landing.jpg`}
+        />
 
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
@@ -149,23 +150,24 @@ const Medical = () => {
             In today's digital world, Off-Highway Vehicles engineering plays a crucial role in advancing technological capabilities, improving efficiency, and enhancing safety standards across industries.
           </p>
         </div>
-        <div>
+        {/* <div>
           <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
             What We Do
           </h1>
           <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-            At Saraca, we are committed to pioneering significant innovations in Off-Highway Vehicles Engineering, leveraging our expertise in ER&D, Digital solutions, and Consulting services. Our focus areas include:
+            At Saraca, we are committed to revolutionizing Off-Highway Vehicles engineering with our comprehensive range of services and solutions to meet the evolving needs of our customers:            <br />
+            <br />
+            <strong>Advanced Vehicle Design: </strong>Our team of expert engineers specializes in designing Off-Highway Vehicles equipped with state-of-the-art digital technologies, ensuring superior performance, reliability, and durability in rugged environments.            <br />
+            <br />
+            <strong>Digital Integration and Connectivity: </strong>We leverage the power of digital integration and connectivity to equip Off-Highway Vehicles with IoT sensors, telematics systems, and data analytics platforms for real-time monitoring, remote diagnostics, and predictive maintenance.            <br />
+            <br />
+            <strong>Safety and Autonomous Solutions: </strong>  Saraca is at the forefront of developing safety-critical systems and autonomous solutions for Off-Highway Vehicles, including collision avoidance systems, operator assistance features, and autonomous operation capabilities, enhancing safety and efficiency on the job site.
             <br />
             <br />
-            1. <strong>Advanced Vehicle Dynamics:</strong> Implementing cutting-edge simulation and analysis techniques to optimize vehicle performance, stability, and maneuverability in off-road environments.
-            <br />
-            <br />
-            2. <strong>Intelligent Control Systems:</strong> Developing smart control systems and automation solutions to enhance operational efficiency, safety, and autonomy in Off-Highway Vehicles.
-            <br />
-            <br />
-            3. <strong>Electrification and Alternative Powertrains:</strong> Embracing sustainable technologies and alternative powertrains to reduce emissions, improve fuel efficiency, and minimize environmental impact in Off-Highway Vehicle operations.
+            <strong>Environmental Sustainability: </strong>  We prioritize environmental sustainability by designing Off-Highway Vehicles with low emissions, energy-efficient components, and recyclable materials, contributing to a greener and more sustainable future.
           </p>
-        </div>
+
+        </div> */}
 
       </div>
 
@@ -179,7 +181,7 @@ const Medical = () => {
           })}
         </div>
       </div>
-      
+
       <div aria-label="Our Service Offerings" className="my-24 flex flex-col gap-12">
         <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">
           Our Service Offerings

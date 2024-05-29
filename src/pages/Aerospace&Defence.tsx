@@ -51,18 +51,18 @@ const ServiceOfferings = [
 const medicalCardsData = [{
   title: "Aerospace",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/aerospace.jpg`,
-  link: "#"
+  link: "/Industry/Aerospace&Defense/Aerospace"
 },
 
 {
   title: "Defence",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Defense.jpg`,
-  link: "#"
+  link: "/Industry/Aerospace&Defense/Defense"
 },
 {
   title: "Space",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Space.jpg`,
-  link: "#"
+  link: "/Industry/Aerospace&Defense/Space"
 }]
 
 const DiscoverMoreCardsData = [{
