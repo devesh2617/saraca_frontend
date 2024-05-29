@@ -314,7 +314,7 @@ We support a wide range of industry-standard features such as IEEE 1687 IJTAG su
         {ServiceOfferings.map((data, index: number) => (
           <ServiceOfferingsCards
             cardsData={data}
-            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/${data.imageSrc}`}
+            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/DFT/${data.imageSrc}`}
             imagePosition={index % 2 === 0 ? "left" : "right"}
           />
         ))}

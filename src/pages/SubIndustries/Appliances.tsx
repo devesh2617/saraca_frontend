@@ -248,7 +248,7 @@ const Medical = () => {
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-16 mt-24">
           {medicalCardsData.map((data: medicalCardsData, index: number) => {
             return (
-              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/` + data.imageSrc} />
+              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Consumer/Appliances` + data.imageSrc} />
             )
           })}
         </div>

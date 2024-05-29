@@ -238,7 +238,7 @@ const Medical = () => {
                   playsInline
                   muted
                 >
-                  <source src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Rolling Stock/Landing.mp4`} type="video/mp4" />
+                  <source src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/RollingStock/Landing.mp4`} type="video/mp4" />
                 </video>
       
       </div>
@@ -293,7 +293,7 @@ We specialize in optimizing rolling stock design for interiors, car bodies, and 
         {ServiceOfferings.map((data, index: number) => (
           <ServiceOfferingsCards
             cardsData={data}
-            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/${data.imageSrc}`}
+            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/RollingStocks/${data.imageSrc}`}
             imagePosition={index % 2 === 0 ? "left" : "right"}
           />
         ))}

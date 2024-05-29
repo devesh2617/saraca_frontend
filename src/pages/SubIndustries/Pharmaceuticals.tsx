@@ -196,7 +196,7 @@ const Medical = () => {
         {ServiceOfferings.map((data, index: number) => (
           <ServiceOfferingsCards
             cardsData={data}
-            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/${data.imageSrc}`}
+            imageSrc={data.imageSrc}
             imagePosition={index % 2 === 0 ? "left" : "right"}
           />
         ))}
