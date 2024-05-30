@@ -12,8 +12,8 @@ const Card: FC<CardProps> = ({ cardsData, imageSrc }) => {
     <div
       className={`flex flex-col container mx-auto bg-gradient-to-l from-slate-700 to-slate-400 px-8 rounded-xl sm:min-h-24 hover:-translate-y-1 shadow-md transition-all duration-500` }
     >
-      <div aria-label="image" className="w-full aspect-[16/9] mt-8">
-        <img src={imageSrc} className="h-full w-full mx-auto object-cover" />
+      <div aria-label="image" className="w-full  mt-8">
+        <img src={imageSrc} className="aspect-[16/9] w-full mx-auto object-cover" />
       </div>
       <div aria-label="content" className={`text-left flex py-8 px-8 md:text-left`}>
         <div className={``}>

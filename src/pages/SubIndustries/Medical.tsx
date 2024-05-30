@@ -27,7 +27,7 @@ const medicalCardsData = [{
     "Trauma - Plates, Screws, MIS intruments",
     "Navigation systems - Surgical Robots, Surgery Navigation Software Systems"
   ],
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-modern-hospital-physical-therapy-patient-with-injury-walks-wearing-advanced-robotic-exoskeleton-2029416683.jpg`
+  imageSrc: "ortho.png"
 },
  
 {
@@ -42,7 +42,7 @@ const medicalCardsData = [{
     "Hospital Beds, Physiotherapy Systems",
     "Ophthalmic and ENT Products"
   ],
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-modern-hospital-physical-therapy-patient-with-injury-walks-wearing-advanced-robotic-exoskeleton-2029416683.jpg`
+  imageSrc: "cardio.png"
 },
 {
   title: "In-vitro Diagnostics",
@@ -56,7 +56,7 @@ const medicalCardsData = [{
     "Molecular Diagnostics",
     "Clinical Chemistry"
   ],
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-modern-hospital-physical-therapy-patient-with-injury-walks-wearing-advanced-robotic-exoskeleton-2029416683.jpg`
+  imageSrc: "invitro.png"
 }]
 
 // const DiscoverMoreCardsData = [{
@@ -83,7 +83,7 @@ const ServiceOfferings = [
       "Outline how to review and improve processes across your organization",
       "Compliance to ISO 14971, ISO 62304, IEC 60601 4th Edition"
     ],
-    imageSrc:"Medical Kit.svg"
+    imageSrc:"Quality Management System.jpg"
   },
   {
     title: "Design Quality Services",
@@ -97,7 +97,8 @@ const ServiceOfferings = [
       "Risk Management File (RMF)",
       "Design Input/Output and Design Transfer"
     ],
-    imageSrc:"Medical Kit.svg"
+    imageSrc:"Design Quality Services.jpg"
+
   },
   {
     title: "Supplier Quality Services",
@@ -111,7 +112,7 @@ const ServiceOfferings = [
       "Coordinate between R&D and Supplier",
       "Supplier Validation Processes "
     ],
-    imageSrc:""
+    imageSrc:"Supplier Quality Services.jpg"
   },
   {
     title: "Global Regulatory Strategy Services",
@@ -130,7 +131,7 @@ const ServiceOfferings = [
       "Training and Mentoring",
       "Due Diligence and Integration Planning"
     ],
-    imageSrc:""
+    imageSrc:"Global Regulatory Strategy Services.jpg"
   },
   {
     title: "MDR/IVDR Tech Files Services",
@@ -147,7 +148,7 @@ const ServiceOfferings = [
       "Support reporting incidents and field actions",
       "Summary of Post Market Surveillance"
     ],
-    imageSrc:""
+    imageSrc:"MDRIVDR Tech Files Services.jpg"
   },
   {
     title: "CER and PER Services",
@@ -162,7 +163,7 @@ const ServiceOfferings = [
       "Extensive experience in various segments including Pathology, Chemistry and Immunodiagnostics, Transfusion Medicine",
       "Technical writing of clinical documents like Analytical Performance reports, Clinical Performance reports, and Scientific Validity reports"
     ],
-    imageSrc:""
+    imageSrc:"CER and PER Services.jpg"
   },
   {
     title: "Post Market Clinical Follow-up (PMCF)",
@@ -178,7 +179,7 @@ const ServiceOfferings = [
       "Assist in communication with Notified Body",
       "Data analysis and reporting"
     ],
-    imageSrc:""
+    imageSrc:"Post Market Clinical Follow-up (PMCF).jpg"
   },
   {
     title: "Performance Evaluation Report (PER)",
@@ -192,7 +193,7 @@ const ServiceOfferings = [
       "IVDR Readiness Audits and Mock Audits",
       "Gap Assessments in the existing PER"
     ],
-    imageSrc:""
+    imageSrc:"Performance Evaluation Report (PER).jpg"
   },
   {
     title: "EU IVDR",
@@ -209,7 +210,7 @@ const ServiceOfferings = [
       "Post Market Surveillance (PMSR) Protocols and Reports",
       "Vigilance Reporting as per Article 82 of the IVDR"
     ],
-    imageSrc:""
+    imageSrc:"EU IVDR.jpg"
   },
   {
     title: "EU MDR",
@@ -223,7 +224,7 @@ const ServiceOfferings = [
     "Post Market Clinical Follow-up (PMCF)",
     "Summary Technical Documentation (STED) creation and development",
     ],
-    imageSrc:""
+    imageSrc:"EU IVDR.jpg"
   },
   {
     title: "Post Market Surveillance",
@@ -244,7 +245,7 @@ const ServiceOfferings = [
       "Verification of Implementation",
       "Closure"
     ],
-    imageSrc:""
+    imageSrc:"Post Market Surveillance.jpg"
   }
 
 ]
@@ -261,7 +262,7 @@ const Medical = () => {
           <div className="h-full absolute w-full left-0 text-9xl text-white flex justify-center items-center p-36 font-semibold text-center">Improving lives through medical technology</div>
         </div>
         
-        <img className="h-full w-full object-cover brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/Landing.png`} />
+        <img className="h-full w-full object-cover brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/MedicalDevices/Landing.png`} />
       
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
@@ -290,7 +291,7 @@ const Medical = () => {
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-16 mt-24">
           {medicalCardsData.map((data: medicalCardsData, index: number) => {
             return (
-              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={data.imageSrc} />
+              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/MedicalDevices/${data.imageSrc}`} />
             )
           })}
         </div>

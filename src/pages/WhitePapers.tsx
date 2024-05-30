@@ -6,7 +6,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import { getApi } from "@/api/adminApi";
 
 const CaseStudies = () => {
-  const [activeItem, setActiveItem] = useState("Aerospace and Defense");
+  const [activeItem, setActiveItem] = useState("");
   const [cardsData, setCardsData] = useState()
   // const [activeItemScrolled, setActiveItemScrolled] = useState("")
   const sectionRefs = useRef({});
