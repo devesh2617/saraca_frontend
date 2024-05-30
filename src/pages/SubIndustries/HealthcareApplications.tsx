@@ -77,27 +77,27 @@ const ServiceOfferings = [
     {
         title: "Remote Patient Monitoring Software",
         description: "RPM helps healthcare providers take care of their patients in a better way, even outside regular office visits. Patients use devices like heart monitors and blood pressure cuffs to track their health, sending the data to their doctor through their phone or other electronic ways. With RPM, many people are actively managing their chronic conditions every day, making it a useful tool in modern healthcare. This tech has made healthcare easier and more accessible, especially for older adults or those recovering from surgeries.",
-        imageSrc: "Medical Kit.svg"
+        imageSrc: "Remote Patient Monitoring Software.jpg"
     },
     {
         title: "Medical Diagnosis Software",
         description: "Medical diagnosis software (MDS) or medical diagnosis apps frequently use artificial intelligence (AI) technology. Industry stats suggest that the global market for artificial intelligence in diagnostics is expected to grow steadily at about 20% each year from 2023 to 2032. By 2032, it's projected to hit around $8 billion. During the pandemic, medical diagnosis apps for patients have been helpful. They guide patients with their symptoms and advise if they should go to the hospital. These apps usually consist of simple questionnaires. Medical providers can use diagnostic software to share patient data in a way that keeps it anonymous. This helps to fill in any information gaps, leading to more accurate diagnoses in the end.",
-        imageSrc: "Medical Kit.svg"
+        imageSrc: "Medical Diagnosis Software.jpg"
     },
     {
         title: "Electronic Health Record (EHR)",
         description: "Healthcare providers have been adopting certified electronic health records (EHR) more in recent years, according to HealthIT reports. In 2021, about 70% of office-based doctors and 90% of federal acute care hospitals had adopted Electronic Health Records (EHRs). This is a big jump from 2011 when about 25% of acute care hospitals and 30% of doctors used EHRs. Electronic health records (EHR) systems have revolutionized patient information management and are widely adopted by healthcare providers. These systems replace paper medical records and offer all the necessary functions for storing patient information. EHRs enable medical professionals to securely store and access patient data, ensuring that information can be easily shared among healthcare providers. This interoperability means doctors don’t have to ask for the same information repeatedly, which improves patient care and leads to more accurate diagnoses. Additionally, EHR software often includes features for managing billing and payment details, streamlining the administrative side of healthcare. Overall, electronic health records allow for efficient data management, reducing errors and safety hazards.",
-        imageSrc: ""
+        imageSrc: "Electronic Health Record (EHR).jpg"
     },
     {
         title: "Medical Imaging Software",
         description: "Medical imaging technology, part of telehealth, adds image-based info to existing data sets. With AI and Machine Learning, data processing speeds up. Examples are X-ray, CT, or MRI scans. It's vital for finding diseases that aren't visible externally. Medical imaging helps doctors catch potential health issues early. Software allows healthcare pros to manage, store, and share images securely. Exciting things are happening in healthcare with apps that make 3D models of human anatomy and even create medical devices or body parts using medical imaging. These advances show a lot of promise for the future of healthcare.",
-        imageSrc: ""
+        imageSrc: "Medical Imaging Software.jpg"
     },
     {
         title: "Surgery Software",
         description: "Robots are not new in complex surgeries. Thousands of successful surgeries have been performed with their help. These robots, known as robotically assisted surgical devices (RAS), allow surgeons to control instruments through very small incisions in the patient’s body. They're great for many types of surgeries because they're minimally invasive. However, it's important to understand that the robots themselves can't perform surgeries. It's the surgeons operating the programs who are the real brains behind the entire operation.",
-        imageSrc: ""
+        imageSrc: "Surgery Software.jpg"
     },
    
 
@@ -173,7 +173,7 @@ const Medical = () => {
         {ServiceOfferings.map((data, index: number) => (
           <ServiceOfferingsCards
             cardsData={data}
-            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeScience/HealthcareApplications/${data.imageSrc}`}
+            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/HealthcareApplications/${data.imageSrc}`}
             imagePosition={index % 2 === 0 ? "left" : "right"}
           />
         ))}
