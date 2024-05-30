@@ -118,7 +118,7 @@ const ServiceOfferings = [
     content: [
       "Efficient powertrains are essential for high-performance Off-Highway Vehicles. Saraca specializes in designing and optimizing robust, fuel-efficient propulsion systems, minimizing emissions and operating costs while meeting heavy-duty application demands."
     ],
-    imageSrc: "101.jpg"
+    imageSrc: "website image.jpg"
   }
 
 ]
