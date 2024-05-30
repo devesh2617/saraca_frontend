@@ -20,33 +20,33 @@ type medicalCardsData = {
 // }
 
 const medicalCardsData = [{
-  title: "Vehicle Design and Development",
+  title: "Advanced Vehicle Design",
   points: [
-    "From conceptualization to prototyping, we leverage cutting-edge technologies and industry insights to create vehicles that exceed expectations in performance, durability, and sustainability."
+    "We employ engineering techniques and software to design trucks and buses that prioritize fuel efficiency, aerodynamics, and safety without compromising performance."
   ],
-  imageSrc: "Avionics.png"
+  imageSrc: "Advanced Vehicle Design.png"
 },
  
 {
-  title: "Powertrain Optimization",
+  title: "Digital Integration",
   points: [
-    "We specialize in enhancing powertrain systems to maximize fuel efficiency, reduce emissions, and enhance overall vehicle performance, ensuring your fleet operates at peak efficiency levels."
+    "Our engineering solutions incorporate technologies such as IoT sensors, telematics, and predictive analytics to enable real-time monitoring, remote diagnostics, and predictive maintenance, enhancing fleet management capabilities."
   ],
-  imageSrc: "Digital.jpg"
+  imageSrc: "Digital Integration.png"
 },
 {
-  title: "Safety Solutions",
+  title: "Electrification and Alternative Fuels",
   points: [
-    "Safety is paramount in the Trucks and Buses sector. Our team is dedicated to implementing state-of-the-art safety features and technologies to mitigate risks and ensure the well-being of drivers, passengers, and pedestrians alike."
+    "Recognizing the growing importance of sustainability, we focus on developing electric and hybrid propulsion systems as well as exploring alternative fuel options to reduce emissions and minimize environmental impact."
   ],
-  imageSrc: "MRO.jpg"
+  imageSrc: "Electrification and Alternative Fuels.png"
 },
 {
-    title: "Customized Solutions",
+    title: "Autonomous and Connected Vehicles",
     points: [
-      "Recognizing that each client has unique requirements, we offer tailor-made engineering solutions that address specific challenges and deliver measurable results, helping you stay ahead in a competitive market landscape."
+      "We are at the forefront of research and development in autonomous and connected vehicle technologies, paving the way for safer and more efficient transportation systems through features like adaptive cruise control, collision avoidance systems, and vehicle-to-vehicle communication."
     ],
-    imageSrc: "Digital.jpg"
+    imageSrc: "Autonomous and Connected Vehicles.png"
   }]
 
 // const DiscoverMoreCardsData = [{
@@ -203,7 +203,7 @@ Efficiency, Safety, Sustainability - Engineered for Success</div>
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-16 mt-24">
           {medicalCardsData.map((data: medicalCardsData, index: number) => {
             return (
-              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/`+data.imageSrc} />
+              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Truck and Buses/`+data.imageSrc} />
             )
           })}
         </div>

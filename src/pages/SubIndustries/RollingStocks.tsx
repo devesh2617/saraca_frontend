@@ -85,66 +85,7 @@ const medicalCardsData = [{
 
 
 const ServiceOfferings = [
-  {
-    title: "Passenger Experience",
-    content: [
-      "Saraca provides a range of services, including consumer research, UI/UX design, AI, voice technology, extended reality, and transportation styling, to turn your vision into reality. Our experienced team has a wealth of expertise in collaborating with diverse clients to revolutionize the way individuals engage with their surroundings."
-    ],
-    imageSrc: "PassengerExperience.svg"
-  },
-  {
-    title: "Design and Styling",
-    content: [
-      "We offer design and styling consultation services to our clients, employing our comprehensive i-cube design approach, strong research skills, and end-to-end design and engineering capabilities—from concept to deployment."
-    ],
-    imageSrc: "DesignAndStyling.svg"
-  },
-  {
-    title: "HW/SW Development and Testing",
-    content: [
-      "Hardware Development and Testing across the life cycle including ASIC/FPGA design and redesign activities for cost/component optimization",
-      "Firmware Development",
-      "User Interface (UI) Design",
-      "3D modeling & rendering services and 3D product animation services",
-      "Finite Element Analysis — FEA services",
-      "Application Software Development/ porting/ integration",
-      "Board Support Package(BSP) for a variety of processors like ARM and OS for Linux, VxWorks, Android, and FreeRTOS"
-    ],
-    imageSrc: "HW_SW_Development.svg"
-  },
-  {
-    title: "Technical Documentation",
-    content: [
-      "Create or modify illustrations, CAD file to Illustration",
-      "Raster to vector conversion; photo editing",
-      "Creation of Electronic and Illustrated Parts catalogs",
-      "Development of 3D Modelling and Animation",
-      "Legacy conversion/archive of documents",
-      "Language Translations",
-      "Authoring new technical content on IFUs and related processes, including translation and version control management systems",
-      "Production phase- Print, CD Proofing, and release"
-    ],
-    imageSrc: "TechnicalDocumentation.svg"
-  },
-  {
-    title: "System Development",
-    content: [
-      "Software Development and Testing across the life cycle for a range of (sub-) system such as TCMS, HMI, displays, ATE/ATB, or simulators",
-      "RAMS Services as per EN 50126, EN 50128, and EN 50129 standards, including PHA, FMECA, RCM, RGA, and safety planning",
-      "Design and mock-up, analysis, and space management",
-      "Integration including build support and change management across systems",
-      "System Verification and Validation",
-      "Product Certifications"
-    ],
-    imageSrc: "SystemDevelopment.svg"
-  },
-  {
-    title: "Technical authoring and services engineering",
-    content: [
-      "Our comprehensive rail services engineering encompasses maintainability, technical authoring, and thorough spare parts management, providing improved outcomes without increasing capital expenditures and lowering maintenance costs."
-    ],
-    imageSrc: "TechnicalAuthoring.svg"
-  },
+
   {
     title: "Verification & Validation",
     content: [
