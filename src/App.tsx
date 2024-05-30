@@ -131,7 +131,7 @@ function App() {
       </Routes>
     )
   }
-  const Layout = ({ children }: any) => {
+  const Layout = ({ children }) => {
     const location = useLocation()
     return (
       <div className={`relative overflow-x-hidden bg-background bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/background.svg')] bg-repeat w-full overflow-y-auto min-h-[100vh] flex flex-col`}

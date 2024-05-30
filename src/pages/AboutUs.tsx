@@ -154,10 +154,8 @@ const AboutUs = () => {
   const [index, setIndex] = useState(1)
   const [activeIndex, setActiveIndex] = useState(null)
   const [screenSize, setScreenSize] = useState<string | null>(null)
-  useEffect(() => {
-    
-
-    
+  
+  useEffect(() => {   
     const intervalId = setInterval(() => {
       if (index >= 18) {
         setIndex(1); // Reset to 1 when index is greater than or equal to 18
