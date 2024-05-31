@@ -250,7 +250,7 @@ const Navbar = () => {
                 />) : ""}
 
                 {value?.sublinks?.length > 0 && (
-                  <nav className="bg-black text-white lg:bg-opacity-70 backdrop-blur-sm hidden top-full lg:left-0 lg:right-0 container absolute z-20 px-6 py-2 cursor-pointer text-lg group-hover:grid group-hover:lg:grid-cols-5 group-hover:sm:grid-cols-1">
+                  <nav className="bg-black text-white backdrop-blur-sm hidden top-full lg:left-0 lg:right-0 container absolute z-20 px-6 py-2 cursor-pointer text-lg group-hover:grid group-hover:lg:grid-cols-5 group-hover:sm:grid-cols-1">
                     {value.sublinks.map((link: object, index: number) => {
 
                       // console.log(Object.values(link)[0])
