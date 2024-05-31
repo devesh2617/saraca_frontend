@@ -250,17 +250,17 @@ const Navbar = () => {
                 />) : ""}
 
                 {value?.sublinks?.length > 0 && (
-                  <nav className="bg-black text-white lg:bg-opacity-90 backdrop-blur-sm hidden top-full lg:left-0 lg:right-0 w-screen absolute z-20 px-6 py-2 cursor-pointer text-lg group-hover:grid group-hover:lg:grid-cols-4 group-hover:sm:grid-cols-1">
+                  <nav className="bg-black text-white lg:bg-opacity-70 backdrop-blur-sm hidden top-full lg:left-0 lg:right-0 container absolute z-20 px-6 py-2 cursor-pointer text-lg group-hover:grid group-hover:lg:grid-cols-5 group-hover:sm:grid-cols-1">
                     {value.sublinks.map((link: object, index: number) => {
 
                       // console.log(Object.values(link)[0])
                       return (
                         <div
-                          className={`p-2`}
+                          className={`p-2 lg:p-4 text-2xl`}
                           key={index}
                         >
                           <div className="relative">
-                            <span className="peer/sublink group/sublink  h-full inline-block hover:text-orange-400">
+                            <span className="peer/sublink group/sublink h-full inline-block hover:text-orange-400">
                               <a href={Object.values(link)[0].link}>
                                 {Object.keys(link)[0]}
                               </a>
@@ -280,22 +280,25 @@ const Navbar = () => {
                             <div
                               className={`hidden w-full absolute bottom-full hover:top-full hover:relative hover:block peer-hover/sublink:top-full peer-hover/sublink:relative peer-hover/sublink:block`}
                             >
+                              <ul className=" list-disc">
                               {Object.values(link)[0].sublinks.map(
                                 (sublink: string, index: number) => {
 
                                   return (
-                                    <div
+                                    <li
                                       className="text-white ml-8 p-2"
                                       key={index}
                                     >
                                       <a href={sublink.link} className="hover:text-blue-400">
-                                        - {sublink.name}
+                                        {sublink.name}
                                       </a>
 
-                                    </div>
+                                    </li>
                                   );
                                 }
                               )}
+                              </ul>
+                              
                             </div>
                           </div>
                         </div>
