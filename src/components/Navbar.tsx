@@ -256,7 +256,7 @@ const Navbar = () => {
                       // console.log(Object.values(link)[0])
                       return (
                         <div
-                          className={`p-2 lg:p-4 text-2xl`}
+                          className={`p-2 lg:p-4 text-2xl font-normal`}
                           key={index}
                         >
                           <div className="relative">

@@ -107,7 +107,7 @@ const ServiceOfferings = [
       "Fault simulation and analysis",
       "Testability analysis and optimization"
     ],
-    imageSrc: "DFT.svg"
+    imageSrc: "Design for Testability (DFT) Services.jpg"
   },
   {
     title: "Embedded Systems Development",
@@ -118,7 +118,7 @@ const ServiceOfferings = [
       "Real-time operating system (RTOS) integration",
       "IoT (Internet of Things) device development"
     ],
-    imageSrc: "EmbeddedSystems.svg"
+    imageSrc: "Embedded Systems Development.png"
   },
   {
     title: "Electronic Hardware Design",
@@ -129,7 +129,7 @@ const ServiceOfferings = [
       "EMC/EMI compliance testing",
       "Prototyping and hardware debugging"
     ],
-    imageSrc: "ElectronicHardware.svg"
+    imageSrc: "Electronic Hardware Design.jpg"
   },
   {
     title: "Software Development and Integration",
@@ -140,7 +140,7 @@ const ServiceOfferings = [
       "Database design and optimization",
       "System integration and testing"
     ],
-    imageSrc: "SoftwareDevelopment.svg"
+    imageSrc: "Software Development and Integration.png"
   },
   {
     title: "Machine Learning and AI Solutions",
@@ -151,7 +151,7 @@ const ServiceOfferings = [
       "Performance optimization for inference",
       "Continuous model monitoring and updates"
     ],
-    imageSrc: "MachineLearningAI.svg"
+    imageSrc: "Machine Learning and AI Solutions.png"
   },
   {
     title: "Wireless Communication Solutions",
@@ -162,7 +162,7 @@ const ServiceOfferings = [
       "Antenna design and optimization",
       "System-level simulation and testing"
     ],
-    imageSrc: "WirelessCommunication.svg"
+    imageSrc: "Wireless Communication Solutions.png"
   },
   {
     title: "Cybersecurity Services",
@@ -171,7 +171,7 @@ const ServiceOfferings = [
       "Security architecture design",
       "Encryption and authentication implementation"
     ],
-    imageSrc: "Cybersecurity.svg"
+    imageSrc: "Cybersecurity Services.jpg"
   },
   {
     title: "Embedded",
@@ -182,7 +182,7 @@ const ServiceOfferings = [
       "ADAS",
       "IOT Systems development"
     ],
-    imageSrc: "Embedded.svg"
+    imageSrc: "Embedded.png"
   },
   {
     title: "Technical Publications",
@@ -191,7 +191,7 @@ const ServiceOfferings = [
       "Technical Authoring",
       "Multimedia"
     ],
-    imageSrc: "TechPub.svg"
+    imageSrc: "Technical Publications.png"
   },
   {
     title: "Manufacturing Engineering",
@@ -203,7 +203,7 @@ const ServiceOfferings = [
       "Sourcing Activities",
       "Assembly Engineering"
     ],
-    imageSrc: "Manufacturing.svg"
+    imageSrc: "Manufacturing Engineering.png"
   },
   {
     title: "Mechanical Engineering",
@@ -217,7 +217,7 @@ const ServiceOfferings = [
       "Systems Engineering",
       "Post Launch Follow-up"
     ],
-    imageSrc: "Mechnaical.svg"
+    imageSrc: "Mechanical Engineering.jpg"
   },
   {
     title: "Software Engineering",
@@ -229,7 +229,7 @@ const ServiceOfferings = [
       "Front and back end development",
       "Full Stack development"
     ],
-    imageSrc: "Software.svg"
+    imageSrc: "Software Engineering.jpg"
   },
   {
     title: "Quality Engineering",
@@ -240,7 +240,7 @@ const ServiceOfferings = [
       "DHF Remediation",
       "Regulatory assessment"
     ],
-    imageSrc: "Quality.svg"
+    imageSrc: "Quality Engineering.jpg"
   }
 ]
 
@@ -254,16 +254,16 @@ const Medical = () => {
     <div>
       <div aria-label='landing-image' className="h-[100vh] w-full relative">
         <div className="absolute z-[1] w-full h-full">
-          <div className="h-full absolute w-full left-0 text-9xl text-white flex justify-center items-center p-36 font-semibold text-center">Aviate, Navigate, Communicate</div>
+          <div className="h-full absolute w-full lg:w-1/2 text-left left-0 lg:text-9xl md:text-4xl text-2xl  bg-gradient-to-r from-black to-transparent text-white flex justify-center items-center pl-36 font-semibold">Automated Integration, Minimal Modifications: DFT Made Easy</div>
         </div>
         
-        <img className="h-full w-full object-cover brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/Landing.png`} />
+        <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/DFT/Landing.jpg`} />
       
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
         <div>
         <h1 className='text-5xl font-semibold text-center pb-24'>
-          Aerospace Engineering
+          DFT
         </h1>
         <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
         Our focus is on simplifying and optimizing the testing process for System on Chip (SoC) designs, which have become increasingly complex due to advancements in processes, shrinking circuit sizes, and strict power consumption limits.
@@ -306,7 +306,7 @@ We support a wide range of industry-standard features such as IEEE 1687 IJTAG su
           })}
         </div>
       </div> */}
-     <div aria-label="Our Service Offerings" className="my-24 container">
+     <div aria-label="Our Service Offerings" className="mb-24 container">
         <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">
           Our Service Offerings
         </h1>
