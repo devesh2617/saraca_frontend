@@ -55,7 +55,7 @@ const Navbar = () => {
           "Semiconductor": {
             sublinks: [
               { name: "ASIC/FPGA Design & Development", link: "/Industry/Semiconductor/ASICFPGADesignDevelopment" },
-              { name: "V&V", link: "/Industry/Semiconductor/Verification&Validation" },
+              // { name: "V&V", link: "/Industry/Semiconductor/Verification&Validation" },
               { name: "Physical Design", link: "/Industry/Semiconductor/PhysicalDesign" },
               { name: "DFT", link: "/Industry/Semiconductor/DFT" }
             ], link: "/Industry/Semiconductor"
@@ -166,7 +166,7 @@ const Navbar = () => {
         { "X1 Platform": { sublinks: [], link: "/Innovation/X1_Platform" } },
         { "eFleXpine": { sublinks: [], link: "/Innovation/eFleXpine" } },
         { "FastPMCF": { sublinks: [], link: "/Innovation/FastPMCF" } },
-        { "QTST": { sublinks: [], link: "/Innovation/QTST" } }
+        // { "QTST": { sublinks: [], link: "/Innovation/QTST" } }
       ], link: "#"
     },
     "About Us": { sublinks: [], link: "/About_Us" },

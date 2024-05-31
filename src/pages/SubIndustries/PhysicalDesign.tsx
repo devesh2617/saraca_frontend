@@ -28,7 +28,7 @@ const medicalCardsData = [{
     "FPGA Design, Prototyping & Emulation",
     "SystemC & AMS Verification"
   ],
-  imageSrc: "Avionics.png"
+  imageSrc: "151.jpg"
 },
  
 {
@@ -39,7 +39,7 @@ const medicalCardsData = [{
     "SYNTHESIS, CDC, LINT, STA, LOW POWER",
     "SOC INTEGRATION"
   ],
-  imageSrc: "Digital.jpg"
+  imageSrc: "152.jpg"
 },
 {
   title: "Verification",
@@ -49,7 +49,7 @@ const medicalCardsData = [{
     "Networking, Wireless, Memory, Processor, High Speed Interconnects, Mobile, Wireless",
     "UVM based verification, SV and UVM based verification"
   ],
-  imageSrc: "MRO.jpg"
+  imageSrc: "153.jpg"
 }
 ]
 
@@ -70,7 +70,7 @@ const TrendingTechnologiesCards = (data) => {
   return (
       <div className='w-48 group'>
           <div className='h-48 w-48 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300'>
-              <img src={data.imageSrc} className=' w-full h-full rounded-full object-cover' alt="" />
+              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/ASICFPGADesignDevelopment/${data.imageSrc}`} className=' w-full h-full rounded-full object-cover' alt="" />
           </div>
           <h6 className='text-md text-white w-full text-center mt-4 group-hover:font-semibold transition-all duration-300'>{data.title}</h6>
       </div>
@@ -80,35 +80,35 @@ const TrendingTechnologiesCards = (data) => {
 const ServiceOfferings = [
   {
     title: "RTL Design",
-    imageSrc:"Embedded.svg"
+    imageSrc:"137.jpg"
   },
   {
     title: "Post Silicon Validation",
-    imageSrc:"TechPub.svg"
+    imageSrc:"138.jpg"
   },
   {
     title: "FPGA Design, Prototyping & Emulation",
-    imageSrc:"Manufacturing.svg"
+    imageSrc:"139.jpg"
   },
   {
     title: "SytemC & AMS Verification",
-    imageSrc:"Mechnaical.svg"
+    imageSrc:"140.jpg"
   },
   {
     title: "Design for Manufacturing/Design for Yield",
-    imageSrc:"Embedded.svg"
+    imageSrc:"141.jpg"
   },
   {
     title: "Design for Test ",
-    imageSrc:"TechPub.svg"
+    imageSrc:"142.jpg"
   },
   {
     title: "RTL Synthesis",
-    imageSrc:"Manufacturing.svg"
+    imageSrc:"146.jpg"
   },
   {
     title: "Physical Verification",
-    imageSrc:"Mechnaical.svg"
+    imageSrc:"147.jpg"
   },
  
  
@@ -121,11 +121,32 @@ const Medical = () => {
   return (
     <div>
       <div aria-label='landing-image' className="h-[100vh] w-full relative">
-        <div className="absolute z-[1] w-full h-full">
-          <div className="h-full absolute w-full left-0 text-9xl text-white flex justify-center items-center p-36 font-semibold text-center">From Concept to Silicon: SARACA's DFT and DFM-driven Approach</div>
-        </div>
+      <div
+              aria-label="overlay-container"
+              className="bg-gradient-to-r from-black to-transparent absolute z-[1] w-full h-[100vh]"
+            >
+              <div className="md:w-1/2 h-full flex justify-start items-center p-24">
+                <div aria-label="content" className="md:text-left">
+                  <h1 className="text-white text-4xl md:text-7xl lg:text-9xl font-semibold text-left">
+                   Physical Design
+                  </h1>
+                  <p className="text-white text-3xl mt-16 w-full hidden lg:block leading-normal">
+                  Transforming Ideas into Integrated Circuits
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
         
-        <img className="h-full w-full object-cover brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/Landing.png`} />
+            <video  
+                  className="h-full w-full object-cover"
+                  autoPlay={true}
+                  loop
+                  playsInline
+                  muted
+                >
+                  <source src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/PhysicalDesign/Landing.mp4`} type="video/mp4" />
+                </video>
       
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
@@ -165,7 +186,7 @@ const Medical = () => {
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-16 mt-24">
           {medicalCardsData.map((data: medicalCardsData, index: number) => {
             return (
-              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/`+data.imageSrc} />
+              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/PhysicalDesign/${data.imageSrc}`} />
             )
           })}
         </div>

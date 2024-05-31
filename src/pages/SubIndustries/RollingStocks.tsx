@@ -91,7 +91,7 @@ const ServiceOfferings = [
     content: [
       "Hardware-in-loop simulation"
     ],
-    imageSrc: "VerificationValidation.svg"
+    imageSrc: "Verification & Validation.jpg"
   },
   {
     title: "Cybersecurity",
@@ -100,7 +100,7 @@ const ServiceOfferings = [
       "FMEA, FTA",
       "Product Certification Management"
     ],
-    imageSrc: "Cybersecurity.svg"
+    imageSrc: "Cybersecurity.jpg"
   },
   {
     title: "Electronics",
@@ -109,7 +109,7 @@ const ServiceOfferings = [
       "Embedded software development",
       "Hardware development"
     ],
-    imageSrc: "Electronics.svg"
+    imageSrc: "Electronics.jpg"
   },
   {
     title: "AI/ML & Cloud",
@@ -117,7 +117,7 @@ const ServiceOfferings = [
       "AI/ML solution development",
       "Development of cloud applications"
     ],
-    imageSrc: "AI_ML_Cloud.svg"
+    imageSrc: "AIML & Cloud.jpg"
   },
   {
     title: "Vehicle System Engineering",
@@ -126,7 +126,7 @@ const ServiceOfferings = [
       "System Validation",
       "Functional Engineering"
     ],
-    imageSrc: "VehicleSystemEngineering.svg"
+    imageSrc: "Vehicle System Engineering.jpg"
   },
   {
     title: "Physical Installation & Integration",
@@ -137,7 +137,7 @@ const ServiceOfferings = [
       "CAR body interiors & exteriors",
       "DFA & DFM"
     ],
-    imageSrc: "PhysicalInstallation.svg"
+    imageSrc: "Physical Installation & Integration.jpg"
   },
   {
     title: "Signaling System Engineering",
@@ -146,7 +146,7 @@ const ServiceOfferings = [
       "CBTC",
       "Electronic interlocking"
     ],
-    imageSrc: "SignalingSystemEngineering.svg"
+    imageSrc: "Signaling System Engineering.jpg"
   },
   {
     title: "Industrial Design",
@@ -155,7 +155,7 @@ const ServiceOfferings = [
       "Modelling",
       "Passenger flow"
     ],
-    imageSrc: "IndustrialDesign.svg"
+    imageSrc: "Industrial Design.jpg"
   }
 ]
 
@@ -215,7 +215,7 @@ We specialize in optimizing rolling stock design for interiors, car bodies, and 
        
       </div>
 
-      <div aria-label="medical-device-segments" className="min-h-[100vh] w-full bg-gradient-to-r from-cyan-950 to-cyan-700 py-24">
+      {/* <div aria-label="medical-device-segments" className="min-h-[100vh] w-full bg-gradient-to-r from-cyan-950 to-cyan-700 py-24">
         <h1 className="text-white text-6xl text-center font-semibold">Rolling Stock Segments</h1>
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-16 mt-24">
           {medicalCardsData.map((data: medicalCardsData, index: number) => {
@@ -224,7 +224,7 @@ We specialize in optimizing rolling stock design for interiors, car bodies, and 
             )
           })}
         </div>
-      </div>
+      </div> */}
 
       <div aria-label="Our Service Offerings" className="my-24 container">
         <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">

@@ -50,11 +50,11 @@ const medicalCardsData = [{
   link: "/Industry/Semiconductor/ASICFPGADesignDevelopment"
 },
 
-{
-  title: "Verification & Validation",
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/V&V.jpg`,
-  link: "/Industry/Semiconductor/Verification&Validation"
-},
+// {
+//   title: "Verification & Validation",
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/V&V.jpg`,
+//   link: "/Industry/Semiconductor/Verification&Validation"
+// },
 {
   title: "Physical Design",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/Physical Design.jpg`,
@@ -90,14 +90,14 @@ const Industry = () => {
       <div aria-label='landing-image' className="h-[100vh] w-full relative">
       <div
               aria-label="overlay-container"
-              className="bg-gradient-to-r from-transparent to-black absolute z-[1] w-full h-[100vh]"
+              className="absolute z-[1] w-full h-[100vh]"
             >
-              <div className="md:w-1/2 h-full flex justify-start items-center p-24">
-                <div aria-label="content" className="md:text-left">
-                  <h1 className="text-white text-4xl md:text-7xl lg:text-9xl font-semibold text-left">
+              <div className="h-full w-full flex justify-center items-center p-24">
+                <div aria-label="content" className="md:text-left text-center">
+                  <h1 className="text-white text-4xl md:text-7xl lg:text-9xl font-semibold">
                    Semiconductor
                   </h1>
-                  <p className="text-white text-3xl mt-16 w-full hidden lg:block leading-normal">
+                  <p className="text-white text-3xl mt-16 w-full hidden lg:block leading-normal text-center">
                   Transforming Ideas into Integrated Circuits
                   </p>
                   
