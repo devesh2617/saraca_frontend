@@ -100,51 +100,51 @@
 const ServiceOfferings = [
   {
     title: "SoC/IP Functional Verification",
-    imageSrc: "Embedded.svg"
+    imageSrc: "137.jpg"
   },
   {
     title: "ARM Cortex series Processor Verification",
-    imageSrc: "TechPub.svg"
+    imageSrc: "138.jpg"
   },
   {
     title: "Analog Mixed-Signal Verification",
-    imageSrc: "Manufacturing.svg"
+    imageSrc: "139.jpg"
   },
   {
     title: "IP Development and Verification",
-    imageSrc: "Mechnaical.svg"
+    imageSrc: "140.jpg"
   },
   {
     title: "EDA Tool Validation",
-    imageSrc: "Software.svg"
+    imageSrc: "141.jpg"
   },
   {
     title: "FPGA Device Selection",
-    imageSrc: "Quality.svg"
+    imageSrc: "142.jpg"
   },
   {
     title: "ASISC Prototyping",
-    imageSrc: "Embedded.svg"
+    imageSrc: "143.jpg"
   },
   {
     title: "Synthesis & Optimization",
-    imageSrc: "TechPub.svg"
+    imageSrc: "144.jpg"
   },
   {
     title: "SOC Integration",
-    imageSrc: "Manufacturing.svg"
+    imageSrc: "145.jpg"
   },
   {
     title: "Functional Verification",
-    imageSrc: "Mechnaical.svg"
+    imageSrc: "146.jpg"
   },
   {
     title: "FPGA Accelerator Implementation",
-    imageSrc: "Software.svg"
+    imageSrc: "147.jpg"
   },
   {
     title: "FPGA Validation",
-    imageSrc: "Quality.svg"
+    imageSrc: "148.jpg"
   }
 ]
 
@@ -153,7 +153,7 @@ const TrendingTechnologiesCards = (data) => {
   return (
       <div className='w-48 group'>
           <div className='h-48 w-48 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300'>
-              <img src={data.imageSrc} className=' w-full h-full rounded-full object-cover' alt="" />
+              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/ASICFPGADesignDevelopment/${data.imageSrc}`} className=' w-full h-full rounded-full object-cover' alt="" />
           </div>
           <h6 className='text-md text-white w-full text-center mt-4 group-hover:font-semibold transition-all duration-300'>{data.title}</h6>
       </div>
@@ -173,13 +173,13 @@ const Medical = () => {
           <div className="h-full absolute w-full left-0 text-9xl text-white flex justify-center items-center p-36 font-semibold text-center">Expert ASIC/FPGA Design for Every Industry</div>
         </div>
 
-        <img className="h-full w-full object-cover brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/Landing.png`} />
+        <img className="h-full w-full object-cover brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/ASICFPGADesignDevelopment/Landing.jpg`} />
 
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
         <div>
           <h1 className='text-5xl font-semibold text-center pb-24'>
-            Aerospace Engineering
+            ASIC/FPGA
           </h1>
           <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
             We specialize in assisting clients across various sectors, including AI-driven data centres, aerospace, automotive, networking, consumer electronics, industrial, medical, and IoT.
