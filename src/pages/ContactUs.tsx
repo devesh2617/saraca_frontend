@@ -92,7 +92,7 @@ const ContactUs = () => {
         if (validations()) {
             toast.promise(sendEmail(), {
                 loading: 'Loading...',
-                success: (message) => {
+                success: (message:string) => {
                     return message;
                 },
                 error: (error) => {
@@ -103,11 +103,10 @@ const ContactUs = () => {
     }
     return (
         <div className="min-h-[60vh] mb-8">
-            <div className="bg-[#526D82] bg-opacity-40 backdrop-blur-md min-h-96 container rounded-lg p-8 mt-32">
+            <div className="bg-[#526D82] bg-opacity-40 backdrop-blur-md min-h-96 max-w-[900px] mx-auto rounded-lg p-8 mt-32">
                 <div className="relative">
                     <h1 className="text-center text-white font-bold text-3xl">Contact Us</h1>
                 </div>
-
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                     <div>
                         <input type="text" name="name" value={contactUsData.name} onChange={handleChange} placeholder="Name" required className="p-4 w-full rounded-lg outline-none focus:outline-[#D2E9E9] placeholder:text-black" />

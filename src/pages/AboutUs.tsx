@@ -148,6 +148,11 @@ const TimeLineCards: TimeLineCards[] = [
   }
 ]
 
+const ourCultureCards = Array.from({ length: 27 }, (_, index) => ({
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Our_Culture/${index + 1}.jpg`
+}));
+
+
 
 const AboutUs = () => {
   const ref = useRef<HTMLVideoElement | null>(null)
@@ -404,7 +409,35 @@ const AboutUs = () => {
         </div>
 
       </div>
-      <div aria-label="Our-Culture" className="min-h-[10vh] py-24">
+      <div aria-label="Our Culture" className="min-h-[10rem] bg-cover lg:pt-24 pt-8">
+        <h1 className="text-5xl font-semibold pb-24 text-center">Our Culture</h1>
+        <div>
+          <Swiper
+            slidesPerView={screenSize === "sm" ? 1 : 2}
+            spaceBetween={32}
+            autoplay={{ delay: 3000 }}
+            navigation={true}
+            loop={true}
+            modules={[Navigation, Autoplay]}
+            className="mySwiper container mx-auto lg:pb-24 pb-8"
+            centeredSlides
+          >
+            {
+              ourCultureCards?.map((data: TimeLineCards, index: number) => {
+                return (
+                  <SwiperSlide className={`w-full aspect-[16/9] relative transition-all duration-700`} key={index}>
+                    <div className="absolute h-full w-full rounded-lg" onMouseOver={(e)=>console.log(e.target)}>
+                      <img src={data.imageSrc} alt="timeline" className="absolute h-full w-full rounded-lg object-cover" />
+                    </div>
+                  </SwiperSlide>
+                )
+              })
+            }
+          </Swiper>
+        </div>
+
+      </div>
+      {/* <div aria-label="Our-Culture" className="min-h-[10vh] py-24">
         <h1 className="text-5xl text-black font-semibold text-center mb-24">Our Culture</h1>
         <div className="flex flex-col 2xl:flex-row container flex-wrap mx-auto gap-4">
           <div aria-label="left-section" className="h-[44rem] flex-1 flex gap-[1rem] flex-wrap">
@@ -441,7 +474,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

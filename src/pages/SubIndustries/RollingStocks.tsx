@@ -1,13 +1,13 @@
 // import { useState } from 'react';
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
-import IndustryCards from "../../components/IndustryCards";
+// import IndustryCards from "../../components/IndustryCards";
 import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
 
-type medicalCardsData = {
-  title: string,
-  points: string[],
-  imageSrc: string
-}
+// type medicalCardsData = {
+//   title: string,
+//   points: string[],
+//   imageSrc: string
+// }
 
 // type DiscoverMoreCardsData = {
 //   imageSrc: string,
@@ -19,56 +19,56 @@ type medicalCardsData = {
 //   content: string[]
 // }
 
-const medicalCardsData = [{
-  title: "Physical Installation & Integration",
-  points: [
-    "CAR body exterior and interiors",
-    "Driver cab and driver desk",
-    "CAE validation – crashworthiness, strength & durability, NVH, CFD, etc.",
-    "Gap & flush, tolerance management",
-    "Electrical wiring harness design and development",
-    "Pipe routing and mounting",
-    "Drawing release for component manufacturing"
-  ],
-  imageSrc: "Avionics.png"
-},
+// const medicalCardsData = [{
+//   title: "Physical Installation & Integration",
+//   points: [
+//     "CAR body exterior and interiors",
+//     "Driver cab and driver desk",
+//     "CAE validation – crashworthiness, strength & durability, NVH, CFD, etc.",
+//     "Gap & flush, tolerance management",
+//     "Electrical wiring harness design and development",
+//     "Pipe routing and mounting",
+//     "Drawing release for component manufacturing"
+//   ],
+//   imageSrc: "Avionics.png"
+// },
  
-{
-  title: "Train Control and Management System (TCMS)",
-  points: [
-    "System engineering",
-    "TCMS platformisation",
-    "Software quality assurance and validation",
-    "TCMS application software development",
-    "TCMS and subsystem integration",
-    "Test engineering for TCMS",
-    "TCMS HMI"
-  ],
-  imageSrc: "Digital.jpg"
-},
-{
-  title: "Vehicle Engineering",
-  points: [
-    "Operability engineering",
-    "Train architecture (Functional, Electrical, Mechanical)",
-    "Functional requirements modelling & simulation",
-    "Functional requirements decomposition & allocation to sub-systems",
-    "Requirements management from train level to components",
-    "Model based systems engineering",
-    "Vehicle level validation on lab train"
-  ],
-  imageSrc: "MRO.jpg"
-},
-{
-    title: "Automated Test Equipment/Test Rigs",
-    points: [
-      "Design & Development of PC Based Virtual Test Bench",
-      "Hardware-In-Loop Simulation Rig",
-      "Lab Train Rig for train simulation",
-      "Test Automation Framework"
-    ],
-    imageSrc: "Digital.jpg"
-  }]
+// {
+//   title: "Train Control and Management System (TCMS)",
+//   points: [
+//     "System engineering",
+//     "TCMS platformisation",
+//     "Software quality assurance and validation",
+//     "TCMS application software development",
+//     "TCMS and subsystem integration",
+//     "Test engineering for TCMS",
+//     "TCMS HMI"
+//   ],
+//   imageSrc: "Digital.jpg"
+// },
+// {
+//   title: "Vehicle Engineering",
+//   points: [
+//     "Operability engineering",
+//     "Train architecture (Functional, Electrical, Mechanical)",
+//     "Functional requirements modelling & simulation",
+//     "Functional requirements decomposition & allocation to sub-systems",
+//     "Requirements management from train level to components",
+//     "Model based systems engineering",
+//     "Vehicle level validation on lab train"
+//   ],
+//   imageSrc: "MRO.jpg"
+// },
+// {
+//     title: "Automated Test Equipment/Test Rigs",
+//     points: [
+//       "Design & Development of PC Based Virtual Test Bench",
+//       "Hardware-In-Loop Simulation Rig",
+//       "Lab Train Rig for train simulation",
+//       "Test Automation Framework"
+//     ],
+//     imageSrc: "Digital.jpg"
+//   }]
 
 // const DiscoverMoreCardsData = [{
 //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
