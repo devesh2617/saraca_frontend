@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import CaseStudiesHeader from "../components/CaseStudiesHeader";
 import WhitePaperCard from "../components/WhitePaperCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { getApi } from "@/api/adminApi";
 
 const CaseStudies = () => {
@@ -68,9 +68,10 @@ const CaseStudies = () => {
            ref={(ref) => (sectionRefs.current[data] = ref)}
          >
            <Swiper
-             modules={[Pagination, Navigation]}
+             modules={[Pagination, Navigation, Autoplay]}
              loop    
              navigation
+             autoplay={{delay:4000}}
            >
              {sectionData.map((card, index) => (
                <SwiperSlide key={index}>
