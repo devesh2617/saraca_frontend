@@ -81,6 +81,7 @@ const CaseStudies = () => {
            <Swiper
              modules={[Pagination, Navigation]}
              loop
+             navigation
            >
              {sectionData?.map((card, index) => (
                <SwiperSlide key={index} >
