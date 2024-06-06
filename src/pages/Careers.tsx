@@ -254,7 +254,7 @@ const AboutUs = () => {
       <div aria-label="Timeline" className="min-h-[10rem] bg-cover lg:pt-24 pt-8">
         <div>
           <Swiper
-            slidesPerView={screenSize === "sm" ? 1 : 2}
+            slidesPerView={screenSize===null?1:screenSize === "sm" ? 1 : screenSize==="md"?2:3}
             spaceBetween={32}
             autoplay={{ delay: 3000 }}
             navigation={true}
@@ -295,8 +295,8 @@ const AboutUs = () => {
             infiniteLoop
             interval={4000}
             showThumbs={false}
-            centerMode={screenSize === "sm" ? false : true}
-            centerSlidePercentage={screenSize === "md" ? 60 : 34}
+            centerMode={true}
+            centerSlidePercentage={screenSize===null?100:screenSize==="sm"?66:screenSize === "md" ? 34 : 34}
             showStatus={false}
           >
             {TestmonialCardsData.map((data: any, index: number) => {

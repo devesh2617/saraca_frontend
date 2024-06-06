@@ -40,7 +40,7 @@ const mediaArray = [
     heading: "Automotive",
     subheading:
       "As the automotive landscape evolves towards future mobility, we stand ready to assist. Saraca's automotive engineering services, design expertise, and solution accelerators ensure your products align with evolving market expectations, adding value throughout the development lifecycle.",
-    link: "",
+    link: "/Industry/Automotive",
   },
   {
     type: "image",
@@ -48,7 +48,7 @@ const mediaArray = [
     heading: "Semiconductor",
     subheading:
       "Companies are recognizing the significance of software and services linked to chipsets, facilitating swift adoption of hardware platforms by OEMs during this era of technological convergence. The AI chipset market is experiencing rapid growth due to widespread acceptance and accelerated development cycles driven by applications and associated technology stacks.",
-    link: "",
+    link: "/Industry/Semiconductor",
   },
   {
     type: "image",
@@ -56,7 +56,7 @@ const mediaArray = [
     heading: "Railways",
     subheading:
       "The rail industry is experiencing significant transformation driven by technology convergence, aiming for cost-efficiency, robust designs, and safety compliance. Key areas of digitalization in rail encompass passenger interfaces, mobile apps, e-ticketing, automated train supervision, cybersecurity, driverless trains, and predictive maintenance.",
-    link: "",
+    link: "/Industry/RailTransportation",
   },
   {
     type: "image",
@@ -64,7 +64,7 @@ const mediaArray = [
     heading: "Aerospace",
     subheading:
       "Addressing technology challenges in unmanned aerial systems, SARACA leverages its deep domain knowledge in aerospace engineering. The skilled workforce excels in digital technologies, solving critical problems in aerospace, Défense, and space product development. Through a Design Thinking process, OEMs and suppliers can expedite design cycles, improve safety and efficiency, boost profit margins, and transition into a future-ready organization.",
-    link: "",
+    link: "/Industry/Automotive",
   },
   
   {
@@ -72,14 +72,14 @@ const mediaArray = [
     name: "MedicalDevices.png",
     heading: "Medical Device",
     subheading:"Leveraging cutting-edge technologies, businesses are reducing operational costs and improving processes. Secure connectivity, automation, and data analytics have the potential to elevate patient value and alleviate the societal burden of disease.",
-    link: "",
+    link: "/Industry/Life_Sciences/Medical_Devices",
   },
   {
     type: "image",
     name: "Industrial.jpg",
     heading: "Industrial",
     subheading:"Elevate Your Projects with Precision: Tailored Infrastructure Engineering Solutions by Our Expert Team, Powered by Cutting-Edge Tools and Industry Best Practices.",
-    link: "",
+    link: "/Industry/Industrial",
   },
   // {
   //   type: "image",
@@ -261,9 +261,11 @@ const Home = () => {
                   <p className="text-white text-xl lg:text-3xl mt-16 w-3/4 hidden lg:block leading-normal">
                     {media.subheading}
                   </p>
+                  <a href={media.link}>
                   <button className=" bg-gradient-to-r from-blue-400 to-blue-700 px-8 py-4 rounded-full text-xl text-white mt-8 mx-auto font-semibold">
                     Explore More
                   </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -324,8 +326,8 @@ const Home = () => {
           infiniteLoop
           interval={4000}
           showThumbs={false}
-          centerMode={screenSize==="sm"?false:true}
-          centerSlidePercentage={screenSize==="md"?60:34}
+          centerMode={true}
+          centerSlidePercentage={screenSize===null?100:screenSize==="sm"?66:screenSize === "md" ? 34 : 34}
           showStatus={false}
         >
           {TestmonialCardsData.map((data:any, index:number)=> {

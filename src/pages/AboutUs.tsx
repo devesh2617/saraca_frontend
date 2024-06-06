@@ -240,7 +240,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="text-center flex-1">
-          <div className="h-[20rem] rounded-lg text-xl leading-normal tracking-wide p-8 bg-[#0D9276]">
+          <div className="min-h-[20rem] rounded-lg text-xl leading-normal tracking-wide p-8 bg-[#0D9276]">
             <h1 className="font-semibold text-5xl"> Our Mission</h1>
             <div className="flex direction-reverse">
 
@@ -281,7 +281,7 @@ const AboutUs = () => {
         </div>
         <div className="container mx-auto">
           <Swiper
-            slidesPerView={screenSize==="sm"?1:screenSize==="md"?2:4}
+            slidesPerView={screenSize===null?1:screenSize==="sm"?2:screenSize==="md"?3:4}
             effect={"coverflow"}
             autoplay={{
               delay: 2500,
@@ -355,7 +355,7 @@ const AboutUs = () => {
         <h1 className="mb-24 text-7xl font-semibold text-center">Timeline</h1>
         <div>
           <Swiper
-            slidesPerView={screenSize==="sm"?1:screenSize==="md"?2:3}
+            slidesPerView={screenSize===null?1:screenSize==="sm"?2:screenSize==="md"?3:3}
             spaceBetween={32}
             autoplay={{ delay: 3000 }}
             navigation={true}
@@ -413,7 +413,7 @@ const AboutUs = () => {
         <h1 className="text-5xl font-semibold pb-24 text-center">Our Culture</h1>
         <div>
           <Swiper
-            slidesPerView={screenSize === "sm" ? 1 : 2}
+            slidesPerView={screenSize===null?1:screenSize === "sm" ? 1 : 2}
             spaceBetween={32}
             autoplay={{ delay: 3000 }}
             navigation={true}
