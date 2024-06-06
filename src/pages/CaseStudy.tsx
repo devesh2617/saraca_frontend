@@ -13,7 +13,7 @@ const CaseStudy = () => {
         [])
     return (
         <div>
-            <div aria-label='landing-image' className="w-full h-full mt-24 relative">
+            <div aria-label='landing-image' className="w-full h-full lg:mt-24 mt-20 relative">
                 <div className="absolute z-[1] w-full h-full">
                     <div className="h-full absolute w-2/3 left-0 text-xl lg:text-5xl text-white flex items-center lg:font-semibold text-left pl-[1em]">
                         {caseStudy?.title}
