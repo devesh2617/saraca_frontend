@@ -17,8 +17,8 @@ const CaseStudyCard:FC = ({data}) => {
                         </div>
                     </div>
       </div>
-                <div className="flex-1 my-auto aspect-[4/3]">
-            <img src={import.meta.env.VITE_REACT_APP_API_URL+data?.img} alt="" className="object-cover mx-auto my-8 h-full w-full "/>
+                <div className="flex-1 my-auto w-full">
+            <img src={import.meta.env.VITE_REACT_APP_API_URL+data?.img} alt="" className="my-8 object-cover mx-auto w-[100%] aspect-[4/3]"/>
         </div>
     </div>
   )

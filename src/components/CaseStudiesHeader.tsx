@@ -17,7 +17,7 @@ const CaseStudiesHeader: FC<CaseStudiesHeaderProps> = ({ activeItem, setActiveIt
   ]
 
   return (
-    <div className="bg-sky-200 text-sky-800 font-semibold text-xl flex flex-row lg:mt-24 mt-20 fixed z-10 justify-around h-16 overflow-x-auto min-w-[100%] gap-8 whitespace-nowrap no-scrollbar">
+    <div className="bg-sky-200 text-sky-800 font-semibold text-xl flex flex-row lg:mt-24 mt-20 fixed z-10 justify-evenly h-16 overflow-x-auto min-w-[100%] gap-4 whitespace-nowrap ">
       {caseStudiesHeader.map((item, index) => {
         return (
           <p 

@@ -9,11 +9,11 @@ html, body, #root {
     padding: 0;
     overflow: auto;
     font-size: 10px;
-  }
+}
   
-  body * {
+body * {
     box-sizing: border-box;
-  }
+}
 
 h1 {
   font-family: "Alegreya Sans", sans-serif;
@@ -22,16 +22,16 @@ h1 {
 }
 
 ::-webkit-scrollbar{
-    width: 0.8rem;
+    width: 0.4rem;
 }
 ::-webkit-scrollbar-track{
     background: #040204;
 }
 ::-webkit-scrollbar-thumb{
     background-color: #F26161;
-    border-radius: 10px;
+    border-radius: 2px;
 }
-
+  
 h2 {
     font-family: "Alegreya Sans", sans-serif;
     font-weight: 900;
