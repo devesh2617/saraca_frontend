@@ -64,7 +64,7 @@ const mediaArray = [
     heading: "Aerospace",
     subheading:
       "Addressing technology challenges in unmanned aerial systems, SARACA leverages its deep domain knowledge in aerospace engineering. The skilled workforce excels in digital technologies, solving critical problems in aerospace, Défense, and space product development. Through a Design Thinking process, OEMs and suppliers can expedite design cycles, improve safety and efficiency, boost profit margins, and transition into a future-ready organization.",
-    link: "/Industry/Automotive",
+    link: "/Industry/Aerospace&Defense",
   },
   
   {
@@ -72,15 +72,15 @@ const mediaArray = [
     name: "MedicalDevices.png",
     heading: "Medical Device",
     subheading:"Leveraging cutting-edge technologies, businesses are reducing operational costs and improving processes. Secure connectivity, automation, and data analytics have the potential to elevate patient value and alleviate the societal burden of disease.",
-    link: "/Industry/Life_Sciences/Medical_Devices",
+    link: "/Industry/LifeSciences/MedicalDevices",
   },
-  {
-    type: "image",
-    name: "Industrial.jpg",
-    heading: "Industrial",
-    subheading:"Elevate Your Projects with Precision: Tailored Infrastructure Engineering Solutions by Our Expert Team, Powered by Cutting-Edge Tools and Industry Best Practices.",
-    link: "/Industry/Industrial",
-  },
+  // {
+  //   type: "image",
+  //   name: "Industrial.jpg",
+  //   heading: "Industrial",
+  //   subheading:"Elevate Your Projects with Precision: Tailored Infrastructure Engineering Solutions by Our Expert Team, Powered by Cutting-Edge Tools and Industry Best Practices.",
+  //   link: "/Industry/Industrial",
+  // },
   // {
   //   type: "image",
   //   name: "pic5.png",
@@ -114,20 +114,20 @@ const mediaArray = [
 
 
 const cardsData = [
-  {
-    title: "QTST",
-    heading: "Quick Talent Search Tool",
-    description:
-      "It’s an idea to transform talent search method to more interactive and swift manner. With AI identifying the resumes best suited for position provides confidence to recruiters for sharing resumes to account managers. Interactive dashboard allows BU heads and Team Leads track account summary.",
-    link: "",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/qtst-laptop.png`,
-  },
+  // {
+  //   title: "QTST",
+  //   heading: "Quick Talent Search Tool",
+  //   description:
+  //     "It’s an idea to transform talent search method to more interactive and swift manner. With AI identifying the resumes best suited for position provides confidence to recruiters for sharing resumes to account managers. Interactive dashboard allows BU heads and Team Leads track account summary.",
+  //   link: "",
+  //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/qtst-laptop.png`,
+  // },
   {
     title: "X1 Platform",
     heading: "Driving tomorrows innovation today",
     description:
       "Elevating automotive excellence with AGL: Powered instrument cluster, infotainment, and telematics system",
-    link: "",
+    link: "/Innovation/X1_Platform",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/image 8.png`,
   },
   {
@@ -135,14 +135,14 @@ const cardsData = [
     heading: "Advancing Precision, Surgeon Well-being & Patient- Centricity in spinal surgery",
     description:
       "A significant stride in spinal surgery, this innovative system is poised to redefine the landscape of treating degenerative disorders, deformities like scoliosis, and trauma indications in the human spine",
-    link: "",
+    link: "/Innovation/eFleXpine",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/image 6.png`,
   },
   {
     title: "FastPMCF",
     heading: "Accelerating Insights, Elevating Excellence",
     description:"Transforming PMCF surveys for swift clinical evidence feedback",
-    link: "",
+    link: "/Innovation/FastPMCF",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/image 5.png`,
   },
 ];
