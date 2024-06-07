@@ -1,12 +1,12 @@
 
 import React, { useEffect, useRef } from 'react';
-import DiscoverMoreCards from '../../components/DiscoverMoreCards';
+// import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 import ServiceOfferingsCards from "../../components/SubservicesServiceOfferingCards";
 
-type DiscoverMoreCardsData = {
-    imageSrc: string,
-    link: string
-}
+// type DiscoverMoreCardsData = {
+//     imageSrc: string,
+//     link: string
+// }
 
 type TrendingTechnologiesObject = {
     title: string,
@@ -16,27 +16,27 @@ type TrendingTechnologiesObject = {
 
 const TrendingTechnologiesData = [
     {
-        heading: "Product Design and Development",
+        heading: "Digital Twin Technology",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     },
     {
-        heading: "Process Optimisation",
+        heading: "Internet of Things (IoT) Integration",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     },
     {
-        heading: "Regulatory Compliances",
+        heading: "Cloud-Based PLM Solutions",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     },
     {
-        heading: "Quality Assurance and Validation",
+        heading: "Artificial Intelligence and Machine Learning",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     },
     {
-        heading: "Technical Consulting",
+        heading: "Augmented Reality (AR) and Virtual Reality (VR)",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     }
@@ -45,39 +45,33 @@ const TrendingTechnologiesData = [
 
 const ServiceOfferings = [
     {
-        heading: "Product Design and Development",
-        description:
-            "  We offer end-to-end product design and development services, from concept generation to prototyping and manufacturing support. Our iterative approach ensures that your product not only meets regulatory standards but also exceeds user expectations.",
+        heading: "Product Lifecycle Management (PLM)",
+        description: "Our PLM services encompass the entire product lifecycle, from conceptualization and design to manufacturing and support. We employ industry-leading tools and methodologies to streamline processes, enhance collaboration, and drive innovation.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Product Design & Development.svg`,
+        imageSrc: ""
     },
     {
-        heading: "Process Optimisation",
-        description:
-            "Through advanced process modeling, simulation, and optimization techniques, we help streamline manufacturing processes, enhance efficiency, and reduce costs without compromising quality or compliance.",
+        heading: "Software Engineering Solutions",
+        description: "SARACA offers a comprehensive suite of software engineering solutions, including software development, testing, maintenance, and optimization. Our team of seasoned engineers and developers is committed to delivering robust, scalable, and high-performance software solutions that exceed client expectations.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Process Optimisation.svg`,
+        imageSrc: ""
     },
     {
-        heading: "Regulatory Compliances",
-        description:
-            "Navigating the regulatory landscape can be daunting. Our team is well-versed in regulatory requirements and standards, ensuring that your products and processes meet the rigorous demands of regulatory agencies worldwide.",
+        heading: "Technology Integration",
+        description: "We specialize in seamless technology integration, helping clients leverage the latest advancements to optimize operations, improve efficiency, and gain a competitive edge in the market. Whether it's integrating new technologies into existing systems or developing custom solutions from the ground up, SARACA has the expertise to deliver results.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Regulatory.svg`,
+        imageSrc: ""
     },
     {
-        heading: "Quality Assurance and Validation",
-        description: " Quality is paramount in the life science industry. We provide comprehensive quality assurance and validation services to ensure that your products and processes adhere to the highest standards of reliability, safety, and efficacy.",
+        heading: "Quality Assurance and Compliance",
+        description: "SARACA ensures adherence to the highest quality standards and regulatory compliance requirements throughout the product development lifecycle. Our rigorous quality assurance processes and compliance frameworks guarantee that deliverables meet the most stringent industry standards and certifications.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Quality.svg`,
+        imageSrc: ""
     },
-    {
-        heading: "Technical Consulting",
-        description: "Whether you're facing technical challenges or seeking strategic guidance, our team is here to help. We offer expert technical consulting services tailored to your unique needs, providing insights and solutions that drive innovation and growth.",
-        link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Technical.svg`,
-    }
+   
 ];
+
+
 
 const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
     return (
@@ -90,18 +84,18 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
     )
 }
 
-const DiscoverMoreCardsData = [{
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#"
-},
-{
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#"
-},
-{
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#"
-}]
+// const DiscoverMoreCardsData = [{
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     link: "#"
+// },
+// {
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     link: "#"
+// },
+// {
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     link: "#"
+// }]
 
 const Industry = () => {
     const cardsRefs = Array.from({ length: ServiceOfferings.length }, () => useRef(null));
@@ -163,12 +157,34 @@ const Industry = () => {
             </div>
             <div aria-label='what-we-do' className='w-full py-24'>
                 <div>
-                    <h1 className='text-5xl font-semibold text-center'>
-                        Innovating Life Science Through Technology
+                    <h1 className='text-5xl font-semibold text-center pb-24'>
+                    Product Lifecycle Management
                     </h1>
-                    <p className='container text-3xl mx-auto px-8 text-gray-600 mt-24'>
-                        We specialize in providing cutting-edge engineering services tailored specifically to the dynamic and ever-evolving life science sector. With a steadfast commitment to innovation, excellence, and client satisfaction, we empower life science organizations to thrive in today's competitive landscape. From pharmaceuticals to biotechnology, medical devices to healthcare technologies, we possess the knowledge and skills necessary to tackle the most complex engineering challenges.        </p>
+                    <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+                    Product Lifecycle Management (PLM) in software engineering encompasses the management of software products from inception through development, deployment, maintenance, and eventual retirement. It involves comprehensive planning, collaboration, and control to ensure the seamless evolution of software solutions, aligning with business objectives and market demands.
+                    <br />
+                    <br />
+In the rapidly evolving digital landscape, effective PLM is crucial for driving innovation, optimizing resources, and enhancing competitiveness. By implementing robust PLM practices, organizations can accelerate time-to-market, improve product quality, and adapt swiftly to dynamic market trends, thereby maximizing the value of their software investments. 
+                    </p>
                 </div>
+                <div>
+                    <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
+                        Segments:
+                    </h1>
+                    <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+                        <strong>Software Design and Architecture:</strong> Architecting scalable and resilient software solutions tailored to your business needs.
+                        <br />
+                        <br />
+                        <strong>Development and Integration:</strong> Streamlining the development process and integrating software components for seamless functionality.
+                        <br />
+                        <br />
+                        <strong>Quality Assurance and Testing:</strong> Ensuring the reliability, performance, and security of software products through rigorous testing methodologies.
+                        <br />
+                        <br />
+                        <strong>Deployment and Maintenance:</strong> Facilitating smooth deployment and providing ongoing support and maintenance services to optimize software performance.
+                    </p>
+                </div>
+
             </div>
 
             <div aria-label="trending-technologies-section" className={`min-h-[30vh] w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.svg')] bg-cover`}>

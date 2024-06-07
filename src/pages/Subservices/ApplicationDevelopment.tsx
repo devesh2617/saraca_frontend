@@ -16,27 +16,27 @@ type TrendingTechnologiesObject = {
 
 const TrendingTechnologiesData = [
     {
-        heading: "Product Design and Development",
+        heading: "Artificial Intelligence and Machine Learning",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     },
     {
-        heading: "Process Optimisation",
+        heading: "Progressive Web Apps (PWAs)",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     },
     {
-        heading: "Regulatory Compliances",
+        heading: "DevOps and Continuous Integration/Continuous Deployment (CI/CD)",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     },
     {
-        heading: "Quality Assurance and Validation",
+        heading: "Microservices Architecture",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     },
     {
-        heading: "Technical Consulting",
+        heading: "Cross-Platform Mobile Development",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     }
@@ -45,35 +45,41 @@ const TrendingTechnologiesData = [
 
 const ServiceOfferings = [
     {
-        heading: "Product Design and Development",
+        heading: "Custom Application Development",
         description:
-            "  We offer end-to-end product design and development services, from concept generation to prototyping and manufacturing support. Our iterative approach ensures that your product not only meets regulatory standards but also exceeds user expectations.",
+            "Leverage our expertise to build custom software applications that address your unique business needs. Whether you require a web-based application, mobile app, or enterprise software solution, we have the skills and experience to bring your vision to life.",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Product Design & Development.svg`,
     },
     {
-        heading: "Process Optimisation",
+        heading: "Legacy Application Modernization",
         description:
-            "Through advanced process modeling, simulation, and optimization techniques, we help streamline manufacturing processes, enhance efficiency, and reduce costs without compromising quality or compliance.",
+            "Is your legacy software holding you back? Our team can modernize and upgrade your outdated applications to the latest technologies and platforms, ensuring improved performance, scalability, and security while preserving valuable functionality and data.",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Process Optimisation.svg`,
     },
     {
-        heading: "Regulatory Compliances",
+        heading: "Full-Cycle Development Services",
         description:
-            "Navigating the regulatory landscape can be daunting. Our team is well-versed in regulatory requirements and standards, ensuring that your products and processes meet the rigorous demands of regulatory agencies worldwide.",
+            "From initial concept to deployment and ongoing maintenance, we provide end-to-end application development services that are tailored to your specific requirements. Our agile approach ensures that your project stays on track and delivers results on time and within budget.",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Regulatory.svg`,
     },
     {
-        heading: "Quality Assurance and Validation",
-        description: " Quality is paramount in the life science industry. We provide comprehensive quality assurance and validation services to ensure that your products and processes adhere to the highest standards of reliability, safety, and efficacy.",
+        heading: "Cross-Platform Development",
+        description: "Reach a wider audience with applications that run seamlessly across different devices and operating systems. Whether it's iOS, Android, or web-based applications, we ensure a consistent user experience across all platforms.",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Quality.svg`,
     },
     {
-        heading: "Technical Consulting",
-        description: "Whether you're facing technical challenges or seeking strategic guidance, our team is here to help. We offer expert technical consulting services tailored to your unique needs, providing insights and solutions that drive innovation and growth.",
+        heading: "Integration Services",
+        description: "Seamlessly connect your applications with existing systems, third-party APIs, and external services to streamline workflows and improve collaboration across your organization. Our integration services ensure smooth data exchange and automation of business processes.",
+        link: "",
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Technical.svg`,
+    },
+    {
+        heading: "Quality Assurance and Testing",
+        description: "Ensure the reliability, performance, and security of your applications with our comprehensive testing services. We conduct thorough testing at every stage of development to identify and fix issues before deployment, ensuring a seamless user experience.",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Technical.svg`,
     }
@@ -163,12 +169,32 @@ const Industry = () => {
             </div>
             <div aria-label='what-we-do' className='w-full py-24'>
                 <div>
-                    <h1 className='text-5xl font-semibold text-center'>
-                        Innovating Life Science Through Technology
+                    <h1 className='text-5xl font-semibold text-center pb-24'>
+                    Application Development
                     </h1>
-                    <p className='container text-3xl mx-auto px-8 text-gray-600 mt-24'>
-                        We specialize in providing cutting-edge engineering services tailored specifically to the dynamic and ever-evolving life science sector. With a steadfast commitment to innovation, excellence, and client satisfaction, we empower life science organizations to thrive in today's competitive landscape. From pharmaceuticals to biotechnology, medical devices to healthcare technologies, we possess the knowledge and skills necessary to tackle the most complex engineering challenges.        </p>
+                    <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+                    At Saraca Solutions, we specialize in delivering tailored application development services that empower businesses to thrive in today's digital landscape. With our extensive expertise and commitment to excellence, we help organizations of all sizes transform their ideas into innovative software solutions that drive growth and success.
+                    </p>
                 </div>
+                {/* <div>
+                    <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
+                        What We Serve
+                    </h1>
+                    <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+                        <strong>Custom Application Development:</strong> Saraca Solutions offers tailored application development services to meet the unique needs of businesses. Whether it's a web-based application, mobile app, or enterprise software solution, our team of experienced developers can create custom applications from scratch.
+                        <br />
+                        <br />
+                        <strong>Quality Assurance and Software Testing:</strong> Ensure the reliability and performance of your software applications with Saraca's comprehensive quality assurance and testing services. We employ industry-leading testing frameworks and methodologies to identify and mitigate defects, ensuring flawless user experiences.
+                        <br />
+                        <br />
+                        <strong>Cloud Application Development:</strong> Saraca Solutions specializes in developing cloud-native applications that leverage the scalability, reliability, and flexibility of cloud computing platforms such as AWS, Azure, and Google Cloud. We help businesses harness the power of the cloud to reduce infrastructure costs, improve agility, and accelerate time-to-market for their applications.
+                        <br />
+                        <br />
+                        <strong>Product Lifecycle Management (PLM) Integration:</strong> Saraca Solutions offers PLM integration services to streamline product development processes, from ideation to retirement. We help businesses integrate PLM systems with other enterprise applications such as ERP, CRM, and CAD/CAM systems to ensure seamless data flow and collaboration across departments.
+ 
+                    </p>
+                </div> */}
+
             </div>
 
             <div aria-label="trending-technologies-section" className={`min-h-[30vh] w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.svg')] bg-cover`}>

@@ -312,7 +312,7 @@ const AboutUs = () => {
       <div id="regions" className="container my-24 text-center">
         <h1 className="text-red-600 lg:text-7xl text-4xl font-semibold">We are Hiring</h1>
         <p className="lg:text-3xl text-xl mt-8">Choose from global locations and job functions</p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 ">
+        <div className="flex flex-col sm:flex-row gap-12 justify-center mt-8 ">
           {regions?.map((region:any)=>(    
                           <button key={region?.id} className=" bg-red-400 flex-1 hover:bg-red-500 transition-all duration-300 py-4 px-8 rounded-lg text-xl text-white hover:scale-105" onClick={()=>navigate(`/Careers/Positions/${region?.name}`)}>{region?.name}</button>     
           ))}

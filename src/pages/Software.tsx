@@ -15,29 +15,29 @@ type ServiceOfferings = {
 const ServiceOfferings = [
 {
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/IOT.png`,
-  title: "IOT",
-  link: ""
+  title: "Application Development",
+  link: "/Service/Software/ApplicationDevelopment"
 },
 {
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/CyberSecurity.png`,
-  title: "CyberSecurity",
-  link: ""
+  title: "Software Testing",
+  link: "/Service/Software/SoftwareTesting"
 },
 {
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability.png`,
-  title: "Sustainability",
-  link: ""
+  title: "Cloud",
+  link: "/Service/Software/Cloud"
 },
 {
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Industry4.0.png`,
-  title: "Indutry 4.0",
-  link: ""
+  title: "PLM",
+  link: "/Service/Software/PLM"
 },
-{
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Artificial Intelligence.png`,
-  title: "Artificial Intelligence",
-  link: ""
-}
+// {
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Artificial Intelligence.png`,
+//   title: "Artificial Intelligence",
+//   link: ""
+// }
 ]
 
 const DiscoverMoreCardsData = [{
@@ -55,12 +55,15 @@ const DiscoverMoreCardsData = [{
 
 const serviceOfferingCards = (data: ServiceOfferings) => {
   return (
-    <div className='bg-white w-[16rem] rounded-xl overflow-hidden'>
+    <a href={data.link}>
+       <div className='bg-white w-[16rem] rounded-xl overflow-hidden'>
           <img src={data.imageSrc} className='w-full object-cover min-h-52'/>
           <h1 className=' font-bold text-center text-2xl py-4'>
             {data.title}
           </h1>
          </div>
+    </a>
+   
   )
 }
 
@@ -88,31 +91,51 @@ const Industry = () => {
         <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Landing.png`} />
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
-        <div>
-        <h1 className='text-6xl font-semibold text-center mb-8'>
-          Digital Technology
-        </h1>
-        <p className='container text-2xl mx-auto p-8 text-gray-600 leading-normal'>
-        We live in a digital era. New advancements in communications, data processing, and data storage technology are driving the next frontiers of progress. As global engineering services are refined by the continuing rise of emerging technologies and ongoing developments in the digital technologies. Virtual realms are reshaping the way products are designed, developed, and manufactured. In this dynamic environment, the future belongs to the next level of synergy between hardware and software, underscoring the need for a robust digital engineering paradigm. As the world evolves and demand patterns mature, the future, therefore, will be defined by the new age solutions and offerings of companies that can leverage the capabilities unlocked by digital engineering.
-        <br/>
-        <br/>
-        Signaling engineering serves as the backbone of railway safety and efficiency. It ensures precise control over train movements, mitigates the risk of accidents, and optimizes traffic flow along railway networks. In the dynamic landscape of rail transportation, signaling engineering plays a pivotal role in modernizing infrastructure, enhancing capacity, and meeting evolving safety standards. 
-         </p>
-        </div>
-      </div>
+                <div>
+                    <h1 className='text-5xl font-semibold text-center pb-24'>
+                    Software Engineering
+                    </h1>
+                    <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+                    In the digital era, software has become the backbone of modern businesses, enabling automation, connectivity, and seamless user experiences. Software Engineering ensures the reliability, scalability, and security of digital solutions, facilitating efficient operations, accelerated growth, and enhanced customer satisfaction.
+                    <br />
+                    <br />
+                    At Saraca, we are committed to pioneering significant innovations in the Software Engineering domain. Our team of experts leverages cutting-edge technologies and industry best practices to deliver transformative solutions that drive value and competitiveness for our clients.
+
+                    </p>
+                </div>
+                <div>
+                    <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
+                        What We Serve
+                    </h1>
+                    <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+                        <strong>Custom Application Development:</strong> Saraca Solutions offers tailored application development services to meet the unique needs of businesses. Whether it's a web-based application, mobile app, or enterprise software solution, our team of experienced developers can create custom applications from scratch.
+                        <br />
+                        <br />
+                        <strong>Quality Assurance and Software Testing:</strong> Ensure the reliability and performance of your software applications with Saraca's comprehensive quality assurance and testing services. We employ industry-leading testing frameworks and methodologies to identify and mitigate defects, ensuring flawless user experiences.
+                        <br />
+                        <br />
+                        <strong>Cloud Application Development:</strong> Saraca Solutions specializes in developing cloud-native applications that leverage the scalability, reliability, and flexibility of cloud computing platforms such as AWS, Azure, and Google Cloud. We help businesses harness the power of the cloud to reduce infrastructure costs, improve agility, and accelerate time-to-market for their applications.
+                        <br />
+                        <br />
+                        <strong>Product Lifecycle Management (PLM) Integration:</strong> Saraca Solutions offers PLM integration services to streamline product development processes, from ideation to retirement. We help businesses integrate PLM systems with other enterprise applications such as ERP, CRM, and CAD/CAM systems to ensure seamless data flow and collaboration across departments.
+ 
+                    </p>
+                </div>
+
+            </div>
 
       <div aria-label='our-service-offerings' className='w-full py-24 bg-cyan-600'>
         <div>
-        <h1 className='text-6xl font-semibold text-center mb-8 text-white'>
+        <h1 className='text-6xl font-semibold text-center text-white'>
           Our Service Offerings 
         </h1>
-        <div className=' mt-16 w-full flex justify-evenly flex-wrap gap-8'>
+        <div className=' mt-24 w-full flex justify-evenly flex-wrap gap-8'>
          {ServiceOfferings.map((data:ServiceOfferings)=>serviceOfferingCards(data))}
         </div>
         </div>
       </div>
 
-      <div aria-label='what-we-do' className='w-full py-24'>
+      {/* <div aria-label='our-approach' className='w-full py-24'>
         <div>
         <h1 className='text-6xl font-semibold text-center mb-8'>
           Our Approach
@@ -120,13 +143,13 @@ const Industry = () => {
         <p className='container text-2xl mx-auto p-8 text-gray-600 leading-normal'>
         At SARACA, we believe in a collaborative approach, working closely with our clients to understand their unique needs, challenges, and aspirations. Through transparent communication, meticulous planning, and agile methodologies, we ensure timely delivery of solutions that exceed expectations and drive tangible results.         </p>
         </div>
-      </div>
+      </div> */}
 
       
       
-      <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')]`}>
-        <h1 className="text-white text-6xl text-center font-semibold py-12">Discover More</h1>
-        <div className=" mt-16 w-full flex justify-evenly flex-wrap gap-8">
+      <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')]`}>
+        <h1 className="text-white text-6xl text-center font-semibold pb-24">Discover More</h1>
+        <div className="w-full flex justify-evenly flex-wrap gap-8">
           {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {
             return (
               <DiscoverMoreCards key={index} imageSrc={data.imageSrc} link={data.link} />

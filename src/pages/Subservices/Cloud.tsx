@@ -1,12 +1,12 @@
 
 import React, { useEffect, useRef } from 'react';
-import DiscoverMoreCards from '../../components/DiscoverMoreCards';
+// import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 import ServiceOfferingsCards from "../../components/SubservicesServiceOfferingCards";
 
-type DiscoverMoreCardsData = {
-    imageSrc: string,
-    link: string
-}
+// type DiscoverMoreCardsData = {
+//     imageSrc: string,
+//     link: string
+// }
 
 type TrendingTechnologiesObject = {
     title: string,
@@ -16,27 +16,27 @@ type TrendingTechnologiesObject = {
 
 const TrendingTechnologiesData = [
     {
-        heading: "Product Design and Development",
+        heading: "Server less Computing",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     },
     {
-        heading: "Process Optimisation",
+        heading: "Hybrid and Multi-Cloud Solutions",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     },
     {
-        heading: "Regulatory Compliances",
+        heading: "Edge Computing",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     },
     {
-        heading: "Quality Assurance and Validation",
+        heading: "AI and Machine Learning as a Service",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     },
     {
-        heading: "Technical Consulting",
+        heading: "Cloud Security and Compliance",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     }
@@ -45,39 +45,48 @@ const TrendingTechnologiesData = [
 
 const ServiceOfferings = [
     {
-        heading: "Product Design and Development",
-        description:
-            "  We offer end-to-end product design and development services, from concept generation to prototyping and manufacturing support. Our iterative approach ensures that your product not only meets regulatory standards but also exceeds user expectations.",
+        heading: "Cloud Migration",
+        description: [
+            "Seamlessly transition your applications and data to the cloud with our expert cloud migration services. We ensure minimal disruption and maximum efficiency throughout the migration process."
+        ],
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Product Design & Development.svg`,
+        imageSrc: ""
     },
     {
-        heading: "Process Optimisation",
-        description:
-            "Through advanced process modeling, simulation, and optimization techniques, we help streamline manufacturing processes, enhance efficiency, and reduce costs without compromising quality or compliance.",
+        heading: "Cloud Architecture Design",
+        description: [
+            "Our team of seasoned architects designs robust and scalable cloud architectures tailored to your specific needs. We optimize performance, reliability, and security to maximize the benefits of cloud computing."
+        ],
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Process Optimisation.svg`,
+        imageSrc: ""
     },
     {
-        heading: "Regulatory Compliances",
-        description:
-            "Navigating the regulatory landscape can be daunting. Our team is well-versed in regulatory requirements and standards, ensuring that your products and processes meet the rigorous demands of regulatory agencies worldwide.",
+        heading: "Cloud Infrastructure Management",
+        description: [
+            "SARACA provides comprehensive cloud infrastructure management services to keep your cloud environment running smoothly. From monitoring to optimization, we handle all aspects of cloud infrastructure maintenance."
+        ],
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Regulatory.svg`,
+        imageSrc: ""
     },
     {
-        heading: "Quality Assurance and Validation",
-        description: " Quality is paramount in the life science industry. We provide comprehensive quality assurance and validation services to ensure that your products and processes adhere to the highest standards of reliability, safety, and efficacy.",
+        heading: "DevOps Integration",
+        description: [
+            "Accelerate your software development lifecycle with our DevOps integration services. We automate processes, streamline collaboration, and improve efficiency to deliver high-quality software at scale."
+        ],
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Quality.svg`,
+        imageSrc: ""
     },
     {
-        heading: "Technical Consulting",
-        description: "Whether you're facing technical challenges or seeking strategic guidance, our team is here to help. We offer expert technical consulting services tailored to your unique needs, providing insights and solutions that drive innovation and growth.",
+        heading: "Cloud Security Solutions",
+        description: [
+            "Protect your cloud assets and data with our advanced cloud security solutions. We implement robust security measures and best practices to mitigate risks and safeguard your valuable resources."
+        ],
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Technical.svg`,
-    }
+        imageSrc: ""
+    },
 ];
+
+
 
 const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
     return (
@@ -90,18 +99,18 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
     )
 }
 
-const DiscoverMoreCardsData = [{
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#"
-},
-{
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#"
-},
-{
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#"
-}]
+// const DiscoverMoreCardsData = [{
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     link: "#"
+// },
+// {
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     link: "#"
+// },
+// {
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     link: "#"
+// }]
 
 const Industry = () => {
     const cardsRefs = Array.from({ length: ServiceOfferings.length }, () => useRef(null));
@@ -148,7 +157,7 @@ const Industry = () => {
                     <div className="md:w-2/3 h-full flex justify-start items-center p-24">
                         <div aria-label="content" className="md:text-left">
                             <h1 className="text-white text-4xl md:text-7xl lg:text-9xl font-semibold text-left">
-                                CyberSecurity
+                            Cloud Engineering
                             </h1>
                             <p className="text-white text-3xl mt-16 w-full hidden lg:block leading-normal">
                                 Beware of Cyber threats
@@ -163,15 +172,34 @@ const Industry = () => {
             </div>
             <div aria-label='what-we-do' className='w-full py-24'>
                 <div>
-                    <h1 className='text-5xl font-semibold text-center'>
-                        Innovating Life Science Through Technology
+                    <h1 className='text-5xl font-semibold text-center pb-24'>
+                    Cloud Engineering
                     </h1>
-                    <p className='container text-3xl mx-auto px-8 text-gray-600 mt-24'>
-                        We specialize in providing cutting-edge engineering services tailored specifically to the dynamic and ever-evolving life science sector. With a steadfast commitment to innovation, excellence, and client satisfaction, we empower life science organizations to thrive in today's competitive landscape. From pharmaceuticals to biotechnology, medical devices to healthcare technologies, we possess the knowledge and skills necessary to tackle the most complex engineering challenges.        </p>
+                    <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+                    Cloud Engineering encompasses the design, development, deployment, and maintenance of software applications and systems that leverage cloud computing infrastructure. It involves harnessing the power of cloud resources, such as storage, computing power, and services, to create scalable, flexible, and cost-effective solutions.
+                    <br />
+                    <br />
+Cloud Engineering enables organizations to scale their operations seamlessly, accelerate time-to-market, enhance collaboration, and adapt to changing market demands with ease. By leveraging the cloud, businesses can unlock unprecedented opportunities for growth and transformation.
+                    </p>
                 </div>
+                <div>
+                    <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
+                        Segments:
+                    </h1>
+                    <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+                        <strong>Cloud Application Development:</strong> We specialize in designing and developing cloud-native applications tailored to meet the unique needs and objectives of our clients.
+                        <br />
+                        <br />
+                        <strong>Cloud Migration and Modernization:</strong> Our comprehensive migration and modernization services help businesses seamlessly transition their legacy systems to the cloud, unlocking new levels of scalability, reliability, and performance.
+                        <br />
+                        <br />
+                        <strong>Cloud Infrastructure Optimization:</strong> We optimize cloud infrastructure to maximize efficiency, reduce costs, and enhance overall performance, ensuring that businesses derive maximum value from their cloud investments.
+                    </p>
+                </div>
+
             </div>
 
-            <div aria-label="trending-technologies-section" className={`min-h-[30vh] w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.svg')] bg-cover`} >
+            <div aria-label="trending-technologies-section" className={`min-h-[30vh] w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.svg')] bg-cover`}>
                 <h1 className="text-white text-5xl font-semibold text-center">Trending Technologies</h1>
                 <div className="container flex flex-wrap justify-evenly items-start mt-24 mx-auto">
                     {TrendingTechnologiesData.map((data: TrendingTechnologiesObject) => TrendingTechnologiesCards(data))}
@@ -201,7 +229,7 @@ const Industry = () => {
                 </div>
 
             </div>
-            {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24`} >
+            {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24`}>
                 <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
                 <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
                     {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {

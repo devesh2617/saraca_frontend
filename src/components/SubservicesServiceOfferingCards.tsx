@@ -6,7 +6,7 @@ interface CardProps {
   contentPosition: "left" | "right";
 }
 
-const Card: FC<CardProps> = forwardRef(({ key, cardsData, contentPosition }, ref) => {
+const Card: FC<CardProps> = forwardRef(({ cardsData, contentPosition }, ref) => {
   return (
     <div
       ref={ref}
@@ -19,7 +19,17 @@ const Card: FC<CardProps> = forwardRef(({ key, cardsData, contentPosition }, ref
         <img src={cardsData.imageSrc} className="h-full w-full mx-auto object-contain" alt="" />
       </div>
       <div aria-label="content" className={`flex-1 ${contentPosition === "left" ? "text-left" : "text-right"}`}>
-        <p className="text-lg text-gray-600 px-6">{cardsData.description}</p>
+        <p className="text-lg text-gray-600 px-6">{typeof cardsData?.description==="string"?<p className="lg:my-4 my-1 text-lg lg:text-xl">{cardsData?.description}</p>:cardsData?.description?.length>1?(<ul className="list-disc">
+            {
+             cardsData.description.map((point:string, index:number)=>{
+                return(
+                    <li key={index} className="lg:my-4 my-1 text-lg lg:text-xl list-none">{index+1}. {point}</li>
+                )
+             })
+            }
+          </ul>):(
+            <p className="lg:my-4 my-1 text-lg lg:text-xl">{cardsData.description[0]}</p>
+          )}</p>
       </div>
     </div>
   );

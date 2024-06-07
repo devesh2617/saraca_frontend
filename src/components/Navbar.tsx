@@ -144,8 +144,8 @@ const Navbar = () => {
               { name: "Machining Strategy", link: "/Service/Manufacturing/MachiningStrategy" },
               { name: "Supply Chain Management", link: "/Service/Manufacturing/SupplyChainManagement" },
               { name: "Process Engineering", link: "/Service/Manufacturing/ProcessEngineering" },
-              { name: "Project Management", link: "/Service/Manufacturing/ProjectManagement" },
-              { name: "Manufacturing Transfer", link: "/Service/Manufacturing/ManufacturingTransfer" }
+              // { name: "Project Management", link: "/Service/Manufacturing/ProjectManagement" },
+              // { name: "Manufacturing Transfer", link: "/Service/Manufacturing/ManufacturingTransfer" }
             ], link: "/Service/Manufacturing"
           }
         },

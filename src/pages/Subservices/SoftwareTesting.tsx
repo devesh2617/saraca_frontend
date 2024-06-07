@@ -1,12 +1,12 @@
 
 import React, { useEffect, useRef } from 'react';
-import DiscoverMoreCards from '../../components/DiscoverMoreCards';
+// import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 import ServiceOfferingsCards from "../../components/SubservicesServiceOfferingCards";
 
-type DiscoverMoreCardsData = {
-    imageSrc: string,
-    link: string
-}
+// type DiscoverMoreCardsData = {
+//     imageSrc: string,
+//     link: string
+// }
 
 type TrendingTechnologiesObject = {
     title: string,
@@ -16,27 +16,27 @@ type TrendingTechnologiesObject = {
 
 const TrendingTechnologiesData = [
     {
-        heading: "Product Design and Development",
+        heading: "Automated Testing",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     },
     {
-        heading: "Process Optimisation",
+        heading: "AI and Machine Learning in Testing",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     },
     {
-        heading: "Regulatory Compliances",
+        heading: "Continuous Testing in DevOps",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     },
     {
-        heading: "Quality Assurance and Validation",
+        heading: "Test Automation for Mobile Applications",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     },
     {
-        heading: "Technical Consulting",
+        heading: "Performance and Load Testing",
         link: "",
         imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
     }
@@ -45,39 +45,51 @@ const TrendingTechnologiesData = [
 
 const ServiceOfferings = [
     {
-        heading: "Product Design and Development",
-        description:
-            "  We offer end-to-end product design and development services, from concept generation to prototyping and manufacturing support. Our iterative approach ensures that your product not only meets regulatory standards but also exceeds user expectations.",
+        heading: "Software Testing",
+        description: [
+            "Manual Testing",
+            "Automated Testing",
+            "Performance Testing",
+            "Security Testing",
+            "Compatibility Testing"
+        ],
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Product Design & Development.svg`,
+        imageSrc: ""
     },
     {
-        heading: "Process Optimisation",
-        description:
-            "Through advanced process modeling, simulation, and optimization techniques, we help streamline manufacturing processes, enhance efficiency, and reduce costs without compromising quality or compliance.",
+        heading: "Quality Assurance",
+        description: [
+            "Test Plan Development",
+            "Test Case Design",
+            "Defect Tracking and Management",
+            "Regression Testing"
+        ],
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Process Optimisation.svg`,
+        imageSrc: ""
     },
     {
-        heading: "Regulatory Compliances",
-        description:
-            "Navigating the regulatory landscape can be daunting. Our team is well-versed in regulatory requirements and standards, ensuring that your products and processes meet the rigorous demands of regulatory agencies worldwide.",
+        heading: "Consulting Services",
+        description: [
+            "Test Strategy Development",
+            "Process Improvement",
+            "Tool Selection and Implementation"
+        ],
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Regulatory.svg`,
+        imageSrc: ""
     },
     {
-        heading: "Quality Assurance and Validation",
-        description: " Quality is paramount in the life science industry. We provide comprehensive quality assurance and validation services to ensure that your products and processes adhere to the highest standards of reliability, safety, and efficacy.",
+        heading: "Specialized Solutions",
+        description: [
+            "Mobile App Testing",
+            "Web Application Testing",
+            "Cloud-based Testing",
+            "IoT Device Testing"
+        ],
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Quality.svg`,
-    },
-    {
-        heading: "Technical Consulting",
-        description: "Whether you're facing technical challenges or seeking strategic guidance, our team is here to help. We offer expert technical consulting services tailored to your unique needs, providing insights and solutions that drive innovation and growth.",
-        link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Technical.svg`,
+        imageSrc: ""
     }
 ];
+
 
 const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
     return (
@@ -90,18 +102,18 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
     )
 }
 
-const DiscoverMoreCardsData = [{
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#"
-},
-{
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#"
-},
-{
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#"
-}]
+// const DiscoverMoreCardsData = [{
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     link: "#"
+// },
+// {
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     link: "#"
+// },
+// {
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     link: "#"
+// }]
 
 const Industry = () => {
     const cardsRefs = Array.from({ length: ServiceOfferings.length }, () => useRef(null));
@@ -163,12 +175,31 @@ const Industry = () => {
             </div>
             <div aria-label='what-we-do' className='w-full py-24'>
                 <div>
-                    <h1 className='text-5xl font-semibold text-center'>
-                        Innovating Life Science Through Technology
+                    <h1 className='text-5xl font-semibold text-center pb-24'>
+                    Software Testing
                     </h1>
-                    <p className='container text-3xl mx-auto px-8 text-gray-600 mt-24'>
-                        We specialize in providing cutting-edge engineering services tailored specifically to the dynamic and ever-evolving life science sector. With a steadfast commitment to innovation, excellence, and client satisfaction, we empower life science organizations to thrive in today's competitive landscape. From pharmaceuticals to biotechnology, medical devices to healthcare technologies, we possess the knowledge and skills necessary to tackle the most complex engineering challenges.        </p>
+                    <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+                    Software testing is a critical phase in the software development lifecycle aimed at identifying defects and ensuring that software meets quality standards. It involves the systematic examination of software components to detect errors, bugs, and vulnerabilities, ultimately enhancing the performance, usability, and security of software applications.
+                    <br />
+                    <br />
+In today's digital world, where software applications power every aspect of our lives, the importance of software testing cannot be overstated. With the proliferation of complex systems and the increasing demand for flawless user experiences, effective software testing is essential for mitigating risks, enhancing customer satisfaction, and maintaining competitive advantage in the market. 
+                    </p>
                 </div>
+                <div>
+                    <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
+                        Segments:
+                    </h1>
+                    <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
+                        <strong>Automated Testing Solutions:</strong> Harness the power of automation to streamline testing processes, accelerate time-to-market, and enhance software quality.
+                        <br />
+                        <br />
+                        <strong>Performance Testing and Optimization:</strong> Ensure optimal performance and scalability of software applications through comprehensive performance testing and optimization strategies.
+                        <br />
+                        <br />
+                        <strong>Security Testing Services:</strong> Safeguard your software assets against potential threats and vulnerabilities with our rigorous security testing services.
+                    </p>
+                </div>
+
             </div>
 
             <div aria-label="trending-technologies-section" className={`min-h-[30vh] w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.svg')] bg-cover`}>

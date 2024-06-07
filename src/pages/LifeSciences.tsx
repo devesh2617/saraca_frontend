@@ -2,16 +2,20 @@
 import DiscoverMoreCards from '../components/DiscoverMoreCards';
 import WhereWeServeCards from "../components/WhereWeServeCards";
 import ServiceOfferingsCards from "../components/ServicesOfferingsCards"
+import { useEffect } from 'react';
+import getDiscoverMoreDataByIds from '@/utilities/getDiscoverMoreDataByIds';
 type medicalCardsData = {
   title: string,
   link: string,
   imageSrc: string
 }
+
 type DiscoverMoreCardsData = {
   imageSrc: string,
   link: string
 }
 
+const discoverMoreIds = ['0ffe87c5-b0ee-427a-af21-967792b393e5', '9feaf5fa-05a3-4dc6-88e7-9dd8aacf2499']
 
 const ServiceOfferings = [
   {
@@ -80,6 +84,12 @@ const DiscoverMoreCardsData = [{
 }]
 
 const Industry = () => {
+  useEffect(()=>{
+   getDiscoverMoreDataByIds(discoverMoreIds).then(
+    res=>console.log(res.data)
+   )
+
+  },[])
   return (
     <div>
       <div aria-label='landing-image' className="h-[100vh] w-full relative">

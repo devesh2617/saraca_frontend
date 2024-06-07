@@ -293,7 +293,7 @@ const Home = () => {
      
       <div aria-label="stories" className="my-12 flex flex-col gap-8">
         <h1 className="text-5xl md:text-8xl text-black text-center mt-8 font-semibold">
-          #Let'sDoEngineering
+          Let's Do Engineering
         </h1>
         {cardsData.map((data: object, index: number) => (
           <Cards
@@ -306,7 +306,7 @@ const Home = () => {
       <h1 className="text-5xl text-gray-600 font-semibold container mx-auto">
           Why Choose Us ?
         </h1>
-        <div className="grid grid-cols-1 mt-24 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center">
+        <div className="grid grid-cols-2 mt-24 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center">
           {whyChooseUsCardsData.map((data:whyChooseUsCardsData, index:number)=> {
             return (
               <WhyChooseUsCards data={data} cardPosition={index%2 === 0?'odd': 'even'} index={index}/>
