@@ -85,9 +85,9 @@ const DiscoverMoreCardsData = [{
 
 const Industry = () => {
   useEffect(()=>{
-   getDiscoverMoreDataByIds(discoverMoreIds).then(
-    res=>console.log(res.data)
-   )
+  //  getDiscoverMoreDataByIds(discoverMoreIds).then(
+  //   res=>console.log(res.data)
+  //  )
 
   },[])
   return (
