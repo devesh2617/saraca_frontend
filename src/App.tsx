@@ -133,6 +133,18 @@ function App() {
   }
   const Layout = ({ children }) => {
     const location = useLocation()
+    useEffect(()=>{
+      const path = location.pathname;
+      let formattedPath 
+      if(path === "/") formattedPath = "SARACA"
+      // Split the path into parts using the '/' delimiter
+      const parts = path.split('/').filter(part => part !== "");
+      // Join the parts with ' | ' to get the desired format
+      if(parts.length) formattedPath = parts.join(' | '); 
+      
+      // Update the document's title with the formatted path
+      document.title = formattedPath;
+    }, [location.pathname])
     return (
       <div className={`relative overflow-x-hidden bg-background bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/background.svg')] bg-repeat w-full overflow-y-auto min-h-[100vh] flex flex-col`}
       style={{ backgroundImage: `url('${import.meta.env.VITE_REACT_APP_API_URL}/background.svg')` }}
