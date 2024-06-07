@@ -3,24 +3,24 @@ import CertificateCards from "../components/CertificateCards"
 const Client_Testimonials = () => {
   const CertificatesCards = [
     {
-      name:"Saurabh Aggarwal",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Saurabh_Aggarwal.png`,  
-      content: "Saraca was extremely helpful to our Product Team’s understanding of the understading",
+      name:"Appendix to ISO 27001",
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Certificates/Appendix ISO 27001.jpg`,  
+      content: "",
     },
     {
-      name:"Dr. Eduardo Gonzalez",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Educardo.jpg`,
-      content: "Toby has had a smooth journey with Saraca Solutions. ",
+      name:"ISO 9001",
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Certificates/ISO 9001.jpg`,
+      content: "",
     },
     {
-      name:"Patrick Ireland",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Patrick.jpg`,
-      content: "Our team has partnered well with SARACA Solutions as ",
+      name:"ISO 13485",
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Certificates/ISO 13485.jpg`,
+      content: "",
     },
     {
-      name:"Manoj Kumar",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Manoj_Kumar.png`,
-      content: "SARACA's commitment to delivering high-quality automotive",
+      name:"ISO 27001",
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Certificates/ISO 27001.jpg`,
+      content: "",
     }
   ]
   return (
