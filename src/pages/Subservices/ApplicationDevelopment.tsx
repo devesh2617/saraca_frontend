@@ -18,27 +18,27 @@ const TrendingTechnologiesData = [
     {
         heading: "Artificial Intelligence and Machine Learning",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/App Development/AI & ML.png`,
     },
     {
         heading: "Progressive Web Apps (PWAs)",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/App Development/Progressive Web Apps (PWAs).png`,
     },
     {
         heading: "DevOps and Continuous Integration/Continuous Deployment (CI/CD)",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/App Development/DevOps and Continuous IntegrationContinuous Deployment.png`,
     },
     {
         heading: "Microservices Architecture",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/App Development/Microservices Architecture.png`,
     },
     {
         heading: "Cross-Platform Mobile Development",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/App Development/Cross-Platform Mobile Development.png`,
     }
 ];
 
@@ -49,39 +49,39 @@ const ServiceOfferings = [
         description:
             "Leverage our expertise to build custom software applications that address your unique business needs. Whether you require a web-based application, mobile app, or enterprise software solution, we have the skills and experience to bring your vision to life.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Product Design & Development.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/App Development/Custom Application Development.png`,
     },
     {
         heading: "Legacy Application Modernization",
         description:
             "Is your legacy software holding you back? Our team can modernize and upgrade your outdated applications to the latest technologies and platforms, ensuring improved performance, scalability, and security while preserving valuable functionality and data.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Process Optimisation.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/App Development/Legacy Application Modernization.png`,
     },
     {
         heading: "Full-Cycle Development Services",
         description:
             "From initial concept to deployment and ongoing maintenance, we provide end-to-end application development services that are tailored to your specific requirements. Our agile approach ensures that your project stays on track and delivers results on time and within budget.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Regulatory.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/App Development/Full-Cycle Development Services.png`,
     },
     {
         heading: "Cross-Platform Development",
         description: "Reach a wider audience with applications that run seamlessly across different devices and operating systems. Whether it's iOS, Android, or web-based applications, we ensure a consistent user experience across all platforms.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Quality.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/App Development/Cross-Platform Development.png`,
     },
     {
         heading: "Integration Services",
         description: "Seamlessly connect your applications with existing systems, third-party APIs, and external services to streamline workflows and improve collaboration across your organization. Our integration services ensure smooth data exchange and automation of business processes.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Technical.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/App Development/Integration Services.png`,
     },
     {
         heading: "Quality Assurance and Testing",
         description: "Ensure the reliability, performance, and security of your applications with our comprehensive testing services. We conduct thorough testing at every stage of development to identify and fix issues before deployment, ensuring a seamless user experience.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Technical.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/App Development/Quality Assurance and Testing.png`,
     }
 ];
 
@@ -149,24 +149,34 @@ const Industry = () => {
             <div aria-label='landing-image' className="h-[100vh] w-full relative">
                 <div
                     aria-label="overlay-container"
-                    className="bg-gradient-to-r from-black to-transparent absolute z-[1] w-full h-[100vh]"
+                    className=" from-black to-transparent absolute z-[1] w-full h-[100vh]"
                 >
                     <div className="md:w-2/3 h-full flex justify-start items-center p-24">
                         <div aria-label="content" className="md:text-left">
                             <h1 className="text-white text-4xl md:text-7xl lg:text-9xl font-semibold text-left">
-                                CyberSecurity
+                            Application Development
                             </h1>
                             <p className="text-white text-3xl mt-16 w-full hidden lg:block leading-normal">
-                                Beware of Cyber threats
+                            Byte by Byte, Building Brilliance: Scalability, Security, Superiority
                             </p>
 
                         </div>
                     </div>
                 </div>
 
-                <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`} />
+                <video  
+                  
+                  className="h-full w-full object-fill"
+                  autoPlay={true}
+                  loop
+                  playsInline
+                  muted
+                >
+                  <source src={`${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/App Development/Landing.mp4`} type="video/mp4" />
+                </video>  
 
             </div>
+           
             <div aria-label='what-we-do' className='w-full py-24'>
                 <div>
                     <h1 className='text-5xl font-semibold text-center pb-24'>

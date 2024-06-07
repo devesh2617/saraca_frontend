@@ -18,27 +18,27 @@ const TrendingTechnologiesData = [
     {
         heading: "Explainable AI (XAI)",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/ai/Explainable.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/AI/Explainable.jpg`,
     },
     {
         heading: "Edge AI",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/ai/Edge ai.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/AI/Edge Ai.jpg`,
     },
     {
         heading: "Federated Learning",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/ai/Federated Learning.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/AI/Federated Learning.jpg`,
     },
     {
         heading: "Generative Adversarial Networks (GANs)",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/ai/Generative.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/AI/Generative.jpg`,
     },
     {
         heading: "Reinforcement Learning",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/ai/learning.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/AI/learning.jpg`,
     }
 ];
 
@@ -48,49 +48,49 @@ const ServiceOfferings = [
         heading: "AI Strategy Consulting",
         description: "We help businesses develop robust AI strategies tailored to their unique needs and objectives. Our consulting services encompass AI roadmap development, opportunity assessments, and implementation planning to ensure seamless integration with your business goals.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/ai/consult.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/AI/consult.svg`,
     },
     {
         heading: "AI Product Development",
         description: "From concept to deployment, we guide businesses through the entire AI product development lifecycle. Our team of experts specializes in designing and building AI-powered solutions that transform data into actionable insights, driving innovation and value creation.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/ai/Product.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/AI/Product.svg`,
     },
     {
         heading: "Natural Language Processing (NLP)",
         description: "We leverage state-of-the-art NLP techniques to extract insights from unstructured text data, enabling businesses to unlock valuable information and improve decision-making processes. Our NLP solutions span text classification, sentiment analysis, entity recognition, and more.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/ai/nlp.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/AI/nlp.svg`,
     },
     {
         heading: "Computer Vision Solutions",
         description: "Saraca's Computer Vision solutions empower businesses to extract meaningful information from visual data. From object detection and image classification to video analytics and augmented reality applications, we deliver custom-built solutions to address diverse business needs.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/ai/vision.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/AI/vision.svg`,
     },
     {
         heading: "AI-powered Automation",
         description: "We help businesses streamline operations and enhance efficiency through AI-powered automation solutions. From intelligent process automation to predictive maintenance and anomaly detection, Saraca enables organizations to optimize workflows and drive cost savings.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/ai/powerd.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/AI/powerd.svg`,
     },
     {
         heading: "Machine Learning Engineering",
         description: "Saraca offers end-to-end Machine Learning engineering services, including data preprocessing, model development, training, and deployment. Our expertise in advanced algorithms and frameworks enables us to deliver scalable and high-performance ML solutions that drive business outcomes.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/ai/ml.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/AI/ml.svg`,
     },
     {
         heading: "AI Solution Design and Development",
         description: "From ideation to deployment, we specialize in designing and developing AI solutions tailored to your business objectives. Our agile methodologies ensure rapid iteration and deployment of AI-powered applications that deliver tangible results.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/ai/Design.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/AI/Design.svg`,
     },
     {
         heading: "AI Infrastructure and Optimization",
         description: "Future-proof your AI infrastructure with Saraca's AI infrastructure and optimization services. We help businesses architect scalable, high-performance AI systems while optimizing costs and resource utilization for maximum efficiency.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/ai/opti.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/AI/opti.svg`,
     }
 ];
 

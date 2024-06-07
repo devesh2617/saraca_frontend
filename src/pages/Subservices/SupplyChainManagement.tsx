@@ -18,27 +18,22 @@ const TrendingTechnologiesData = [
     {
         heading: "Blockchain Technology",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/manufacturing/supply chain management/1.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Manufacturing/Supply Chain Management/Blockchain Technology.jpg`,
     },
     {
         heading: "Internet of Things (IoT)",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/manufacturing/supply chain management/2.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Manufacturing/Supply Chain Management/IOT.jpg`,
     },
     {
         heading: "Artificial Intelligence (AI) and Machine Learning",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/manufacturing/supply chain management/3.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Manufacturing/Supply Chain Management/AI and ML.jpg`,
     },
     {
         heading: "Robotics and Automation",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/manufacturing/supply chain management/4.svg`,
-    },
-    {
-        heading: "Robotics and Automation",
-        link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/manufacturing/supply chain management/5.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Manufacturing/Supply Chain Management/Robotics.jpg`,
     }
 ];
 
@@ -49,34 +44,28 @@ const ServiceOfferings = [
         description:
             "  Streamline operations, minimize lead times, and optimize inventory levels through advanced modelling and simulation techniques.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/manufacturing/supply chain management/6.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Manufacturing/Supply Chain Management/Supply Chain Optimization.jpg`,
     },
     {
         heading: "Supplier Relationship Management",
         description:
             "Enhance collaboration and mitigate risks by implementing robust supplier management processes and performance metrics.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/manufacturing/supply chain management/7.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Manufacturing/Supply Chain Management/Supplier Relationship Management.jpg`,
     },
     {
         heading: "Demand Forecasting and Planning",
         description:
             "Utilize predictive analytics and demand sensing techniques to forecast customer demand accurately and optimize production planning and scheduling.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/manufacturing/supply chain management/8.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Manufacturing/Supply Chain Management/Demand Forecasting.jpg`,
     },
     {
         heading: "Supply Chain Integration",
         description:
             "Streamline your supply chain operations with Saraca's supply chain integration services. We optimize material flow, inventory management, and logistics processes to minimize lead times, reduce costs, and enhance supply chain visibility and responsiveness.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Regulatory.svg`,
-    },
-    {
-        heading: "Inventory Optimization",
-        description: " Optimize inventory levels and minimize carrying costs through advanced demand forecasting, inventory planning, and replenishment strategies.",
-        link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/manufacturing/supply chain management/9.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Manufacturing/Supply Chain Management/Supply Chain Integration.jpg`,
     }
 ];
 

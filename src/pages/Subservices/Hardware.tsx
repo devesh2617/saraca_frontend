@@ -49,27 +49,27 @@ const ServiceOfferings = [
         description:
             "  From conceptualization to prototyping, we specialize in end-to-end hardware design and development services. Our agile methodologies ensure the rapid delivery of high-quality hardware solutions that align with your business objectives and exceed user expectations.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Product Design & Development.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Embedded/Hardware/Hardware Design and Development.jpg`,
     },
     {
         heading: "Hardware Testing and Validation",
         description:
             "Ensure the reliability and performance of your embedded hardware systems with Saraca's comprehensive testing and validation services. We employ industry-leading testing frameworks and methodologies to identify and mitigate hardware defects, ensuring optimal functionality and user experiences.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Process Optimisation.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Embedded/Hardware/Hardware Testing and Validation.jpg`,
     },
     {
         heading: "Legacy System Migration",
         description:
             "Future-proof your embedded hardware infrastructure with Saraca's legacy system migration services. We help businesses transition from outdated hardware platforms to modern architectures, enhancing scalability, security, and maintainability while minimizing disruption to operations.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Regulatory.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Embedded/Hardware/Legacy System Migration.jpg`,
     },
     {
         heading: "Prototype Development",
         description: " Accelerate your product development process with our rapid prototype development services. We transform concepts into tangible prototypes, enabling you to validate designs and iterate quickly, reducing time and costs.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Quality.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Embedded/Hardware/Prototype Development.jpg`,
     }
 ];
 

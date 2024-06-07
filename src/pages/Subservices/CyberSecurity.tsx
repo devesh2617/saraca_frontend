@@ -18,27 +18,27 @@ const TrendingTechnologiesData = [
     {
         heading: "Zero Trust Architecture",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/cyber/zero.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Cyber/Zero Trust Architecture.png`,
     },
     {
         heading: "AI- Powered Security Analysis",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Cyber/AI- Powered Security Analysis.png`,
     },
     {
         heading: "Cloud Security",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/cyber/cloud.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Cyber/Cloud Security.png`,
     },
     {
         heading: "Blockchain Security",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/cyber/block.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Cyber/Blockchain Security.png`,
     },
     {
         heading: "Identify and Access Management",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/digital/cyber/identify.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Cyber/Identify and Access Management.png`,
     }
 ];
 

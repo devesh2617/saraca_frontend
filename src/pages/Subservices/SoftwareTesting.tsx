@@ -18,30 +18,29 @@ const TrendingTechnologiesData = [
     {
         heading: "Automated Testing",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Software testing/Automated Testing.png`,
     },
     {
         heading: "AI and Machine Learning in Testing",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Software testing/AI and Machine Learning in Testing.png`,
     },
     {
         heading: "Continuous Testing in DevOps",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Software testing/Continuous Testing in DevOps.png`,
     },
     {
         heading: "Test Automation for Mobile Applications",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Software testing/Test Automation for Mobile Applications.png`,
     },
     {
         heading: "Performance and Load Testing",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Software testing/Performance and Load Testing.png`,
     }
 ];
-
 
 const ServiceOfferings = [
     {
@@ -54,7 +53,7 @@ const ServiceOfferings = [
             "Compatibility Testing"
         ],
         link: "",
-        imageSrc: ""
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Software testing/Software Testing.png`
     },
     {
         heading: "Quality Assurance",
@@ -65,7 +64,7 @@ const ServiceOfferings = [
             "Regression Testing"
         ],
         link: "",
-        imageSrc: ""
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Software testing/Quality Assurance.png`
     },
     {
         heading: "Consulting Services",
@@ -75,7 +74,7 @@ const ServiceOfferings = [
             "Tool Selection and Implementation"
         ],
         link: "",
-        imageSrc: ""
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Software testing/Consulting Services.png`
     },
     {
         heading: "Specialized Solutions",
@@ -86,7 +85,7 @@ const ServiceOfferings = [
             "IoT Device Testing"
         ],
         link: "",
-        imageSrc: ""
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Software testing/Specialized Solutions.png`
     }
 ];
 
@@ -152,25 +151,34 @@ const Industry = () => {
 
     return (
         <div>
-            <div aria-label='landing-image' className="h-[100vh] w-full relative">
+             <div aria-label='landing-image' className="h-[100vh] w-full relative">
                 <div
                     aria-label="overlay-container"
-                    className="bg-gradient-to-r from-black to-transparent absolute z-[1] w-full h-[100vh]"
+                    className=" from-black to-transparent absolute z-[1] w-full h-[100vh]"
                 >
                     <div className="md:w-2/3 h-full flex justify-start items-center p-24">
                         <div aria-label="content" className="md:text-left">
                             <h1 className="text-white text-4xl md:text-7xl lg:text-9xl font-semibold text-left">
-                                CyberSecurity
+                            Software Testing
                             </h1>
                             <p className="text-white text-3xl mt-16 w-full hidden lg:block leading-normal">
-                                Beware of Cyber threats
+                            Securing Software Integrity Through Vigilant Testing: Validate, Fortify, Protect
                             </p>
 
                         </div>
                     </div>
                 </div>
 
-                <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`} />
+                <video  
+                  
+                  className="h-full w-full object-fill"
+                  autoPlay={true}
+                  loop
+                  playsInline
+                  muted
+                >
+                  <source src={`${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Software testing/Landing.mp4`} type="video/mp4" />
+                </video>  
 
             </div>
             <div aria-label='what-we-do' className='w-full py-24'>

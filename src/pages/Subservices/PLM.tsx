@@ -18,27 +18,27 @@ const TrendingTechnologiesData = [
     {
         heading: "Digital Twin Technology",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Digital Twin Technology.png`,
     },
     {
         heading: "Internet of Things (IoT) Integration",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Internet of Things (IoT) Integration.png`,
     },
     {
         heading: "Cloud-Based PLM Solutions",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Cloud-Based PLM Solutions.png`,
     },
     {
         heading: "Artificial Intelligence and Machine Learning",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Artificial Intelligence and Machine Learning.png`,
     },
     {
         heading: "Augmented Reality (AR) and Virtual Reality (VR)",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Augmented Reality (AR) and Virtual Reality (VR).png`,
     }
 ];
 
@@ -48,25 +48,25 @@ const ServiceOfferings = [
         heading: "Product Lifecycle Management (PLM)",
         description: "Our PLM services encompass the entire product lifecycle, from conceptualization and design to manufacturing and support. We employ industry-leading tools and methodologies to streamline processes, enhance collaboration, and drive innovation.",
         link: "",
-        imageSrc: ""
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Product Lifecycle Management (PLM).jpg`
     },
     {
         heading: "Software Engineering Solutions",
         description: "SARACA offers a comprehensive suite of software engineering solutions, including software development, testing, maintenance, and optimization. Our team of seasoned engineers and developers is committed to delivering robust, scalable, and high-performance software solutions that exceed client expectations.",
         link: "",
-        imageSrc: ""
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Software Engineering Solutions.jpg`
     },
     {
         heading: "Technology Integration",
         description: "We specialize in seamless technology integration, helping clients leverage the latest advancements to optimize operations, improve efficiency, and gain a competitive edge in the market. Whether it's integrating new technologies into existing systems or developing custom solutions from the ground up, SARACA has the expertise to deliver results.",
         link: "",
-        imageSrc: ""
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Technology Integration.jpg`
     },
     {
         heading: "Quality Assurance and Compliance",
         description: "SARACA ensures adherence to the highest quality standards and regulatory compliance requirements throughout the product development lifecycle. Our rigorous quality assurance processes and compliance frameworks guarantee that deliverables meet the most stringent industry standards and certifications.",
         link: "",
-        imageSrc: ""
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Quality Assurance and Compliance.jpg`
     },
    
 ];
@@ -137,22 +137,31 @@ const Industry = () => {
             <div aria-label='landing-image' className="h-[100vh] w-full relative">
                 <div
                     aria-label="overlay-container"
-                    className="bg-gradient-to-r from-black to-transparent absolute z-[1] w-full h-[100vh]"
+                    className=" bg-gradient-to-r from-black to-transparent absolute z-[1] w-full h-[100vh]"
                 >
                     <div className="md:w-2/3 h-full flex justify-start items-center p-24">
                         <div aria-label="content" className="md:text-left">
                             <h1 className="text-white text-4xl md:text-7xl lg:text-9xl font-semibold text-left">
-                                CyberSecurity
+                            Product LifeCycle Management
                             </h1>
                             <p className="text-white text-3xl mt-16 w-full hidden lg:block leading-normal">
-                                Beware of Cyber threats
+                            PLM Solutions: Plan, Execute, Excel                          
                             </p>
 
                         </div>
                     </div>
                 </div>
 
-                <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`} />
+                <video  
+                  
+                  className="h-full w-full object-fill"
+                  autoPlay={true}
+                  loop
+                  playsInline
+                  muted
+                >
+                  <source src={`${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Landing.mp4`} type="video/mp4" />
+                </video>  
 
             </div>
             <div aria-label='what-we-do' className='w-full py-24'>

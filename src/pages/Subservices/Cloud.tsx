@@ -18,30 +18,29 @@ const TrendingTechnologiesData = [
     {
         heading: "Server less Computing",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Serverless Computing.png`,
     },
     {
         heading: "Hybrid and Multi-Cloud Solutions",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Hybrid and Multi-Cloud Solutions.png`,
     },
     {
         heading: "Edge Computing",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Edge Computing.png`,
     },
     {
         heading: "AI and Machine Learning as a Service",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/AI and Machine Learning.png`,
     },
     {
         heading: "Cloud Security and Compliance",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Cloud Security.png`,
     }
 ];
-
 
 const ServiceOfferings = [
     {
@@ -50,7 +49,7 @@ const ServiceOfferings = [
             "Seamlessly transition your applications and data to the cloud with our expert cloud migration services. We ensure minimal disruption and maximum efficiency throughout the migration process."
         ],
         link: "",
-        imageSrc: ""
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Cloud Migration.jpg`
     },
     {
         heading: "Cloud Architecture Design",
@@ -58,7 +57,7 @@ const ServiceOfferings = [
             "Our team of seasoned architects designs robust and scalable cloud architectures tailored to your specific needs. We optimize performance, reliability, and security to maximize the benefits of cloud computing."
         ],
         link: "",
-        imageSrc: ""
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Cloud Architecture Design.jpg`
     },
     {
         heading: "Cloud Infrastructure Management",
@@ -66,7 +65,7 @@ const ServiceOfferings = [
             "SARACA provides comprehensive cloud infrastructure management services to keep your cloud environment running smoothly. From monitoring to optimization, we handle all aspects of cloud infrastructure maintenance."
         ],
         link: "",
-        imageSrc: ""
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Cloud Infrastructure Management.jpg`
     },
     {
         heading: "DevOps Integration",
@@ -74,7 +73,7 @@ const ServiceOfferings = [
             "Accelerate your software development lifecycle with our DevOps integration services. We automate processes, streamline collaboration, and improve efficiency to deliver high-quality software at scale."
         ],
         link: "",
-        imageSrc: ""
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/DevOps Integration.jpg`
     },
     {
         heading: "Cloud Security Solutions",
@@ -82,7 +81,7 @@ const ServiceOfferings = [
             "Protect your cloud assets and data with our advanced cloud security solutions. We implement robust security measures and best practices to mitigate risks and safeguard your valuable resources."
         ],
         link: "",
-        imageSrc: ""
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Cloud Security Solutions.jpg`
     },
 ];
 
@@ -149,10 +148,10 @@ const Industry = () => {
 
     return (
         <div>
-            <div aria-label='landing-image' className="h-[100vh] w-full relative">
+           <div aria-label='landing-image' className="h-[100vh] w-full relative">
                 <div
                     aria-label="overlay-container"
-                    className="bg-gradient-to-r from-black to-transparent absolute z-[1] w-full h-[100vh]"
+                    className=" bg-gradient-to-r from-black to-transparent absolute z-[1] w-full h-[100vh]"
                 >
                     <div className="md:w-2/3 h-full flex justify-start items-center p-24">
                         <div aria-label="content" className="md:text-left">
@@ -160,14 +159,23 @@ const Industry = () => {
                             Cloud Engineering
                             </h1>
                             <p className="text-white text-3xl mt-16 w-full hidden lg:block leading-normal">
-                                Beware of Cyber threats
+                            Simple Cloud Solutions, Remarkable Results                            
                             </p>
 
                         </div>
                     </div>
                 </div>
 
-                <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`} />
+                <video  
+                  
+                  className="h-full w-full object-fill"
+                  autoPlay={true}
+                  loop
+                  playsInline
+                  muted
+                >
+                  <source src={`${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Landing.mp4`} type="video/mp4" />
+                </video>  
 
             </div>
             <div aria-label='what-we-do' className='w-full py-24'>

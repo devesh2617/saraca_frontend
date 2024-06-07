@@ -107,7 +107,7 @@ const Navbar = () => {
             sublinks: [
               { name: "Design & Development", link: "/Service/Mechanical/Design&Development" },
               { name: "CAD/CAE/CFD/CAM", link: "/Service/Mechanical/CAD_CAM" },
-              { name: "CAx Automation", link: "/Service/Mechanical/CAxAutomation" }
+              // { name: "CAx Automation", link: "/Service/Mechanical/CAxAutomation" }
             ], link: "/Service/Mechanical"
           }
         },
@@ -149,15 +149,15 @@ const Navbar = () => {
             ], link: "/Service/Manufacturing"
           }
         },
-        {
-          "TechPub": {
-            sublinks: [
-              { name: "AR/VR/MR", link: "/Service/TechPub/ARVRMR" },
-              { name: "CBT/WBT", link: "/Service/TechPub/CBTWBT" },
-              { name: "Authoring", link: "/Service/TechPub/Authoring" }
-            ], link: "/Service/TechPub"
-          }
-        }
+        // {
+        //   "TechPub": {
+        //     sublinks: [
+        //       { name: "AR/VR/MR", link: "/Service/TechPub/ARVRMR" },
+        //       { name: "CBT/WBT", link: "/Service/TechPub/CBTWBT" },
+        //       { name: "Authoring", link: "/Service/TechPub/Authoring" }
+        //     ], link: "/Service/TechPub"
+        //   }
+        // }
       ],
       link: "#"
     },

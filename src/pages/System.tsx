@@ -14,12 +14,12 @@ type ServiceOfferings = {
 
 const ServiceOfferings = [
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/services/system/mbd.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/System/MBD.jpg`,
   title: "MBD",
   link: ""
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/system/Test.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/System/Test.jpg`,
   title: "System Testing",
   link: ""
 }

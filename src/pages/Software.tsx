@@ -14,22 +14,22 @@ type ServiceOfferings = {
 
 const ServiceOfferings = [
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/IOT.png`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Application Development.png`,
   title: "Application Development",
   link: "/Service/Software/ApplicationDevelopment"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/CyberSecurity.png`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Software testing.png`,
   title: "Software Testing",
   link: "/Service/Software/SoftwareTesting"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability.png`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud.png`,
   title: "Cloud",
   link: "/Service/Software/Cloud"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Industry4.0.png`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM .png`,
   title: "PLM",
   link: "/Service/Software/PLM"
 },
@@ -71,25 +71,35 @@ const Industry = () => {
   return (
     <div>
       <div aria-label='landing-image' className="h-[100vh] w-full relative">
-      <div
-              aria-label="overlay-container"
-              className="bg-gradient-to-r from-black to-transparent absolute z-[1] w-full h-[100vh]"
-            >
-              <div className="md:w-2/3 h-full flex justify-start items-center p-24">
-                <div aria-label="content" className="md:text-left max-w-full">
-                  <h1 className="text-white text-4xl md:text-7xl lg:text-9xl font-semibold text-left">
-                   Digital
-                  </h1>
-                  <p className="text-white text-2xl mt-16 w-full hidden lg:block leading-normal">
-                   Let's make the world digital
-                  </p>
-                  
+                <div
+                    aria-label="overlay-container"
+                    className=" from-black to-transparent absolute z-[1] w-full h-[100vh]"
+                >
+                    <div className="md:w-2/3 h-full flex justify-start items-center p-24">
+                        <div aria-label="content" className="md:text-left">
+                            <h1 className="text-white text-4xl md:text-7xl lg:text-9xl font-semibold text-left">
+                                Software
+                            </h1>
+                            <p className="text-white text-3xl mt-16 w-full hidden lg:block leading-normal">
+                            Next-Gen Software Engineering Solutions: Transformative, Scalable, Secure 
+                            </p>
+
+                        </div>
+                    </div>
                 </div>
-              </div>
+
+                <video  
+                  
+                  className="h-full w-full object-fill"
+                  autoPlay={true}
+                  loop
+                  playsInline
+                  muted
+                >
+                  <source src={`${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Landing.mp4`} type="video/mp4" />
+                </video>  
+
             </div>
-        
-        <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Landing.png`} />
-      </div>
       <div aria-label='what-we-do' className='w-full py-24'>
                 <div>
                     <h1 className='text-5xl font-semibold text-center pb-24'>
@@ -147,7 +157,7 @@ const Industry = () => {
 
       
       
-      <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')]`}>
+      {/* <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')]`}>
         <h1 className="text-white text-6xl text-center font-semibold pb-24">Discover More</h1>
         <div className="w-full flex justify-evenly flex-wrap gap-8">
           {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {
@@ -156,7 +166,7 @@ const Industry = () => {
             )
           })}
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
