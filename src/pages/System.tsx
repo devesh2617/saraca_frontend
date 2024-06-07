@@ -78,7 +78,7 @@ const Industry = () => {
                   playsInline
                   muted
                 >
-                  <source src={`${import.meta.env.VITE_REACT_APP_API_URL}/services/system/landing.mp4`} type="video/mp4" />
+                  <source src={`${import.meta.env.VITE_REACT_APP_API_URL}/Services/System/Landing.mp4`} type="video/mp4" />
                 </video>
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
