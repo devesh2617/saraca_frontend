@@ -21,7 +21,7 @@ const Card: FC<CardProps> = ({cardsData}) => {
       <div aria-label="content" className={`md:flex-1 w-full text-left flex justify-center items-center py-12 px-8 md:text-left`}>
         <div className={`w-full min-h-[15rem] flex flex-col`}>
         
-          <h1 className="text-3xl font-semibold">{cardsData?.title}</h1>
+          <h1 className="text-4xl font-semibold">{cardsData?.title}</h1>
           
           <p className="text-2xl md:text-left mb-12 leading-8 mt-4 text-gray-600">{cardsData?.description}</p>
           <div className="mt-auto flex justify-between">
