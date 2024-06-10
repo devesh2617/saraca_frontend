@@ -47,7 +47,7 @@ const AdminDashboard = () => {
   
 
   const htmlContentRegex = /[^\s]/;
-  const imgFormats = ["jpg", "jpeg", "png", "svg"]
+  const imgFormats = ["jpg", "jpeg", "png", "svg", "webp"]
   // Example function to check HTML content
   const hasContent = (htmlString: string) => {
     // Strip HTML tags and &nbsp; entities
