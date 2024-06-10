@@ -127,7 +127,7 @@ const Industry = () => {
           })}
         </div>
       </div>
-      <div aria-label="Our Service Offerings" className="my-24 container">
+      {/* <div aria-label="Our Service Offerings" className="my-24 container">
         <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">
           What we do
         </h1>
@@ -140,8 +140,8 @@ const Industry = () => {
           />
         ))}
         </div>   
-      </div>
-      <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-900 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24`}>
+      </div> */}
+      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-900 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24`}>
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
           {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {
@@ -150,7 +150,7 @@ const Industry = () => {
             )
           })}
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

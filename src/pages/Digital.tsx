@@ -16,27 +16,27 @@ const ServiceOfferings = [
 {
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/IOT.png`,
   title: "IOT",
-  link: ""
+  link: "/Service/Digital/IOT"
 },
 {
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/CyberSecurity.png`,
   title: "CyberSecurity",
-  link: ""
+  link: "/Service/Digital/Cybersecurity"
 },
 {
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability.png`,
   title: "Sustainability",
-  link: ""
+  link: "/Service/Digital/Sustainability"
 },
 {
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Industry4.0.png`,
   title: "Indutry 4.0",
-  link: ""
+  link: "/Service/Digital/Industry4.0"
 },
 {
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Artificial Intelligence.png`,
   title: "Artificial Intelligence",
-  link: ""
+  link: "/Service/Digital/ArtificialIntelligence"
 }
 ]
 
@@ -55,12 +55,14 @@ const DiscoverMoreCardsData = [{
 
 const serviceOfferingCards = (data: ServiceOfferings) => {
   return (
-    <div className='bg-white w-[16rem] rounded-xl overflow-hidden'>
+    <a href={data.link}>
+       <div className='bg-white w-[16rem] rounded-xl overflow-hidden'>
           <img src={data.imageSrc} className='w-full object-cover min-h-52'/>
           <h1 className=' font-bold text-center text-2xl py-4'>
             {data.title}
           </h1>
          </div>
+    </a> 
   )
 }
 
@@ -123,7 +125,7 @@ const Industry = () => {
 
       
       
-      <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')]`}>
+      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')]`}>
         <h1 className="text-white text-6xl text-center font-semibold py-12">Discover More</h1>
         <div className=" mt-16 w-full flex justify-evenly flex-wrap gap-8">
           {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {
@@ -132,7 +134,7 @@ const Industry = () => {
             )
           })}
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

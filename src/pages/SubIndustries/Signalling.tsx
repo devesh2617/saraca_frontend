@@ -20,32 +20,41 @@ type medicalCardsData = {
 // }
 
 const medicalCardsData = [{
-  title: "Railway Signaling Systems:",
+  title: "Mainline Signalling",
   points: [
-    "Design, Development, and Implementation: Specializing in crafting cutting-edge signaling systems tailored precisely to the needs of railway networks.",
-    "Range of Solutions: From traditional block signaling to advanced Positive Train Control (PTC) systems, our solutions prioritize safety, reliability, and efficiency.",
-    "Optimization: Our systems optimize train movements, enhancing safety and reliability while streamlining operations for maximum efficiency."
+    "Trackside equipment (Automatic train protection, Level crossings, Point machines, track circuits, Axle counters)",
+    "Interlocking 4.0 (Cloud interlocking, Integration with ERTMS, CBTC systems)",
+    "Control centre solutions (Network management, HMI)",
+    "Automatic train operation (ATO)"
   ],
-  imageSrc: "railway.png"
+  imageSrc: "5.jpg"
 },
  
 {
-  title: "Digital Signal Processing",
+  title: "Freight & mining signalling",
   points: [
-    "Leveraging Technology: Harnessing the power of digital signal processing to revolutionize railway signaling systems.",
-    "Enhanced Accuracy: Implementation of sophisticated algorithms and predictive analytics for improved signal detection, classification, and processing capabilities.",
-    "Responsiveness: Digital signal processing technologies ensure heightened responsiveness and accuracy in signaling operations."
+    "Point machines (Trailable, Non- trailable, Electro-hydraulic, Electro-mechanical)",
+    "Train detection devices (Audio frequency, Speed code transition, Low frequency)",
+    "Rail crossing protection system.",
+    "Design for installation and maintenance",
+    "Big data platform",
+    "Algorithms for AI, ML, cyber security",
+    "Connected technology."
   ],
-  imageSrc: "Digital.png"
+  imageSrc: "6.jpg"
 },
 {
-  title: "Consulting and Advisory Services",
+  title: "Urban Signalling",
   points: [
-    "Strategic Guidance: Navigating the complexities of signaling engineering with comprehensive consulting and advisory services.",
-    "Expert Assessment: Seasoned consultants provide in-depth assessments, strategic recommendations, and implementation support.",
-    "Operational Excellence: Helping railway operators optimize signaling infrastructure, meet regulatory requirements, and drive operational excellence through strategic guidance and support."
+    "Communication-based train control (CBTC) system",
+    "Automated people mover (APM)",
+    "Driver control & assistance functions (CENELEC)",
+    "Tram signalling system",
+    "Light rail vehicle (LRV) signalling system",
+    "Integrated control centre",
+    "Optimised traffic management system."
   ],
-  imageSrc: "MRO.jpg"
+  imageSrc: "7.jpg"
 }]
 
 // const DiscoverMoreCardsData = [{
@@ -64,36 +73,60 @@ const medicalCardsData = [{
 
 const ServiceOfferings = [
   {
-    title: "Signal Design and Implementation",
+    title: "On-board equipment",
     content: [
-      "End-to-end signal design and hardware integration.",
-      "Tailored solutions for specific project needs.",
-      "Collaboration for seamless integration and compliance.",
-      "Embrace innovation for enhanced safety and efficiency."
+      "FASTRAMS",
+      "Technical Documentation (Maintenance and operational manuals, IPCs and IETM)",
+      "Configuration management",
+      "Wiring and electrical equipment design",
+      "Mechanical component design",
+      "Testing (Functional & non-functional)",
+      "Prototyping",
+      "Signalling software design & development",
+      "DMI Test Automation"
     ],
-    imageSrc:"Embedded.svg"
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling/On-board Equipment.jpg`
   },
   {
-    title: "System Integration and Testing",
+    title: "Control Centres",
     content: [
-      "Comprehensive integration and rigorous testing.",
-      "Validation of functionality, interoperability, and safety.",
-      "Expertise across hardware, software, and protocols.",
-      "Continuous improvement and adoption of best practices."
+     "Equipment design",
+     "Verifying and validating applications and interfaces",
+     "Customizing railway applications",
+     "Designing and programming user interfaces (HMI)"
     ],
-    imageSrc:"TechPub.svg"
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling/Control Centres.jpg`
   },
   {
-    title: "Maintenance and Support",
+    title: "Rail Communications",
     content: [
-      "Proactive maintenance to minimize downtime.",
-      "Remote monitoring for early issue detection.",
-      "Rapid response teams for quick resolutions.",
-      "Performance optimization for peak reliability."
+      "Technical documentation handling",
+      "Communication system management (passenger and assistant information system)"
     ],
-    imageSrc:"Manufacturing.svg"
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling/Rail Communications.jpg`
+  },
+  {
+    title: "Research & Development",
+    content: [
+      "Verification & validation",
+      "Control centres (ATS, CTC, local)",
+      "Communication system",
+      "Application & infrastructure",
+      "Application design & development"
+    ],
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling/Research & Development.jpg`
+  },
+  {
+    title: "Software & Hardware Track System",
+    content: [
+      "Signalling solutions",
+      "Configuration management",
+      "Interlocking systems",
+      "Design & installation of track equipment",
+      "Hardware design development of interlocking systems"
+    ],
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling/Software & Hardware Track System.jpg`
   }
- 
  
 ]
 const Medical = () => {
@@ -105,7 +138,7 @@ const Medical = () => {
     <div>
       <div aria-label='landing-image' className="h-[100vh] w-full relative">
         <div className="absolute z-[1] w-full h-full">
-          <div className="h-full absolute w-full left-0 text-9xl text-white flex justify-center items-center p-36 font-semibold text-center">Navigating Railways with Advanced Signalling Solutions</div>
+          <div className="h-full absolute bg-gradient-to-r from-black to-transparent left-0 text-9xl text-white flex justify-center items-end p-36 font-semibold text-left">Navigating Railways with Advanced Signalling Solutions</div>
         </div>
         
         <video  
@@ -126,10 +159,10 @@ const Medical = () => {
           Engineering the Signals
         </h1>
         <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        In the realm of Rail Transportation, signaling engineering stands as a crucial component ensuring the safety, efficiency, and reliability of railway systems. It encompasses the design, implementation, and maintenance of signaling systems that facilitate seamless operations and safeguard passengers and cargo.
-        <br/>
-        <br/>
-        Signaling engineering serves as the backbone of railway safety and efficiency. It ensures precise control over train movements, mitigates the risk of accidents, and optimizes traffic flow along railway networks. In the dynamic landscape of rail transportation, signaling engineering plays a pivotal role in modernizing infrastructure, enhancing capacity, and meeting evolving safety standards.
+        At Saraca, we have over a decade of expertise in engineering and R&D consulting for railway signalling, covering SIL0 to SIL4, train information, and train control management systems (TCMS). Our services include system integration, design-in, and application development. We support customers in product development, from architecture and software design to final adaptation and configuration.
+        <br />
+        <br />
+Our signalling team has extensive experience in planning, design, testing, and commissioning for rail authorities worldwide. We offer innovative, practical, and cost-efficient solutions, ensuring high-quality service and successful project delivery. Safety is our top priority, and we consistently meet and exceed client expectations.
           </p>
         </div>
         <div>
@@ -137,8 +170,8 @@ const Medical = () => {
           What We Do
         </h1>
         <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        At Saraca, we are dedicated to advancing the field of signaling engineering with innovative solutions tailored to the needs of railway operators and stakeholders. Our team of experts leverages cutting-edge technologies and industry best practices to deliver transformative signaling solutions that elevate safety, efficiency, and operational performance across railway networks.
-        </p>
+        We enhance operational efficiency with features like Automatic Train Protection (ATP), Automatic Train Operation (ATO), and Automatic Train Supervision (ATS). Our projects span major cities and countries, providing solutions for new and existing rail systems. Saraca is a trusted partner for reliable and efficient railway signalling, ensuring safe and secure train journeys
+        .        </p>
         </div>
        
       </div>
@@ -161,7 +194,7 @@ const Medical = () => {
         {ServiceOfferings.map((data, index: number) => (
           <ServiceOfferingsCards
             cardsData={data}
-            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling/${data.imageSrc}`}
+            imageSrc={data.imageSrc}
             imagePosition={index % 2 === 0 ? "left" : "right"}
           />
         ))}

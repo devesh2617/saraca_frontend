@@ -180,12 +180,22 @@ const Medical = () => {
     <div>
       <div aria-label='landing-image' className="h-[100vh] w-full relative">
         <div className="absolute z-[1] w-full h-full">
-          <div className="h-full absolute w-full left-0 text-9xl text-white flex justify-center items-center p-36 font-semibold text-center">Smart Solutions for Illumination, Security, and Efficiency</div>
+          <div className="h-full bg-gradient-to-r from-black to-transparent absolute lg:w-2/3 w-full left-0 text-9xl text-white flex justify-center items-center p-36 font-semibold text-left">Smart Solutions for Illumination, Security, and Efficiency</div>
         </div>
-
-        <img className="h-full w-full object-cover brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/Landing.png`} />
-
+        
+        <video  
+                  
+                  className="h-full w-full object-cover"
+                  autoPlay={true}
+                  loop
+                  playsInline
+                  muted
+                >
+                  <source src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Consumer/Appliances/Landing.mp4`} type="video/mp4" />
+                </video>
+      
       </div>
+    
       <div aria-label='what-we-do' className='w-full py-24'>
         <div>
           <h1 className='text-5xl font-semibold text-center pb-24'>
@@ -243,7 +253,7 @@ const Medical = () => {
 
       </div>
 
-      <div aria-label="medical-device-segments" className="min-h-[100vh] w-full bg-gradient-to-r from-cyan-950 to-cyan-700 py-24">
+      {/* <div aria-label="medical-device-segments" className="min-h-[100vh] w-full bg-gradient-to-r from-cyan-950 to-cyan-700 py-24">
         <h1 className="text-white text-6xl text-center font-semibold">Aerospace Segments</h1>
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-16 mt-24">
           {medicalCardsData.map((data: medicalCardsData, index: number) => {
@@ -252,10 +262,10 @@ const Medical = () => {
             )
           })}
         </div>
-      </div>
+      </div> */}
 
 
-      <div aria-label="Our Service Offerings" className="my-24 container">
+      {/* <div aria-label="Our Service Offerings" className="my-24 container">
         <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">
           Our Service Offerings
         </h1>
@@ -268,7 +278,7 @@ const Medical = () => {
           />
         ))}
         </div>   
-      </div>
+      </div> */}
       {/* <div aria-label="discover more section" className="min-h-[80vh] w-full bg-cyan-900 bg-[url('../../public/cube-background.svg')] py-24">
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-8">

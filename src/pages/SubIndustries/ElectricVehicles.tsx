@@ -21,76 +21,76 @@ type medicalCardsData = {
 
 const medicalCardsData = [{
   title: "E-motors, Batteries, EDUs, Skateboard Chassis, Power Electronics, and Connectivity",
-  imageSrc: "Avionics.png"
+  imageSrc: ""
 },
 
 {
   title: "ECU Consolidation and Ready Reference Designs",
-  imageSrc: "Digital.jpg"
+  imageSrc: ""
 },
 {
   title: "Battery Optimization",
-  imageSrc: "MRO.jpg"
+  imageSrc: ""
 },
 {
   title: "Advanced Battery Management System (BMS)",
-  imageSrc: "Digital.jpg"
+  imageSrc: ""
 },
 {
   title: "Comprehensive Battery Digital Twin Platform",
-  imageSrc: "Interiors.png"
+  imageSrc: ""
 },
 {
   title: "Dedicated E-mobility HILS Setup",
-  imageSrc: "Interiors.png"
+  imageSrc: ""
 },
 {
   title: "Cyber Security",
-  imageSrc: "Interiors.png"
+  imageSrc: ""
 },
 {
   title: "Tech Support & Program Management",
-  imageSrc: "Interiors.png"
+  imageSrc: ""
 },
 {
   title: "Verification & Validation",
-  imageSrc: "Interiors.png"
+  imageSrc: ""
 },
 {
   title: "Embedded Engineering",
-  imageSrc: "Interiors.png"
+  imageSrc: ""
 },
 {
   title: "Simulation & Analysis",
-  imageSrc: "Interiors.png"
+  imageSrc: ""
 },
 {
   title: "System Engineering",
-  imageSrc: "Interiors.png"
+  imageSrc: ""
 },
 {
   title: "Power Converter",
-  imageSrc: "Interiors.png"
+  imageSrc: ""
 },
 {
   title: "DC-DC Converter",
-  imageSrc: "Interiors.png"
+  imageSrc: ""
 },
 {
   title: "EV Systems",
-  imageSrc: "Interiors.png"
+  imageSrc: ""
 },
 {
   title: "EV Digital Ecosystem",
-  imageSrc: "Interiors.png"
+  imageSrc: ""
 },
 {
   title: "Energy Infra Ecosystem",
-  imageSrc: "Interiors.png"
+  imageSrc: ""
 },
 {
   title: "Vehicle Design",
-  imageSrc: "Interiors.png"
+  imageSrc: ""
 },
 ]
 
@@ -249,9 +249,9 @@ const Medical = () => {
 
 <div aria-label="trending-technologies-section" className={`min-h-[30vh] w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.svg')] bg-cover`}>
                 <h1 className="text-white text-5xl font-semibold text-center">Service Offerings</h1>
-                <div className="container flex flex-wrap justify-evenly items-start mt-24 mx-auto">
-                    {medicalCardsData.map((data) => TrendingTechnologiesCards(data))}
-                </div>
+                <ul className="container grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-4 text-2xl justify-evenly items-start mt-24 mx-auto list-outside list-disc">
+                    {medicalCardsData.map((data) => (<li className="text-white p-2">{data.title}</li>))}
+                </ul>
 </div>
       {/* <div aria-label="discover more section" className="min-h-[80vh] w-full bg-cyan-900 bg-[url('../../public/cube-background.svg')] py-24">
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>

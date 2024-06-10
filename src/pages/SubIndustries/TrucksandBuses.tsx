@@ -209,7 +209,7 @@ Efficiency, Safety, Sustainability - Engineered for Success</div>
         </div>
       </div>
 
-      <div aria-label="Our Service Offerings" className="my-24 container">
+      {/* <div aria-label="Our Service Offerings" className="my-24 container">
         <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">
           Our Service Offerings
         </h1>
@@ -222,7 +222,7 @@ Efficiency, Safety, Sustainability - Engineered for Success</div>
           />
         ))}
         </div>   
-      </div>
+      </div> */}
       {/* <div aria-label='medical-device-service-offerings' className='min-h-[120vh]  w-full flex justify-center items-center relative my-24'>
       <div aria-label='content-section' className={` ${selectedServicesOffering ? "relative" : "hidden"} top-0 left-0 w-full h-full z-[2]  transition-all duration-500 ease-linear flex justify-center items-center`}>
           <div className='container'>
