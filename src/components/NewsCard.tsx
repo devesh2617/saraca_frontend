@@ -25,8 +25,8 @@ const Card: FC<CardProps> = ({cardsData}) => {
           
           <p className="text-2xl md:text-left mb-12 leading-8 mt-4 text-gray-600">{cardsData?.description}</p>
           <div className="mt-auto flex justify-between">
-          <a href={cardsData.link} target="_blank" className=" text-red-500 underline">Read more...</a>
-          <p className="text-right text-sky-500">{cardsData?.date?.split("00:00:00")[0]}</p>
+          <a href={cardsData.link} target="_blank" className=" text-red-500 underline text-2xl">Read more...</a>
+          <p className="text-right text-sky-500 text-2xl">{cardsData?.date?.split("00:00:00")[0]}</p>
           </div>
         
         </div>
