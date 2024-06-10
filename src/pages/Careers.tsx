@@ -26,6 +26,9 @@ type ourLeadersCardsData = {
   }[]
 }
 
+const ourCultureCards = Array.from({ length: 27 }, (_, index) => ({
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Our_Culture/${index + 1}.jpg`
+}));
 
 const ourLeadersCardsData: ourLeadersCardsData[] = [
   {
@@ -264,11 +267,11 @@ const AboutUs = () => {
             centeredSlides
           >
             {
-              TimeLineCards.map((data: TimeLineCards, index: number) => {
+              ourCultureCards.map((data: TimeLineCards, index: number) => {
                 return (
                   <SwiperSlide className={`w-full aspect-[16/9] relative transition-all duration-700`} key={index}>
                     <div className="absolute h-[100%] w-[100%] rounded-lg">
-                      <img src={data.imageSrc} alt="timeline" className="absolute h-[100%] w-[100%] rounded-lg" />
+                      <img src={data.imageSrc} alt="timeline" className="absolute h-[100%] w-[100%] rounded-lg object-cover" />
                     </div>
                   </SwiperSlide>
                 )

@@ -38,7 +38,7 @@ const ServiceOfferings = [
     heading: "Tech Pub",
     description:" Quality is paramount in the life science industry. We provide comprehensive quality assurance and validation services to ensure that your products and processes adhere to the highest standards of reliability, safety, and efficacy.",
     link: "",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Consultng.svg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Tech Pub.png`,
   },
 {
   heading: "Consulting",

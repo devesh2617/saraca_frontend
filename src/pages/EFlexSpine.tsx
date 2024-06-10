@@ -45,7 +45,7 @@ const CaseStudies = () => {
     <div className='h-screen overflow-y-hidden bg-black'>
       <HorizontalScroll reverseScroll={true}>
         <section className='w-[100vw] h-[100vh] relative'>
-          <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/spine.svg`} className='w-full h-full object-contain'>
+          <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/eFlexPine/Spinal cord.svg`} className='w-full h-full object-contain'>
           </img>
           <div className='z-10 absolute inset-0 flex justify-center items-end font-bold'>
             <h1 className='text-white xl:text-9xl text-5xl'>eFlexPine</h1>

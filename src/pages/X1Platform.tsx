@@ -65,7 +65,7 @@ const CaseStudies = () => {
 
             </section>
             <section className='flex-[6]'>
-              <iframe src="https://www.youtube.com/embed/EvL3eBZCh4Q?si=PSzQljyNTZK3JnmQ" className='w-[70%] h-[20rem] mx-auto'></iframe>
+              <iframe src="https://www.youtube.com/embed/EvL3eBZCh4Q?si=PSzQljyNTZK3JnmQ" className='w-[70%] aspect-[16/9] mx-auto'></iframe>
               <div className='text-xl text-white mt-8 px-12'>
                 Automotive Grade Linux (AGL) is an automotive OS platform that aims to revolutionize the automotive industry by creating a standardized Linux-based platform for automotive applications. AGL enables the development of advanced infotainment systems, instrument clusters, telematics, ADAS, autonomous driving, fleet management, and car-sharing platforms. It leverages open-source software and promotes collaboration among carmakers, suppliers, and technology companies. AGL's Software Defined Vehicle (SDV) concept integrates virtualization, partitioning, over-the-air updates, advanced connectivity, data analytics, and AI to enhance vehicle functionality and transform it into a software-driven platform. SDV encourages collaboration, standardization, and interoperability within the automotive ecosystem, fostering rapid innovation and customization.
               </div>
