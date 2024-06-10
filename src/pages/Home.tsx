@@ -337,7 +337,7 @@ const Home = () => {
           
         </Carousel>
       </div>
-      <div aria-label="latest from saraca" className="mt-24">
+      {/* <div aria-label="latest from saraca" className="mt-24">
         <h1 className="text-5xl md:text-8xl text-black text-center mt-8 font-semibold mb-12">       Latest from SARACA
         </h1>
         <div aria-label="insights-cards" className="flex flex-col gap-32 mb-32">
@@ -345,7 +345,7 @@ const Home = () => {
             insightsCards.map((data, index: number) => (<NewsBlogsCards category={data.category} title={data.title} text={data.text} link={data.link} imageSrc={data.imageSrc} imgPosition={index % 2 === 0 ? "left" : "right"} date={data.date} />))
           }
         </div>
-      </div>
+      </div> */}
       
     </div>
   );
