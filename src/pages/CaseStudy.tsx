@@ -26,7 +26,7 @@ const CaseStudy = () => {
             <h1 className="text-2xl lg:text-5xl text-center mt-4">{caseStudy?.customer}</h1>
             <div className="container flex flex-col lg:flex-row py-8 gap-4">
                 <div className="flex-1">
-                    <img src={import.meta.env.VITE_REACT_APP_API_URL+caseStudy?.img} alt="" className="w-full aspect-square object-cover rounded-lg" />
+                    <img src={import.meta.env.VITE_REACT_APP_API_URL+caseStudy?.img} alt="" className="w-full aspect-[16/9] object-fill rounded-lg" />
                 </div>
                 <div className="flex-1 flex flex-col gap-4">
 
