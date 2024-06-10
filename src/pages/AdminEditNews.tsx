@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 
 import { Button } from "@/components/ui/button"
-import Editor from 'jodit-react'
+
 import {
   Card,
   CardContent,
@@ -14,12 +14,7 @@ import { Input } from "@/components/ui/input"
 import { useForm } from 'react-hook-form'
 import { format } from "date-fns"
 import { CalendarIcon } from "lucide-react"
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs"
+
 
 import * as z from "zod"
 import { zodResolver } from '@hookform/resolvers/zod';

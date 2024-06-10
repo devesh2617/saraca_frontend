@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 import { Button } from "@/components/ui/button"
-import Editor from 'jodit-react'
+import { Editor } from '@tinymce/tinymce-react';
 import {
   Card,
   CardContent,
@@ -54,7 +54,7 @@ const AdminDashboard = () => {
     "Industrial",
     "Rail Transportation",
     "Consumer"
-]
+  ]
   const navigate = useNavigate()
   const [whitePaperImg, setWhitePaperImg] = useState<File | undefined>()
   const [whitePaperPdf, setWhitePaperPdf] = useState<File | undefined>()
@@ -62,7 +62,7 @@ const AdminDashboard = () => {
   const [newsImg, setNewsImg] = useState<File | undefined>()
   const [blogImg, setBlogImg] = useState<File | undefined>()
   const [webinarImg, setWebinarImg] = useState<File | undefined>()
-
+ 
   const htmlContentRegex = /[^\s]/;
   const imgFormats = ["jpg", "jpeg", "png", "svg"]
   // Example function to check HTML content
@@ -136,7 +136,7 @@ const AdminDashboard = () => {
       message: "Filename should not include underscores"
     }).refine(val => imgFormats.includes(val?.split(".")[val?.split(".")?.length - 1])
       , { message: "Please select a image file" }),
-    
+
   })
 
   const BlogSchema = z.object({
@@ -146,7 +146,7 @@ const AdminDashboard = () => {
     content: z.string().refine((val) => hasContent(val), {
       message: "Content cannot be empty"
     }),
-    
+
     img: z.string().refine((val) => !val.includes("_"), {
       message: "Filename should not include underscores"
     }).refine(val => imgFormats.includes(val?.split(".")[val?.split(".")?.length - 1])
@@ -189,75 +189,76 @@ const AdminDashboard = () => {
   });
 
   const onSubmitWhitePaper = async (data) => {
-    try{
-    const { img, pdf, ...newData } = data
-    newData.img = whitePaperImg
-    newData.pdf = whitePaperPdf
-    const res:any = await postApi("admin/create_white_paper", newData)
-    if(res?.data?.message){
-      toast.success(res.data.message)
-      navigate(`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/white_papers`)
-    } 
-    }catch(error:any){
+    try {
+      const { img, pdf, ...newData } = data
+      newData.img = whitePaperImg
+      newData.pdf = whitePaperPdf
+      console.log(newData)
+      const res: any = await postApi("admin/create_white_paper", newData)
+      if (res?.data?.message) {
+        toast.success(res.data.message)
+        navigate(`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/white_papers`)
+      }
+    } catch (error: any) {
       console.log(error.message)
     }
   }
 
   const onSubmitNews = async (data) => {
     try {
-    const { img, ...newData } = data
-    newData.img = newsImg
-    const res:any = await postApi("admin/create_news", newData)
-    if(res?.data?.message){
-      toast.success(res.data.message)
-      navigate(`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/news`)
-    }
-    } catch (error:any) {
+      const { img, ...newData } = data
+      newData.img = newsImg
+      const res: any = await postApi("admin/create_news", newData)
+      if (res?.data?.message) {
+        toast.success(res.data.message)
+        navigate(`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/news`)
+      }
+    } catch (error: any) {
       console.log(error.message)
-    } 
+    }
   }
 
   const onSubmitBlog = async (data) => {
     try {
-    const { img, ...newData } = data
-    newData.img = blogImg
-    const res:any = await postApi("admin/create_blog", newData)
-    if(res?.data?.message){
-      toast.success(res.data.message)
-      navigate(`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/blogs`)
-    }
-    } catch (error:any) {
+      const { img, ...newData } = data
+      newData.img = blogImg
+      const res: any = await postApi("admin/create_blog", newData)
+      if (res?.data?.message) {
+        toast.success(res.data.message)
+        navigate(`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/blogs`)
+      }
+    } catch (error: any) {
       console.log(error.message)
-    }  
+    }
   }
 
   const onSubmitWebinar = async (data) => {
     try {
-    const { img, ...newData } = data
-    newData.img = webinarImg
-    const res:any = await postApi("admin/create_webinar", newData)
-    if(res?.data?.message){
-      toast.success(res.data.message)
-      navigate(`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/webinars`)
-    }
-    } catch (error:any) {
+      const { img, ...newData } = data
+      newData.img = webinarImg
+      const res: any = await postApi("admin/create_webinar", newData)
+      if (res?.data?.message) {
+        toast.success(res.data.message)
+        navigate(`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/webinars`)
+      }
+    } catch (error: any) {
       console.log(error.message)
     }
   }
 
   const onSubmitCaseStudy = async (data) => {
     try {
-    const { img, ...newData } = data
-    newData.img = caseStudyImg
-    const res:any = await postApi("admin/create_case_study", newData)
-    if(res?.data?.message){
-      toast.success(res.data.message)
-      navigate(`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/case_studies`)
-    }
-    } catch (error:any) {
+      const { img, ...newData } = data
+      newData.img = caseStudyImg
+      const res: any = await postApi("admin/create_case_study", newData)
+      if (res?.data?.message) {
+        toast.success(res.data.message)
+        navigate(`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/case_studies`)
+      }
+    } catch (error: any) {
       console.log(error.message)
     }
-  } 
+  }
 
   return (
     <div>
@@ -296,34 +297,34 @@ const AdminDashboard = () => {
                   >
                   </FormField>
                   <FormField
-                      control={whitePaperForm.control}
-                      name="industry"
-                      render={({ field }) => {
-                        return (
-                          <FormItem>
-                            <FormLabel>Industry</FormLabel>
-                            <FormControl>
-                              <Select  onValueChange={field.onChange} defaultValue={field.value} {...field}>
-                                <SelectTrigger>
-                                  <SelectValue placeholder="Select Industry" />
-                                </SelectTrigger>
-                                <SelectContent>
-                                  <SelectGroup>
-                                    {industries?.map((industry) => (
-                                      <SelectItem key={industry} value={industry}>
-                                        {industry}
-                                      </SelectItem>
-                                    ))}
-                                  </SelectGroup>
-                                </SelectContent>
-                              </Select>
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )
-                      }}
-                    >
-                    </FormField>
+                    control={whitePaperForm.control}
+                    name="industry"
+                    render={({ field }) => {
+                      return (
+                        <FormItem>
+                          <FormLabel>Industry</FormLabel>
+                          <FormControl>
+                            <Select onValueChange={field.onChange} defaultValue={field.value} {...field}>
+                              <SelectTrigger>
+                                <SelectValue placeholder="Select Industry" />
+                              </SelectTrigger>
+                              <SelectContent>
+                                <SelectGroup>
+                                  {industries?.map((industry) => (
+                                    <SelectItem key={industry} value={industry}>
+                                      {industry}
+                                    </SelectItem>
+                                  ))}
+                                </SelectGroup>
+                              </SelectContent>
+                            </Select>
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )
+                    }}
+                  >
+                  </FormField>
                   <FormField
                     control={whitePaperForm.control}
                     name="description"
@@ -425,11 +426,27 @@ const AdminDashboard = () => {
                   <FormField
                     control={whitePaperForm.control}
                     name="content"
-                    render={({ field }) => (
+                    render={() => (
                       <FormItem>
                         <FormLabel>Content</FormLabel>
                         <FormControl>
-                          <Editor {...field} />
+                          <Editor
+                            onEditorChange={(a)=>whitePaperForm.setValue("content",a)}
+                            value={whitePaperForm.getValues("content")}
+                            apiKey='rqvkfybyhlu42exb1mlmf4stf273nps45memnsxdh6xsiu0h'
+                            init={{
+                              plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage advtemplate ai mentions tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss markdown',
+                              toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+                              tinycomments_mode: 'embedded',
+                              tinycomments_author: 'Author name',
+                              mergetags_list: [
+                                { value: 'First.Name', title: 'First Name' },
+                                { value: 'Email', title: 'Email' },
+                              ],
+                              ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
+                            }}
+                           
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -443,7 +460,7 @@ const AdminDashboard = () => {
           </Card>
         </TabsContent>
         <TabsContent value="case studies">
-        <Card>
+          <Card>
             <CardHeader>
               <CardTitle>Case Studies</CardTitle>
               <CardDescription>
@@ -469,34 +486,34 @@ const AdminDashboard = () => {
                   </FormField>
 
                   <FormField
-                      control={caseStudiesForm.control}
-                      name="industry"
-                      render={({ field }) => {
-                        return (
-                          <FormItem>
-                            <FormLabel>Industry</FormLabel>
-                            <FormControl>
-                              <Select  onValueChange={field.onChange} defaultValue={field.value} {...field}>
-                                <SelectTrigger>
-                                  <SelectValue placeholder="Select Industry" />
-                                </SelectTrigger>
-                                <SelectContent>
-                                  <SelectGroup>
-                                    {industries?.map((industry) => (
-                                      <SelectItem key={industry} value={industry}>
-                                        {industry}
-                                      </SelectItem>
-                                    ))}
-                                  </SelectGroup>
-                                </SelectContent>
-                              </Select>
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )
-                      }}
-                    >
-                    </FormField>
+                    control={caseStudiesForm.control}
+                    name="industry"
+                    render={({ field }) => {
+                      return (
+                        <FormItem>
+                          <FormLabel>Industry</FormLabel>
+                          <FormControl>
+                            <Select onValueChange={field.onChange} defaultValue={field.value} {...field}>
+                              <SelectTrigger>
+                                <SelectValue placeholder="Select Industry" />
+                              </SelectTrigger>
+                              <SelectContent>
+                                <SelectGroup>
+                                  {industries?.map((industry) => (
+                                    <SelectItem key={industry} value={industry}>
+                                      {industry}
+                                    </SelectItem>
+                                  ))}
+                                </SelectGroup>
+                              </SelectContent>
+                            </Select>
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )
+                    }}
+                  >
+                  </FormField>
                   <FormField
                     control={caseStudiesForm.control}
                     name="customer"
@@ -511,7 +528,7 @@ const AdminDashboard = () => {
                     )}
                   >
                   </FormField>
-                 
+
                   <FormField
                     control={caseStudiesForm.control}
                     name="img"
@@ -532,15 +549,31 @@ const AdminDashboard = () => {
                     }}
                   >
                   </FormField>
-                  
+
                   <FormField
                     control={caseStudiesForm.control}
                     name="project_scope"
-                    render={({ field }) => (
+                    render={() => (
                       <FormItem>
                         <FormLabel>Project Scope</FormLabel>
                         <FormControl>
-                          <Editor {...field} />
+                        <Editor
+                            onEditorChange={(a)=>caseStudiesForm.setValue("project_scope",a)}
+                            value={caseStudiesForm.getValues("project_scope")}
+                            apiKey='rqvkfybyhlu42exb1mlmf4stf273nps45memnsxdh6xsiu0h'
+                            init={{
+                              plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage advtemplate ai mentions tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss markdown',
+                              toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+                              tinycomments_mode: 'embedded',
+                              tinycomments_author: 'Author name',
+                              mergetags_list: [
+                                { value: 'First.Name', title: 'First Name' },
+                                { value: 'Email', title: 'Email' },
+                              ],
+                              ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
+                            }}
+                           
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -550,11 +583,27 @@ const AdminDashboard = () => {
                   <FormField
                     control={caseStudiesForm.control}
                     name="project_deliverables"
-                    render={({ field }) => (
+                    render={() => (
                       <FormItem>
                         <FormLabel>Project Deliverables</FormLabel>
                         <FormControl>
-                          <Editor {...field} />
+                        <Editor
+                            onEditorChange={(a)=>caseStudiesForm.setValue("project_deliverables",a)}
+                            value={caseStudiesForm.getValues("project_deliverables")}
+                            apiKey='rqvkfybyhlu42exb1mlmf4stf273nps45memnsxdh6xsiu0h'
+                            init={{
+                              plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage advtemplate ai mentions tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss markdown',
+                              toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+                              tinycomments_mode: 'embedded',
+                              tinycomments_author: 'Author name',
+                              mergetags_list: [
+                                { value: 'First.Name', title: 'First Name' },
+                                { value: 'Email', title: 'Email' },
+                              ],
+                              ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
+                            }}
+                          
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -564,11 +613,27 @@ const AdminDashboard = () => {
                   <FormField
                     control={caseStudiesForm.control}
                     name="key_tools"
-                    render={({ field }) => (
+                    render={() => (
                       <FormItem>
                         <FormLabel>Key Tools</FormLabel>
                         <FormControl>
-                          <Editor {...field} />
+                        <Editor
+                            onEditorChange={(a)=>caseStudiesForm.setValue("key_tools",a)}
+                            value={caseStudiesForm.getValues("key_tools")}
+                            apiKey='rqvkfybyhlu42exb1mlmf4stf273nps45memnsxdh6xsiu0h'
+                            init={{
+                              plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage advtemplate ai mentions tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss markdown',
+                              toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+                              tinycomments_mode: 'embedded',
+                              tinycomments_author: 'Author name',
+                              mergetags_list: [
+                                { value: 'First.Name', title: 'First Name' },
+                                { value: 'Email', title: 'Email' },
+                              ],
+                              ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
+                            }}
+                            
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -629,56 +694,72 @@ const AdminDashboard = () => {
                     >
                     </FormField>
                     <FormField
-                    control={blogForm.control}
-                    name="date"
-                    render={({ field }) => (
-                      <FormItem className="mt-2">
-                        <FormLabel>Date</FormLabel>
-                        <Popover>
-                          <PopoverTrigger asChild>
-                            <FormControl>
-                              <Button
-                                variant={"outline"}
-                                className={cn(
-                                  "pl-3 text-left font-normal w-full",
-                                  !field.value && "text-muted-foreground"
-                                )}
-                              >
-                                {field.value ? (
-                                  format(field.value, "PP")
-                                ) : (
-                                  <span>Pick a date</span>
-                                )}
-                                <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
-                              </Button>
-                            </FormControl>
-                          </PopoverTrigger>
-                          <PopoverContent className="w-auto p-0" align="start">
-                            <Calendar
-                              mode="single"
-                              className="w-full"
-                              selected={field.value}
-                              onSelect={field.onChange}
-                              disabled={(date) =>
-                                date > new Date()
-                              }
-                              initialFocus
-                            />
-                          </PopoverContent>
-                        </Popover>
+                      control={blogForm.control}
+                      name="date"
+                      render={({ field }) => (
+                        <FormItem className="mt-2">
+                          <FormLabel>Date</FormLabel>
+                          <Popover>
+                            <PopoverTrigger asChild>
+                              <FormControl>
+                                <Button
+                                  variant={"outline"}
+                                  className={cn(
+                                    "pl-3 text-left font-normal w-full",
+                                    !field.value && "text-muted-foreground"
+                                  )}
+                                >
+                                  {field.value ? (
+                                    format(field.value, "PP")
+                                  ) : (
+                                    <span>Pick a date</span>
+                                  )}
+                                  <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
+                                </Button>
+                              </FormControl>
+                            </PopoverTrigger>
+                            <PopoverContent className="w-auto p-0" align="start">
+                              <Calendar
+                                mode="single"
+                                className="w-full"
+                                selected={field.value}
+                                onSelect={field.onChange}
+                                disabled={(date) =>
+                                  date > new Date()
+                                }
+                                initialFocus
+                              />
+                            </PopoverContent>
+                          </Popover>
 
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
                     <FormField
                       control={blogForm.control}
                       name="content"
-                      render={({ field }) => (
+                      render={() => (
                         <FormItem>
                           <FormLabel>Content</FormLabel>
                           <FormControl>
-                            <Editor {...field} />
+                          <Editor
+                            onEditorChange={(a)=>blogForm.setValue("content",a)}
+                            value={blogForm.getValues("content")}
+                            apiKey='rqvkfybyhlu42exb1mlmf4stf273nps45memnsxdh6xsiu0h'
+                            init={{
+                              plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage advtemplate ai mentions tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss markdown',
+                              toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+                              tinycomments_mode: 'embedded',
+                              tinycomments_author: 'Author name',
+                              mergetags_list: [
+                                { value: 'First.Name', title: 'First Name' },
+                                { value: 'Email', title: 'Email' },
+                              ],
+                              ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
+                            }}
+                            
+                          />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -737,46 +818,46 @@ const AdminDashboard = () => {
                     >
                     </FormField>
                     <FormField
-                    control={webinarForm.control}
-                    name="date"
-                    render={({ field }) => (
-                      <FormItem className="mt-2">
-                        <FormLabel>Date</FormLabel>
-                        <Popover>
-                          <PopoverTrigger asChild>
-                            <FormControl>
-                              <Button
-                                variant={"outline"}
-                                className={cn(
-                                  "pl-3 text-left font-normal w-full",
-                                  !field.value && "text-muted-foreground"
-                                )}
-                              >
-                                {field.value ? (
-                                  format(field.value, "PP")
-                                ) : (
-                                  <span>Pick a date</span>
-                                )}
-                                <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
-                              </Button>
-                            </FormControl>
-                          </PopoverTrigger>
-                          <PopoverContent className="w-auto p-0" align="start">
-                            <Calendar
-                              mode="single"
-                              className="w-full"
-                              selected={field.value}
-                              onSelect={field.onChange}
-                              
-                              initialFocus
-                            />
-                          </PopoverContent>
-                        </Popover>
+                      control={webinarForm.control}
+                      name="date"
+                      render={({ field }) => (
+                        <FormItem className="mt-2">
+                          <FormLabel>Date</FormLabel>
+                          <Popover>
+                            <PopoverTrigger asChild>
+                              <FormControl>
+                                <Button
+                                  variant={"outline"}
+                                  className={cn(
+                                    "pl-3 text-left font-normal w-full",
+                                    !field.value && "text-muted-foreground"
+                                  )}
+                                >
+                                  {field.value ? (
+                                    format(field.value, "PP")
+                                  ) : (
+                                    <span>Pick a date</span>
+                                  )}
+                                  <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
+                                </Button>
+                              </FormControl>
+                            </PopoverTrigger>
+                            <PopoverContent className="w-auto p-0" align="start">
+                              <Calendar
+                                mode="single"
+                                className="w-full"
+                                selected={field.value}
+                                onSelect={field.onChange}
 
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                                initialFocus
+                              />
+                            </PopoverContent>
+                          </Popover>
+
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
                     <FormField
                       control={webinarForm.control}
                       name="img"

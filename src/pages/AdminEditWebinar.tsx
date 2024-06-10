@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
 
 import { Button } from "@/components/ui/button"
-import Editor from 'jodit-react'
 import {
   Card,
   CardContent,
