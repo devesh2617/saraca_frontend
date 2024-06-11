@@ -74,11 +74,11 @@ const ourLeadersCardsData: ourLeadersCardsData[] = [
     links: [
       {
         web: "twitter",
-        link: ""
+        link: "#"
       },
       {
         web: "linkedin",
-        link: ""
+        link: "#"
       }
     ]
   },

@@ -57,10 +57,10 @@ const WhitePaper = () => {
                 </img>
 
             </div>
-            <div aria-label='content-section' className='flex flex-col-reverse gap-4 xl:flex-row my-4'>
-                <div dangerouslySetInnerHTML={{ __html: blogData?.content }} className='container mx-auto text-2xl'>
+            <div aria-label='content-section' className='flex flex-col-reverse gap-4 lg:flex-row my-4 container'>
+                <div dangerouslySetInnerHTML={{ __html: blogData?.content }} className='mx-auto text-2xl flex-1'>
                 </div>
-                <div className='flex-1 max-w-3xl mx-auto'>
+                <div className='w-[30rem] mx-auto'>
                     <form onSubmit={handleSubmit(onSubmit)} className="bg-zinc-200 rounded-lg py-8 px-4 flex flex-col gap-8">
                         <Input {...register('name')} placeholder="Name" className='h-16'/>
                         {errors.name && <p className=' text-sm text-red-500'>{errors?.name?.message}</p>}

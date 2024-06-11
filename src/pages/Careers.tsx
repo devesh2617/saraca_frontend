@@ -128,28 +128,28 @@ type TimeLineCards = {
 }
 const TestmonialCardsData = [
   {
-    name: "Saurabh Aggarwal",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Saurabh_Aggarwal.png`,
-    designation: "Head, Napier Development Centre at Napier Healthcare",
-    content: "Saraca was extremely helpful to our Product Team’s understanding of the requirements of ISO 13485 by presenting it to them in a simple and effective manner. They have also done a commendable job in helping us to align our deliverables in-line with the ISO 13485 requirements...."
+    name: "Tarun Kumar",
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}`,
+    designation: "Sr. Corporate Quality Executive",
+    content: "At the start of joining, I had doubts about the company and corporate culture. But when I joined and time passed, I became more relaxed. After engineering, learning something new-in-service sector was adventurous as well as scary but Kuldepp, Ankit and Rahul helped me to sail through. I really like working in SARACA, I hope that I react good heights in..."
   },
   {
-    name: "Dr. Eduardo Gonzalez",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Educardo.jpg`,
-    designation: "CEO-Toby Orthopaedics",
-    content: "Toby has had a smooth journey with Saraca Solutions.  They have provided us with both a highly experienced Quality Manager and a very energetic Quality Engineer.  Specifically, I would like to thank Saraca for closing our NCs in a timely manner while simultaneously performing a gap...."
+    name: "Sanjay Kumar Rajpoot",
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}`,
+    designation: "Recruitment Manager",
+    content: "I have been associated with SARACA for the last 8 years as a Recruitment Manager. SARACA always recognizes my work ethic and contribution towards my job responsibilties. Leaders at SARACA are very helpful and hold our hand in an odd situation and problems..."
   },
   {
-    name: "Patrick Ireland",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Patrick.jpg`,
-    designation: "Vice President-Grace Medical",
-    content: "Our team has partnered well with SARACA Solutions as we continue the development process for submitting one of ENT products for 510(k) review with US FDA. They constructed and maintain a Design History. They are also working on Risk Analysis as defined by our Quality Management...."
+    name: "Bhanu Prakash Jena",
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}`,
+    designation: "Manager FA & A",
+    content: "A company that has its vision and mission clear & same has been communicated transparently to each & every employee. Diversity and inclusion are some of the key highlights observed while working in SARACA. Efforts have always been recognised in a..."
   },
   {
-    name: "Manoj Kumar",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Manoj_Kumar.png`,
-    designation: "VP, Head Engineering",
-    content: "SARACA's commitment to delivering high-quality solutions has significantly contributed to the success of our projects. Their technical expertise, attention to detail, and proactive approach exceeded our expectations. Despite the tight timelines, Saraca's impressive speed in completing the...."
+    name: "Kundan Kumar Mishra",
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}`,
+    designation: "Sr. QA/RA Executive",
+    content: "I am working at SARACA for the last 3 years. As I experienced it is a good company with a great working culture and a lot of new opportunities to learn and grow. All staffs are helpful and supportive. Thank you so much SARACA. For freshers, SARACA is a good choice..."
   }
 ]
 const TimeLineCards: TimeLineCards[] = [
@@ -281,7 +281,7 @@ const AboutUs = () => {
         </div>
 
       </div>
-      <div aria-label="Our Leaders" className="bg-blue-100">
+      <div aria-label="Employee Speaks" className="bg-blue-100">
         <div className="container lg:pt-24 pt-8">
           <h1 className="text-sky-500 font-semibold lg:text-5xl text-4xl">Employee Speaks</h1>
           <p className="text-xl mt-4">
@@ -291,7 +291,7 @@ const AboutUs = () => {
         <div className="mx-auto">
           <Carousel
 
-            ariaLabel="testimonials"
+            ariaLabel="employee speaks"
             autoPlay
             autoFocus
             showArrows={false}

@@ -5,7 +5,10 @@ const Footer = () => {
         },
         {
           "Bengaluru, India:":
-            "78/9, 1ft floor, Vaishnavi Signature, Outer Ring Road, Ballandur Village, Varthur Hobli, Bengaluru Urban, Bengalure, Karnataka, 560103",
+            "78/9, 1ft floor, Vaishnavi Signature, Outer Ring Road, Ballandur Village, Varthur Hobli, Bengaluru Urban, Bengaluru, Karnataka, 560103",
+        },
+        {
+         "Pune, India:": "Sr No 133(P), CTS No 4944, Magarpatta Road, Kirtane Baugh, Magarpatta, Hadapsar, Pune, Maharashtra 411013"
         },
         {
           "South Carolina, USA:": "PO Box 61, Fair Play, South Carolina, 29643",
@@ -79,7 +82,7 @@ const Footer = () => {
     <div
         aria-label="footer"
         className={`max-w-full text-sky-200 min-h-[35vh] bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/footer.webp')] bg-cover mx-auto flex flex-col lg:flex-row mt-auto leading-relaxed bg-black`}
-        style={{ backgroundImage: `url('${import.meta.env.VITE_REACT_APP_API_URL}/footer.webp')` }}
+        style={{ backgroundImage: `url('${import.meta.env.VITE_REACT_APP_API_URL}/footer.jpg')` }}
       >
         <div className="flex-1 text-center p-8 ">
           <h1 className="text-5xl text-blue-400">About Us</h1>
