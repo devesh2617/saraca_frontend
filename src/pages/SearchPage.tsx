@@ -53,10 +53,10 @@ const SearchPage = () => {
     {selected==="White Paper"?(<div className="flex flex-col my-12 gap-12">
       {searchResults?.whitePaper?.map((data, index)=> <WhitePaperCard data={data}/>)}
     </div>):""}
-    {selected==="Blogs"?(<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-start mx-auto flex-wrap gap-4 my-12">
+    {selected==="Blogs"?(<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-start mx-auto flex-wrap gap-4 my-12">
       {searchResults?.blogs?.map((data, index)=> <BlogCard key={index} cardsData={data}/>)}
     </div>):""}
-    {selected==="Webinars"?(<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-start mx-auto flex-wrap gap-4 my-12">
+    {selected==="Webinars"?(<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-start mx-auto flex-wrap gap-4 my-12">
       {searchResults?.webinars?.map((data, index)=> <WebinarCard key={index} cardsData={data}/>)}
     </div>):""}
     </div>
