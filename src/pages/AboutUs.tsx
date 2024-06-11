@@ -259,10 +259,10 @@ const AboutUs = () => {
           <div className="my-12 bg-background py-6 px-12 flex flex-col lg:flex-row rounded-md border-b-4 border-blue-400 gap-12">
             <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Kuldeep.png`} alt="" className="rounded-full w-52 aspect-square object-cover" />
             <div className="flex-1 flex flex-col">
-              <h1 className=" text-2xl font-semibold text-sky-700">
+              <h1 className=" text-4xl font-semibold text-sky-700">
                 KULDEEP TYAGI
               </h1>
-              <p className="uppercase mt-4 text-sky-600">Founder, Managing Director and Cheif Executive Officer</p>
+              <p className="uppercase mt-4 text-sky-600 text-2xl">Founder, Managing Director and Cheif Executive Officer</p>
               <div className="flex mt-auto">
                 <a href="#">
                   <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/twitter.svg`} alt="twitter" className="h-16 aspect-square" />
@@ -274,8 +274,8 @@ const AboutUs = () => {
               </div>
             </div>
             <div className="flex-[2]">
-              <h1 className="text-sky-700 font-semibold text-2xl">CEO's MESSAGE</h1>
-              <p className="mt-4 leading-normal text-lg text-sky-600">SARACA is a global IT consulting and engineering R&D services company with Fortune 500 customers 80% of our customers are based in United States of America(USA) with 95% of recurring business. We provide services in medical technology, aerospace, defence, rail transportation and automotive industries</p>
+              <h1 className="text-sky-700 font-semibold text-4xl">CEO's MESSAGE</h1>
+              <p className="mt-4 leading-normal text-sky-600 text-2xl">SARACA is a global IT consulting and engineering R&D services company with Fortune 500 customers 80% of our customers are based in United States of America(USA) with 95% of recurring business. We provide services in medical technology, aerospace, defence, rail transportation and automotive industries</p>
             </div>
           </div>
         </div>

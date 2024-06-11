@@ -87,11 +87,11 @@ const Footer = () => {
           SARACA is a rapidly growing product engineering services company with deep expertise in digital, artificial intelligence, and emerging new technologies. Founded in 2014, SARACA is powered by Gen Z and Millennials with greater focus on agility, customer centricity, faster technology adoption, and adherence to cultural sensitivity. Our digital natives perform their actions with speed and ensure that we exceed customer expectation every single time. SARACA adopted vertically integrated approach to build depth in the industries we operate in. Over the years we have built strong expertise in aerospace, defense, space, automotive, medical devices, Industrial, Farm Equipment, rail transportation, technology, semiconductor, and many other industries
           </p>
           <div aria-label="links" className="flex gap-8 text-4xl px-8">
-            <i className="fa-brands fa-instagram cursor-pointer hover:text-blue-400"></i>
-            <i className="fa-brands fa-facebook-f cursor-pointer hover:text-blue-400"></i>
-            <i className="fa-brands fa-x-twitter cursor-pointer hover:text-blue-400"></i>
-            <i className="fa-brands fa-youtube cursor-pointer hover:text-blue-400"></i>
-            <i className="fa-brands fa-linkedin-in cursor-pointer hover:text-blue-400"></i>
+            <a href="https://www.linkedin.com/company/saraca-solutions/mycompany/" target="_blank"><i className="fa-brands fa-linkedin-in cursor-pointer hover:text-blue-400"></i></a>
+            <a href="https://www.instagram.com/saraca_solutions_/" target="_blank"><i className="fa-brands fa-instagram cursor-pointer hover:text-blue-400"></i></a>
+            <a href="https://www.facebook.com/saracasolutions" target="_blank"><i className="fa-brands fa-facebook-f cursor-pointer hover:text-blue-400"></i></a>
+            <a href="https://x.com/saracasolutions" target="_blank"><i className="fa-brands fa-x-twitter cursor-pointer hover:text-blue-400"></i></a>
+            <a href="https://www.youtube.com/@saracasolutions8564" target="_blank"><i className="fa-brands fa-youtube cursor-pointer hover:text-blue-400"></i></a>
           </div>
         </div>
         <div className="text-center flex-1 p-8">

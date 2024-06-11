@@ -26,7 +26,7 @@ const BlogCard: FC<CardProps> = ({ cardsData }) => {
             </div>
             
             <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 z-[1] bg-black bg-opacity-20 backdrop-blur-[2px] transition-opacity duration-500">
-                <a href={cardsData?.link} className="text-center">
+                <a href={cardsData?.link} target="_blank" className="text-center">
                     <Button variant="secondary" className="text-2xl py-8">
                         Read more
                     </Button>
