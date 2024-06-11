@@ -26,7 +26,7 @@ const CaseStudiesHeader: FC<CaseStudiesHeaderProps> = ({ activeItem, setActiveIt
               activeItem === item ? "text-blue-600 border-b-4 border-blue-600" : ""
             } flex-shrink-0 h-full flex items-center cursor-pointer`} 
             onClick={() => {
-              document.getElementById(item).scrollIntoView({ behavior: "smooth" })
+              document.getElementById(item).scrollIntoView({ behavior: "instant" })
               setActiveItem(item)
             }}
           >
