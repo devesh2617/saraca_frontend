@@ -55,16 +55,16 @@ const CaseStudies = () => {
         <section className='w-screen h-screen p-4 px-24'>
           <div className='h-full w-full flex gap-4 items-center'>
             <section className='flex-1 flex flex-col'>
-            <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/image 6.png`} className='object-cover w-full h-[20rem] mx-auto'></img>
+            <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/image 6.png`} className='object-cover w-full acpect-[16/9] mx-auto'></img>
 
               <h1 className=" text-5xl font-semibold text-white mt-12">
               SPINAL ROD BENDING SOLUTION              </h1>
-              <p className='text-md text-white mt-12'>
+              <p className='text-3xl text-white mt-12'>
               SARACA is proud to introduce our innovative Automated Spinal Rod Bending Solution, a game-changing system designed to transform the treatment of degenerative disorders, deformities, and trauma indications in the human spine. Our cutting-edge technology empowers surgeons to precisely bend metal rods to meet each patient's specific anatomical needs and conditions, revolutionizing spinal surgery.
               </p>
             </section>
             <section className='flex-[2]'>
-            <iframe src="https://www.youtube.com/embed/2xSn3Ws44bw?si=3elqruy-L8g06FcR" className='h-[60vh] object-cover w-[80%] mx-auto'></iframe>
+            <iframe src="https://www.youtube.com/embed/2xSn3Ws44bw?si=3elqruy-L8g06FcR" className='aspect-[16/9] object-cover w-[80%] mx-auto'></iframe>
 
             </section>
 
@@ -82,12 +82,12 @@ const CaseStudies = () => {
 
               {cardsData?.map((data, index) => {
                 return (
-                  <div className={`${index % 2 === 0 ? "translate-y-[18%]" : ""} border-[1px] p-2 rounded-lg shadow-md shadow-gray-300`}>
+                  <div className={`${index % 2 === 0 ? "translate-y-[18%]" : ""} border-[1px] p-4 rounded-lg shadow-md shadow-gray-300`}>
                     <div className="h-[16rem] aspect-[4/3]">
                       <img src={data?.imageSrc} alt="" className='w-full h-full object-contain rounded-md' />
                     </div>
-                    <div className='text-gray-400 text-sm leading-5 mt-4'>
-                      <h1 className='text-white font-semibold text-lg'>{data?.title}</h1>
+                    <div className='text-gray-400 text-xl mt-4'>
+                      <h1 className='text-white font-semibold text-2xl'>{data?.title}</h1>
                       {data?.content}
                     </div>
                   </div>

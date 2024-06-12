@@ -122,29 +122,59 @@ type TimeLineCards = {
 
 const TimeLineCards: TimeLineCards[] = [
   {
-    year: "2018",
+    year: "2014",
     tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industrial.jpg`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2014.png`
+  },
+  {
+    year: "2015",
+    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2015.png`
+  },
+  {
+    year: "2016",
+    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2016.png`
+  },
+  {
+    year: "2017",
+    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2017.png`
   },
   {
     year: "2018",
     tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industrial.jpg`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2018.png`
   },
   {
-    year: "2018",
+    year: "2019",
     tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industrial.jpg`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2019.png`
   },
   {
-    year: "2018",
+    year: "2020",
     tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industrial.jpg`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2020.png`
   },
   {
-    year: "2018",
+    year: "2021",
     tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industrial.jpg`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2021.png`
+  },
+  {
+    year: "2022",
+    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2022.png`
+  },
+  {
+    year: "2023",
+    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2023.png`
+  },
+  {
+    year: "2024",
+    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2024.png`
   }
 ]
 
@@ -374,7 +404,7 @@ const AboutUs = () => {
                 
                 setActiveIndex(currentIndex)
                 // console.log(activeSlide.classList)
-                activeSlide.style.transform = 'translateY(-40px)'; 
+                activeSlide.style.transform = 'translateY(-20px)'; 
             })}
             // onSwiper={(swiper) => {
             //   swiper.on('slideChange', () => {
@@ -388,15 +418,15 @@ const AboutUs = () => {
                   <SwiperSlide className={`timeline-slide-container w-full aspect-[16/9] relative transition-all duration-700 ${activeIndex===index?"rotated":""}`} key={index}>
                     <div className="timeline-slide-front absolute h-[100%] w-[100%] rounded-lg">
                       <img src={data.imageSrc} alt="timeline" className="absolute h-[100%] w-[100%] rounded-lg" />
-                      <div className="absolute h-24 aspect-square rounded-full bg-blue-950 timeline-slide-front text-white flex items-center justify-center bg-opacity-40 font-semibold">{data.year}</div>
+                      <div className="absolute h-36 aspect-square rounded-full bg-blue-950 timeline-slide-front text-white flex items-center justify-center bg-opacity-40 font-semibold text-5xl">{data.year}</div>
                     </div>
 
                     <div className=" bg-sky-900 absolute inset-0 timeline-slide-back rounded-lg">
                       <div className="flex flex-col gap-4 lg:p-8 p-2">
-                        <h1 className="text-white text-center font-semibold text-2xl">
+                        <div className="text-white text-center font-semibold text-5xl">
                           {data.year}
-                        </h1>
-                        <p className="text-white text-sm">
+                        </div>
+                        <p className="text-white text-3xl">
                           {data.tagline}
                         </p>
                       </div>

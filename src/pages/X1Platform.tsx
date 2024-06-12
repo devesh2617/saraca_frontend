@@ -66,7 +66,7 @@ const CaseStudies = () => {
             </section>
             <section className='flex-[6]'>
               <iframe src="https://www.youtube.com/embed/EvL3eBZCh4Q?si=PSzQljyNTZK3JnmQ" className='w-[70%] aspect-[16/9] mx-auto'></iframe>
-              <div className='text-xl text-white mt-8 px-12'>
+              <div className='text-3xl text-white mt-8 px-12'>
                 Automotive Grade Linux (AGL) is an automotive OS platform that aims to revolutionize the automotive industry by creating a standardized Linux-based platform for automotive applications. AGL enables the development of advanced infotainment systems, instrument clusters, telematics, ADAS, autonomous driving, fleet management, and car-sharing platforms. It leverages open-source software and promotes collaboration among carmakers, suppliers, and technology companies. AGL's Software Defined Vehicle (SDV) concept integrates virtualization, partitioning, over-the-air updates, advanced connectivity, data analytics, and AI to enhance vehicle functionality and transform it into a software-driven platform. SDV encourages collaboration, standardization, and interoperability within the automotive ecosystem, fostering rapid innovation and customization.
               </div>
             </section>
@@ -87,7 +87,7 @@ const CaseStudies = () => {
 
             </section>
             <section className='flex-[6]'>
-              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/ic3.png`} className='h-[70vh] object-cover w-[80%] mx-auto'></img>
+              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/ic3.png`} className='aspect-[16/9] object-cover w-[80%] mx-auto'></img>
 
             </section>
 
@@ -103,7 +103,7 @@ const CaseStudies = () => {
 
             </section>
             <section className='flex-[6]'>
-              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/ic1.png`} className='h-[70vh] object-cover w-[80%] mx-auto'></img>
+              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/ic1.png`} className='aspect-[16/9] object-cover w-[80%] mx-auto'></img>
             </section>
 
           </div>
@@ -118,7 +118,7 @@ const CaseStudies = () => {
 
             </section>
             <section className='flex-[6]'>
-              <iframe src="https://www.youtube.com/embed/EvL3eBZCh4Q?si=PSzQljyNTZK3JnmQ" className='h-[70vh] object-cover w-[80%] mx-auto'></iframe>
+              <iframe src="https://www.youtube.com/embed/EvL3eBZCh4Q?si=PSzQljyNTZK3JnmQ" className='aspect-[16/9] object-cover w-[80%] mx-auto'></iframe>
             </section>
 
           </div>
@@ -126,7 +126,7 @@ const CaseStudies = () => {
         <section className='h-screen w-screen p-4 flex items-center justify-center gap-24'>
           <div className='w-[40%]'>
             <h1 className='text-5xl text-white font-bold'>Product Overview</h1>
-            <p className='text-white text-lg mt-8'>
+            <p className='text-white text-3xl mt-8'>
               Introducing a cutting-edge instrument cluster based on the Automotive Grade Linux (AGL) platform. This remarkable advancement in automotive technology revolutionizes the way drivers interact with their vehicles and access vital information through a TFT (Thin Film Transistor) screen.
               <br />
               <br />
@@ -142,15 +142,15 @@ const CaseStudies = () => {
               
                   {cardsData?.map((data, index) => {
                     return (
-                      <div className={`${index % 2 === 0 ? "translate-y-[18%]" : ""} border-[1px] p-2 rounded-lg shadow-md shadow-gray-300`}>
-                        <div className="h-[16rem] aspect-[4/3]">
-                          <img src={data?.imageSrc} alt="" className='w-full h-full object-contain rounded-md' />
-                        </div>
-                        <div className='text-gray-400 text-sm leading-5 mt-4'>
-                          <h1 className='text-white font-semibold text-lg'>{data?.title}</h1>
-                          {data?.content}
-                        </div>
-                      </div>
+                      <div className={`${index % 2 === 0 ? "translate-y-[18%]" : ""} border-[1px] p-4 rounded-lg shadow-md shadow-gray-300`}>
+                    <div className="h-[16rem] aspect-[4/3]">
+                      <img src={data?.imageSrc} alt="" className='w-full h-full object-contain rounded-md' />
+                    </div>
+                    <div className='text-gray-400 text-xl mt-4'>
+                      <h1 className='text-white font-semibold text-2xl'>{data?.title}</h1>
+                      {data?.content}
+                    </div>
+                  </div>
                     )
                   })}
                 

@@ -62,7 +62,7 @@ const CaseStudies = () => {
         <section className='w-screen h-screen p-4 relative overflow-hidden flex justify-center items-center'>
           <div className='absolute z-1 w-full scale-110 h-full bg-[#353535] bottom-[50%]' style={{ borderRadius: "50%" }}>
           </div>
-          <div className='z-[2] text-2xl text-white container text-center flex flex-col items-center'>
+          <div className='z-[2] text-3xl text-white container text-center flex flex-col items-center'>
             FastPMCFTM manages end-to-end cycle of the PMCF survey and enables the medical device manufacturers to get the feedback on clinical evidence from market in a quick turnaround time.
             <div className=' w-96 aspect-square bg-white rounded-full mt-8'>
               <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/image 5.png`} alt="" className='w-full h-full object-contain' />
@@ -74,14 +74,14 @@ const CaseStudies = () => {
           <div className='h-full w-full flex gap-4 items-center'>
 
             <section className='flex-[2]'>
-              <iframe src="https://www.youtube.com/embed/ipMa3uSgFMY?si=JFR6ksgCKHKGW9tr" className='h-[60vh] object-cover w-[80%] mx-auto'></iframe>
+              <iframe src="https://www.youtube.com/embed/ipMa3uSgFMY?si=JFR6ksgCKHKGW9tr" className='object-cover w-[80%] aspect-[16/9] mx-auto'></iframe>
             </section>
             <section className='flex-1 pt-24'>
 
               <h1 className=" text-5xl font-semibold text-white">
                 Single Platform to manage all your PMCF Surveys
               </h1>
-              <p className='text-2xl text-white mt-12'>
+              <p className='text-3xl text-white mt-12'>
                 FastPMCF TM enables medical device
                 manufacturers manage their PMCF needs
                 and collect real world evidence in a quick
@@ -104,12 +104,12 @@ const CaseStudies = () => {
 
               {cardsData?.map((data, index) => {
                 return (
-                  <div className={`${index % 2 === 0 ? "translate-y-[18%]" : ""} border-[1px] p-2 rounded-lg shadow-md shadow-gray-300`}>
+                  <div className={`${index % 2 === 0 ? "translate-y-[18%]" : ""} border-[1px] p-4 rounded-lg shadow-md shadow-gray-300`}>
                     <div className="h-[16rem] aspect-[4/3]">
                       <img src={data?.imageSrc} alt="" className='w-full h-full object-contain rounded-md' />
                     </div>
-                    <div className='text-gray-400 text-sm leading-5 mt-4'>
-                      <h1 className='text-white font-semibold text-lg'>{data?.title}</h1>
+                    <div className='text-gray-400 text-xl mt-4'>
+                      <h1 className='text-white font-semibold text-2xl'>{data?.title}</h1>
                       {data?.content}
                     </div>
                   </div>

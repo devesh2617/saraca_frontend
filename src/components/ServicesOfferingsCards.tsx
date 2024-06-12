@@ -18,18 +18,18 @@ const Card: FC<CardProps> = ({ cardsData, imageSrc }) => {
       <div aria-label="content" className={`text-left flex py-8 px-8 md:text-left`}>
         <div className={``}>
         
-          <h1 className="text-3xl font-bold mb-6">{cardsData.heading||cardsData.title}</h1>
-          {cardsData?.description&&(<p className="text-lg lg:text-xl text-white md:text-left leading-8">{cardsData.description}</p>)}
+          <h1 className="text-5xl font-bold mb-6">{cardsData.heading||cardsData.title}</h1>
+          {cardsData?.description&&(<p className="text-2xl lg:text-3xl text-white md:text-left font-extralight">{cardsData.description}</p>)}
           {cardsData?.content?cardsData?.content?.length>1?(<ul className="list-disc">
             {
              cardsData.content.map((point:string, index:number)=>{
                 return(
-                    <li key={index} className="lg:my-4 my-1 text-lg lg:text-xl text-white">{point}</li>
+                    <li key={index} className="lg:my-4 my-1 text-2xl lg:text-3xl text-white font-extralight">{point}</li>
                 )
              })
             }
           </ul>):(
-            <p className="lg:my-4 my-1 text-lg lg:text-xl text-white">{cardsData.content[0]}</p>
+            <p className="lg:my-4 my-1 text-2xl lg:text-3xl text-white font-extralight">{cardsData.content[0]}</p>
           ):""}
         </div>
       </div>
