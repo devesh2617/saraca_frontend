@@ -234,6 +234,7 @@ const Home = () => {
   //   });
     window.addEventListener("resize", handleScreenSize)
     handleScreenSize()
+    return () => document.title = "SARACA"
   }, [])
 
   return (

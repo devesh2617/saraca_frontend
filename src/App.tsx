@@ -105,8 +105,9 @@ import WhitePaper from "./pages/WhitePaper";
 import SearchPage from "./pages/SearchPage";
 import EFlexPine from "./pages/EFlexSpine"
 import HealthcareApplications from "./pages/SubIndustries/HealthcareApplications"
+import Error404 from "./pages/Error404";
 function App() {
-  
+
 
   const AdminRoutes = () => {
     return (
@@ -133,49 +134,50 @@ function App() {
   }
   const Layout = ({ children }) => {
     const location = useLocation()
-    useEffect(()=>{
-      const path = location.pathname;
-let formattedPath;
-
-// Handle the root path separately
-if (path === "/") {
-  formattedPath = "SARACA";
-} else {
-  // Split the path into parts using the '/' delimiter and filter out empty parts
-  const parts = path.split('/').filter(part => part !== "");
-  
-  // Join the parts with ' | ' to get the desired format
-  if (parts.length) {
-    formattedPath = parts.join(' | ');
-  }
-}
-
-// Replace underscores with spaces in the formatted path
-if (formattedPath) {
-  formattedPath = formattedPath.replace(/_/g, " ");
-}
-
-// Update the document's title with the formatted path
-document.title = formattedPath;
-console.log(formattedPath);
-
-    }, [location.pathname])
+    useEffect(() =>{
+      return () => {
+        {
+          const path = location.pathname;
+          let formattedPath = "";
+    
+        
+            // Split the path into parts using the '/' delimiter and filter out empty parts
+            const parts = path.split('/').filter(part => part !== "");
+    
+            // Join the parts with ' | ' to get the desired format
+            if (parts.length) {
+              formattedPath = parts.join(' | ');
+            }
+          
+    
+          // Replace underscores with spaces in the formatted path
+          if (formattedPath) {
+            formattedPath = formattedPath.replace(/_/g, " ");
+          }
+    
+          // Update the document's title with the formatted path
+          document.title = formattedPath;
+    
+        }
+      }
+    }
+   , [location.pathname])
     return (
       <div className={`relative overflow-x-hidden bg-background bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/background.svg')] bg-repeat w-full overflow-y-auto min-h-[100vh] flex flex-col`}
-      style={{ backgroundImage: `url('${import.meta.env.VITE_REACT_APP_API_URL}/background.svg')` }}
+        style={{ backgroundImage: `url('${import.meta.env.VITE_REACT_APP_API_URL}/background.svg')` }}
       >
-        {location.pathname.split("/")[1]!=="activate"?<Navbar />:""}
+        {location.pathname.split("/")[1] !== "activate" ? <Navbar /> : ""}
         {children}
-        {location.pathname.split("/")[1]!=="activate"&&location.pathname.split("/")[1]!=="Innovation"?<Footer />:""}
-        {location.pathname.split("/")[1]!=="activate"?(
+        {location.pathname.split("/")[1] !== "activate" && location.pathname.split("/")[1] !== "Innovation" ? <Footer /> : ""}
+        {location.pathname.split("/")[1] !== "activate" ? (
           <a href="/Contact_Us">
-          {location.pathname.split("/")[1]!=="Contact_Us"?(<button className="fixed z-10 bg-red-400 px-8 rounded-full py-4 pr-12 text-white text-2xl font-semibold bottom-[2%] right-[2.5%] hover:scale-110 hover:bg-red-600 duration-500">
-            <FontAwesomeIcon icon={faPaperPlane} style={{ fontSize: "2rem" }} />
-            <span id="contact_us_button" className="ml-4">Contact</span>
-          </button>):""}
-        </a>
-        ):""}
-        
+            {location.pathname.split("/")[1] !== "Contact_Us" ? (<button className="fixed z-10 bg-red-400 px-8 rounded-full py-4 pr-12 text-white text-2xl font-semibold bottom-[2%] right-[2.5%] hover:scale-110 hover:bg-red-600 duration-500">
+              <FontAwesomeIcon icon={faPaperPlane} style={{ fontSize: "2rem" }} />
+              <span id="contact_us_button" className="ml-4">Contact</span>
+            </button>) : ""}
+          </a>
+        ) : ""}
+
       </div>
     );
   }
@@ -204,7 +206,7 @@ console.log(formattedPath);
             <Route path="/Industry/Automotive/TruckandBuses" element={<TruckBuses />} />
             <Route path="/Industry/Automotive/OffHighwayVehicles" element={<OffHighwayVehicle />} />
             <Route path="/Industry/Semiconductor" element={<Semiconductor />} />
-            <Route path="/Industry/Semiconductor/ASICFPGADesignDevelopment" element={<DesignDevelopment />} />            
+            <Route path="/Industry/Semiconductor/ASICFPGADesignDevelopment" element={<DesignDevelopment />} />
             <Route path="/Industry/Semiconductor/Verification&Validation" element={<VerificationValidation />} />
             <Route path="/Industry/Semiconductor/PhysicalDesign" element={<PhysicalDesign />} />
             <Route path="/Industry/Semiconductor/DFT" element={<DFT />} />
@@ -269,12 +271,13 @@ console.log(formattedPath);
             <Route path="/White_Paper/:id" element={<WhitePaper />} />
             <Route path="/Insights/News" element={<News />} />
             <Route path="/Insights/Certificates" element={<Certificates />} />
-            <Route path="/Case_Study/:id" element={<CaseStudy/>}/>
-            <Route path="/activate/:id" element={<VerifyEmail/>}/>
-            <Route path="/Innovation/X1_Platform" element={<X1Platform/>}/>
-            <Route path="/Innovation/FastPMCF" element={<FastPMCF/>}/>
-            <Route path="/Innovation/eFleXpine" element={<EFlexPine/>}/>
-            <Route path="/Search" element={<SearchPage/>}/>
+            <Route path="/Case_Study/:id" element={<CaseStudy />} />
+            <Route path="/activate/:id" element={<VerifyEmail />} />
+            <Route path="/Innovation/X1_Platform" element={<X1Platform />} />
+            <Route path="/Innovation/FastPMCF" element={<FastPMCF />} />
+            <Route path="/Innovation/eFleXpine" element={<EFlexPine />} />
+            <Route path="/Search" element={<SearchPage />} />
+            <Route path="*" element={<Error404 />} />
           </Routes>
         </Layout>} />
       </Routes>

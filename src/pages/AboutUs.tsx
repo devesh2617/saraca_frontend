@@ -123,57 +123,57 @@ type TimeLineCards = {
 const TimeLineCards: TimeLineCards[] = [
   {
     year: "2014",
-    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    tagline: "Won our first customer in orthopedics from Miami, Florida, USA.",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2014.png`
   },
   {
     year: "2015",
-    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    tagline: "Successfully delivered a mission-critical healthcare project for a prestigious Singapore-based client, ensuring top-tier performance and exceptional results.",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2015.png`
   },
   {
     year: "2016",
-    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    tagline: "",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2016.png`
   },
   {
     year: "2017",
-    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    tagline: "Established our USA subsidiary in the state of Delaware.",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2017.png`
   },
   {
     year: "2018",
-    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    tagline: "",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2018.png`
   },
   {
     year: "2019",
-    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    tagline: "Celebrated our first customer win in the automotive industry.",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2019.png`
   },
   {
     year: "2020",
-    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    tagline: "Won our first customer in Semiconductor industry.",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2020.png`
   },
   {
     year: "2021",
-    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    tagline: "Reached a significant milestone by securing 10 esteemed Fortune 500 customers.",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2021.png`
   },
   {
     year: "2022",
-    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    tagline: "Began our journey in the Rail Transportation industry.",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2022.png`
   },
   {
     year: "2023",
-    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    tagline: "Successfully filed groundbreaking patents in medical software innovations, setting new standards in the industry.",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2023.png`
   },
   {
     year: "2024",
-    tagline: " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro enim quo architecto velit ullam minima ex quasi, exercitationem quia? Ullam non, necessitatibus aperiam quaerat veniam error tempore rerum ipsam.e",
+    tagline: "Launched X1 Platform for Automotive Industry.",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2024.png`
   }
 ]
