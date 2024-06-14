@@ -45,7 +45,7 @@ const medicalCardsData = [{
     "Lighting Systems",
     "Aerostructures"
   ],
-  imageSrc: "Digital.jpg"
+  imageSrc: "Exteriors.png"
 },
 {
   title: "MRO",

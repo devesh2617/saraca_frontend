@@ -38,14 +38,14 @@ const medicalCardsData = [{
   points: [
     "We offer a comprehensive suite of engineering services for land systems, including vehicle maintenance, repair, assembly/disassembly, and inspection. Our expertise in process improvement, quality control/assurance, and manufacturing engineering ensures the reliability and readiness of land-based defense systems."
   ],
-  imageSrc: "Avionics.png"
+  imageSrc: "3.png"
 },
 {
   title: "Small Arms and Ammunition",
   points: [
     "Saraca specializes in the development and integration of ground control systems for unmanned aerial vehicles and drones. Our solutions encompass data analysis, application development, and hybris development to facilitate real-time monitoring, control, and mission management."
   ],
-  imageSrc: "Digital.jpg"
+  imageSrc: "4.png"
 }]
 
 // const DiscoverMoreCardsData = [{
@@ -171,7 +171,7 @@ const Medical = () => {
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-16 mt-24">
           {medicalCardsData.map((data: medicalCardsData, index: number) => {
             return (
-              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/` + data.imageSrc} />
+              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Defense/` + data.imageSrc} />
             )
           })}
         </div>

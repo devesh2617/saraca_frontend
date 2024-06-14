@@ -164,7 +164,7 @@ const Navbar = () => {
     "Innovation": {
       sublinks: [
         { "X1 Platform": { sublinks: [], link: "/Innovation/X1_Platform" } },
-        { "eFleXpine": { sublinks: [], link: "/Innovation/eFleXpine" } },
+        { "eFlexPine": { sublinks: [], link: "/Innovation/eFleXpine" } },
         { "FastPMCF": { sublinks: [], link: "/Innovation/FastPMCF" } },
         // { "QTST": { sublinks: [], link: "/Innovation/QTST" } }
       ], link: "#"

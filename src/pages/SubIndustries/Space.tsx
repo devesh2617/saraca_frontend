@@ -40,7 +40,7 @@ const medicalCardsData = [{
   points: [
     "With a focus on lightweight and high-strength materials, we specialize in carbon and carbon fiber joining techniques, ensuring the integrity and durability of critical components in space missions, from rocket stages to satellite structures."
   ],
-  imageSrc: "Data Science.jpg"
+  imageSrc: "Carbon.jpg"
 },
 {
     title: "Data Science",
@@ -61,7 +61,7 @@ const medicalCardsData = [{
     points: [
       "We spearhead the development of innovative battery and fuel cell technologies tailored to the demands of space missions, ensuring reliable power supply, energy storage, and propulsion for spacecraft and extraterrestrial habitats."
     ],
-    imageSrc: "Battery & Fuel.png"
+    imageSrc: "Battery & Fuel.jpg"
   }]
 
 // const DiscoverMoreCardsData = [{
