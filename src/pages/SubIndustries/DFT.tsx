@@ -173,75 +173,75 @@ const ServiceOfferings = [
     ],
     imageSrc: "Cybersecurity Services.jpg"
   },
-  {
-    title: "Embedded",
-    content: [
-      "New product development",
-      "Low level development – BSP, DD",
-      "Application development",
-      "ADAS",
-      "IOT Systems development"
-    ],
-    imageSrc: "Embedded.png"
-  },
-  {
-    title: "Technical Publications",
-    content: [
-      "Technical illustrations",
-      "Technical Authoring",
-      "Multimedia"
-    ],
-    imageSrc: "Technical Publications.png"
-  },
-  {
-    title: "Manufacturing Engineering",
-    content: [
-      "Concurrent/Process Engineering",
-      "Tools, Jigs and Fixture Designing",
-      "Transfer of Technology (TOT)",
-      "Manufacturing Transfers",
-      "Sourcing Activities",
-      "Assembly Engineering"
-    ],
-    imageSrc: "Manufacturing Engineering.png"
-  },
-  {
-    title: "Mechanical Engineering",
-    content: [
-      "New Product Development",
-      "Value Engineering",
-      "Reverse Engineering",
-      "Finite Element Analysis",
-      "Sustenance Engineering",
-      "Structural Engineering",
-      "Systems Engineering",
-      "Post Launch Follow-up"
-    ],
-    imageSrc: "Mechanical Engineering.jpg"
-  },
-  {
-    title: "Software Engineering",
-    content: [
-      "New product development",
-      "Safety critical software’s",
-      "HMI development",
-      "ATE Application development",
-      "Front and back end development",
-      "Full Stack development"
-    ],
-    imageSrc: "Software Engineering.jpg"
-  },
-  {
-    title: "Quality Engineering",
-    content: [
-      "Product design control",
-      "Supplier quality assurance",
-      "QMS development",
-      "DHF Remediation",
-      "Regulatory assessment"
-    ],
-    imageSrc: "Quality Engineering.jpg"
-  }
+  // {
+  //   title: "Embedded",
+  //   content: [
+  //     "New product development",
+  //     "Low level development – BSP, DD",
+  //     "Application development",
+  //     "ADAS",
+  //     "IOT Systems development"
+  //   ],
+  //   imageSrc: "Embedded.png"
+  // },
+  // {
+  //   title: "Technical Publications",
+  //   content: [
+  //     "Technical illustrations",
+  //     "Technical Authoring",
+  //     "Multimedia"
+  //   ],
+  //   imageSrc: "Technical Publications.png"
+  // },
+  // {
+  //   title: "Manufacturing Engineering",
+  //   content: [
+  //     "Concurrent/Process Engineering",
+  //     "Tools, Jigs and Fixture Designing",
+  //     "Transfer of Technology (TOT)",
+  //     "Manufacturing Transfers",
+  //     "Sourcing Activities",
+  //     "Assembly Engineering"
+  //   ],
+  //   imageSrc: "Manufacturing Engineering.png"
+  // },
+  // {
+  //   title: "Mechanical Engineering",
+  //   content: [
+  //     "New Product Development",
+  //     "Value Engineering",
+  //     "Reverse Engineering",
+  //     "Finite Element Analysis",
+  //     "Sustenance Engineering",
+  //     "Structural Engineering",
+  //     "Systems Engineering",
+  //     "Post Launch Follow-up"
+  //   ],
+  //   imageSrc: "Mechanical Engineering.jpg"
+  // },
+  // {
+  //   title: "Software Engineering",
+  //   content: [
+  //     "New product development",
+  //     "Safety critical software’s",
+  //     "HMI development",
+  //     "ATE Application development",
+  //     "Front and back end development",
+  //     "Full Stack development"
+  //   ],
+  //   imageSrc: "Software Engineering.jpg"
+  // },
+  // {
+  //   title: "Quality Engineering",
+  //   content: [
+  //     "Product design control",
+  //     "Supplier quality assurance",
+  //     "QMS development",
+  //     "DHF Remediation",
+  //     "Regulatory assessment"
+  //   ],
+  //   imageSrc: "Quality Engineering.jpg"
+  // }
 ]
 
 
