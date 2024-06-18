@@ -131,7 +131,7 @@ const cardsData = [
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/image 8.png`,
   },
   {
-    title: "eFlexSpine",
+    title: "eFleXpine",
     heading: "Advancing Precision, Surgeon Well-being & Patient- Centricity in spinal surgery",
     description:
       "A significant stride in spinal surgery, this innovative system is poised to redefine the landscape of treating degenerative disorders, deformities like scoliosis, and trauma indications in the human spine",

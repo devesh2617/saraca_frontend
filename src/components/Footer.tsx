@@ -73,10 +73,10 @@ const Footer = () => {
           name:"Manufacturing",
           link:"/Service/Manufacturing"
         },
-        {
-          name:"TechPub",
-          link:"/Service/TechPub"
-        },
+        // {
+        //   name:"TechPub",
+        //   link:"/Service/TechPub"
+        // },
       ]
   return (
     <div
