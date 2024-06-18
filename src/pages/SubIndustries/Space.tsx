@@ -150,10 +150,13 @@ const Medical = () => {
            From Earth to the Cosmos
         </h1>
         <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        We are highly proficient at working within regulated environments such as those imposed by the U.S. FDA, EU MDR, EU IVDR, ISO13485, 21 CFR Part 820 Quality Management systems along with ISO14971 and IEC62304. Our skills include software development and testing, Embedded Hardware and Firmware, mechanical Design, developing Design Dossiers (DHF/Tech Files), 510(k) applications, CER, PER, STED, UDI implementation, Remediation of Class I, II, and III products, and CAPA Management.
+        At SARACA, we specialize in applied engineering research and development. Our goal is to provide space engineering services that tackle challenging problems. We assist organizations in meeting the demands of space exploration by integrating new space technologies and enhancing production and testing processes.
+        <br />
+        <br />
+        For many years, SARACA has been esteemed as a top innovator in technology and new product research and development.
         </p>
         </div>
-        <div>
+        {/* <div>
         <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
           What We Do
         </h1>
@@ -161,7 +164,7 @@ const Medical = () => {
         We have expertise in implementation of complex new regulations, including the EU MDR and IVDR and creation of CERs and PERs and strong clinical practice supporting EU requirements, providing strategies and turnkey approach to completion of CERs, PERs, and PMS-related deliverables (PSUR, SSCP, PMCF/PMPF plans and reports, PMCF/PMPF surveys).
         has context menu.
         </p>
-        </div>
+        </div> */}
        
       </div>
 
