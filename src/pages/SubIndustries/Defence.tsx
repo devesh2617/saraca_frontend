@@ -23,7 +23,7 @@ const medicalCardsData = [{
   points: [
     "From communications and navigation to monitoring and surveillance systems, we specialize in the development of advanced avionics solutions that enable UAVs to operate effectively in diverse environments. Our expertise also extends to flight control systems, mission computers, and power control systems, ensuring optimal performance and reliability in unmanned aerial operations."
   ],
-  imageSrc: "1.png"
+  imageSrc: "22.jpg"
 },
 
 {
@@ -31,21 +31,21 @@ const medicalCardsData = [{
   points: [
     "Saraca provides engineering services for drones encompassing avionics, exteriors, and digital solutions. Our capabilities include designing and integrating landing gears, doors, hydraulics, lighting systems, and aerostructures to enhance drone performance and functionality."
   ],
-  imageSrc: "2.png"
+  imageSrc: "23.jpg"
 },
 {
   title: "Ground Control Systems",
   points: [
     "We offer a comprehensive suite of engineering services for land systems, including vehicle maintenance, repair, assembly/disassembly, and inspection. Our expertise in process improvement, quality control/assurance, and manufacturing engineering ensures the reliability and readiness of land-based defense systems."
   ],
-  imageSrc: "3.png"
+  imageSrc: "24.jpg"
 },
 {
   title: "Small Arms and Ammunition",
   points: [
     "Saraca specializes in the development and integration of ground control systems for unmanned aerial vehicles and drones. Our solutions encompass data analysis, application development, and hybris development to facilitate real-time monitoring, control, and mission management."
   ],
-  imageSrc: "4.png"
+  imageSrc: "25.jpg"
 }]
 
 // const DiscoverMoreCardsData = [{

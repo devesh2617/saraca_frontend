@@ -385,7 +385,7 @@ const AboutUs = () => {
         <h1 className="mb-24 text-7xl font-semibold text-center">Timeline</h1>
         <div>
           <Swiper
-            slidesPerView={screenSize===null?1:screenSize==="sm"?2:screenSize==="md"?3:3}
+            slidesPerView={screenSize===null?1:screenSize === "sm" ? 1 : screenSize === "md"?2: 3}
             spaceBetween={32}
             autoplay={{ delay: 3000 }}
             navigation={true}
