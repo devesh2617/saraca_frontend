@@ -20,44 +20,52 @@ type medicalCardsData = {
 // }
 
 const medicalCardsData = [{
-  title: "Orthopaedic, Spine, and Trauma",
-  points: [
-    "Joint replacements - Knee, Hips, Ankle implants and instruments",
-    "Spine - Thoracic, Lumber, Cervical, Pedicle Screw Systems, Interbody Devices, 3D printed implants",
-    "Trauma - Plates, Screws, MIS intruments",
-    "Navigation systems - Surgical Robots, Surgery Navigation Software Systems"
-  ],
-  imageSrc: "ortho.png"
+  title: "Cardiovascular Devices",
+  points: [],
+  imageSrc: "Cardiovascular Devices.jpg"
 },
  
 {
-  title: "Cardiovascular and Radiology",
-  points: [
-    "Cardiac Rhythm Management (CRM) - pacemaker and defibrillators",
-    "Patient Monitors Systems",
-    "Heart Valves, and Stents",
-    "Perfusion Packs and Urology",
-    "Heart lungs machine and Oxygenator",
-    "X-ray, MRI, and Ultrasound Systems",
-    "Hospital Beds, Physiotherapy Systems",
-    "Ophthalmic and ENT Products"
-  ],
-  imageSrc: "cardio.png"
+  title: "Ear, Nose, and Throat Devices",
+  points: [],
+  imageSrc: "Ear, Nose, and Throat Devices.jpg"
 },
 {
-  title: "In-vitro Diagnostics",
-  points: [
-    "Transfusion Medicine",
-    "Immunodiagnostic System",
-    "Chemistry System",
-    "Remote Patient Monitoring",
-    "Laboratory Automation & IT",
-    "Point of Care Diagnostics",
-    "Molecular Diagnostics",
-    "Clinical Chemistry"
-  ],
-  imageSrc: "invitro.png"
-}]
+  title: "Neurological Devices",
+  points: [],
+  imageSrc: "Neurological Devices.jpg"
+},
+{
+  title: "Ophthalmic Devices",
+  points: [],
+  imageSrc: "Ophthalmic Devices.jpg"
+},
+{
+  title: "Orthopaedic Devices",
+  points: [],
+  imageSrc: "Orthopaedic Devices.jpg"
+},
+{
+  title: "Radiology Devices",
+  points: [],
+  imageSrc: "Radiology Devices.jpg"
+},
+{
+  title: "Maxillofacial Devices",
+  points: [],
+  imageSrc: "Maxillofacial Devices.jpg"
+},
+{
+  title: "Sterile & non-sterile devices",
+  points: [],
+  imageSrc: "Sterile & non-sterile devices.jpg"
+},
+{
+  title: "In-vitro Diagnostic Devices",
+  points: [],
+  imageSrc: "In-vitro Diagnostic Devices.jpg"
+}
+]
 
 // const DiscoverMoreCardsData = [{
 //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
@@ -75,111 +83,71 @@ const medicalCardsData = [{
 
 const ServiceOfferings = [
   { 
-    title: "Quality Management System",
+    title: "Mechanical Design",
     content: [
-      "Adapt or build a new quality management system",
-      "DHF, RMF, Technical FIle Remediation",
-      "Implementation or upgrade of systems to comply with ISO 13485:2016, FDA 21 CFR 820, and EU MDR",
-      "Outline how to review and improve processes across your organization",
-      "Compliance to ISO 14971, ISO 62304, IEC 60601 4th Edition"
+      "Design of implants, instruments and electro-mechanical equipment",
+      "Design of Orthopaedic, Cardiovascular, In-vitro diagnostic and automated medical systems",
+      "3D part and assembly modelling",
+      "2D drawing development",
+      "GD&T and tolerance stack-up",
+      "Structural, Thermal and CFD analysis for Medical Devices",
+      "Prototyping"
     ],
-    imageSrc:"Quality Management System.jpg"
+    imageSrc: "Mechanical Design.jpg"
   },
   {
-    title: "Design Quality Services",
+    title: "Electronics Design",
     content: [
-      "Identification of critical characteristics in the design",
-      "Train and provide clarification on QMS to the engineering and manufacturing team",
-      "Responsibility in completing a risk assessment and FMEA",
-      "Development of Measurement System Analysis (MSA) for the best inspection ",
-      "methodology",
-      "Traceability Matrix",
-      "Risk Management File (RMF)",
-      "Design Input/Output and Design Transfer"
+      "Electronics design for medical device applications",
+      "Analog and digital design",
+      "Microcontroller and Microprocessor based design",
+      "SOC/SOM, IOT & Sensor based medical device design",
+      "USB, Ethernet, CAN, Bluetooth, Wi-fi, UART, I2C",
+      "Multilayer PCB design & development",
+      "RoHS, REACH and EMI/EMC Compliance support",
+      "Prototyping"
     ],
-    imageSrc:"Design Quality Services.jpg"
-
+    imageSrc: "Electronics Design.jpg"
   },
   {
-    title: "Supplier Quality Services",
+    title: "Embedded Software",
     content: [
-      "Responsible for Supplier Corrective Action Reports (SCAR)",
-      "Improve supplier-related metrics including on-time delivery and better FPY",
-      "Execute processes like 8D and root cause analysis",
-      "Ensure proper documentation including pFMEA, risk analysis, and process capability",
-      "Perform periodic supplier audits",
-      "Notified Body(NB) Audits",
-      "Coordinate between R&D and Supplier",
-      "Supplier Validation Processes "
+      "MCU/MPU: Renesas, NXP, STM, Infineon, Nvidia, Cypress, Qualcomm, Intel",
+      "OS: MICROSAR, Linux, QNX, OSEK, VX works, FreeRTOS, Green Hills",
+      "Protocols: J1939, CAN-FD, LIN, UDS, MOST, Flexray, BLE, Ethernet, Automotive Ethernet, MODBUS, LVDS",
+      "Languages: Embedded C, C++, Python, JAVA, Dart",
+      "Standards: ISO 62304, IATF 16949, ASPICE, MISRA-C",
+      "Driver Development: I/O, CAN, LIN, BLE, Crypto drivers, NVM, DMA, Sensors – Temperature, Pressure, Level, Proximity, J1939, Ethernet"
     ],
-    imageSrc:"Supplier Quality Services.jpg"
+    imageSrc: "Embedded Software.jpg"
   },
   {
-    title: "Global Regulatory Strategy Services",
+    title: "Quality Assurance",
     content: [
-      "Global Regulatory assessment, planning, and strategy",
-      "Traditional and special 510(k), Pre-Market Approval (PMA) preparation and submission",
-      "Design Dossier preparation",
-      "FDA, Notified Body, and ISO 13485 registrar audit preparation and participation",
-      "Supplier and Internal Audits",
-      "Design Controls implementation and completion of Design History Files",
-      "Clinical Evaluation Reports",
-      "Medical Device Reporting and Vigilance Reporting",
-      "Labeling and Instructions for Use",
-      "Promotional literature assessments including surgical techniques, brochures, and websites",
-      "Remediation resulting in audits or inspections",
-      "Training and Mentoring",
-      "Due Diligence and Integration Planning"
+      "Adapt or build a new quality management system to comply with ISO 13485, FDA 21 CFR 820, and EU MDR",
+      "Risk Management per ISO 14971",
+      "Gap analysis & Remediation of DHF, Technical File and Risk Management File",
+      "Compliance to ISO 62304, IEC 60601 for Medical Software Development and Electrical safety",
+      "Post-Market Quality support – NC, CAPA, Complaint handling etc.",
+      "Verification & Validation support",
+      "Manufacturing Process development and design transfer support",
+      "Supplier and Internal Audits"
     ],
-    imageSrc:"Global Regulatory Strategy Services.jpg"
+    imageSrc: "Quality Assurance.jpg"
   },
   {
-    title: "MDR/IVDR Tech Files Services",
+    title: "Clinical Evaluation Report (CER)",
     content: [
-      "Summary technical documentation (STED) files as per EU IVDR (2017/746) and EU MDR (2017/745), Manufacturer’s Incident Reports (MIR), and field safety actions and notices, and device-specific vigilance reporting per MEDDEV 2.12-1 rev. 8",
-      "Notified Body selection",
-      "Labeling and Instructions for Use",
-      "Medical Device Reporting and Vigilance Reporting",
-      "Manage compliance strategy and risks",
-      "Develop and sustain a competitive advantage",
-      "Protect your brand",
-      "Our consultants can temporarily be an extension of your team to manage regulatory compliance issues",
-      "Minimize business impacts such as loss of sales, product recall, and obsolete inventory",
-      "Support reporting incidents and field actions",
-      "Summary of Post Market Surveillance"
+      "Clinical Evaluation Plan",
+      "Literature Search",
+      "Clinical background, Current knowledge and State of the Art",
+      "Integrating PMS data",
+      "Integrating Risk management data",
+      "Benefit risk analysis",
+      "Compilation and conclusion of CER",
+      "Support until document approval by notified body"
     ],
-    imageSrc:"MDRIVDR Tech Files Services.jpg"
-  },
-  {
-    title: "CER and PER Services",
-    content: [
-      "Clinical Evaluation Reports and Literature Reviews per MEDDEV 2.7.1 revision",
-      "MAUDE search and analysis",
-      "State of art development",
-      "IVDR Gap Assessment",
-      "Risk and benefit analysis",
-      "Expertise in PubMed, Embase, Google Scholar, and other popular databases",
-      "Performance Evaluation Report (PER) Article 56 of the IVDR with focus on all three elements: scientific validity, analytical performance, and clinical performance",
-      "Extensive experience in various segments including Pathology, Chemistry and Immunodiagnostics, Transfusion Medicine",
-      "Technical writing of clinical documents like Analytical Performance reports, Clinical Performance reports, and Scientific Validity reports"
-    ],
-    imageSrc:"CER and PER Services.jpg"
-  },
-  {
-    title: "Post Market Clinical Follow-up (PMCF)",
-    content: [
-      "PMCF Plan per EU MDR",
-      "PMCF Survey Plan development",
-      "Development of questionnaires",
-      "Scoping of the survey",
-      "Determine suitable endpoints",
-      "Delivery of electronic survey using the proprietary tool - FastPMCF™",
-      "Determine feasibility of survey execution",
-      "Sample size calculations and statistical justification",
-      "Assist in communication with Notified Body",
-      "Data analysis and reporting"
-    ],
-    imageSrc:"Post Market Clinical Follow-up (PMCF).jpg"
+    imageSrc: "Clinical Evaluation Report.jpg"
   },
   {
     title: "Performance Evaluation Report (PER)",
@@ -193,62 +161,72 @@ const ServiceOfferings = [
       "IVDR Readiness Audits and Mock Audits",
       "Gap Assessments in the existing PER"
     ],
-    imageSrc:"Performance Evaluation Report (PER).jpg"
-  },
-  {
-    title: "EU IVDR",
-    content: [
-      "Regulatory strategy to transition to IVDR",
-      "Gap analysis of the IVDR GSPR compliance",
-      "Compilation of the technical file / STED",
-      "Scientific Validity Reports",
-      "Clinical Performance Reports",
-      "Performance Evaluation Reports",
-      "Writing/revising other documents such as package insert/IFU",
-      "Quick Reference Instructions (QRI) and operation/user manual",
-      "Post Market Performance Follow up (PMPF) protocols and Reports",
-      "Post Market Surveillance (PMSR) Protocols and Reports",
-      "Vigilance Reporting as per Article 82 of the IVDR"
-    ],
-    imageSrc:"EU IVDR.jpg"
-  },
-  {
-    title: "EU MDR",
-    content: [
-    "EU MDR - GAP Assessment",
-    "CE Certification Strategy",
-    "Notified Body support",
-    "Virtual MDR training",
-    "Identifying the submission process in Europe",
-    "Clinical Evaluation Report (CER)",
-    "Post Market Clinical Follow-up (PMCF)",
-    "Summary Technical Documentation (STED) creation and development",
-    ],
-    imageSrc:"EU IVDR.jpg"
+    imageSrc: "Performance Evaluation Report.jpg"
   },
   {
     title: "Post Market Surveillance",
     content: [
-      "Complaint Handling: Complaint Review",
-      "Complaint Investigation",
-      "Determination of CAPA if needed",
-      "Root-Cause Analysis",
-      "Response to Complaint",
-      "Complaint Closure",
-      "Adverse Event Reporting: Vigilance Reporting",
-      "Trend Reporting",
-      "Field safety corrective actions",
-      "Field safety notice",
-      "CAPA: Problem Identification",
-      "Root Cause Analysis",
-      "Corrective and Preventive Action Plan",
-      "Verification of Implementation",
-      "Closure"
+      "Complaint Handling: Complaint Review, Complaint Investigation, Determination of CAPA if needed, Root-Cause Analysis, Response to Complaint, Complaint Closure",
+      "Adverse Event Reporting: Vigilance Search & Reporting, Trend Reporting, Field safety corrective actions, Field safety notice",
+      "CAPA: Problem Identification, Root Cause Analysis, Corrective and Preventive Action Plan, Verification of Implementation, Closure"
     ],
-    imageSrc:"Post Market Surveillance.jpg"
+    imageSrc: "Post Market Surveillance.jpg"
+  },
+  {
+    title: "Software Quality Assurance",
+    content: [
+      "Quality support for Software (NPD) DHF documentation per IEC 62304",
+      "Software Risk Assessment",
+      "Quality support for Software V&V",
+      "Documentation preparation and review",
+      "Quality support throughout phase gate process"
+    ],
+    imageSrc: "Software Quality Assurance.jpg"
+  },
+  {
+    title: "Regulatory Affairs Consulting",
+    content: [
+      "Global Regulatory assessment, planning, and strategy",
+      "Traditional and special 510(k), Pre-Market Approval (PMA) preparation and submission",
+      "Medical Device Reporting and Vigilance Reporting",
+      "Labelling and Instructions for Use",
+      "Remediation resulting in audits or inspections"
+    ],
+    imageSrc: "Regulatory Affairs Consulting.jpg"
+  },
+  {
+    title: "EU MDR & EU IVDR",
+    content: [
+      "MDD to MDR Gap Assessment and transition",
+      "Device Classification per EU MDR",
+      "Development & remediation of STED",
+      "GSPR Compliance",
+      "Clinical Evaluation Report (CER)",
+      "Post Market Clinical Follow-up (PMCF)",
+      "Periodic Safety Update Report (PSUR)",
+      "Summary of Safety and Clinical Performance (SSCP)",
+      "Vigilance search & reporting"
+    ],
+    imageSrc: "EU MDR & IVDR.jpg"
+  },
+  {
+    title: "EU IVDR",
+    content: [
+      "IVDD to IVDR Gap Assessment and transition",
+      "Development & remediation of STED",
+      "GSPR Compliance",
+      "Scientific Validity Reports",
+      "Clinical Performance Reports",
+      "Performance Evaluation Reports (PERs)",
+      "Post Market Performance Follow up (PMPF)",
+      "Post Market Surveillance (PMS) Protocols and Reports",
+      "Vigilance Reporting as per Article 82 of the IVDR",
+      "Package insert/IFU"
+    ],
+    imageSrc: "EU IVDR.jpg"
   }
+];
 
-]
 const Medical = () => {
 
   // const [selectedServicesOffering, setSelectedServicesOffering] = useState<ServicesOfferingsData | null>(null)
@@ -271,7 +249,10 @@ const Medical = () => {
           Medical Device Technologies
         </h1>
         <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        We are highly proficient at working within regulated environments such as those imposed by the U.S. FDA, EU MDR, EU IVDR, ISO13485, 21 CFR Part 820 Quality Management systems along with ISO14971 and IEC62304. Our skills include software development and testing, Embedded Hardware and Firmware, mechanical Design, developing Design Dossiers (DHF/Tech Files), 510(k) applications, CER, PER, STED, UDI implementation, Remediation of Class I, II, and III products, and CAPA Management.
+        Medical Device Industry is going through a major shift in terms of technology advancement with the adoption of Software Technologies in the devices and frequent changes in global regulations and international standards.
+        <br />
+        <br />
+We, at Saraca Solutions, have always been advancing along with industry trends and have evolved with resolving the challenges being faced by the industry.
         </p>
         </div>
         <div>
@@ -279,8 +260,7 @@ const Medical = () => {
           What We Do
         </h1>
         <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        We have expertise in implementation of complex new regulations, including the EU MDR and IVDR and creation of CERs and PERs and strong clinical practice supporting EU requirements, providing strategies and turnkey approach to completion of CERs, PERs, and PMS-related deliverables (PSUR, SSCP, PMCF/PMPF plans and reports, PMCF/PMPF surveys).
-        has context menu.
+        We bring a unique value to our medical device customers with integrated capabilities in Product engineering as well as Quality Assurance, Regulatory & Clinical Affairs. Our engineering capabilities span across mechanical design, electronics design & embedded software with an experience across several therapeutic areas.
         </p>
         </div>
        
