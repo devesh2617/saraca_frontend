@@ -128,7 +128,8 @@ const cardsData = [
     description:
       "Elevating automotive excellence with AGL: Powered instrument cluster, infotainment, and telematics system",
     link: "/Innovation/X1_Platform",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/image 8.png`,
+    type: "embedded",
+    imageSrc: `https://www.youtube.com/embed/k0TpoaiZGb0?si=brztd2wseyrUgIWf`,
   },
   {
     title: "eFleXpine",
@@ -136,13 +137,15 @@ const cardsData = [
     description:
       "A significant stride in spinal surgery, this innovative system is poised to redefine the landscape of treating degenerative disorders, deformities like scoliosis, and trauma indications in the human spine",
     link: "/Innovation/eFleXpine",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/image 6.png`,
+    type: "embedded",
+    imageSrc: `https://www.youtube.com/embed/2xSn3Ws44bw?si=IskOUblfe7yO9gDA`,
   },
   {
     title: "FastPMCF",
     heading: "Accelerating Insights, Elevating Excellence",
     description:"Transforming PMCF surveys for swift clinical evidence feedback",
     link: "/Innovation/FastPMCF",
+    type: "image",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/image 5.png`,
   },
 ];
