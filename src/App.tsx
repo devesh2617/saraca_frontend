@@ -206,7 +206,7 @@ function App() {
             <Route path="/Industry/Automotive/TruckandBuses" element={<TruckBuses />} />
             <Route path="/Industry/Automotive/OffHighwayVehicles" element={<OffHighwayVehicle />} />
             <Route path="/Industry/Semiconductor" element={<Semiconductor />} />
-            <Route path="/Industry/Semiconductor/ASICFPGADesignDevelopment" element={<DesignDevelopment />} />
+            <Route path="/Industry/Semiconductor/ASIC_FPGA_Design&Development" element={<DesignDevelopment />} />
             <Route path="/Industry/Semiconductor/Verification&Validation" element={<VerificationValidation />} />
             <Route path="/Industry/Semiconductor/PhysicalDesign" element={<PhysicalDesign />} />
             <Route path="/Industry/Semiconductor/DFT" element={<DFT />} />

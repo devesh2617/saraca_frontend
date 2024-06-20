@@ -54,7 +54,7 @@ const Navbar = () => {
         {
           "Semiconductor": {
             sublinks: [
-              { name: "ASIC/FPGA Design & Development", link: "/Industry/Semiconductor/ASICFPGADesignDevelopment" },
+              { name: "ASIC/FPGA Design & Development", link: "/Industry/Semiconductor/ASIC_FPGA_Design&Development" },
               // { name: "V&V", link: "/Industry/Semiconductor/Verification&Validation" },
               { name: "Physical Design", link: "/Industry/Semiconductor/PhysicalDesign" },
               { name: "DFT", link: "/Industry/Semiconductor/DFT" }

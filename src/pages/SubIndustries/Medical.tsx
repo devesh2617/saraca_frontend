@@ -93,7 +93,7 @@ const ServiceOfferings = [
       "Structural, Thermal and CFD analysis for Medical Devices",
       "Prototyping"
     ],
-    imageSrc: "Mechanical Design.jpg"
+    imageSrc: "40.jpg"
   },
   {
     title: "Electronics Design",
@@ -107,7 +107,7 @@ const ServiceOfferings = [
       "RoHS, REACH and EMI/EMC Compliance support",
       "Prototyping"
     ],
-    imageSrc: "Electronics Design.jpg"
+    imageSrc: "41.jpg"
   },
   {
     title: "Embedded Software",
@@ -119,7 +119,7 @@ const ServiceOfferings = [
       "Standards: ISO 62304, IATF 16949, ASPICE, MISRA-C",
       "Driver Development: I/O, CAN, LIN, BLE, Crypto drivers, NVM, DMA, Sensors – Temperature, Pressure, Level, Proximity, J1939, Ethernet"
     ],
-    imageSrc: "Embedded Software.jpg"
+    imageSrc: "42.jpg"
   },
   {
     title: "Quality Assurance",
@@ -133,7 +133,7 @@ const ServiceOfferings = [
       "Manufacturing Process development and design transfer support",
       "Supplier and Internal Audits"
     ],
-    imageSrc: "Quality Assurance.jpg"
+    imageSrc: "43.jpg"
   },
   {
     title: "Clinical Evaluation Report (CER)",
@@ -147,7 +147,7 @@ const ServiceOfferings = [
       "Compilation and conclusion of CER",
       "Support until document approval by notified body"
     ],
-    imageSrc: "Clinical Evaluation Report.jpg"
+    imageSrc: "44.jpg"
   },
   {
     title: "Performance Evaluation Report (PER)",
@@ -161,7 +161,7 @@ const ServiceOfferings = [
       "IVDR Readiness Audits and Mock Audits",
       "Gap Assessments in the existing PER"
     ],
-    imageSrc: "Performance Evaluation Report.jpg"
+    imageSrc: "45.jpg"
   },
   {
     title: "Post Market Surveillance",
@@ -181,7 +181,7 @@ const ServiceOfferings = [
       "Documentation preparation and review",
       "Quality support throughout phase gate process"
     ],
-    imageSrc: "Software Quality Assurance.jpg"
+    imageSrc: "46.jpg"
   },
   {
     title: "Regulatory Affairs Consulting",
@@ -192,7 +192,7 @@ const ServiceOfferings = [
       "Labelling and Instructions for Use",
       "Remediation resulting in audits or inspections"
     ],
-    imageSrc: "Regulatory Affairs Consulting.jpg"
+    imageSrc: "47.jpg"
   },
   {
     title: "EU MDR & EU IVDR",
@@ -207,7 +207,7 @@ const ServiceOfferings = [
       "Summary of Safety and Clinical Performance (SSCP)",
       "Vigilance search & reporting"
     ],
-    imageSrc: "EU MDR & IVDR.jpg"
+    imageSrc: "EU IVDR.jpg"
   },
   {
     title: "EU IVDR",

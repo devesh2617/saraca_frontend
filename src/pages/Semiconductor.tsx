@@ -47,7 +47,7 @@ const ServiceOfferings = [
 const medicalCardsData = [{
   title: "ASIC/FPGA Design & Development",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/ASIC.jpg`,
-  link: "/Industry/Semiconductor/ASICFPGADesignDevelopment"
+  link: "/Industry/Semiconductor/ASIC_FPGA_Design&Development"
 },
 
 // {
