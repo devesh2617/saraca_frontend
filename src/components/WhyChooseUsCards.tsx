@@ -12,10 +12,9 @@ const WhyChooseUsCards:FC<whyChooseUsCardsData> = ({data, cardPosition, index}) 
   
 //   console.log(backgroundCode)
   return (
-    <div className={`w-[15rem] aspect-square flex overflow-hidden flex-col background_${index+1} text_${index+1} gap-2 p-4 ${cardPosition==="odd"? `border-t-4 border_${index+1}`: `border-b-4 border_${index+1}`}`}>
-    <img src={data.imageSrc} alt="image" className="w-[10rem] aspect-square rounded-full mx-auto object-cover"/>
-    <h1 className={`text-xl font-semibold text-center`}>{data.title}</h1>
-    <div className="text-sm w-full break-words">{data.content}</div>
+    <div className={`w-full flex flex-col gap-6 p-6 bg-white bg-opacity-30 backdrop-blur-lg rounded-lg shadow-xl ring-1 ring-white/40 shadow-white/20`}>
+    <img src={data.imageSrc} alt="image" className="w-full aspect-square object-cover"/>
+    <p className={`text-4xl text-center font-bold uppercase text-black`}>{data.title}</p>
     </div>
   )
 }

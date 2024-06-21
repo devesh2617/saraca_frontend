@@ -13,22 +13,22 @@ type whyChooseUsCardsData = {
 }
 const whyChooseUsCardsData = [
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/1.svg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/51.png`,
     title: "Strategy",
     content: "",
   },
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/2.svg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/52.png`,
     title: "Customer Satisfaction",
     content: "",
   },
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/3.svg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/53.png`,
     title: "Flexibility",
     content: "",
   },
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/4.svg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/54.png`,
     title: "Speed",
     content: "",
   },
@@ -306,11 +306,14 @@ const Home = () => {
           />
         ))}
       </div>
-      <div aria-label="Why Choose Us" className="container lg:py-24 py-8">
-      <h1 className="text-5xl text-gray-600 font-semibold container mx-auto">
+      <div aria-label="Why Choose Us" className="lg:py-24 py-8 bg-gradient-to-tl from-black to-blue-950 bg-cover"
+      style={{background:`url(${import.meta.env.VITE_REACT_APP_API_URL}/whychooseus.jpg)`}}
+      >
+      <div className="container">
+      <h1 className="text-7xl text-white font-semibold">
           Why Choose Us ?
         </h1>
-        <div className="grid grid-cols-2 mt-24 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center">
+        <div className="grid grid-cols-2 lg:mt-24 mt-8 md:grid-cols-3 lg:grid-cols-4 gap-12 place-content-stretch">
           {whyChooseUsCardsData.map((data:whyChooseUsCardsData, index:number)=> {
             return (
               <WhyChooseUsCards data={data} cardPosition={index%2 === 0?'odd': 'even'} index={index}/>
@@ -318,6 +321,8 @@ const Home = () => {
           })}
         </div>
       </div>
+      </div>
+      
       <div className="bg-gradient-to-r from-cyan-950 to-cyan-700">
         <h1 className="md:text-8xl text-5xl text-white text-center font-semibold pt-16">
           Client Testimonials
