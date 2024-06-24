@@ -81,10 +81,10 @@ const DiscoverMoreCardsData = [{
 const Industry = () => {
   return (
     <div>
-      <div aria-label='landing-image' className="h-[100vh] w-full relative">
+      <div aria-label='landing-image' className="aspect-video w-full relative">
       <div
               aria-label="overlay-container"
-              className="bg-gradient-to-r from-transparent to-black absolute z-[1] w-full h-[100vh]"
+              className="bg-gradient-to-r from-transparent to-black absolute z-[1] w-full inset-0"
             >
               <div className="md:w-1/2 h-full flex justify-start items-center p-24 float-right">
                 <div aria-label="content" className="md:text-right">

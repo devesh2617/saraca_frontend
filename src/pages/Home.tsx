@@ -66,7 +66,6 @@ const mediaArray = [
       "Addressing technology challenges in unmanned aerial systems, SARACA leverages its deep domain knowledge in aerospace engineering. The skilled workforce excels in digital technologies, solving critical problems in aerospace, Défense, and space product development. Through a Design Thinking process, OEMs and suppliers can expedite design cycles, improve safety and efficiency, boost profit margins, and transition into a future-ready organization.",
     link: "/Industry/Aerospace&Defense",
   },
-  
   {
     type: "image",
     name: "MedicalDevices.png",
@@ -108,8 +107,7 @@ const mediaArray = [
   //   heading: "A.I.",
   //   subheading:"AI Revolution: Transforming Business with Intelligence. Unleash Growth, Resilience, and Seamless Human-AI Collaboration. Elevate Experiences, Drive Efficiency – Powering Tomorrow's Success.",
   //   link: "",
-  // },
-  
+  // },  
 ];
 
 
@@ -296,7 +294,7 @@ const Home = () => {
       </Carousel>
      
       <div aria-label="stories" className="my-12 flex flex-col gap-8">
-        <h1 className="text-5xl md:text-8xl text-black text-center mt-8 font-semibold">
+        <h1 className="text-5xl md:text-8xl text-black text-center mt-12 font-semibold">
           Let's Do Engineering
         </h1>
         {cardsData.map((data: object, index: number) => (

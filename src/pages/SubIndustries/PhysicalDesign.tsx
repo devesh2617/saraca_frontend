@@ -120,10 +120,10 @@ const Medical = () => {
   // }
   return (
     <div>
-      <div aria-label='landing-image' className="h-[100vh] w-full relative">
+      <div aria-label='landing-image' className=" aspect-video w-full relative">
       <div
               aria-label="overlay-container"
-              className="bg-gradient-to-r from-black to-transparent absolute z-[1] w-full h-[100vh]"
+              className="bg-gradient-to-r from-black to-transparent absolute z-[1] inset-0"
             >
               <div className="md:w-1/2 h-full flex justify-start items-center p-24">
                 <div aria-label="content" className="md:text-left">
@@ -181,7 +181,7 @@ const Medical = () => {
        
       </div>
 
-      <div aria-label="medical-device-segments" className="min-h-[100vh] w-full bg-gradient-to-r from-cyan-950 to-cyan-700 py-24">
+      <div aria-label="medical-device-segments" className="min-h-[10vh] w-full bg-gradient-to-r from-cyan-950 to-cyan-700 py-24">
         <h1 className="text-white text-6xl text-center font-semibold">Physical Design Segments</h1>
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-16 mt-24">
           {medicalCardsData.map((data: medicalCardsData, index: number) => {

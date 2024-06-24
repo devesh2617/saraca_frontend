@@ -235,9 +235,9 @@ const Medical = () => {
   // }
   return (
     <div>
-      <div aria-label='landing-image' className="h-[100vh] w-full relative">
+      <div aria-label='landing-image' className=" aspect-video w-full relative">
         <div className="absolute z-[1] w-full h-full">
-          <div className="h-full absolute w-full left-0 text-9xl text-white flex justify-center items-center p-36 font-semibold text-center">Improving lives through medical technology</div>
+          <div className="h-full absolute w-full left-0 lg:text-9xl md:text-5xl text-2xl text-white flex justify-center items-center p-36 font-semibold text-center">Improving lives through medical technology</div>
         </div>
         
         <img className="h-full w-full object-cover brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/MedicalDevices/Landing.png`} />

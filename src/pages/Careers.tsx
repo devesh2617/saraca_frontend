@@ -197,10 +197,10 @@ const AboutUs = () => {
   }, [])
   return (
     <div>
-      <div aria-label='landing-image' className="h-[100vh] w-full relative">
+      <div aria-label='landing-image' className="w-full aspect-video relative">
         <div
           aria-label="overlay-container"
-          className="bg-gradient-to-r from-black to-transparent absolute z-[1] w-full h-[100vh]"
+          className="bg-gradient-to-r from-black to-transparent absolute z-[1] inset-0"
         >
           <div className="md:w-2/3 h-full flex justify-start items-center p-24">
             <div aria-label="content" className="md:text-left">
@@ -210,7 +210,7 @@ const AboutUs = () => {
               <p className="text-white text-3xl mt-16 w-full hidden lg:block leading-normal">
                 Build a Future with SARACA
               </p>
-              <button className="mt-24 bg-white text-black text-lg lg:text-3xl py-4 px-8 flex items-center gap-4 rounded-xl animate-bounce" onClick={()=>document.getElementById("regions")?.scrollIntoView({behavior:"smooth"})}>
+              <button className="lg:mt-24 md:mt-16 mt-8 bg-white text-black text-lg lg:text-3xl py-4 px-8 flex items-center gap-4 rounded-xl animate-bounce" onClick={()=>document.getElementById("regions")?.scrollIntoView({behavior:"smooth"})}>
                 Apply now <ArrowRight />
               </button>
             </div>

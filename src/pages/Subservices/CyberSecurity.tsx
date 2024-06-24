@@ -140,10 +140,10 @@ const Industry = () => {
 
     return (
         <div>
-            <div aria-label='landing-image' className="h-[100vh] w-full relative">
+            <div aria-label='landing-image' className=" aspect-video w-full relative">
                 <div
                     aria-label="overlay-container"
-                    className="from-black to-transparent absolute z-[1] w-full h-[100vh]"
+                    className="from-black to-transparent absolute z-[1] inset-0"
                 >
                     <div className="md:w-2/3 h-full flex justify-start items-center p-24">
                         <div aria-label="content" className="md:text-left">

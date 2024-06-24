@@ -124,9 +124,9 @@ const Medical = () => {
   // }
   return (
     <div>
-      <div aria-label='landing-image' className="h-[100vh] w-full relative">
+      <div aria-label='landing-image' className="aspect-video w-full relative">
         <div className="absolute z-[1] w-full h-full">
-          <div className="h-full absolute w-full lg:w-2/3 text-left left-0 lg:text-9xl md:text-4xl text-2xl  bg-gradient-to-r from-black to-transparent text-white flex justify-center items-center pl-36 font-semibold">Catalyzing Discovery: Engineering the Essence of Pharmaceuticals!</div>
+          <div className="h-full absolute w-full lg:w-2/3 text-left left-0 lg:text-9xl md:text-4xl text-2xl  bg-gradient-to-r from-black to-transparent text-white flex justify-center items-center p-36 font-semibold">Catalyzing Discovery: Engineering the Essence of Pharmaceuticals!</div>
         </div>
 
         <img

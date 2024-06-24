@@ -134,17 +134,17 @@ const Industry = () => {
 
     return (
         <div>
-            <div aria-label='landing-image' className="h-[100vh] w-full relative">
+            <div aria-label='landing-image' className=" aspect-video w-full relative">
                 <div
                     aria-label="overlay-container"
-                    className=" from-black to-transparent absolute z-[1] w-full h-[100vh]"
+                    className=" from-black to-transparent absolute z-[1] inset-0"
                 >
-                    <div className="md:w-full h-full flex justify-center items-center p-24">
-                        <div aria-label="content" className="md:text-left">
-                            <h1 className="text-white text-4xl md:text-7xl lg:text-9xl font-semibold text-center">
+                    <div className="w-full h-full flex justify-center items-center p-36 bg-gradient-to-l from-black to-transparent">
+                        <div aria-label="content" className="text-right w-full">
+                            <h1 className="text-white text-4xl md:text-7xl lg:text-9xl font-semibold text-right">
                                 CAD/CAE/CFD/CAM
                             </h1>
-                            <p className="text-white text-3xl mt-16 w-full text-center hidden lg:block leading-normal">
+                            <p className="text-white text-3xl mt-16 w-full text-right hidden lg:block leading-normal">
                             Empowering Mechanical Innovations with Advanced Engineering
                             </p>
 
