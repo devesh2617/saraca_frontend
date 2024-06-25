@@ -79,10 +79,10 @@ const Footer = () => {
     // },
   ]
   return (
-    <div aria-label="footer">
+    <div aria-label="footer" className="mt-auto">
       <div
         aria-label="regular-footer"
-        className={`max-w-full text-sky-200 min-h-[35vh] bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/footer.webp')] bg-cover mx-auto flex flex-col lg:flex-row mt-auto leading-relaxed bg-black`}
+        className={`max-w-full text-sky-200 min-h-[35vh] bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/footer.webp')] bg-cover mx-auto flex flex-col lg:flex-row leading-relaxed bg-black`}
         style={{ backgroundImage: `url('${import.meta.env.VITE_REACT_APP_API_URL}/footer.jpg')` }}
       >
         <div className="flex-1 text-center p-8 ">
