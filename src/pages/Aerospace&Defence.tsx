@@ -15,34 +15,31 @@ type DiscoverMoreCardsData = {
 const ServiceOfferings = [
   {
     heading: "Engineering Services",
-    description:
-      "  We offer end-to-end product design and development services, from concept generation to prototyping and manufacturing support. Our iterative approach ensures that your product not only meets regulatory standards but also exceeds user expectations.",
+    content:["Mechanical Engineering","Electrical Engineering","Systems Engineering","Aerospace Structural Analysis","Aerodynamics and Fluid Dynamics"],
     link: "",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Engineering.svg`,
   },
   {
     heading: "Research & Development",
-    description:
-      "Through advanced process modeling, simulation, and optimization techniques, we help streamline manufacturing processes, enhance efficiency, and reduce costs without compromising quality or compliance.",
+    content:["Advanced Materials Research","Sensor Technology Development","Autonomous Systems","Satellite Communications","Space Exploration Technologies"],
     link: "",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/R&D.svg`,
   },
   {
     heading: "Digital Solutions",
-    description:
-      "Navigating the regulatory landscape can be daunting. Our team is well-versed in regulatory requirements and standards, ensuring that your products and processes meet the rigorous demands of regulatory agencies worldwide.",
+    content:["Data Analytics and Visualization","Cybersecurity Solutions","Cloud Computing","Internet of Things (IoT) Integration","Artificial Intelligence and Machine Learning"],
     link: "",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/digital.svg`,
   },
   {
     heading: "Tech Pub",
-    description:" Quality is paramount in the life science industry. We provide comprehensive quality assurance and validation services to ensure that your products and processes adhere to the highest standards of reliability, safety, and efficacy.",
+    content:["Technical illustrations", "Technical Authoring", "Multimedia"],
     link: "",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Tech Pub.png`,
   },
 {
   heading: "Consulting",
-  description:"Whether you're facing technical challenges or seeking strategic guidance, our team is here to help. We offer expert technical consulting services tailored to your unique needs, providing insights and solutions that drive innovation and growth.",
+  content:["Strategic Planning","Regulatory Compliance","Market Analysis","Supply Chain Management","Risk Assessment and Mitigation"],
   link: "",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Consultng.svg`,
 }

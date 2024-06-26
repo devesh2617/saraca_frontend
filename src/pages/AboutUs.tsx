@@ -133,7 +133,7 @@ const TimeLineCards: TimeLineCards[] = [
   },
   {
     year: "2016",
-    tagline: "",
+    tagline: "Successfully achieved medical device certificate of design and development ",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2016.png`
   },
   {
@@ -143,7 +143,7 @@ const TimeLineCards: TimeLineCards[] = [
   },
   {
     year: "2018",
-    tagline: "",
+    tagline: "Won our first Fortune 500 customer of Aerospace & Defence Industry",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2018.png`
   },
   {
