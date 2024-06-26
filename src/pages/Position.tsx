@@ -281,7 +281,7 @@ export default function PositionPage() {
       <p className="text-2xl mb-4 flex items-center"><strong>Job ID:</strong>&nbsp;{position?.jobId}</p>
       <p className="text-2xl mb-4"><strong>Function:</strong> {position?.function}</p>
       <p className="text-2xl mb-4"><strong>Role:</strong> {position?.role}</p>
-      <p className="text-2xl mb-4 flex gap-1"><strong>Desired Skills:</strong> <div className="flex flex-wrap gap-1">{position?.desiredSkills?.split(",").map(i => <Badge className=" bg-slate-500">{i}</Badge>)}</div></p>
+      <p className="text-2xl mb-4 flex gap-1"><strong>Desired Skills:</strong> <div className="flex flex-wrap gap-1">{position?.desiredSkills?.split(",").map(i => <Badge className=" bg-slate-500 text-2xl font-light">{i}</Badge>)}</div></p>
       <p className="text-2xl mb-4"><strong>Desired Qualification:</strong> {position?.desiredQualification}</p>
       <p className="text-2xl mb-4"><strong>Desired Experience:</strong> {position?.desiredExperience}</p>
 
