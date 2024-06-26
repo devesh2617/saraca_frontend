@@ -286,8 +286,8 @@ const AboutUs = () => {
           <p className="text-xl mt-4">
             Leaders instill in their people a hope for success and a belief in themselves.
           </p>
-          <div className="my-12 bg-background py-6 px-12 flex flex-col lg:flex-row rounded-md border-b-4 border-blue-400 gap-12">
-            <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Kuldeep.png`} alt="" className="rounded-full w-52 aspect-square object-cover" />
+          <div className="my-12 bg-background py-6 px-12 flex flex-col lg:flex-row lg:items-stretch rounded-md border-b-4 border-blue-400 gap-12">
+            <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Kuldeep.png`} alt="" className="rounded-full w-96 h-96 object-cover" />
             <div className="flex-1 flex flex-col">
               <h1 className=" text-4xl font-semibold text-sky-700">
                 KULDEEP TYAGI
