@@ -130,7 +130,7 @@ export default function PositionPage() {
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-4">
         <div>
           <h1 className="text-5xl font-bold">{position?.title}</h1>
-          <p className="text-lg mb-8 flex items-center text-gray-600"><MapPin /> {position?.location}</p>
+          <p className="mb-8 flex items-end text-gray-600 text-2xl"><MapPin /> {position?.location}</p>
         </div>
 
 
@@ -278,14 +278,14 @@ export default function PositionPage() {
       </div>
 
 
-      <p className="text-lg mb-4 flex items-center"><strong>Job ID:</strong>&nbsp;{position?.jobId}</p>
-      <p className="text-lg mb-4"><strong>Function:</strong> {position?.function}</p>
-      <p className="text-lg mb-4"><strong>Role:</strong> {position?.role}</p>
-      <p className="text-lg mb-4 flex gap-1"><strong>Desired Skills:</strong> <div className="flex flex-wrap gap-1">{position?.desiredSkills?.split(",").map(i => <Badge className=" bg-slate-500">{i}</Badge>)}</div></p>
-      <p className="text-lg mb-4"><strong>Desired Qualification:</strong> {position?.desiredQualification}</p>
-      <p className="text-lg mb-4"><strong>Desired Experience:</strong> {position?.desiredExperience}</p>
+      <p className="text-2xl mb-4 flex items-center"><strong>Job ID:</strong>&nbsp;{position?.jobId}</p>
+      <p className="text-2xl mb-4"><strong>Function:</strong> {position?.function}</p>
+      <p className="text-2xl mb-4"><strong>Role:</strong> {position?.role}</p>
+      <p className="text-2xl mb-4 flex gap-1"><strong>Desired Skills:</strong> <div className="flex flex-wrap gap-1">{position?.desiredSkills?.split(",").map(i => <Badge className=" bg-slate-500">{i}</Badge>)}</div></p>
+      <p className="text-2xl mb-4"><strong>Desired Qualification:</strong> {position?.desiredQualification}</p>
+      <p className="text-2xl mb-4"><strong>Desired Experience:</strong> {position?.desiredExperience}</p>
 
-      <div className="text-xl" dangerouslySetInnerHTML={{ __html: position?.description }} />
+      <div className="text-2xl" dangerouslySetInnerHTML={{ __html: position?.description }} />
 
       {/* other position details */}
     </div>

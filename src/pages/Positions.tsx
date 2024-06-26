@@ -46,13 +46,13 @@ const PositionCards = () => {
           }}
         />
       </div>
-      {!positions.length?<h1 className="text-center lg;text-5xl text-3xl">No positions have been added till now</h1>:""}
+      {!positions.length?<h1 className="text-center lg:text-5xl text-3xl">No positions have been added till now</h1>:""}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 container">
         {searchTerm?searchedPositions?.map((position) => (
-          <Card key={position?.id} className="min-h-sm hover:shadow-md hover:-translate-y-1 duration-500">
+          <Card key={position?.id} className="min-h-sm hover:shadow-md hover:-translate-y-1 duration-500 text-2xl">
             <CardHeader>
-              <CardTitle>{position?.title}</CardTitle>
-              <CardDescription className="flex items-end"><MapPin/>{position?.location}</CardDescription>
+              <CardTitle className="text-4xl">{position?.title}</CardTitle>
+              <CardDescription className="flex items-end text-2xl"><MapPin/>{position?.location}</CardDescription>
             </CardHeader>
             <CardContent>
             <p><strong>Job ID:</strong> {position?.jobId}</p>
@@ -64,15 +64,15 @@ const PositionCards = () => {
               <p><strong>Region:</strong> {position?.Region?.name}</p>
             </CardContent>
             <CardFooter>
-            <CardDescription>Posted {formatDateDistance(position?.createdAt)}</CardDescription>
+            <CardDescription className="text-xl">Posted {formatDateDistance(position?.createdAt)}</CardDescription>
               <Button variant="destructive" className="ml-auto" onClick={()=>navigate(`/Careers/position/${position?.id}`)}>Apply</Button>
             </CardFooter>
           </Card>
         )):positions?.map((position) => (
-          <Card key={position?.id} className="min-h-sm hover:shadow-md hover:-translate-y-1 duration-500">
+          <Card key={position?.id} className="min-h-sm hover:shadow-md hover:-translate-y-1 duration-500 text-2xl">
             <CardHeader>
-              <CardTitle>{position?.title}</CardTitle>
-              <CardDescription className="flex items-end"><MapPin/>{position?.location}</CardDescription>
+              <CardTitle className="text-4xl">{position?.title}</CardTitle>
+              <CardDescription className="flex items-end text-2xl"><MapPin/>{position?.location}</CardDescription>
             </CardHeader>
             <CardContent>
             <p><strong>Job ID:</strong> {position?.jobId}</p>
@@ -85,7 +85,7 @@ const PositionCards = () => {
               
             </CardContent>
             <CardFooter>
-            <CardDescription>Posted {formatDateDistance(position?.createdAt)}</CardDescription>
+            <CardDescription className="text-xl">Posted {formatDateDistance(position?.createdAt)}</CardDescription>
               <Button variant="destructive" className="ml-auto" onClick={()=>navigate(`/Careers/position/${position?.id}`)}>Apply</Button>
             </CardFooter>
           </Card>

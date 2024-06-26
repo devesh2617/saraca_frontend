@@ -305,7 +305,11 @@ const AboutUs = () => {
             </div>
             <div className="flex-[2]">
               <h1 className="text-sky-700 font-semibold text-4xl">CEO's MESSAGE</h1>
-              <p className="mt-4 leading-normal text-sky-600 text-2xl">SARACA is a global IT consulting and engineering R&D services company with Fortune 500 customers 80% of our customers are based in United States of America(USA) with 95% of recurring business. We provide services in medical technology, aerospace, defence, rail transportation and automotive industries</p>
+              <p className="mt-4 leading-normal text-sky-600 text-2xl">Since our inception in 2014, we are leading in digital transformation and emerging technologies.
+                <br />
+At SARACA, we specialize in aerospace, defence, automotive, railways, medical devices, semiconductor and more. Our vertically integrated approach ensures industry-leading solutions delivered with speed and precision. From software development to mechanical design, we cover it all.
+<br />
+With a focus on quality and compliance, we're trusted by over 25+ Fortune 500 clients to drive their business goals forward. From concept to market launch, we're with you every step of the way, offering unique aftermarket services and comprehensive V&V solutions.</p>
             </div>
           </div>
         </div>
