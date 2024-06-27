@@ -139,9 +139,9 @@ const Footer = () => {
             <a target="_blank" href={`${import.meta.env.VITE_REACT_APP_API_URL}/PL-4029.pdf`}>
              Privacy Policy
             </a>
-            {/* <a href="#">
+            <a href="/Unsubscribe">
              Unsubscribe
-            </a> */}
+            </a>
             <a href="/Contact_Us">
              Contact Us
             </a>

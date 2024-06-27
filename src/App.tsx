@@ -106,6 +106,7 @@ import SearchPage from "./pages/SearchPage";
 import EFlexPine from "./pages/EFlexSpine"
 import HealthcareApplications from "./pages/SubIndustries/HealthcareApplications"
 import Error404 from "./pages/Error404";
+import UnsubscribePage from "./components/Unsubscribe";
 function App() {
 
 
@@ -277,6 +278,7 @@ function App() {
             <Route path="/Innovation/FastPMCF" element={<FastPMCF />} />
             <Route path="/Innovation/eFleXpine" element={<EFlexPine />} />
             <Route path="/Search" element={<SearchPage />} />
+            <Route path="/Unsubscribe" element={<UnsubscribePage/>}/>
             <Route path="*" element={<Error404 />} />
           </Routes>
         </Layout>} />
