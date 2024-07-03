@@ -9,7 +9,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/autoplay'
 // import required modules
 import { Navigation, Autoplay } from 'swiper/modules';
-import TestimonialCards from "../components/TestimonialCards"
+import EmployeeSpeaksCards from "../components/EmployeeSpeaksCards"
 import { Carousel } from "react-responsive-carousel";
 
 import { ArrowRight } from "lucide-react";
@@ -303,7 +303,7 @@ const AboutUs = () => {
             showStatus={false}
           >
             {TestmonialCardsData.map((data: any, index: number) => {
-              return (<TestimonialCards key={index} imageSrc={data.imageSrc} name={data.name} designation={data.designation} content={data.content} />
+              return (<EmployeeSpeaksCards key={index} imageSrc={data.imageSrc} name={data.name} designation={data.designation} content={data.content}/>
               )
             })}
 
