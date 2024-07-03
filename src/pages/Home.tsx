@@ -113,7 +113,7 @@ const mediaArray = [
 
 const cardsData = [
   // {
-  //   title: "QTST",
+  //   logo: "QTST",
   //   heading: "Quick Talent Search Tool",
   //   description:
   //     "It’s an idea to transform talent search method to more interactive and swift manner. With AI identifying the resumes best suited for position provides confidence to recruiters for sharing resumes to account managers. Interactive dashboard allows BU heads and Team Leads track account summary.",
@@ -121,7 +121,7 @@ const cardsData = [
   //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/qtst-laptop.png`,
   // },
   {
-    title: "X1 Platform",
+    logo: "x1-logo.svg",
     heading: "Driving tomorrows innovation today",
     description:
       "Elevating automotive excellence with AGL: Powered instrument cluster, infotainment, and telematics system",
@@ -130,7 +130,7 @@ const cardsData = [
     imageSrc: `https://www.youtube.com/embed/k0TpoaiZGb0?si=brztd2wseyrUgIWf`,
   },
   {
-    title: "eFleXpine",
+    logo: "eFleXpine-logo.svg",
     heading: "Advancing Precision, Surgeon Well-being & Patient- Centricity in spinal surgery",
     description:
       "A significant stride in spinal surgery, this innovative system is poised to redefine the landscape of treating degenerative disorders, deformities like scoliosis, and trauma indications in the human spine",
@@ -139,7 +139,7 @@ const cardsData = [
     imageSrc: `https://www.youtube.com/embed/2xSn3Ws44bw?si=IskOUblfe7yO9gDA`,
   },
   {
-    title: "FastPMCF",
+    logo: "Fastpmcf Logo.svg",
     heading: "Accelerating Insights, Elevating Excellence",
     description:"Transforming PMCF surveys for swift clinical evidence feedback",
     link: "/Innovation/FastPMCF",
@@ -293,8 +293,8 @@ const Home = () => {
         ))}
       </Carousel>
      
-      <div aria-label="stories" className="my-12 flex flex-col gap-8">
-        <h1 className="text-5xl md:text-8xl text-black text-center mt-12 font-semibold">
+      <div aria-label="stories" className="my-24 flex flex-col gap-8">
+        <h1 className="text-5xl md:text-8xl text-black text-center mb-24 lg:mb-0 font-semibold">
           Let's Do Engineering
         </h1>
         {cardsData.map((data: object, index: number) => (

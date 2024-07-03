@@ -172,7 +172,7 @@ function App() {
         {location.pathname.split("/")[1] !== "activate" && location.pathname.split("/")[1] !== "Innovation" ? <Footer /> : ""}
         {location.pathname.split("/")[1] !== "activate" ? (
           <a href="/Contact_Us">
-            {location.pathname.split("/")[1] !== "Contact_Us" ? (<button className="fixed z-10 bg-red-400 px-8 rounded-full py-4 pr-12 text-white text-2xl font-semibold bottom-[2%] -right-[9.5rem] hover:bg-red-600 duration-500">
+            {location.pathname.split("/")[1] !== "Contact_Us" ? (<button className="fixed z-10 bg-red-400 px-8 rounded-full py-4 pr-12 text-white text-2xl font-semibold bottom-[0.5rem] left-[0.5rem] hover:bg-red-600 duration-500">
               <FontAwesomeIcon icon={faPaperPlane} style={{ fontSize: "2rem" }} />
               <span id="contact_us_button" className="ml-4">Contact</span>
             </button>) : ""}
