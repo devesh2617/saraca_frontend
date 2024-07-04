@@ -66,7 +66,7 @@ const CaseStudies = () => {
             </section>
             <section className='flex-[6]'>
               <iframe src="https://www.youtube.com/embed/k0TpoaiZGb0?si=brztd2wseyrUgIWf" className='w-[70%] aspect-[16/9] mx-auto'></iframe>
-              <div className='text-3xl text-white mt-8 px-12'>
+              <div className='text-2xl text-white mt-8 px-12'>
                 Automotive Grade Linux (AGL) is an automotive OS platform that aims to revolutionize the automotive industry by creating a standardized Linux-based platform for automotive applications. AGL enables the development of advanced infotainment systems, instrument clusters, telematics, ADAS, autonomous driving, fleet management, and car-sharing platforms. It leverages open-source software and promotes collaboration among carmakers, suppliers, and technology companies. AGL's Software Defined Vehicle (SDV) concept integrates virtualization, partitioning, over-the-air updates, advanced connectivity, data analytics, and AI to enhance vehicle functionality and transform it into a software-driven platform. SDV encourages collaboration, standardization, and interoperability within the automotive ecosystem, fostering rapid innovation and customization.
               </div>
             </section>
@@ -82,7 +82,7 @@ const CaseStudies = () => {
             <section className='flex-[2] relative'>
 
               <h1 className=" text-8xl font-semibold text-white absolute origin-bottom-left -rotate-90 translate-x-[60%]">
-                2 WHEELAR INSTRUMENT CLUSTER
+                2 WHEELER INSTRUMENT CLUSTER
               </h1>
 
             </section>
@@ -98,7 +98,7 @@ const CaseStudies = () => {
             <section className='flex-[2] relative'>
 
               <h1 className=" text-8xl font-semibold text-white absolute origin-bottom-left -rotate-90 translate-x-[60%]">
-                4 WHEELAR INSTRUMENT CLUSTER
+                4 WHEELER INSTRUMENT CLUSTER
               </h1>
 
             </section>
@@ -113,7 +113,7 @@ const CaseStudies = () => {
             <section className='flex-[2] relative'>
 
               <h1 className=" text-8xl font-semibold text-white absolute origin-bottom-left -rotate-90 translate-x-[60%]">
-                4 WHEELAR INFOTAINMENT SYSTEM
+                4 WHEELER INFOTAINMENT SYSTEM
               </h1>
 
             </section>
