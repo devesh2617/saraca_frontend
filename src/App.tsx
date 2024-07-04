@@ -1,6 +1,7 @@
 
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import CookieConsent from "react-cookie-consent"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
@@ -178,7 +179,11 @@ function App() {
             </button>) : ""}
           </a>
         ) : ""}
-
+        <CookieConsent style={{backgroundColor:"black", padding:"1rem 0"}} buttonText="Accept Cookies" buttonStyle={{backgroundColor:"white", fontSize:"1.5rem"}}>
+          <p className=" text-white text-2xl">
+            We use cookies to improve your experience on our site. By continuing to use our site, you accept our use of cookies.
+          </p>
+        </CookieConsent>
       </div>
     );
   }

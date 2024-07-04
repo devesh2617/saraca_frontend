@@ -13,24 +13,24 @@ type whyChooseUsCardsData = {
 }
 const whyChooseUsCardsData = [
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/51.png`,
-    title: "Strategy",
-    content: "",
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/EngineeringDNA.svg`,
+    title: "We have an",
+    content: "Engineering DNA",
   },
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/52.png`,
-    title: "Customer Satisfaction",
-    content: "",
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/CustomerSatisfaction.png`,
+    title: "We have",
+    content: "High Customer Satisfaction",
   },
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/53.png`,
-    title: "Flexibility",
-    content: "",
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/Challenges.svg`,
+    title: "We",
+    content: "Love Challanges",
   },
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/54.png`,
-    title: "Speed",
-    content: "",
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/Digital.svg`,
+    title: "We are",
+    content: "Agile and Born Digital",
   },
 ]
 const mediaArray = [
@@ -305,7 +305,7 @@ const Home = () => {
         ))}
       </div>
       <div aria-label="Why Choose Us" className="lg:py-24 py-8 bg-gradient-to-tl from-black to-blue-950 bg-cover"
-      style={{background:`url(${import.meta.env.VITE_REACT_APP_API_URL}/whychooseus.jpg)`}}
+      style={{background:`url(${import.meta.env.VITE_REACT_APP_API_URL}/whychooseus.png)`}}
       >
       <div className="container">
       <h1 className="text-7xl text-white font-semibold">

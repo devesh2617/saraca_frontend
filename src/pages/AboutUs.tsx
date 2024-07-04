@@ -384,9 +384,9 @@ With a focus on quality and compliance, we're trusted by over 25+ Fortune 500 cl
         </marquee>
       </div>
       <div aria-label="Timeline" className="min-h-[20rem] lg:py-24 py-8 bg-cover"
-      style={{ backgroundImage: `url('${import.meta.env.VITE_REACT_APP_API_URL}/Timeline_Background.svg')` }}
+      style={{ backgroundImage: `url('${import.meta.env.VITE_REACT_APP_API_URL}/Timeline_Background.png')` }}
       >
-        <h1 className="mb-24 text-7xl font-semibold text-center">Timeline</h1>
+        <h1 className="mb-24 text-7xl font-semibold text-center text-white">Timeline</h1>
         <div>
           <Swiper
             slidesPerView={screenSize===null?1:screenSize === "sm" ? 1 : screenSize === "md"?2: 3}
