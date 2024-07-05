@@ -16,28 +16,25 @@ type DiscoverMoreCardsData = {
 const ServiceOfferings = [
   {
     heading: "Engineering Services",
-    description:
-      "  We offer end-to-end product design and development services, from concept generation to prototyping and manufacturing support. Our iterative approach ensures that your product not only meets regulatory standards but also exceeds user expectations.",
+    content:["Conceptualization and Design: From ideation to execution, we bring your automotive visions to life through innovative design solutions.","Product Development: Our expertise spans the entire product development lifecycle, delivering cutting-edge solutions that exceed expectations.","Prototyping and Testing: Utilizing advanced methodologies, we ensure the reliability and performance of automotive components and systems.","Manufacturing Support: We provide comprehensive support throughout the manufacturing process, optimizing efficiency and quality."],
     link: "",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Engineering Services.svg`,
   },
   {
     heading: "Research & Development",
-    description:
-      "Through advanced process modeling, simulation, and optimization techniques, we help streamline manufacturing processes, enhance efficiency, and reduce costs without compromising quality or compliance.",
+    content:["Advanced Technology Integration: Stay ahead of the curve with our integration of emerging technologies, such as SDV, ADAS, EV, AI, IoT, and advanced materials.","Performance Enhancement: Enhance vehicle performance and efficiency through our research-driven approaches and optimization techniques.","Sustainability Solutions: Embrace sustainability with our eco-friendly initiatives and development of green automotive technologies."],
     link: "",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/R&D.svg`,
   },
   {
     heading: "Digital Solutions",
-    description:
-      "Navigating the regulatory landscape can be daunting. Our team is well-versed in regulatory requirements and standards, ensuring that your products and processes meet the rigorous demands of regulatory agencies worldwide.",
+    content:["Digital Twin Development: Leverage the power of digital twins for virtual simulations, predictive maintenance, and performance optimization.","Data Analytics and Insights: Harness the potential of data-driven insights to make informed decisions and drive business growth.","Connectivity and IoT Solutions: Transform your automotive ecosystem with seamless connectivity and IoT-enabled solutions for enhanced user experiences."],
     link: "",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Digital.svg`,
   },
 {
   heading: "Consulting",
-  description:"Whether you're facing technical challenges or seeking strategic guidance, our team is here to help. We offer expert technical consulting services tailored to your unique needs, providing insights and solutions that drive innovation and growth.",
+  content:["Strategic Planning: Benefit from our industry expertise and strategic insights to navigate market challenges and capitalize on opportunities.","Regulatory Compliance: Ensure compliance with global regulatory standards and industry guidelines such as ISO 26262 with our expert guidance and support.","Voice of customers: Frontend assessment of customer requirements to understand the adoption of latest technologies such as feasibility of global ADAS on Indian roads."],
   link: "",
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Consulting.svg`,
 }
