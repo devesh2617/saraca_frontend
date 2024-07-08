@@ -1,5 +1,6 @@
 // import { useState } from 'react';
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
+import {Helmet} from "react-helmet"
 import IndustryCards from "../../components/IndustryCards";
 import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
 
@@ -136,6 +137,15 @@ const Medical = () => {
   // }
   return (
     <div>
+      <Helmet>
+      <title>Cutting-Edge Space Solutions by Saraca Solutions</title>
+        <meta property="og:title" content="Cutting-Edge Space Solutions by Saraca Solutions" />
+        <meta name="description" content="Explore Saraca Solutions' pioneering space solutions, delivering innovative technologies and strategic services tailored to meet the challenges of the space industry. Discover our expertise in advancing space exploration, satellite systems, and mission-critical operations." />
+        <meta name="keywords" content="Space solutions, Satellite systems, Space technology, Space exploration, Space industry, Space engineering, Satellite services, Space mission support" />
+        <meta property="og:description" content="Explore Saraca Solutions' pioneering space solutions, delivering innovative technologies and strategic services tailored to meet the challenges of the space industry. Discover our expertise in advancing space exploration, satellite systems, and mission-critical operations." />
+        <meta property="og:keywords" content="Space solutions, Satellite systems, Space technology, Space exploration, Space industry, Space engineering, Satellite services, Space mission support" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className=" aspect-video w-full relative">
         <div className="absolute z-[1] w-full h-full">
           <div className="h-full absolute w-full left-0 lg:text-9xl md:text-5xl text-2xl text-white flex justify-center items-center p-36 font-semibold text-center">Engineering the Next Era of Space Exploration</div>

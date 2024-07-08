@@ -1,5 +1,6 @@
 import DiscoverMoreCards from '../components/DiscoverMoreCards';
 import WhereWeServeCards from "../components/WhereWeServeCards";
+import {Helmet} from "react-helmet";
 import ServiceOfferingsCards from "../components/ServicesOfferingsCards"
 type medicalCardsData = {
   title: string,
@@ -78,6 +79,15 @@ const DiscoverMoreCardsData = [{
 const Industry = () => {
   return (
     <div>
+      <Helmet>
+        <title>Advanced Aerospace & Defense Solutions | Saraca Solutions</title>
+        <meta property="og:title" content="Advanced Aerospace & Defense Solutions | Saraca Solutions" />
+        <meta name="description" content="Explore Saraca Solutions' cutting-edge offerings in aerospace and defense industries, delivering innovative solutions and advanced technologies to meet the sector's unique challenges and requirements." />
+        <meta name="keywords" content="Aerospace solutions, Aerospace engineering, Defense innovations, Aerospace industry, Defense sector, Aerospace systems, Defense solutions" />
+        <meta property="og:description" content="Explore Saraca Solutions' cutting-edge offerings in aerospace and defense industries, delivering innovative solutions and advanced technologies to meet the sector's unique challenges and requirements." />
+        <meta property="og:keywords" content="Aerospace solutions, Aerospace engineering, Defense innovations, Aerospace industry, Defense sector, Aerospace systems, Defense solutions" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className="aspect-video w-full relative">
       <div
               aria-label="overlay-container"

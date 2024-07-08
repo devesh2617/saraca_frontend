@@ -1,4 +1,4 @@
-
+import {Helmet} from "react-helmet"
 import DiscoverMoreCards from '../components/DiscoverMoreCards';
 import WhereWeServeCards from "../components/WhereWeServeCards";
 import ServiceOfferingsCards from "../components/ServicesOfferingsCards"
@@ -79,6 +79,15 @@ const DiscoverMoreCardsData = [{
 const Industry = () => {
   return (
     <div>
+      <Helmet>
+      <title>Advanced Automotive Solutions by Saraca Solutions</title>
+        <meta property="og:title" content="Advanced Automotive Solutions by Saraca Solutions" />
+        <meta name="description" content="Discover Saraca Solutions' innovative automotive solutions, featuring advanced technologies and strategic services designed to enhance performance, efficiency, and sustainability in the automotive industry. Explore our expertise in automotive engineering and cutting-edge solutions for vehicle innovation" />
+        <meta name="keywords" content="Automotive solutions, Automotive technology, Automotive engineering, Vehicle innovation, Automotive industry, Automotive performance, Vehicle efficiency" />
+        <meta property="og:description" content="Discover Saraca Solutions' innovative automotive solutions, featuring advanced technologies and strategic services designed to enhance performance, efficiency, and sustainability in the automotive industry. Explore our expertise in automotive engineering and cutting-edge solutions for vehicle innovation" />
+        <meta property="og:keywords" content="Automotive solutions, Automotive technology, Automotive engineering, Vehicle innovation, Automotive industry, Automotive performance, Vehicle efficiency" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className=" aspect-video w-full relative">
       <div
               aria-label="overlay-container"

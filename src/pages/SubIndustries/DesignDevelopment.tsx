@@ -1,4 +1,5 @@
 // import { useState } from 'react';
+import {Helmet} from "react-helmet"
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 // import IndustryCards from "../../components/IndustryCards";
 // import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
@@ -168,6 +169,30 @@ const Medical = () => {
   // }
   return (
     <div>
+            <Helmet>
+        <title>Semiconductor – ASIC FPGA Design Development</title>
+        <meta
+          property="og:title"
+          content="Semiconductor – ASIC FPGA Design Development"
+        />
+        <meta
+          name="description"
+          content="Saraca specializes in advanced ASIC (Application Specific Integrated Circuit) and FPGA (Field-Programmable Gate Array) solutions, serving diverse sectors including AI-driven data centres, aerospace, automotive, networking, consumer electronics, industrial, medical, and IoT. Our expertise spans digital and mixed-signal ASIC design, as well as FPGA-SoC development, focusing on high-performance, low-power consumption, and compact form-factor designs. We excel in all stages of silicon development, from initial design and verification to physical implementation and validation, leveraging our proficiency in mixed-signal solutions across various technology nodes from 180nm to cutting-edge 3nm and beyond. With a pioneering spirit, Saraca has achieved numerous successful tape-outs, including milestones at 7nm and 10nm nodes, establishing ourselves as leaders in semiconductor engineering services."
+        />
+        <meta
+          name="keywords"
+          content="ASIC design services, FPGA-SoC development, digital ASIC design, mixed-signal ASIC solutions, low-power ASIC design, high-performance ASIC design, compact form-factor ASIC, semiconductor engineering services, silicon design services, AI-driven data centre ASIC, aerospace ASIC development, automotive ASIC solutions, networking ASIC design, consumer electronics ASIC design, industrial ASIC solutions, medical ASIC development, IoT ASIC applications, silicon tape-out, 180nm to 3nm technology nodes, ASIC prototyping, EDA tool validation, FPGA device selection, SoC integration, functional verification in ASIC, FPGA accelerator implementation, FPGA validation, ARM Cortex processor verification, IP development and verification"
+        />
+        <meta
+          property="og:description"
+          content="Saraca specializes in advanced ASIC (Application Specific Integrated Circuit) and FPGA (Field-Programmable Gate Array) solutions, serving diverse sectors including AI-driven data centres, aerospace, automotive, networking, consumer electronics, industrial, medical, and IoT. Our expertise spans digital and mixed-signal ASIC design, as well as FPGA-SoC development, focusing on high-performance, low-power consumption, and compact form-factor designs. We excel in all stages of silicon development, from initial design and verification to physical implementation and validation, leveraging our proficiency in mixed-signal solutions across various technology nodes from 180nm to cutting-edge 3nm and beyond. With a pioneering spirit, Saraca has achieved numerous successful tape-outs, including milestones at 7nm and 10nm nodes, establishing ourselves as leaders in semiconductor engineering services."
+        />
+        <meta
+          property="og:keywords"
+          content="ASIC design services, FPGA-SoC development, digital ASIC design, mixed-signal ASIC solutions, low-power ASIC design, high-performance ASIC design, compact form-factor ASIC, semiconductor engineering services, silicon design services, AI-driven data centre ASIC, aerospace ASIC development, automotive ASIC solutions, networking ASIC design, consumer electronics ASIC design, industrial ASIC solutions, medical ASIC development, IoT ASIC applications, silicon tape-out, 180nm to 3nm technology nodes, ASIC prototyping, EDA tool validation, FPGA device selection, SoC integration, functional verification in ASIC, FPGA accelerator implementation, FPGA validation, ARM Cortex processor verification, IP development and verification"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className=" aspect-video w-full relative">
         <div className="absolute z-[1] w-full h-full">
           <div className="h-full absolute w-full lg:w-1/2 text-left left-0 lg:text-9xl md:text-5xl text-2xl  bg-gradient-to-r from-black to-transparent text-white flex justify-center items-center p-24 font-semibold">Expert ASIC/FPGA Design for Every Industry</div>

@@ -1,5 +1,6 @@
 // import { useState } from 'react';
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
+import {Helmet} from "react-helmet"
 import IndustryCards from "../../components/IndustryCards";
 import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
 
@@ -143,6 +144,15 @@ const Medical = () => {
   // }
   return (
     <div>
+      <Helmet>
+      <title>Advanced Truck and Bus Solutions by Saraca Solutions</title>
+        <meta property="og:title" content="Advanced Truck and Bus Solutions by Saraca Solutions" />
+        <meta name="description" content="Explore Saraca Solutions' advanced truck and bus solutions, featuring cutting-edge technologies and strategic services tailored to optimize performance, efficiency, and reliability in the automotive industry. Discover our expertise in automotive engineering and innovative solutions designed to meet the unique challenges of commercial vehicles." />
+        <meta name="keywords" content="Truck solutions, Bus solutions, Commercial vehicle solutions, Automotive engineering services, Vehicle performance optimization, Vehicle efficiency enhancements, Automotive industry expertise" />
+        <meta property="og:description" content="Explore Saraca Solutions' advanced truck and bus solutions, featuring cutting-edge technologies and strategic services tailored to optimize performance, efficiency, and reliability in the automotive industry. Discover our expertise in automotive engineering and innovative solutions designed to meet the unique challenges of commercial vehicles." />
+        <meta property="og:keywords" content="Truck solutions, Bus solutions, Commercial vehicle solutions, Automotive engineering services, Vehicle performance optimization, Vehicle efficiency enhancements, Automotive industry expertise" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className=" aspect-video w-full relative">
         <div className="absolute z-[1] w-full h-full">
           <div className="h-full absolute w-full left-0 lg:text-9xl md:text-5xl text-2xl text-white flex justify-center items-center p-36 font-semibold text-center">

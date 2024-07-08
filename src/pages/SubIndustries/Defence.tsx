@@ -1,5 +1,6 @@
 // import { useState } from 'react';
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
+import {Helmet} from "react-helmet";
 import IndustryCards from "../../components/IndustryCards";
 import ServiceOfferingsCards from '@/components/ServicesOfferingsCards';
 type medicalCardsData = {
@@ -142,6 +143,15 @@ const Medical = () => {
   // }
   return (
     <div>
+      <Helmet>
+      <title>Advanced Defense Solutions by Saraca Solutions</title>
+        <meta property="og:title" content="Advanced Defense Solutions by Saraca Solutions" />
+        <meta name="description" content="Explore Saraca Solutions' advanced defense solutions, offering innovative technologies and strategic services tailored to meet the evolving needs of the defense sector. Discover our expertise in enhancing operational effectiveness and mission success in defense applications." />
+        <meta name="keywords" content="Defense solutions, Defense technology, Defense engineering, Defense innovation, Military solutions, Strategic defense services, Defense industry expertise." />
+        <meta property="og:description" content="Explore Saraca Solutions' advanced defense solutions, offering innovative technologies and strategic services tailored to meet the evolving needs of the defense sector. Discover our expertise in enhancing operational effectiveness and mission success in defense applications." />
+        <meta property="og:keywords" content="Defense solutions, Defense technology, Defense engineering, Defense innovation, Military solutions, Strategic defense services, Defense industry expertise." />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className=" aspect-video w-full relative">
         <div className="absolute z-[1] w-full h-full">
           <div className="h-full absolute w-full left-0 lg:text-9xl md:text-5xl text-2xl text-white flex justify-center items-center p-36 font-semibold text-center">Empowering Defense through Engineering Excellence</div>

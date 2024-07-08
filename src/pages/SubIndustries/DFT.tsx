@@ -1,4 +1,5 @@
 // import { useState } from 'react';
+import {Helmet} from "react-helmet"
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 // import IndustryCards from "../../components/IndustryCards";
 import ServiceOfferingsCards from '@/components/ServicesOfferingsCards';
@@ -252,6 +253,30 @@ const Medical = () => {
   // }
   return (
     <div>
+       <Helmet>
+        <title>Semiconductor – DFT</title>
+        <meta
+          property="og:title"
+          content="Semiconductor – DFT"
+        />
+        <meta
+          name="description"
+          content="Saraca is at the forefront of Design for Testability (DFT) services, specializing in optimizing and simplifying the testing process for complex System on Chip (SoC) designs. With expertise tailored to modern SoC challenges—such as integrating multiple memory components, mixed-signal blocks, and IPs from diverse vendors—we employ advanced DFT solutions. Our approach includes hybrid algorithms with optimized scan compression ratios to maximize pattern counts while minimizing testing overhead. We conduct thorough testing across standalone test benches, covering diagnostic, hard repair, soft repair, and BIST verification modes prior to SoC integration. Our comprehensive methodology seamlessly integrates test structures into designs and existing IP, leveraging automation to minimize front-end design modifications. Saraca supports industry-standard features including IEEE 1687 IJTAG support, 1149.1/1149.6 boundary scan, memory BIST, scan stitching, and core wrapper insertion, with additional capabilities in MBIST, logic insertion, clock integration, logical equivalence checking, and multi-pass test pattern generation for extensive coverage analysis."
+        />
+        <meta
+          name="keywords"
+          content="Design for Testability (DFT) services, SoC testing, scan chain insertion, boundary scan (JTAG) implementation, ATPG (Automatic Test Pattern Generation), fault simulation and analysis, testability analysis, DFT optimization, embedded systems development, microcontroller design, firmware development, RTOS integration, IoT device development, electronic hardware design, PCB layout, analog circuit design, digital circuit design, signal integrity analysis, EMC/EMI compliance testing, software development, middleware development, API development, database optimization, system integration, machine learning solutions, AI algorithms on embedded systems, wireless communication solutions, RF circuit design, protocol stack development, antenna design, cybersecurity services, vulnerability assessment, encryption implementation"
+        />
+        <meta
+          property="og:description"
+          content="Saraca is at the forefront of Design for Testability (DFT) services, specializing in optimizing and simplifying the testing process for complex System on Chip (SoC) designs. With expertise tailored to modern SoC challenges—such as integrating multiple memory components, mixed-signal blocks, and IPs from diverse vendors—we employ advanced DFT solutions. Our approach includes hybrid algorithms with optimized scan compression ratios to maximize pattern counts while minimizing testing overhead. We conduct thorough testing across standalone test benches, covering diagnostic, hard repair, soft repair, and BIST verification modes prior to SoC integration. Our comprehensive methodology seamlessly integrates test structures into designs and existing IP, leveraging automation to minimize front-end design modifications. Saraca supports industry-standard features including IEEE 1687 IJTAG support, 1149.1/1149.6 boundary scan, memory BIST, scan stitching, and core wrapper insertion, with additional capabilities in MBIST, logic insertion, clock integration, logical equivalence checking, and multi-pass test pattern generation for extensive coverage analysis."
+        />
+        <meta
+          property="og:keywords"
+          content="Design for Testability (DFT) services, SoC testing, scan chain insertion, boundary scan (JTAG) implementation, ATPG (Automatic Test Pattern Generation), fault simulation and analysis, testability analysis, DFT optimization, embedded systems development, microcontroller design, firmware development, RTOS integration, IoT device development, electronic hardware design, PCB layout, analog circuit design, digital circuit design, signal integrity analysis, EMC/EMI compliance testing, software development, middleware development, API development, database optimization, system integration, machine learning solutions, AI algorithms on embedded systems, wireless communication solutions, RF circuit design, protocol stack development, antenna design, cybersecurity services, vulnerability assessment, encryption implementation"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className=" aspect-video w-full relative">
         <div className="absolute z-[1] w-full h-full">
           <div className="h-full absolute w-full lg:w-2/3 text-left left-0 lg:text-9xl md:text-5xl text-2xl  bg-gradient-to-r from-black to-transparent text-white flex justify-center items-center p-36 font-semibold">Automated Integration, Minimal Modifications: DFT Made Easy</div>

@@ -7,7 +7,7 @@ type medicalCardsData = {
   points: string[],
   imageSrc: string
 }
-
+import {Helmet} from "react-helmet"
 // type DiscoverMoreCardsData = {
 //   imageSrc: string,
 //   link: string
@@ -177,6 +177,15 @@ const Medical = () => {
   // }
   return (
     <div>
+      <Helmet>
+      <title>Leading Aerospace Solutions by Saraca Solutions</title>
+        <meta property="og:title" content="Leading Aerospace Solutions by Saraca Solutions" />
+        <meta name="description" content="Discover Saraca Solutions' comprehensive range of cutting-edge aerospace solutions, tailored to meet the dynamic demands of the industry. Explore innovative technologies and strategic services designed to optimize performance and enhance operational efficiency in aerospace applications." />
+        <meta name="keywords" content="Aerospace solutions, Aerospace technology, Aerospace engineering, Aerospace innovation, Aerospace services, Aerospace systems, Aerospace industry expertise." />
+        <meta property="og:description" content="Discover Saraca Solutions' comprehensive range of cutting-edge aerospace solutions, tailored to meet the dynamic demands of the industry. Explore innovative technologies and strategic services designed to optimize performance and enhance operational efficiency in aerospace applications." />
+        <meta property="og:keywords" content="Aerospace solutions, Aerospace technology, Aerospace engineering, Aerospace innovation, Aerospace services, Aerospace systems, Aerospace industry expertise." />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className="w-full aspect-video relative">
         <div className="absolute z-[1] w-full h-full">
           <div className="h-full absolute w-full left-0 lg:text-9xl md:text-5xl text-2xl text-white flex justify-center items-center p-36 font-semibold text-center">Aviate, Navigate, Communicate</div>

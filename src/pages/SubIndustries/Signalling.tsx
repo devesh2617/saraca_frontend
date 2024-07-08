@@ -1,5 +1,6 @@
 // import { useState } from 'react';
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
+import {Helmet} from "react-helmet"
 import IndustryCards from "../../components/IndustryCards";
 import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
 
@@ -136,6 +137,36 @@ const Medical = () => {
   // }
   return (
     <div>
+       <Helmet>
+        <title>Rail Signalling</title>
+        <meta
+          property="og:title"
+          content="Rail Signalling"
+        />
+        <meta
+          name="description"
+          content="Saraca specializes in advanced engineering and R&D consulting for railway signalling systems, boasting over a decade of expertise from SIL0 to SIL4 classifications. Our comprehensive services encompass system integration, design-in, and application development, supporting clients through every stage of product lifecycle—from initial architecture and software design to final adaptation and configuration.
+
+With a global footprint, our signalling team excels in planning, designing, testing, and commissioning for railway authorities worldwide. We deliver innovative, practical, and cost-efficient solutions that prioritize safety, operational efficiency, and client satisfaction. At Saraca, we are committed to enhancing railway systems with cutting-edge technologies such as Automatic Train Protection (ATP), Automatic Train Operation (ATO), and Automatic Train Supervision (ATS), ensuring safe and secure train journeys across urban and mainline networks.
+"
+        />
+        <meta
+          name="keywords"
+          content="railway signalling engineering, SIL0 to SIL4 signalling systems, train control management systems (TCMS), system integration for railways, signalling application development, railway product development, Automatic Train Protection (ATP), Automatic Train Operation (ATO), Automatic Train Supervision (ATS), railway interlocking systems, cloud interlocking, ERTMS integration, CBTC systems, railway control centre solutions, signalling for freight and mining, point machines, train detection devices, railway communication systems, Communication-Based Train Control (CBTC), Automated People Mover (APM) signalling, tram signalling systems, railway traffic management systems, railway signalling prototyping, signalling software development, signalling system verification & validation, railway control centre design, railway communication system management, railway R&D consulting, railway signalling algorithms, railway big data platforms, AI and ML algorithms for railway, cyber security for railways, railway signalling equipment design, railway signalling documentation, railway signalling hardware development."
+        />
+        <meta
+          property="og:description"
+          content="Saraca specializes in advanced engineering and R&D consulting for railway signalling systems, boasting over a decade of expertise from SIL0 to SIL4 classifications. Our comprehensive services encompass system integration, design-in, and application development, supporting clients through every stage of product lifecycle—from initial architecture and software design to final adaptation and configuration.
+
+With a global footprint, our signalling team excels in planning, designing, testing, and commissioning for railway authorities worldwide. We deliver innovative, practical, and cost-efficient solutions that prioritize safety, operational efficiency, and client satisfaction. At Saraca, we are committed to enhancing railway systems with cutting-edge technologies such as Automatic Train Protection (ATP), Automatic Train Operation (ATO), and Automatic Train Supervision (ATS), ensuring safe and secure train journeys across urban and mainline networks.
+"
+        />
+        <meta
+          property="og:keywords"
+          content="railway signalling engineering, SIL0 to SIL4 signalling systems, train control management systems (TCMS), system integration for railways, signalling application development, railway product development, Automatic Train Protection (ATP), Automatic Train Operation (ATO), Automatic Train Supervision (ATS), railway interlocking systems, cloud interlocking, ERTMS integration, CBTC systems, railway control centre solutions, signalling for freight and mining, point machines, train detection devices, railway communication systems, Communication-Based Train Control (CBTC), Automated People Mover (APM) signalling, tram signalling systems, railway traffic management systems, railway signalling prototyping, signalling software development, signalling system verification & validation, railway control centre design, railway communication system management, railway R&D consulting, railway signalling algorithms, railway big data platforms, AI and ML algorithms for railway, cyber security for railways, railway signalling equipment design, railway signalling documentation, railway signalling hardware development."
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className=" aspect-video w-full relative">
         <div className="absolute z-[1] w-full h-full">
           <div className="h-full absolute bg-gradient-to-r from-black to-transparent left-0 lg:text-9xl md:text-5xl text-2xl text-white flex justify-center items-end p-36 font-semibold text-left">Navigating Railways with Advanced Signalling Solutions</div>

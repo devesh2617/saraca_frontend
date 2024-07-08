@@ -1,5 +1,6 @@
 // import { useState } from 'react';
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
+import {Helmet} from "react-helmet"
 import IndustryCards from "../../components/IndustryCards";
 // import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
 
@@ -120,6 +121,30 @@ const Medical = () => {
   // }
   return (
     <div>
+      <Helmet>
+        <title>Semiconductor – Physical Design</title>
+        <meta
+          property="og:title"
+          content="Semiconductor – Physical Design"
+        />
+        <meta
+          name="description"
+          content="Saraca excels in advanced Physical Design services, leveraging extensive capabilities and experience to deliver silicon turnkey design solutions. With a focus on 10nm, 7nm, and 5nm ASIC technology nodes, our dedicated tech department implements robust physical design flows encompassing Design for Test (DFT) and Design for Manufacturing (DFM). We maintain a state-of-the-art EDA infrastructure and employ a team of seasoned experts proficient in methodologies crucial for achieving optimal Performance, Power efficiency, and Area utilization (PPA). Our stringent processes ensure seamless compliance with foundry-specific checks such as Design Rule Checks (DRCs), Layout vs. Schematic (LVS) checks, and Electrical Rule Checks (ERCs), minimizing iterations and project delays."
+        />
+        <meta
+          name="keywords"
+          content="physical design services, silicon turnkey design, ASIC technology nodes, 10nm ASIC design, 7nm ASIC design, 5nm ASIC design, EDA infrastructure, DFT in ASIC, DFM in ASIC, PPA optimization, Design Rule Checks (DRC), Layout vs. Schematic (LVS) checks, Electrical Rule Checks (ERC), RTL design, RTL IP design, microarchitecture development, synthesis in ASIC, CDC analysis, linting in ASIC, static timing analysis (STA) in ASIC, low power design in ASIC, SOC integration, post silicon validation, FPGA design, FPGA prototyping, FPGA emulation, SystemC verification, AMS verification, Design for Manufacturing (DFM), Design for Test (DFT), RTL synthesis, physical verification in ASIC"
+        />
+        <meta
+          property="og:description"
+          content="Saraca excels in advanced Physical Design services, leveraging extensive capabilities and experience to deliver silicon turnkey design solutions. With a focus on 10nm, 7nm, and 5nm ASIC technology nodes, our dedicated tech department implements robust physical design flows encompassing Design for Test (DFT) and Design for Manufacturing (DFM). We maintain a state-of-the-art EDA infrastructure and employ a team of seasoned experts proficient in methodologies crucial for achieving optimal Performance, Power efficiency, and Area utilization (PPA). Our stringent processes ensure seamless compliance with foundry-specific checks such as Design Rule Checks (DRCs), Layout vs. Schematic (LVS) checks, and Electrical Rule Checks (ERCs), minimizing iterations and project delays."
+        />
+        <meta
+          property="og:keywords"
+          content="physical design services, silicon turnkey design, ASIC technology nodes, 10nm ASIC design, 7nm ASIC design, 5nm ASIC design, EDA infrastructure, DFT in ASIC, DFM in ASIC, PPA optimization, Design Rule Checks (DRC), Layout vs. Schematic (LVS) checks, Electrical Rule Checks (ERC), RTL design, RTL IP design, microarchitecture development, synthesis in ASIC, CDC analysis, linting in ASIC, static timing analysis (STA) in ASIC, low power design in ASIC, SOC integration, post silicon validation, FPGA design, FPGA prototyping, FPGA emulation, SystemC verification, AMS verification, Design for Manufacturing (DFM), Design for Test (DFT), RTL synthesis, physical verification in ASIC"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className=" aspect-video w-full relative">
       <div
               aria-label="overlay-container"

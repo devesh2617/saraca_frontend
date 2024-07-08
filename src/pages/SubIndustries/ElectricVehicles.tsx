@@ -3,6 +3,7 @@
 // import { title } from "process";
 // import IndustryCards from "../../components/IndustryCards";
 // import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
+import {Helmet} from "react-helmet"
 type medicalCardsData = {
   title: string,
   points: string[],
@@ -183,6 +184,15 @@ const Medical = () => {
   // }
   return (
     <div>
+      <Helmet>
+      <title>Innovative Electric Vehicle Engineering Solutions | Saraca</title>
+        <meta property="og:title" content="Innovative Electric Vehicle Engineering Solutions | Saraca" />
+        <meta name="description" content="Discover Saraca's pioneering electric vehicle engineering solutions, including EV systems, battery management, digital connectivity, and sustainable mobility advancements. Partner with us to accelerate your journey towards eco-friendly transportation." />
+        <meta name="keywords" content="electric vehicle engineering, EV systems, battery management systems, sustainable mobility, electric propulsion systems, vehicle-to-grid communication, digital connectivity in EVs, electric drivetrains, charging infrastructure, automotive electrification" />
+        <meta property="og:description" content="Discover Saraca's pioneering electric vehicle engineering solutions, including EV systems, battery management, digital connectivity, and sustainable mobility advancements. Partner with us to accelerate your journey towards eco-friendly transportation." />
+        <meta property="og:keywords" content="electric vehicle engineering, EV systems, battery management systems, sustainable mobility, electric propulsion systems, vehicle-to-grid communication, digital connectivity in EVs, electric drivetrains, charging infrastructure, automotive electrification" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className=" aspect-video w-full relative">
         <div className="absolute z-[1] w-full h-full">
           <div className="h-full absolute w-full left-0 lg:text-9xl md:text-5xl text-2xl text-white flex justify-center items-center p-36 font-semibold text-center">Unlocking the Future of Electric Vehicles</div>

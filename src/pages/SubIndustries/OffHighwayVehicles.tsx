@@ -2,7 +2,7 @@
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 import IndustryCards from "../../components/IndustryCards";
 import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
-
+import {Helmet} from "react-helmet"
 type medicalCardsData = {
   title: string,
   points: string[],
@@ -129,6 +129,15 @@ const Medical = () => {
   // }
   return (
     <div>
+      <Helmet>
+      <title>Off-Highway Vehicles Engineering | Advanced Design & Technology Solutions</title>
+        <meta property="og:title" content="Off-Highway Vehicles Engineering | Advanced Design & Technology Solutions" />
+        <meta name="description" content="Explore Saraca's expertise in Off-Highway Vehicles (OHVs) engineering, offering advanced design, digital integration, autonomous solutions, and environmental sustainability. Discover how we enhance performance, efficiency, and safety across industries." />
+        <meta name="keywords" content="off-highway vehicles engineering, advanced vehicle design, digital integration, IoT sensors, autonomous solutions, safety systems, environmental sustainability, polymer engineering, electrification solutions, powertrain optimization" />
+        <meta property="og:description" content="Explore Saraca's expertise in Off-Highway Vehicles (OHVs) engineering, offering advanced design, digital integration, autonomous solutions, and environmental sustainability. Discover how we enhance performance, efficiency, and safety across industries." />
+        <meta property="og:keywords" content="off-highway vehicles engineering, advanced vehicle design, digital integration, IoT sensors, autonomous solutions, safety systems, environmental sustainability, polymer engineering, electrification solutions, powertrain optimization" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className=" aspect-video w-full relative">
         <div className="absolute z-[1] w-full h-full">
           <div className="h-full absolute lg:w-2/3 w-full left-0 lg:text-9xl md:text-5xl text-2xl  bg-gradient-to-r from-black to-transparent text-white flex justify-center items-center p-36 font-semibold text-left">Transforming Off-Road Challenges into Engineering Triumphs</div>

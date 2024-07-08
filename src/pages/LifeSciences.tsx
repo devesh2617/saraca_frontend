@@ -1,4 +1,4 @@
-
+import {Helmet} from "react-helmet"
 import DiscoverMoreCards from '../components/DiscoverMoreCards';
 import WhereWeServeCards from "../components/WhereWeServeCards";
 import ServiceOfferingsCards from "../components/ServicesOfferingsCards"
@@ -92,6 +92,15 @@ const Industry = () => {
   },[])
   return (
     <div>
+      <Helmet>
+      <title>Innovating Life Science Through Technology | Industry</title>
+        <meta property="og:title" content="Innovating Life Science Through Technology | Industry" />
+        <meta name="description" content="We specialize in providing cutting-edge engineering services tailored specifically to the dynamic and ever-evolving life science sector. With a steadfast commitment to innovation, excellence, and client satisfaction, we empower life science organizations to thrive in today's competitive landscape." />
+        <meta name="keywords" content="Lifescience, life science, Medical Devices, Pharmaceuticals, Healthcare Applications, Product Design Development, Process Optimization, Regulatory Compliances, Quality Assurance and Validation, Technical Consulting" />
+        <meta property="og:description" content="We specialize in providing cutting-edge engineering services tailored specifically to the dynamic and ever-evolving life science sector. With a steadfast commitment to innovation, excellence, and client satisfaction, we empower life science organizations to thrive in today's competitive landscape." />
+        <meta property="og:keywords" content="Lifescience, life science, Medical Devices, Pharmaceuticals, Healthcare Applications, Product Design Development, Process Optimization, Regulatory Compliances, Quality Assurance and Validation, Technical Consulting" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className="aspect-video w-full relative">
       <div
               aria-label="overlay-container"

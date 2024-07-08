@@ -1,7 +1,7 @@
 // import { useState } from 'react';
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 // import IndustryCards from "../../components/IndustryCards";
-
+import {Helmet} from "react-helmet"
 type medicalCardsData = {
   title: string,
   points: string[],
@@ -85,6 +85,15 @@ const Medical = () => {
   // }
   return (
     <div>
+      <Helmet>
+      <title>Innovative Passenger Car Solutions by Saraca Solutions</title>
+        <meta property="og:title" content="Innovative Passenger Car Solutions by Saraca Solutions" />
+        <meta name="description" content="Explore Saraca Solutions' advanced solutions for passenger cars, featuring cutting-edge technologies and strategic services tailored to optimize performance, safety, and comfort. Discover our expertise in automotive engineering and innovative solutions designed to enhance the driving experience." />
+        <meta name="keywords" content="Passenger car solutions, Automotive engineering services, Vehicle performance optimization, Automotive safety features, Vehicle comfort enhancements, Advanced automotive technologies, Passenger vehicle innovations, Automotive industry expertise" />
+        <meta property="og:description" content="Explore Saraca Solutions' advanced solutions for passenger cars, featuring cutting-edge technologies and strategic services tailored to optimize performance, safety, and comfort. Discover our expertise in automotive engineering and innovative solutions designed to enhance the driving experience." />
+        <meta property="og:keywords" content="Passenger car solutions, Automotive engineering services, Vehicle performance optimization, Automotive safety features, Vehicle comfort enhancements, Advanced automotive technologies, Passenger vehicle innovations, Automotive industry expertise" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className=" aspect-video w-full relative">
         <div className="absolute z-[1] w-full h-full">
           <div className="h-full absolute w-full left-0 lg:text-9xl md:text-5xl text-2xl text-white flex justify-center items-center p-36 font-semibold text-center">Where Engineering Meets Mobility</div>

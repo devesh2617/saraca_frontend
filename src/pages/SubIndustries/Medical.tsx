@@ -1,5 +1,6 @@
 // import { useState } from 'react';
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
+import {Helmet} from "react-helmet"
 import IndustryCards from "../../components/IndustryCards";
 import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
 
@@ -235,6 +236,15 @@ const Medical = () => {
   // }
   return (
     <div>
+      <Helmet>
+      <title>Medical Devices Technologies | Life Sciences</title>
+        <meta property="og:title" content="Medical Devices Technologies | Life Sciences" />
+        <meta name="description" content="Medical Device Industry is going through a major shift in terms of technology advancement with the adoption of Software Technologies in the devices and frequent changes in global regulations and international standards." />
+        <meta name="keywords" content="Medical Devices Technologies, Mechanical Design, Electronics Design, Embedded Software, Quality Assurance, Clinical Evaluation Report, CER, Performance Evaluation Report, PER, Post Market Surveillance, PMS, Software Quality Assurance, SQA, Regulatory Affairs Consulting, RA, EU MDR & EU IVDR, IVDR" />
+        <meta property="og:description" content="Medical Device Industry is going through a major shift in terms of technology advancement with the adoption of Software Technologies in the devices and frequent changes in global regulations and international standards." />
+        <meta property="og:keywords" content="Medical Devices Technologies, Mechanical Design, Electronics Design, Embedded Software, Quality Assurance, Clinical Evaluation Report, CER, Performance Evaluation Report, PER, Post Market Surveillance, PMS, Software Quality Assurance, SQA, Regulatory Affairs Consulting, RA, EU MDR & EU IVDR, IVDR" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className=" aspect-video w-full relative">
         <div className="absolute z-[1] w-full h-full">
           <div className="h-full absolute w-full left-0 lg:text-9xl md:text-5xl text-2xl text-white flex justify-center items-center p-36 font-semibold text-center">Improving lives through medical technology</div>

@@ -1,4 +1,4 @@
-
+import {Helmet} from "react-helmet"
 import DiscoverMoreCards from '../components/DiscoverMoreCards';
 import WhereWeServeCards from "../components/WhereWeServeCards";
 import ServiceOfferingsCards from "../components/ServicesOfferingsCards"
@@ -86,6 +86,30 @@ const DiscoverMoreCardsData = [{
 const Industry = () => {
   return (
     <div>
+       <Helmet>
+        <title>Rail Transportation</title>
+        <meta
+          property="og:title"
+          content="Rail Transportation"
+        />
+        <meta
+          name="description"
+          content="Saraca leads the way in digitalizing the rail sector with cutting-edge solutions designed to enhance efficiency, safety, and passenger experience. Our expertise spans a comprehensive range of technologies, including passenger interfaces, mobile apps, e-ticketing, automated train supervision, cybersecurity, driverless trains, and predictive maintenance. By integrating these technologies, we optimize operations and ensure compliance with stringent safety standards, offering innovative products and services tailored to modernize the rail transportation experience."
+        />
+        <meta
+          name="keywords"
+          content="rail digitalization, passenger interfaces, mobile apps for rail, e-ticketing solutions, automated train supervision, rail cybersecurity, driverless trains, predictive maintenance in rail, rail technology solutions, digital rail systems, rail industry innovations"
+        />
+        <meta
+          property="og:description"
+          content="Saraca leads the way in digitalizing the rail sector with cutting-edge solutions designed to enhance efficiency, safety, and passenger experience. Our expertise spans a comprehensive range of technologies, including passenger interfaces, mobile apps, e-ticketing, automated train supervision, cybersecurity, driverless trains, and predictive maintenance. By integrating these technologies, we optimize operations and ensure compliance with stringent safety standards, offering innovative products and services tailored to modernize the rail transportation experience."
+        />
+        <meta
+          property="og:keywords"
+          content="rail digitalization, passenger interfaces, mobile apps for rail, e-ticketing solutions, automated train supervision, rail cybersecurity, driverless trains, predictive maintenance in rail, rail technology solutions, digital rail systems, rail industry innovations"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className=" aspect-video w-full relative">
         <div
           aria-label="overlay-container"

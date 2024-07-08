@@ -1,5 +1,6 @@
 // import { useState } from 'react';
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
+import {Helmet} from "react-helmet"
 import IndustryCards from "../../components/IndustryCards";
 import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
 
@@ -124,6 +125,15 @@ const Medical = () => {
   // }
   return (
     <div>
+      <Helmet>
+      <title>Pharmaceuticals | Life Sciences</title>
+        <meta property="og:title" content="Pharmaceuticals | Life Sciences" />
+        <meta name="description" content="In this era of AI, pharmaceutical engineering plays a crucial role in optimizing processes, enhancing efficiency, and ensuring regulatory compliance throughout the drug development and manufacturing lifecycle." />
+        <meta name="keywords" content="Pharmaceuticals Segments, Quality Assurance, QMS and Data Integration, Regulatory Affairs, Quality Remediation and Compliance Verification, Conceptual Design and Feasibility Studies, Process Engineering, Equipment Selection and Validation, Facility Design and Commissioning, Regulatory Compliance and Documentation" />
+        <meta property="og:description" content="In this era of AI, pharmaceutical engineering plays a crucial role in optimizing processes, enhancing efficiency, and ensuring regulatory compliance throughout the drug development and manufacturing lifecycle." />
+        <meta property="og:keywords" content="Pharmaceuticals Segments, Quality Assurance, QMS and Data Integration, Regulatory Affairs, Quality Remediation and Compliance Verification, Conceptual Design and Feasibility Studies, Process Engineering, Equipment Selection and Validation, Facility Design and Commissioning, Regulatory Compliance and Documentation" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className="aspect-video w-full relative">
         <div className="absolute z-[1] w-full h-full">
           <div className="h-full absolute w-full lg:w-2/3 text-left left-0 lg:text-9xl md:text-4xl text-2xl  bg-gradient-to-r from-black to-transparent text-white flex justify-center items-center p-36 font-semibold">Catalyzing Discovery: Engineering the Essence of Pharmaceuticals!</div>

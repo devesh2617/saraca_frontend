@@ -1,4 +1,5 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import {Helmet} from "react-helmet";
 import { Carousel } from "react-responsive-carousel";
 import TestimonialCards from "../components/TestimonialCards"
 import { useEffect, useState } from "react";
@@ -240,6 +241,15 @@ const Home = () => {
 
   return (
     <div>
+      <Helmet>
+      <title>Medical Devices Engineering Services | Contract Engineering| Product Development | Remediation Services | Outsourcing </title>
+        <meta property="og:title" content="Medical Devices Engineering Services | Contract Engineering| Product Development | Remediation Services | Outsourcing " />
+        <meta name="description" content="SARACA Solutions (SARACA) is an engineering services company which specializes in providing innovative, and cost effective deliverables with a core focus on customer satisfaction. Our business has a global reach and is wholly focused on the Medical Products/devices Market Segment. We possess significant expertise in the areas of: Spine, Trauma, ENT, Ophthalmic, Remote Monitoring Systems, IOT Gateways, Embedded electronics, Emergency Care and Single Use Devices." />
+        <meta name="keywords" content="Medical device design, medical product design companies, medical product development, medical device engineer, product design services, engineering services, Medical Engineering, medical product engineering, Contract engineering, medical device outsourcing, medical device engineering consultants, Clinical Evaluation Report, EU MDR, CER writer, Regulatory affairs, Software development, software testing, Robotics" />
+        <meta property="og:description" content="SARACA Solutions (SARACA) is an engineering services company which specializes in providing innovative, and cost effective deliverables with a core focus on customer satisfaction. Our business has a global reach and is wholly focused on the Medical Products/devices Market Segment. We possess significant expertise in the areas of: Spine, Trauma, ENT, Ophthalmic, Remote Monitoring Systems, IOT Gateways, Embedded electronics, Emergency Care and Single Use Devices." />
+        <meta property="og:keywords" content="Medical device design, medical product design companies, medical product development, medical device engineer, product design services, engineering services, Medical Engineering, medical product engineering, Contract engineering, medical device outsourcing, medical device engineering consultants, Clinical Evaluation Report, EU MDR, CER writer, Regulatory affairs, Software development, software testing, Robotics" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Carousel
         autoPlay
         autoFocus

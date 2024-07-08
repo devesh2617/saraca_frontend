@@ -1,6 +1,7 @@
 // import { useState } from 'react';
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 // import IndustryCards from "../../components/IndustryCards";
+import {Helmet} from "react-helmet"
 import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
 
 // type medicalCardsData = {
@@ -166,6 +167,30 @@ const Medical = () => {
   // }
   return (
     <div>
+      <Helmet>
+        <title>Rolling Stocks</title>
+        <meta
+          property="og:title"
+          content="Rolling Stocks"
+        />
+        <meta
+          name="description"
+          content="Saraca offers comprehensive expertise in the rolling stock segment, delivering advanced solutions in signaling and communication engineering, train control systems, braking systems, automation, and rigorous testing and validation. Our skilled team of mechanical and embedded hardware/software engineers excels in mechanical and electrical design, cabin simulation, retrofit/upgrades, and testing and commissioning support. Specializing in optimizing rolling stock design for interiors, car bodies, and subsystems, we prioritize safety, reliability, and operational efficiency, driving innovation to enhance railroad safety, passenger experience, and operational effectiveness."
+        />
+        <meta
+          name="keywords"
+          content="rolling stock engineering, signaling and communication systems, train control systems, rolling stock design optimization, mechanical and electrical design, cabin simulation, retrofit upgrades, testing and commissioning support, rail safety solutions, passenger journey improvements, operational efficiency in rail, rolling stock validation, hardware-in-loop simulation, cybersecurity for rail, AI/ML solutions for rail, cloud applications for rail, vehicle system engineering, SIL 3/4 product engineering, CBTC, electronic interlocking, industrial design for rail, passenger flow optimization"
+        />
+        <meta
+          property="og:description"
+          content="Saraca offers comprehensive expertise in the rolling stock segment, delivering advanced solutions in signaling and communication engineering, train control systems, braking systems, automation, and rigorous testing and validation. Our skilled team of mechanical and embedded hardware/software engineers excels in mechanical and electrical design, cabin simulation, retrofit/upgrades, and testing and commissioning support. Specializing in optimizing rolling stock design for interiors, car bodies, and subsystems, we prioritize safety, reliability, and operational efficiency, driving innovation to enhance railroad safety, passenger experience, and operational effectiveness."
+        />
+        <meta
+          property="og:keywords"
+          content="rolling stock engineering, signaling and communication systems, train control systems, rolling stock design optimization, mechanical and electrical design, cabin simulation, retrofit upgrades, testing and commissioning support, rail safety solutions, passenger journey improvements, operational efficiency in rail, rolling stock validation, hardware-in-loop simulation, cybersecurity for rail, AI/ML solutions for rail, cloud applications for rail, vehicle system engineering, SIL 3/4 product engineering, CBTC, electronic interlocking, industrial design for rail, passenger flow optimization"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className=" aspect-video w-full relative">
         <div className="absolute z-[1] w-full h-full">
           <div className="h-full absolute w-full left-0 lg:text-9xl md:text-5xl text-2xl text-white flex justify-center items-center p-36 font-semibold text-center">Empowering Rails, Engineering Futures</div>

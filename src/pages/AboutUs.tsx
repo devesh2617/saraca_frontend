@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import {Helmet} from 'react-helmet'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -217,6 +217,15 @@ const AboutUs = () => {
   }, [index]); // Add index to the dependency array to avoid stale closures
   return (
     <div>
+      <Helmet>
+      <title>Global IT Consulting & Engineering R&D Services | SARACA</title>
+        <meta property="og:title" content="Global IT Consulting & Engineering R&D Services | SARACA" />
+        <meta name="description" content="SARACA is a global leader in IT consulting and engineering R&D services, serving Fortune 500 clients predominantly based in the USA. With expertise spanning medical technology, aerospace, defense, rail transportation, and automotive industries, we offer tailored solutions in software development, mechanical design, embedded systems, quality assurance, and regulatory affairs. Our team excels in niche technologies like Python, C++, Angular JS, React JS, and cloud computing, delivering cost-effective solutions with a focus on quality and compliance." />
+        <meta name="keywords" content="IT consulting, engineering R&D services, SARACA, software development, mechanical design, embedded systems, quality assurance, regulatory affairs, niche technologies, aerospace, defense, automotive, rail transportation, medical technology" />
+        <meta property="og:description" content="SARACA is a global leader in IT consulting and engineering R&D services, serving Fortune 500 clients predominantly based in the USA. With expertise spanning medical technology, aerospace, defense, rail transportation, and automotive industries, we offer tailored solutions in software development, mechanical design, embedded systems, quality assurance, and regulatory affairs. Our team excels in niche technologies like Python, C++, Angular JS, React JS, and cloud computing, delivering cost-effective solutions with a focus on quality and compliance." />
+        <meta property="og:keywords" content="IT consulting, engineering R&D services, SARACA, software development, mechanical design, embedded systems, quality assurance, regulatory affairs, niche technologies, aerospace, defense, automotive, rail transportation, medical technology" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className="w-full aspect-video relative">
         <div
           aria-label="overlay-container"
