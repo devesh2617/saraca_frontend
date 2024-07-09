@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 import ServiceOfferingsCards from "../../components/SubservicesServiceOfferingCards";
-
+import {Helmet} from "react-helmet"
 type DiscoverMoreCardsData = {
     imageSrc: string,
     link: string
@@ -146,6 +146,30 @@ const Industry = () => {
 
     return (
         <div>
+            <Helmet>
+        <title>Sustainability Engineering Solutions | Saraca</title>
+        <meta
+          property="og:title"
+          content="Sustainability Engineering Solutions | Saraca"
+        />
+        <meta
+          name="description"
+          content="Explore Saraca's comprehensive sustainability engineering services, including sustainable product design, lifecycle assessment, supply chain optimization, and green IT solutions. Partner with us to lead the way towards a greener future."
+        />
+        <meta
+          name="keywords"
+          content="sustainability engineering solutions, sustainable product design, lifecycle assessment services, supply chain optimization, sustainable software development, environmental impact assessment, green data centers, renewable energy integration, IoT for environmental monitoring, AI for sustainability analytics, blockchain for supply chain transparency"
+        />
+        <meta
+          property="og:description"
+          content="Explore Saraca's comprehensive sustainability engineering services, including sustainable product design, lifecycle assessment, supply chain optimization, and green IT solutions. Partner with us to lead the way towards a greener future."
+        />
+        <meta
+          property="og:keywords"
+          content="sustainability engineering solutions, sustainable product design, lifecycle assessment services, supply chain optimization, sustainable software development, environmental impact assessment, green data centers, renewable energy integration, IoT for environmental monitoring, AI for sustainability analytics, blockchain for supply chain transparency"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
             <div aria-label='landing-image' className="w-full aspect-video relative">
                 <div
                     aria-label="overlay-container"

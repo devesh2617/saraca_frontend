@@ -1,4 +1,4 @@
-
+import {Helmet} from "react-helmet"
 import DiscoverMoreCards from '../components/DiscoverMoreCards';
 
 type DiscoverMoreCardsData = {
@@ -70,6 +70,30 @@ const serviceOfferingCards = (data: ServiceOfferings) => {
 const Industry = () => {
   return (
     <div>
+      <Helmet>
+        <title>Saraca Solutions: Innovating Software Engineering for Seamless Business Solutions</title>
+        <meta
+          property="og:title"
+          content="Saraca Solutions: Innovating Software Engineering for Seamless Business Solutions"
+        />
+        <meta
+          name="description"
+          content="Description	Discover Saraca Solutions, a leader in Software Engineering innovations. Our expert team delivers bespoke software solutions including custom application development, quality assurance, cloud applications, and PLM integration. Partner with us for scalable, secure, and reliable digital transformations that drive business growth and enhance customer satisfaction."
+        />
+        <meta
+          name="keywords"
+          content="custom application development, software testing services, cloud application development, PLM integration, digital transformation solutions, bespoke software solutions, Saraca Solutions, software engineering innovations"
+        />
+        <meta
+          property="og:description"
+          content="Description	Discover Saraca Solutions, a leader in Software Engineering innovations. Our expert team delivers bespoke software solutions including custom application development, quality assurance, cloud applications, and PLM integration. Partner with us for scalable, secure, and reliable digital transformations that drive business growth and enhance customer satisfaction."
+        />
+        <meta
+          property="og:keywords"
+          content="custom application development, software testing services, cloud application development, PLM integration, digital transformation solutions, bespoke software solutions, Saraca Solutions, software engineering innovations"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className="w-full aspect-video relative">
                 <div
                     aria-label="overlay-container"

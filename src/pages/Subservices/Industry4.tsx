@@ -1,4 +1,4 @@
-
+import {Helmet} from "react-helmet"
 import React, { useEffect, useRef } from 'react';
 import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 import ServiceOfferingsCards from "../../components/SubservicesServiceOfferingCards";
@@ -128,6 +128,30 @@ const Industry = () => {
 
     return (
         <div>
+            <Helmet>
+        <title>Industry 4.0 Solutions | Saraca</title>
+        <meta
+          property="og:title"
+          content="Industry 4.0 Solutions | Saraca"
+        />
+        <meta
+          name="description"
+          content="Explore Saraca's Industry 4.0 solutions, including digital transformation consulting, IoT integration, AI-driven predictive analytics, and more. Enhance productivity and efficiency with our advanced manufacturing technologies."
+        />
+        <meta
+          name="keywords"
+          content="Industry 4.0 solutions, digital transformation consulting, IoT integration services, AI-driven predictive analytics, robotics and cobots, additive manufacturing, cyber-physical systems, AR and VR for manufacturing, big data analytics for predictive maintenance"
+        />
+        <meta
+          property="og:description"
+          content="Explore Saraca's Industry 4.0 solutions, including digital transformation consulting, IoT integration, AI-driven predictive analytics, and more. Enhance productivity and efficiency with our advanced manufacturing technologies."
+        />
+        <meta
+          property="og:keywords"
+          content="Industry 4.0 solutions, digital transformation consulting, IoT integration services, AI-driven predictive analytics, robotics and cobots, additive manufacturing, cyber-physical systems, AR and VR for manufacturing, big data analytics for predictive maintenance"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
             <div aria-label='landing-image' className="w-full aspect-video relative">
                 <div
                     aria-label="overlay-container"

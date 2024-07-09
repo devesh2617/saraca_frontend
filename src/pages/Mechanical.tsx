@@ -1,4 +1,4 @@
-
+import {Helmet} from "react-helmet"
 import DiscoverMoreCards from '../components/DiscoverMoreCards';
 
 type DiscoverMoreCardsData = {
@@ -60,6 +60,30 @@ const serviceOfferingCards = (data: ServiceOfferings) => {
 const Industry = () => {
   return (
     <div>
+      <Helmet>
+        <title>Mechanical Engineering Solutions | Saraca</title>
+        <meta
+          property="og:title"
+          content="Mechanical Engineering Solutions | Saraca"
+        />
+        <meta
+          name="description"
+          content="Explore Saraca's mechanical engineering services, including design, CAD/CAE/CFD/CAM solutions, and development. Our expertise drives efficiency, productivity, and innovation across diverse industrial sectors"
+        />
+        <meta
+          name="keywords"
+          content="mechanical engineering solutions, CAD services, CAE services, CFD solutions, CAM services, mechanical design, mechanical development, industrial innovation, efficiency in engineering, productivity enhancement, sustainability in engineering"
+        />
+        <meta
+          property="og:description"
+          content="Explore Saraca's mechanical engineering services, including design, CAD/CAE/CFD/CAM solutions, and development. Our expertise drives efficiency, productivity, and innovation across diverse industrial sectors"
+        />
+        <meta
+          property="og:keywords"
+          content="mechanical engineering solutions, CAD services, CAE services, CFD solutions, CAM services, mechanical design, mechanical development, industrial innovation, efficiency in engineering, productivity enhancement, sustainability in engineering"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className="w-full aspect-video relative">
       <div
               aria-label="overlay-container"

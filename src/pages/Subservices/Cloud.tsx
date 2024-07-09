@@ -1,4 +1,4 @@
-
+import {Helmet} from "react-helmet"
 import React, { useEffect, useRef } from 'react';
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 import ServiceOfferingsCards from "../../components/SubservicesServiceOfferingCards";
@@ -148,6 +148,30 @@ const Industry = () => {
 
     return (
         <div>
+            <Helmet>
+            <title>Cloud Engineering Solutions | Saraca Solutions</title>
+            <meta
+              property="og:title"
+              content="Cloud Engineering Solutions | Saraca Solutions"
+            />
+            <meta
+              name="description"
+              content="Saraca Solutions specializes in Cloud Engineering, offering comprehensive services from cloud application development and migration to infrastructure optimization and security solutions. Harnessing cutting-edge technologies like serverless computing and AI, we design scalable, secure, and cost-effective cloud solutions tailored to your business needs. Partner with us to accelerate your digital transformation and achieve unparalleled operational efficiency in the cloud."
+            />
+            <meta
+              name="keywords"
+              content="cloud engineering solutions, cloud application development, cloud migration, cloud infrastructure optimization, DevOps integration, cloud security solutions, Saraca Solutions"
+            />
+            <meta
+              property="og:description"
+              content="Saraca Solutions specializes in Cloud Engineering, offering comprehensive services from cloud application development and migration to infrastructure optimization and security solutions. Harnessing cutting-edge technologies like serverless computing and AI, we design scalable, secure, and cost-effective cloud solutions tailored to your business needs. Partner with us to accelerate your digital transformation and achieve unparalleled operational efficiency in the cloud."
+            />
+            <meta
+              property="og:keywords"
+              content="cloud engineering solutions, cloud application development, cloud migration, cloud infrastructure optimization, DevOps integration, cloud security solutions, Saraca Solutions"
+            />
+            <meta property="og:type" content="website" />
+          </Helmet>
            <div aria-label='landing-image' className="w-full aspect-video relative">
                 <div
                     aria-label="overlay-container"

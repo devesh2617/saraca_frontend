@@ -1,4 +1,4 @@
-
+import {Helmet} from "react-helmet"
 import DiscoverMoreCards from '../components/DiscoverMoreCards';
 
 type DiscoverMoreCardsData = {
@@ -55,6 +55,30 @@ const serviceOfferingCards = (data: ServiceOfferings) => {
 const Industry = () => {
   return (
     <div>
+      <Helmet>
+        <title>System Engineering Services | Saraca Solutions</title>
+        <meta
+          property="og:title"
+          content="System Engineering Services | Saraca Solutions"
+        />
+        <meta
+          name="description"
+          content="Explore Saraca's comprehensive system engineering services, including MBD (Model-Based Design) and system testing across aerospace, automotive, healthcare, and telecommunications industries."
+        />
+        <meta
+          name="keywords"
+          content="System engineering services, MBD, system testing, complex systems design, aerospace, automotive, healthcare, telecommunications, system architecture, requirements analysis, integration, Saraca Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Explore Saraca's comprehensive system engineering services, including MBD (Model-Based Design) and system testing across aerospace, automotive, healthcare, and telecommunications industries."
+        />
+        <meta
+          property="og:keywords"
+          content="System engineering services, MBD, system testing, complex systems design, aerospace, automotive, healthcare, telecommunications, system architecture, requirements analysis, integration, Saraca Solutions"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className="w-full aspect-video relative">
       <div
               aria-label="overlay-container"

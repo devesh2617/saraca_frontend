@@ -1,6 +1,5 @@
-
+import { Helmet } from "react-helmet"
 import DiscoverMoreCards from '../components/DiscoverMoreCards';
-
 type DiscoverMoreCardsData = {
   imageSrc: string,
   link: string
@@ -69,6 +68,30 @@ const serviceOfferingCards = (data: ServiceOfferings) => {
 const Industry = () => {
   return (
     <div>
+      <Helmet>
+        <title>Leading Digital Technology Solutions | Saraca</title>
+        <meta
+          property="og:title"
+          content="Leading Digital Technology Solutions | Saraca"
+        />
+        <meta
+          name="description"
+          content="Discover Saraca's cutting-edge digital technology solutions, including IoT, cybersecurity, sustainability, Industry 4.0, and artificial intelligence. We empower businesses with innovative engineering services for the digital era."
+        />
+        <meta
+          name="keywords"
+          content="digital technology solutions, IoT services, cybersecurity solutions, sustainability initiatives, Industry 4.0 advancements, artificial intelligence in engineering, digital engineering paradigm, hardware software synergy"
+        />
+        <meta
+          property="og:description"
+          content="Discover Saraca's cutting-edge digital technology solutions, including IoT, cybersecurity, sustainability, Industry 4.0, and artificial intelligence. We empower businesses with innovative engineering services for the digital era."
+        />
+        <meta
+          property="og:keywords"
+          content="digital technology solutions, IoT services, cybersecurity solutions, sustainability initiatives, Industry 4.0 advancements, artificial intelligence in engineering, digital engineering paradigm, hardware software synergy"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div aria-label='landing-image' className=" aspect-video w-full relative">
       <div
               aria-label="overlay-container"

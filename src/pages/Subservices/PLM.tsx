@@ -1,4 +1,4 @@
-
+import {Helmet} from "react-helmet"
 import React, { useEffect, useRef } from 'react';
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 import ServiceOfferingsCards from "../../components/SubservicesServiceOfferingCards";
@@ -134,6 +134,30 @@ const Industry = () => {
 
     return (
         <div>
+            <Helmet>
+            <title>Product Lifecycle Management (PLM) Services | Saraca Solutions</title>
+            <meta
+              property="og:title"
+              content="Product Lifecycle Management (PLM) Services | Saraca Solutions"
+            />
+            <meta
+              name="description"
+              content="Saraca Solutions provides comprehensive Product Lifecycle Management (PLM) services encompassing software design, development, integration, quality assurance, deployment, and maintenance. Our PLM solutions are designed to optimize your software product's lifecycle, ensuring alignment with business goals and market demands. Partner with us to leverage cutting-edge technologies like IoT, AI, and cloud-based solutions for seamless innovation and competitive advantage."
+            />
+            <meta
+              name="keywords"
+              content="product lifecycle management services, PLM solutions, software design and architecture, development and integration, quality assurance and testing, deployment and maintenance, Saraca Solutions"
+            />
+            <meta
+              property="og:description"
+              content="Saraca Solutions provides comprehensive Product Lifecycle Management (PLM) services encompassing software design, development, integration, quality assurance, deployment, and maintenance. Our PLM solutions are designed to optimize your software product's lifecycle, ensuring alignment with business goals and market demands. Partner with us to leverage cutting-edge technologies like IoT, AI, and cloud-based solutions for seamless innovation and competitive advantage."
+            />
+            <meta
+              property="og:keywords"
+              content="product lifecycle management services, PLM solutions, software design and architecture, development and integration, quality assurance and testing, deployment and maintenance, Saraca Solutions"
+            />
+            <meta property="og:type" content="website" />
+          </Helmet>
             <div aria-label='landing-image' className="w-full aspect-video relative">
                 <div
                     aria-label="overlay-container"
