@@ -9,8 +9,8 @@ import AdminLogin from "./pages/AdminLogin";
 import MedicalDevices from "./pages/SubIndustries/Medical";
 import Footer from "./components/Footer";
 import Industries from "./pages/LifeSciences";
-import AerospaceDefence from "./pages/Aerospace&Defence"
-import Automotive from "./pages/Automotive"
+import AerospaceDefence from "./pages/Aerospace&Defence";
+import Automotive from "./pages/Automotive";
 import Semiconductor from "./pages/Semiconductor"
 import RailTransportation from "./pages/RailTransportation"
 import Consumer from "./pages/Consumer"
@@ -136,34 +136,34 @@ function App() {
   }
   const Layout = ({ children }) => {
     const location = useLocation()
-    useEffect(() =>{
-      return () => {
-        {
-          const path = location.pathname;
-          let formattedPath = "";
+  //   useEffect(() =>{
+  //     return () => {
+  //       {
+  //         const path = location.pathname;
+  //         let formattedPath = "";
     
         
-            // Split the path into parts using the '/' delimiter and filter out empty parts
-            const parts = path.split('/').filter(part => part !== "");
+  //           // Split the path into parts using the '/' delimiter and filter out empty parts
+  //           const parts = path.split('/').filter(part => part !== "");
     
-            // Join the parts with ' | ' to get the desired format
-            if (parts.length) {
-              formattedPath = parts.join(' | ');
-            }
+  //           // Join the parts with ' | ' to get the desired format
+  //           if (parts.length) {
+  //             formattedPath = parts.join(' | ');
+  //           }
           
     
-          // Replace underscores with spaces in the formatted path
-          if (formattedPath) {
-            formattedPath = formattedPath.replace(/_/g, " ");
-          }
+  //         // Replace underscores with spaces in the formatted path
+  //         if (formattedPath) {
+  //           formattedPath = formattedPath.replace(/_/g, " ");
+  //         }
     
-          // Update the document's title with the formatted path
-          document.title = formattedPath;
+  //         // Update the document's title with the formatted path
+  //         document.title = formattedPath;
     
-        }
-      }
-    }
-   , [location.pathname])
+  //       }
+  //     }
+  //   }
+  //  , [location.pathname])
     return (
       <div className={`relative overflow-x-hidden bg-background bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/background.svg')] bg-repeat w-full overflow-y-auto min-h-[100vh] flex flex-col`}
         style={{ backgroundImage: `url('${import.meta.env.VITE_REACT_APP_API_URL}/background.svg')` }}

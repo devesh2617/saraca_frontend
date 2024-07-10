@@ -1,3 +1,4 @@
+import {Helmet} from "react-helmet"
 import HorizontalScroll from 'react-scroll-horizontal';
 
 const CaseStudies = () => {
@@ -43,6 +44,30 @@ const CaseStudies = () => {
 
   return (
     <div className='h-screen overflow-y-hidden bg-black'>
+      <Helmet>
+        <title>Automated Spinal Rod Bending Solution by SARACA: Redefining Surgical Precision</title>
+        <meta
+          property="og:title"
+          content="Automated Spinal Rod Bending Solution by SARACA: Redefining Surgical Precision"
+        />
+        <meta
+          name="description"
+          content="Explore SARACA's revolutionary Automated Spinal Rod Bending Solution, transforming spinal surgery with unparalleled precision and efficiency. Designed to cater to diverse surgical needs, this innovative system enhances surgical outcomes by ensuring real-time measurement and adjustment for perfect spinal rod alignment. Discover SARACA's commitment to advancing medical technology, prioritizing surgeon well-being, patient-centric care, and regulatory compliance."
+        />
+        <meta
+          name="keywords"
+          content="automated spinal rod bending solution, SARACA medical technology, surgical precision, spinal surgery innovation, spine deformity treatment, scoliosis treatment, surgical outcomes improvement"
+        />
+        <meta
+          property="og:description"
+          content="Explore SARACA's revolutionary Automated Spinal Rod Bending Solution, transforming spinal surgery with unparalleled precision and efficiency. Designed to cater to diverse surgical needs, this innovative system enhances surgical outcomes by ensuring real-time measurement and adjustment for perfect spinal rod alignment. Discover SARACA's commitment to advancing medical technology, prioritizing surgeon well-being, patient-centric care, and regulatory compliance."
+        />
+        <meta
+          property="og:keywords"
+          content="automated spinal rod bending solution, SARACA medical technology, surgical precision, spinal surgery innovation, spine deformity treatment, scoliosis treatment, surgical outcomes improvement"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <HorizontalScroll reverseScroll={true}>
         <section className='w-[100vw] h-[100vh] relative'>
           <video className='w-full h-full object-cover' playsInline={true} autoPlay loop muted>

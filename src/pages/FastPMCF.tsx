@@ -1,4 +1,4 @@
-
+import {Helmet} from "react-helmet"
 import HorizontalScroll from 'react-scroll-horizontal';
 
 const CaseStudies = () => {
@@ -53,6 +53,30 @@ const CaseStudies = () => {
 
   return (
     <div className='h-screen overflow-y-hidden bg-black'>
+      <Helmet>
+        <title>FastPMCF™: Streamlined PMCF Surveys for Medical Device Manufacturers</title>
+        <meta
+          property="og:title"
+          content="FastPMCF™: Streamlined PMCF Surveys for Medical Device Manufacturers"
+        />
+        <meta
+          name="description"
+          content="FastPMCF™ by SARACA is your comprehensive solution for managing Post-Market Clinical Follow-up (PMCF) surveys efficiently. Designed to streamline the entire survey lifecycle, it empowers medical device manufacturers to collect real-world evidence swiftly. Benefit from a single platform to manage multiple device surveys, customizable questionnaires, real-time status updates, dynamic analysis reports, and robust data security features. Launch surveys effortlessly, gather insights, and ensure compliance with confidence."
+        />
+        <meta
+          name="keywords"
+          content="FastPMCF, PMCF surveys, medical device manufacturers, real-world evidence collection, survey management platform, dynamic survey analysis, data security in PMCF, survey lifecycle management."
+        />
+        <meta
+          property="og:description"
+          content="FastPMCF™ by SARACA is your comprehensive solution for managing Post-Market Clinical Follow-up (PMCF) surveys efficiently. Designed to streamline the entire survey lifecycle, it empowers medical device manufacturers to collect real-world evidence swiftly. Benefit from a single platform to manage multiple device surveys, customizable questionnaires, real-time status updates, dynamic analysis reports, and robust data security features. Launch surveys effortlessly, gather insights, and ensure compliance with confidence."
+        />
+        <meta
+          property="og:keywords"
+          content="FastPMCF, PMCF surveys, medical device manufacturers, real-world evidence collection, survey management platform, dynamic survey analysis, data security in PMCF, survey lifecycle management."
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <HorizontalScroll reverseScroll={true}>
         <section className='w-[100vw] h-[100vh] relative flex justify-center items-center'>
         <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/Fastpmcf Logo.svg`} className='w-full h-full object-contain'>

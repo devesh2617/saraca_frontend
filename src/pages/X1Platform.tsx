@@ -1,5 +1,5 @@
 import HorizontalScroll from 'react-scroll-horizontal';
-
+import {Helmet} from "react-helmet"
 const CaseStudies = () => {
 
   const cardsData = [
@@ -48,6 +48,30 @@ const CaseStudies = () => {
 
   return (
     <div className='h-screen overflow-y-hidden bg-black'>
+      <Helmet>
+        <title>Title	Introducing X1 Platform: Automotive Innovation by SARACA</title>
+        <meta
+          property="og:title"
+          content="Title	Introducing X1 Platform: Automotive Innovation by SARACA"
+        />
+        <meta
+          name="description"
+          content="Discover SARACA's revolutionary X1 platform, an Automotive Grade Linux (AGL) based solution redefining the automotive industry. Designed for OEMs and Tier 1 suppliers, the X1 platform offers unparalleled flexibility and customization for instrument clusters, infotainment, and telematics systems. Explore its features including TFT screen, Wi-Fi/Bluetooth connectivity, Google integration, and OTA updates, transforming driver experiences with advanced functionality and user-friendly interfaces."
+        />
+        <meta
+          name="keywords"
+          content="X1 platform, Automotive Grade Linux, instrument cluster, infotainment system, telematics system, TFT screen, Wi-Fi Bluetooth connectivity, Google integration, OTA updates, SARACA automotive solutions"
+        />
+        <meta
+          property="og:description"
+          content="Discover SARACA's revolutionary X1 platform, an Automotive Grade Linux (AGL) based solution redefining the automotive industry. Designed for OEMs and Tier 1 suppliers, the X1 platform offers unparalleled flexibility and customization for instrument clusters, infotainment, and telematics systems. Explore its features including TFT screen, Wi-Fi/Bluetooth connectivity, Google integration, and OTA updates, transforming driver experiences with advanced functionality and user-friendly interfaces."
+        />
+        <meta
+          property="og:keywords"
+          content="X1 platform, Automotive Grade Linux, instrument cluster, infotainment system, telematics system, TFT screen, Wi-Fi Bluetooth connectivity, Google integration, OTA updates, SARACA automotive solutions"
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <HorizontalScroll reverseScroll={true}>
         <section className='w-[100vw] h-[100vh] relative flex items-center justify-center'>
           <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/x1-logo.svg`} className='w-full h-[60%] object-contain'>
