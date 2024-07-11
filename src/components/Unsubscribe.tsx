@@ -130,6 +130,7 @@ const UnsubscribePage = () => {
         >
           Unsubscribe
         </button>
+        <p className='text-red-500 font-semibold text-xl mt-2'>By Providing your phone number, you agree to receive a text message from Saraca Solutions. Message and Data rates may apply, Message frequncey varies.</p>
       </form>
     </div>
     </div>

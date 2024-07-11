@@ -1,4 +1,3 @@
-
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import CookieConsent from "react-cookie-consent"
@@ -11,10 +10,10 @@ import Footer from "./components/Footer";
 import Industries from "./pages/LifeSciences";
 import AerospaceDefence from "./pages/Aerospace&Defence";
 import Automotive from "./pages/Automotive";
-import Semiconductor from "./pages/Semiconductor"
-import RailTransportation from "./pages/RailTransportation"
-import Consumer from "./pages/Consumer"
-import Industrial from "./pages/Industrial"
+import Semiconductor from "./pages/Semiconductor";
+import RailTransportation from "./pages/RailTransportation";
+import Consumer from "./pages/Consumer";
+import Industrial from "./pages/Industrial";
 import Digital from "./pages/Digital";
 import Mechanical from "./pages/Mechanical";
 import Embedded from "./pages/Embedded";

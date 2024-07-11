@@ -27,13 +27,13 @@ const ourLeadersCardsData: ourLeadersCardsData[] = [
     name: "Rohit Gupta",
     designation: "Associate Vice President",
     links: [
-      {
-        web: "twitter",
-        link: "#"
-      },
+      // {
+      //   web: "twitter",
+      //   link: "#"
+      // },
       {
         web: "linkedin",
-        link: "#"
+        link: "https://www.linkedin.com/in/rohit-gupta-78a87519/"
       }
     ]
   },
@@ -42,13 +42,13 @@ const ourLeadersCardsData: ourLeadersCardsData[] = [
     name: "Ankur Aggarwal",
     designation: "Vice President- BU Head",
     links: [
-      {
-        web: "twitter",
-        link: "#"
-      },
+      // {
+      //   web: "twitter",
+      //   link: "#"
+      // },
       {
         web: "linkedin",
-        link: "#"
+        link: "https://www.linkedin.com/in/ankuraggarwal308/"
       }
     ]
   },
@@ -57,13 +57,13 @@ const ourLeadersCardsData: ourLeadersCardsData[] = [
     name: "Rahul Sisodiya",
     designation: "Asssociate Director",
     links: [
-      {
-        web: "twitter",
-        link: "#"
-      },
+      // {
+      //   web: "twitter",
+      //   link: "#"
+      // },
       {
         web: "linkedin",
-        link: "#"
+        link: "https://www.linkedin.com/in/rahulsisodiya/"
       }
     ]
   },
@@ -72,13 +72,13 @@ const ourLeadersCardsData: ourLeadersCardsData[] = [
     name: "Seema Tyagi",
     designation: "Director Human Resources",
     links: [
-      {
-        web: "twitter",
-        link: "#"
-      },
+      // {
+      //   web: "twitter",
+      //   link: "#"
+      // },
       {
         web: "linkedin",
-        link: "#"
+        link: "https://www.linkedin.com/in/dr-seema-tyagi/"
       }
     ]
   },
@@ -87,13 +87,13 @@ const ourLeadersCardsData: ourLeadersCardsData[] = [
     name: "Neeraj Kumar Gupta",
     designation: "Consultant",
     links: [
-      {
-        web: "twitter",
-        link: "#"
-      },
+      // {
+      //   web: "twitter",
+      //   link: "#"
+      // },
       {
         web: "linkedin",
-        link: "#"
+        link: "https://www.linkedin.com/in/dr-neeraj-kumar-gupta-a4977096/"
       }
     ]
   },
@@ -102,13 +102,13 @@ const ourLeadersCardsData: ourLeadersCardsData[] = [
     name: "Dan Wood",
     designation: "Director-Business Development",
     links: [
-      {
-        web: "twitter",
-        link: "#"
-      },
+      // {
+      //   web: "twitter",
+      //   link: "#"
+      // },
       {
         web: "linkedin",
-        link: "#"
+        link: "https://www.linkedin.com/in/mppdanwood/"
       }
     ]
   },
@@ -303,10 +303,10 @@ const AboutUs = () => {
               </h1>
               <p className="uppercase mt-4 text-sky-600 text-2xl">Founder, Managing Director and Cheif Executive Officer</p>
               <div className="flex mt-auto">
-                <a href="#">
+                {/* <a href="#">
                   <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/twitter.svg`} alt="twitter" className="h-16 aspect-square" />
-                </a>
-                <a href="#">
+                </a> */}
+                <a href="https://www.linkedin.com/in/kuldeeptyagi/" target="_blank">
                   <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/linkedin.svg`} alt="linkedin" className="h-16 aspect-square" />
 
                 </a>
@@ -357,7 +357,7 @@ With a focus on quality and compliance, we're trusted by over 25+ Fortune 500 cl
                         <div className="flex justify-center items-center mt-4">
                           {data.links.map((link: any, index: number) => {
                             return (
-                              <a href={link.link} key={index}>
+                              <a href={link.link} key={index} target="_blank">
                                 <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/${link.web}.svg`} alt="links" className="w-12 aspect-square" />
                               </a>
                             )
