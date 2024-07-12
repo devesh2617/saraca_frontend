@@ -174,9 +174,9 @@ const Navbar = () => {
     "Insights": {
       sublinks: [
         { "Certifications": { sublinks: [], link: "/Insights/Certificates" } },
-        { "White Paper": { sublinks: [], link: "/Insights/White_Papers" } },
+        { "White Papers": { sublinks: [], link: "/Insights/White_Papers" } },
         { "Blogs": { sublinks: [], link: "/Insights/Blogs" } },
-        { "Webinar": { sublinks: [], link: "/Insights/Webinars" } },
+        { "Webinars": { sublinks: [], link: "/Insights/Webinars" } },
         { "News": { sublinks: [], link: "/Insights/News" } },
         // { "Report": [] }
       ], link: "#"
