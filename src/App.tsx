@@ -107,6 +107,7 @@ import EFlexPine from "./pages/EFlexSpine"
 import HealthcareApplications from "./pages/SubIndustries/HealthcareApplications"
 import Error404 from "./pages/Error404";
 import UnsubscribePage from "./components/Unsubscribe";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 function App() {
 
 
@@ -283,6 +284,7 @@ function App() {
             <Route path="/Innovation/eFleXpine" element={<EFlexPine />} />
             <Route path="/Search" element={<SearchPage />} />
             <Route path="/Unsubscribe" element={<UnsubscribePage/>}/>
+            <Route path="/Privacy_Policy" element={<PrivacyPolicy/>}/>
             <Route path="*" element={<Error404 />} />
           </Routes>
         </Layout>} />

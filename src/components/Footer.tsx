@@ -115,7 +115,7 @@ const Footer = () => {
               <h1 className="text-3xl text-blue-400">Industries</h1>
               {industryLinks?.map((data, index) => {
                 return (
-                  <a key={index} href={data?.link}>{data.name}</a>
+                  <a key={index} href={data?.link} className="underline hover:text-red-400">{data.name}</a>
                 )
               })}
             </section>
@@ -123,7 +123,7 @@ const Footer = () => {
               <h1 className="text-3xl text-blue-400">Services</h1>
               {serviceLinks?.map((data, index) => {
                 return (
-                  <a key={index} href={data?.link}>{data.name}</a>
+                  <a key={index} href={data?.link} className="underline hover:text-red-400">{data.name}</a>
                 )
               })}
             </section>
@@ -136,13 +136,13 @@ const Footer = () => {
         <div>
           <p className="text-lg">&copy;2024 Saraca Solutions Private Limited</p>
           <div className="flex flex-row gap-x-4 underline mt-1 text-xl">
-            <a target="_blank" href={`${import.meta.env.VITE_REACT_APP_API_URL}/PL-4029.pdf`}>
+            <a href={`/Privacy_Policy`} className="underline hover:text-red-400">
              Privacy Policy
             </a>
-            <a href="/Unsubscribe">
+            <a href="/Unsubscribe" className="underline hover:text-red-400">
              Unsubscribe
             </a>
-            <a href="/Contact_Us">
+            <a href="/Contact_Us" className="underline hover:text-red-400">
              Contact Us
             </a>
           </div>

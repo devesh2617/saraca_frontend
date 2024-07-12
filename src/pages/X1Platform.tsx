@@ -49,10 +49,10 @@ const CaseStudies = () => {
   return (
     <div className='h-screen overflow-y-hidden bg-black'>
       <Helmet>
-        <title>Title	Introducing X1 Platform: Automotive Innovation by SARACA</title>
+        <title>Introducing X1 Platform: Automotive Innovation by SARACA</title>
         <meta
           property="og:title"
-          content="Title	Introducing X1 Platform: Automotive Innovation by SARACA"
+          content="Introducing X1 Platform: Automotive Innovation by SARACA"
         />
         <meta
           name="description"
