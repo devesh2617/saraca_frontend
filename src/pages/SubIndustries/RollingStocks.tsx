@@ -208,7 +208,7 @@ const Medical = () => {
                 </video>
       
       </div>
-      <div aria-label='what-we-do' className='w-full py-24'>
+      <div aria-label='what-we-do' className='w-full pt-24'>
         <div>
         <h1 className='text-5xl font-semibold text-center pb-24'>
           Rolling Stock Segment
