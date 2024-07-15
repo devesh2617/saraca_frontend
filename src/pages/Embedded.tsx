@@ -46,14 +46,13 @@ const DiscoverMoreCardsData = [{
 const serviceOfferingCards = (data: ServiceOfferings) => {
   return (
     <a href={data.link}>
-       <div className='bg-white w-[16rem] rounded-xl overflow-hidden'>
-          <img src={data.imageSrc} className='w-full object-cover min-h-52'/>
+      <div className='bg-white rounded-xl overflow-hidden'>
+          <img src={data.imageSrc} className='object-cover max-w-[30rem] aspect-square'/>
           <h1 className=' font-bold text-center text-2xl py-4'>
             {data.title}
           </h1>
          </div>
-    </a>
-   
+    </a>   
   )
 }
 
@@ -123,7 +122,7 @@ const Industry = () => {
         <h1 className='text-6xl font-semibold text-center mb-8 text-white'>
           Our Service Offerings 
         </h1>
-        <div className=' mt-16 w-full flex justify-evenly flex-wrap gap-8'>
+        <div className=' mt-16 w-full flex justify-center flex-wrap gap-24'>
          {ServiceOfferings.map((data:ServiceOfferings)=>serviceOfferingCards(data))}
         </div>
         </div>
