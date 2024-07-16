@@ -85,6 +85,12 @@ h6 {
     overflow: hidden;
 }
 
+.fifteen_line_text {
+    line-height: 1.5;
+    height: calc(1.5em*15);
+    overflow-y: auto;
+}
+
 .timeline-slide-container{
   perspective: 800px;
 }
@@ -115,6 +121,18 @@ h6 {
 
 .timeline-slide-container .rotated .timeline-slide-back{
     transform: rotateY(360deg) !important;
+}
+
+.wrapper {
+    grid-template-rows: auto auto;
+    grid-template-rows: auto max-content auto;
+}
+
+.subgrid {
+    display: grid;
+    grid-template-rows: subgrid;
+    gap: 1.5em;
+    grid-row: span 3;
 }
 
 

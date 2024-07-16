@@ -150,7 +150,7 @@ const Medical = () => {
           }/Industries/LifeSciences/HealthcareApplications/HealthcareApplications.jpg`}
         />
       </div>
-      <div aria-label="what-we-do" className="w-full py-24">
+      <div aria-label="what-we-do" className="w-full pt-24">
         <div>
           <h1 className="text-5xl font-semibold text-center pb-24">
             Healthcare Applications
@@ -220,7 +220,7 @@ const Medical = () => {
         <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">
           Our Service Offerings
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  mt-24 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  mt-24 gap-12 wrapper">
           {ServiceOfferings.map((data, index: number) => (
             <ServiceOfferingsCards
               cardsData={data}
