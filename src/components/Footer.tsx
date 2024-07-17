@@ -86,7 +86,6 @@ const Footer = () => {
   useEffect(()=>{
     const handleResize = () =>{
       if(window.innerWidth<1024) {
-        console.log(window.innerWidth)
         setScreenSize("sm")
       }
       else setScreenSize("lg")
