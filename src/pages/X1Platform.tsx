@@ -47,7 +47,7 @@ const CaseStudies = () => {
   ]
 
   return (
-    <div className='h-screen overflow-y-hidden bg-black'>
+    <div className='h-screen lg:overflow-y-hidden overflow-x-hidden bg-black'>
       <Helmet>
         <title>Introducing X1 Platform: Automotive Innovation by SARACA</title>
         <meta
@@ -72,7 +72,7 @@ const CaseStudies = () => {
         />
         <meta property="og:type" content="website" />
       </Helmet>
-      <HorizontalScroll reverseScroll={true}>
+      <HorizontalScroll reverseScroll={true} className='hidden lg:block'>
         <section className='w-[100vw] h-[100vh] relative flex items-center justify-center'>
           <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/x1-logo.svg`} className='w-full h-[60%] object-contain'>
 
@@ -132,7 +132,7 @@ const CaseStudies = () => {
 
           </div>
         </section>
-        <section className='w-screen h-screen p-4'>
+        {/* <section className='w-screen h-screen p-4'>
           <div className='h-full w-full flex gap-4 items-center'>
             <section className='flex-[2] relative'>
 
@@ -146,7 +146,7 @@ const CaseStudies = () => {
             </section>
 
           </div>
-        </section>
+        </section> */}
         <section className='h-screen w-screen p-4 flex items-center justify-center gap-24'>
           <div className='w-[40%]'>
             <h1 className='text-5xl text-white font-bold'>Product Overview</h1>
@@ -184,6 +184,118 @@ const CaseStudies = () => {
           </div>
         </section>
       </HorizontalScroll>
+      <div className='w-[90%] mx-auto'>
+     
+          <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/x1-logo.svg`} className='w-full aspect-square object-contain'>
+
+          </img>
+         
+
+        <section className='w-full pt-24'>
+          <div className='h-full w-full flex flex-col gap-16'>
+            <section className='relative'>
+
+              <h1 className=" text-5xl font-semibold text-white">
+                DIGITAL INSTRUMENT CLUSTER
+              </h1>
+
+            </section>
+            <section className=''>
+              <iframe src="https://www.youtube.com/embed/k0TpoaiZGb0?si=brztd2wseyrUgIWf" className='w-full aspect-[16/9]'></iframe>
+              <p className='text-3xl text-white mt-16'>
+                Automotive Grade Linux (AGL) is an automotive OS platform that aims to revolutionize the automotive industry by creating a standardized Linux-based platform for automotive applications. AGL enables the development of advanced infotainment systems, instrument clusters, telematics, ADAS, autonomous driving, fleet management, and car-sharing platforms. It leverages open-source software and promotes collaboration among carmakers, suppliers, and technology companies. AGL's Software Defined Vehicle (SDV) concept integrates virtualization, partitioning, over-the-air updates, advanced connectivity, data analytics, and AI to enhance vehicle functionality and transform it into a software-driven platform. SDV encourages collaboration, standardization, and interoperability within the automotive ecosystem, fostering rapid innovation and customization.
+              </p>
+            </section>
+            <section className='relative'>
+              <h1 className=" text-9xl font-semibold text-white">
+                AGL TECHNOLOGY
+              </h1>
+            </section>
+          </div>
+        </section>
+        <section className='w-full pt-24'>
+          <div className='h-full w-full flex flex-col gap-16'>
+            <section className='relative'>
+
+              <h1 className=" text-5xl font-semibold text-white">
+                2 WHEELER INSTRUMENT CLUSTER
+              </h1>
+
+            </section>
+            <section className=''>
+              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/ic3.png`} className='aspect-[16/9] object-cover w-full'></img>
+
+            </section>
+
+          </div>
+        </section>
+        <section className='w-full py-24'>
+          <div className='h-full w-full flex flex-col gap-16'>
+            <section className='relative'>
+
+              <h1 className=" text-5xl font-semibold text-white">
+                4 WHEELER INSTRUMENT CLUSTER
+              </h1>
+
+            </section>
+            <section className=''>
+              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/ic1.png`} className='aspect-[16/9] object-cover w-full'></img>
+            </section>
+
+          </div>
+        </section>
+        {/* <section className='w-full py-24'>
+          <div className='h-full w-full flex flex-col gap-16'>
+            <section className='flex-[2] relative'>
+
+              <h1 className=" text-5xl font-semibold text-white">
+                4 WHEELER INFOTAINMENT SYSTEM
+              </h1>
+
+            </section>
+            <section className='flex-[6]'>
+              <iframe src="https://www.youtube.com/embed/EvL3eBZCh4Q?si=PSzQljyNTZK3JnmQ" className='aspect-[16/9] object-cover w-full'></iframe>
+            </section>
+
+          </div>
+        </section> */}
+        <section className='flex flex-col'>
+          <div className='w-full'>
+            <h1 className='text-5xl text-white font-bold'>Product Overview</h1>
+            <p className='text-white text-3xl mt-16'>
+              Introducing a cutting-edge instrument cluster based on the Automotive Grade Linux (AGL) platform. This remarkable advancement in automotive technology revolutionizes the way drivers interact with their vehicles and access vital information through a TFT (Thin Film Transistor) screen.
+              <br />
+              <br />
+              The instrument cluster serves as the primary interface between the driver and the vehicle's essential data. Traditionally, instrument clusters were built with proprietary software, limiting their flexibility and functionality. However, with the adoption of the AGL platform, instrument clusters have undergone a remarkable transformation, offering enhanced features and capabilities.
+             
+            </p>
+          </div>
+          <div className='w-full pt-24'>
+            <h1 className='text-5xl text-white font-bold'>
+              Key features
+            </h1>
+            <div className='mt-16 flex flex-col gap-16 min-h-[30rem]'>
+              
+                  {cardsData?.map((data, index) => {
+                    return (
+                      <div className={`p-4 w-full`}>
+                    <div className="w-[60%] aspect-[4/3] mx-auto">
+                      <img src={data?.imageSrc} alt="" className='w-full h-full object-contain rounded-md' />
+                    </div>
+                    <div className='text-gray-400 text-3xl mt-16'>
+                      <h1 className='text-white font-semibold text-5xl text-center mb-16'>{data?.title}</h1>
+                      {data?.content}
+                    </div>
+                  </div>
+                    )
+                  })}
+                
+
+            </div>
+
+          </div>
+        </section>
+        </div>
     </div>
   );
 };
