@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import HorizontalScroll from "react-scroll-horizontal";
 
 const CaseStudies = () => {
+  
   const cardsData = [
     {
       title: "Manage survey(s) for multiple devices on a single platform",
@@ -74,8 +75,10 @@ const CaseStudies = () => {
     },
   ];
 
+ 
+
   return (
-    <div className="h-screen lg:overflow-y-hidden overflow-x-hidden bg-black">
+    <div className="lg:h-screen lg:overflow-y-hidden overflow-x-hidden bg-black">
       <Helmet>
         <title>
           FastPMCF™: Streamlined PMCF Surveys for Medical Device Manufacturers
@@ -116,10 +119,10 @@ const CaseStudies = () => {
             className="absolute z-1 w-full scale-110 h-full bg-[#353535] bottom-[50%]"
             style={{ borderRadius: "50%" }}
           ></div>
-          <div className="z-[2] text-3xl text-white container text-center flex flex-col items-center">
-            FastPMCFTM manages end-to-end cycle of the PMCF survey and enables
-            the medical device manufacturers to get the feedback on clinical
-            evidence from market in a quick turnaround time.
+          <p className="z-[2] text-3xl text-white container text-center flex flex-col items-center w-[80%]">
+          FastPMCF&trade; manages end-to-end cycle of the PMCF survey and
+                enables the medical device manufacturers to get the feedback on
+                clinical evidence from market in a quick turnaround time.
             <div className=" w-96 aspect-square bg-white rounded-full mt-8">
               <img
                 src={`${import.meta.env.VITE_REACT_APP_API_URL}/image 5.png`}
@@ -127,7 +130,7 @@ const CaseStudies = () => {
                 className="w-full h-full object-contain"
               />
             </div>
-          </div>
+          </p>
         </section>
         <section className="w-screen h-screen p-4">
           <div className="h-full w-full flex gap-4 items-center">
@@ -142,7 +145,7 @@ const CaseStudies = () => {
                 Single Platform to manage all your PMCF Surveys
               </h1>
               <p className="text-3xl text-white mt-12">
-                FastPMCF TM enables medical device manufacturers manage their
+                FastPMCF<sup>TM</sup> enables medical device manufacturers manage their
                 PMCF needs and collect real world evidence in a quick turn
                 around time. The platform is uniquely designed to manage
                 multiple surveys and ensure a smooth data capture process.
@@ -194,7 +197,7 @@ const CaseStudies = () => {
           <div className="h-full w-full flex flex-col gap-16">
             <section className="">
               <p className="text-3xl text-white mt-16">
-                FastPMCFTM manages end-to-end cycle of the PMCF survey and
+                FastPMCF<sup>TM</sup> manages end-to-end cycle of the PMCF survey and
                 enables the medical device manufacturers to get the feedback on
                 clinical evidence from market in a quick turnaround time.
               </p>
@@ -211,7 +214,7 @@ const CaseStudies = () => {
         </section>
      
         
-        <section className="w-full py-24">
+        <section className="w-full pt-24">
           <div className="h-full w-full flex flex-col gap-16">
             
             <section className="flex-[6]">
@@ -222,9 +225,23 @@ const CaseStudies = () => {
             </section>
           </div>
         </section>
+        <section className="w-full pt-24">
+          <div className="h-full w-full flex flex-col gap-16">
+          <h1 className=" text-5xl font-semibold text-white">
+                Single Platform to manage all your PMCF Surveys
+              </h1>
+              <p className="text-3xl text-white mt-12">
+                FastPMCF<sup>TM</sup> enables medical device manufacturers manage their
+                PMCF needs and collect real world evidence in a quick turn
+                around time. The platform is uniquely designed to manage
+                multiple surveys and ensure a smooth data capture process.
+              </p>
+          
+          </div>
+        </section>
         <section className="flex flex-col">
           
-          <div className="w-full pt-24">
+          <div className="w-full py-24">
             <h1 className="text-5xl text-white font-bold">Key features</h1>
             <div className="mt-16 flex flex-col gap-16 min-h-[30rem]">
               {cardsData?.map((data, index) => {

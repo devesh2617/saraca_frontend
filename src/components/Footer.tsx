@@ -1,4 +1,9 @@
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+
 const Footer = () => {
+  const [screenSize, setScreenSize] = useState("lg")
+  const location = useLocation();
   const addresses = [
     {
       "New Delhi, India:": "A-18, Bhabha Marg, Sector 59 Noida, Uttar Pradesh, 201301",
@@ -78,8 +83,20 @@ const Footer = () => {
     //   link:"/Service/TechPub"
     // },
   ]
+  useEffect(()=>{
+    const handleResize = () =>{
+      if(window.innerWidth<1024) {
+        console.log(window.innerWidth)
+        setScreenSize("sm")
+      }
+      else setScreenSize("lg")
+     }
+    window.addEventListener("resize", handleResize)
+    handleResize()
+    return () => window.removeEventListener("resize", handleResize)
+  },[])
   return (
-    <div aria-label="footer" className="mt-auto">
+    location.pathname.split("/")[1] === "Innovation" && screenSize ==="lg"?"":(<div aria-label="footer" className="mt-auto">
       <div
         aria-label="regular-footer"
         className={`max-w-full text-sky-200 min-h-[35vh] bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/footer.webp')] bg-cover mx-auto flex flex-col lg:flex-row leading-relaxed bg-black`}
@@ -156,7 +173,7 @@ const Footer = () => {
         </div>
         </div>
       </div>
-    </div>
+    </div>)
 
   )
 }

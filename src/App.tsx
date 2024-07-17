@@ -170,7 +170,7 @@ function App() {
       >
         {location.pathname.split("/")[1] !== "activate" ? <Navbar /> : ""}
         {children}
-        {location.pathname.split("/")[1] !== "activate" && location.pathname.split("/")[1] !== "Innovation" ? <Footer /> : ""}
+        {location.pathname.split("/")[1] !== "activate" ? <Footer /> : ""}
         {location.pathname.split("/")[1] !== "activate" ? (
           <a href="/Contact_Us">
             {location.pathname.split("/")[1] !== "Contact_Us" ? (<button className="fixed z-10 bg-red-400 px-8 rounded-full py-4 pr-12 text-white text-2xl font-semibold bottom-[0.5rem] left-[0.5rem] hover:bg-red-600 duration-500">

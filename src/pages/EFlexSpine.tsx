@@ -60,7 +60,7 @@ const CaseStudies = () => {
   ];
 
   return (
-    <div className="h-screen bg-black lg:overflow-y-hidden overflow-x-hidden">
+    <div className="lg:h-screen bg-black lg:overflow-y-hidden overflow-x-hidden">
       <Helmet>
         <title>
           Automated Spinal Rod Bending Solution by SARACA: Redefining Surgical
@@ -233,7 +233,7 @@ const CaseStudies = () => {
       
         
         <section className="flex flex-col">
-          <div className="w-full pt-24">
+          <div className="w-full py-24">
             <h1 className="text-5xl text-white font-bold">Key features</h1>
             <div className="mt-16 flex flex-col gap-16 min-h-[30rem]">
               {cardsData?.map((data, index) => {

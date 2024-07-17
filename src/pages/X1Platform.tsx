@@ -47,7 +47,7 @@ const CaseStudies = () => {
   ]
 
   return (
-    <div className='h-screen lg:overflow-y-hidden overflow-x-hidden bg-black'>
+    <div className='lg:h-screen lg:overflow-y-hidden overflow-x-hidden bg-black'>
       <Helmet>
         <title>Introducing X1 Platform: Automotive Innovation by SARACA</title>
         <meta
@@ -270,11 +270,11 @@ const CaseStudies = () => {
              
             </p>
           </div>
-          <div className='w-full pt-24'>
+          <div className='w-full py-24'>
             <h1 className='text-5xl text-white font-bold'>
               Key features
             </h1>
-            <div className='mt-16 flex flex-col gap-16 min-h-[30rem]'>
+            <div className='mt-16 flex flex-col gap-16'>
               
                   {cardsData?.map((data, index) => {
                     return (
