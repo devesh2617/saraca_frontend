@@ -15,28 +15,88 @@ type DiscoverMoreCardsData = {
 
 const ServiceOfferings = [
   {
-    heading: "Engineering Services",
-    content:["Conceptualization and Design: From ideation to execution, we bring your automotive visions to life through innovative design solutions.","Product Development: Our expertise spans the entire product development lifecycle, delivering cutting-edge solutions that exceed expectations.","Prototyping and Testing: Utilizing advanced methodologies, we ensure the reliability and performance of automotive components and systems.","Manufacturing Support: We provide comprehensive support throughout the manufacturing process, optimizing efficiency and quality."],
+    heading: "Software Defined Vehicle",
+    content:[
+      "Advanced Driver Assistance System (ADAS)",
+"Automotive ECU Development",
+"AUTOSAR Architecture",
+"Development compliant with ISO 26262 standard",
+"Telematics",
+"Digital Instrument Cluster",
+"Digital Infotainment System"
+    ],
     link: "",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Engineering Services.svg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Software Defined Vehicle.jpg`,
   },
   {
-    heading: "Research & Development",
-    content:["Advanced Technology Integration: Stay ahead of the curve with our integration of emerging technologies, such as SDV, ADAS, EV, AI, IoT, and advanced materials.","Performance Enhancement: Enhance vehicle performance and efficiency through our research-driven approaches and optimization techniques.","Sustainability Solutions: Embrace sustainability with our eco-friendly initiatives and development of green automotive technologies."],
+    heading: "Automotive Software Development",
+    content:[
+      "Microcontrollers and Microprocessors - NXP, Nvidia, Renesas, Infineon, Qualcomm etc.",
+"Operating System: Linux, Android, QNX, VX Works, FreeRTOS, iOS, etc.",
+"Embedded: C, C++, Python, Dart",
+"Device Driver Development",
+"Protocols such as J1939, CAN-FD, LIN, BLE, Automotive Ethernet."
+    ],
     link: "",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/R&D.svg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Automotive Software Development.jpg`,
   },
   {
-    heading: "Digital Solutions",
-    content:["Digital Twin Development: Leverage the power of digital twins for virtual simulations, predictive maintenance, and performance optimization.","Data Analytics and Insights: Harness the potential of data-driven insights to make informed decisions and drive business growth.","Connectivity and IoT Solutions: Transform your automotive ecosystem with seamless connectivity and IoT-enabled solutions for enhanced user experiences."],
+    heading: "Electronics Hardware Design",
+    content:[
+      "Analog and Digital Design",
+"IOT Sensor based system",
+"Microcontroller/Microprocessor/FPGA based design",
+"SOC/SOM based system",
+"Interfaces: USB, Ethernet, CAN, BT, Wi-fi, UART, SPI, I2C etc.",
+"PCB design and development",
+"Verification & Validation"
+    ],
     link: "",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Digital.svg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Electronics Hardware Design.jpg`,
   },
 {
-  heading: "Consulting",
-  content:["Strategic Planning: Benefit from our industry expertise and strategic insights to navigate market challenges and capitalize on opportunities.","Regulatory Compliance: Ensure compliance with global regulatory standards and industry guidelines such as ISO 26262 with our expert guidance and support.","Voice of customers: Frontend assessment of customer requirements to understand the adoption of latest technologies such as feasibility of global ADAS on Indian roads."],
+  heading: "UI/UX Design",
+  content:[
+    "User Research",
+"Competition Analysis",
+"Develop Wireframes and Mockups",
+"User Flows",
+"Develop Prototypes",
+"Validation",
+"Techstack & Tools - Qt, Qml, Flutter, Dart, Figma, Adobe XD, MS Vision, Lucid Charts"
+  ],
   link: "",
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Consulting.svg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/UIUX Design.jpg`,
+},
+{
+  heading: "Testing",
+  content:[
+    "White Box & Black Box Testing",
+"Functional Testing",
+"MIL, SIL & HIL Testing",
+"System Acceptance Testing",
+"GUI Testing",
+"Data Integrity Testing",
+"Regression Testing"
+  ],
+  link: "",
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Testing.jpg`,
+},
+{
+  heading: "Mechanical Design",
+  content:[
+    "End to end product design & development",
+"Concept Design",
+"Risk Assessment",
+"2D & 3D CAD design",
+"GD&T and Tol-stackup",
+"Value Engineering",
+"Reverse Engineering",
+"Sheetmetal and Plastic Design",
+"Prototyping"
+  ],
+  link: "",
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Mechanical Design.jpg`,
 }
 ];
 
