@@ -82,7 +82,7 @@ const CaseStudies = () => {
              modules={[Pagination, Navigation, Autoplay]}
              loop
              navigation
-             autoplay={{delay:4000}}
+             autoplay={{delay:6000}}
            >
              {sectionData?.map((card, index) => (
                <SwiperSlide key={index} >

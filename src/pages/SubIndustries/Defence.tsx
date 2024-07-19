@@ -21,33 +21,51 @@ type medicalCardsData = {
 
 const medicalCardsData = [{
   title: "Unmanned Aerial Vehicles",
-  points: [
-    "From communications and navigation to monitoring and surveillance systems, we specialize in the development of advanced avionics solutions that enable UAVs to operate effectively in diverse environments. Our expertise also extends to flight control systems, mission computers, and power control systems, ensuring optimal performance and reliability in unmanned aerial operations."
-  ],
+  points: [],
   imageSrc: "22.jpg"
 },
 
 {
-  title: "Land Systems",
-  points: [
-    "Saraca provides engineering services for drones encompassing avionics, exteriors, and digital solutions. Our capabilities include designing and integrating landing gears, doors, hydraulics, lighting systems, and aerostructures to enhance drone performance and functionality."
-  ],
-  imageSrc: "23.jpg"
+  title: "Armored Vehicles",
+  points: [],
+  imageSrc: "Armored Vehicles.jpg"
+},
+{
+  title: "Artillery Systems",
+  points: [],
+  imageSrc: "Artillery Systems.jpg"
+},
+{
+  title: "Naval Systems",
+  points: [],
+  imageSrc: "Naval Systems.jpg"
+},
+{
+  title: "Air Systems",
+  points: [],
+  imageSrc: "Air Systems.jpg"
+},
+{
+  title: "Cyber and Electronic Systems",
+  points: [],
+  imageSrc: "15.jpg"
+},
+{
+  title: "Small Arms and Weapons",
+  points: [],
+  imageSrc: "17.jpg"
+},
+{
+  title: "Homeland Security and Border Defense",
+  points: [],
+  imageSrc: "18.jpg"
 },
 {
   title: "Ground Control Systems",
-  points: [
-    "We offer a comprehensive suite of engineering services for land systems, including vehicle maintenance, repair, assembly/disassembly, and inspection. Our expertise in process improvement, quality control/assurance, and manufacturing engineering ensures the reliability and readiness of land-based defense systems."
-  ],
-  imageSrc: "24.jpg"
-},
-{
-  title: "Small Arms and Ammunition",
-  points: [
-    "Saraca specializes in the development and integration of ground control systems for unmanned aerial vehicles and drones. Our solutions encompass data analysis, application development, and hybris development to facilitate real-time monitoring, control, and mission management."
-  ],
-  imageSrc: "25.jpg"
-}]
+  points: [],
+  imageSrc: "Ground Control Systems.jpg"
+}
+]
 
 // const DiscoverMoreCardsData = [{
 //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
@@ -71,44 +89,9 @@ const ServiceOfferings = [
       "Low level development – BSP, DD",
       "Application development",
       "ADAS",
-      "IOT Systems development"
+      "IOT Systems development",
     ],
-    imageSrc: "Embedded.svg"
-  },
-  {
-    title: "Technical Publications",
-    content: [
-      "Technical illustrations",
-      "Technical Authoring",
-      "Multimedia"
-    ],
-    imageSrc: "TechPub.svg"
-  },
-  {
-    title: "Manufacturing Engineering",
-    content: [
-      "Concurrent/Process Engineering",
-      "Tools, Jigs and Fixture Designing",
-      "Transfer of Technology (TOT)",
-      "Manufacturing Transfers",
-      "Sourcing Activities",
-      "Assembly Engineering"
-    ],
-    imageSrc: "Manufacturing.svg"
-  },
-  {
-    title: "Mechanical Engineering",
-    content: [
-      "New Product Development",
-      "Value Engineering",
-      "Reverse Engineering",
-      "Finite Element Analysis",
-      "Sustenance Engineering",
-      "Structural Engineering",
-      "Systems Engineering",
-      "Post Launch Follow-up"
-    ],
-    imageSrc: "Mechnaical.svg"
+    imageSrc: "Embedded.jpg",
   },
   {
     title: "Software Engineering",
@@ -118,24 +101,127 @@ const ServiceOfferings = [
       "HMI development",
       "ATE Application development",
       "Front and back end development",
-      "Full Stack development"
+      "Full Stack development",
     ],
-    imageSrc: "Software.svg"
+    imageSrc: "Software Engineering.jpg",
   },
   {
-    title: "Quality Engineering",
+    title: "Design and Development",
     content: [
-      "Product design control",
-      "Supplier quality assurance",
-      "QMS development",
-      "DHF Remediation",
-      "Regulatory assessment"
+      "Conceptual and Preliminary Design",
+      "Detailed Design",
+      "Systems Engineering",
+      "Aerodynamics and Performance Analysis",
+      "Structural Analysis and Design",
+      "Avionics and Electronics Systems Design",
+      "Propulsion Systems Design",
+      "Interiors Design and Configuration",
+      "Materials and Process Engineering",
     ],
-    imageSrc: "Quality.svg"
-  }
-
-
-]
+    imageSrc: "Design and Development.jpg",
+  },
+  {
+    title: "Simulation and Testing",
+    content: [
+      "Computational Fluid Dynamics (CFD) Analysis",
+      "Finite Element Analysis (FEA)",
+      "System Simulation and Modelling",
+      "Structural Testing (static and dynamic)",
+      "Environmental Testing",
+    ],
+    imageSrc: "1.jpg",
+  },
+  {
+    title: "Manufacturing and Production Support",
+    content: [
+      "Advanced Manufacturing Engineering",
+      "Tooling and Fixture Design",
+      "Production Planning and Control",
+      "Supply Chain Management",
+      "Quality Assurance and Control",
+      "Lean Manufacturing and Process Optimization",
+    ],
+    imageSrc: "Manufacturing and Production Support.jpg",
+  },
+  {
+    title: "Maintenance, Repair, and Overhaul (MRO)",
+    content: [
+      "Aircraft Maintenance and Inspection",
+      "Repair and Overhaul of Components",
+      "Engine Maintenance",
+      "Avionics and Systems Maintenance",
+      "Modifications and Upgrades",
+      "Condition Monitoring and Predictive Maintenance",
+    ],
+    imageSrc: "Maintenance, Repair, and Overhaul (MRO).jpg",
+  },
+  {
+    title: "Product Lifecycle Management",
+    content: [
+      "Data and Configuration Management",
+      "Technical Documentation",
+      "IETP Development",
+      "Illustrations and Graphics",
+    ],
+    imageSrc: "Product Lifecycle Management.jpg",
+  },
+  {
+    title: "Training and Support",
+    content: [
+      "Translation and Localization",
+      "Standards and Compliance",
+      "Integration with PLM Systems",
+      "Lifecycle Documentation Maintenance",
+      "Content Management Solutions",
+    ],
+    imageSrc: "Training and Support.jpg",
+  },
+  {
+    title: "Software and IT Services",
+    content: [
+      "Embedded Systems and Software Development",
+      "Flight Management Systems",
+      "Data Analytics and Big Data Solutions",
+      "Cybersecurity Solutions",
+      "Simulation Software Development",
+      "IT Infrastructure Management",
+    ],
+    imageSrc: "7.jpg",
+  },
+  {
+    title: "Certification and Regulatory Compliance",
+    content: [
+      "Certification Support (FAA, EASA, etc.)",
+      "Safety and Reliability Analysis",
+      "Compliance Documentation",
+      "Environmental Compliance",
+      "Risk Management",
+    ],
+    imageSrc: "Certification and Regulatory Compliance.jpg",
+  },
+  {
+    title: "Sustainability and Green Technologies",
+    content: [
+      "Fuel Efficiency Optimization",
+      "Emission Reduction Technologies",
+      "Sustainable Materials and Processes",
+      "Electric and Hybrid Propulsion Systems",
+      "Renewable Energy Integration",
+    ],
+    imageSrc: "10.jpg",
+  },
+  {
+    title: "Project Management and Consultancy",
+    content: [
+      "Program and Project Management",
+      "Strategic Consultancy",
+      "Market Analysis and Feasibility Studies",
+      "Business Process Reengineering",
+      "Cost Estimation and Budgeting",
+    ],
+    imageSrc: "12.jpg",
+  },
+];
 const Medical = () => {
   // const [selectedServicesOffering, setSelectedServicesOffering] = useState<ServicesOfferingsData | null>(null)
   // const handleSelect = (data: ServicesOfferingsData) => {
