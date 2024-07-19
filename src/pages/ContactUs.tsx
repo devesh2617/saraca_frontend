@@ -10,7 +10,8 @@ const ContactUs = () => {
         message: "",
         // mobile_no: "",
         // country_code: "",
-        organisation: ""
+        organisation: "",
+        checkbox: ""
     })
     const [loading, setLoading] = useState(false)
     const validations = () => {
@@ -48,6 +49,11 @@ const ContactUs = () => {
             return false;
         } else setErrors(prev => ({ ...prev, message: "" }))
 
+        if (!contactUsData.checkbox) {
+            setErrors(prev => ({ ...prev, checkbox: "Please tick the checkbox" }))
+            return false;
+        } else setErrors(prev => ({ ...prev, checkbox: "" }))
+
         return true;
     }
     const [contactUsData, setContactUsData] = useState({
@@ -58,10 +64,13 @@ const ContactUs = () => {
         mobile_no: "",
         country: "",
         industry: "",
-        message: ""
+        message: "",
+        checkbox: false
     })
     const handleChange = (e) => {
-        setContactUsData((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+        // console.log(e.target.value)
+        if(e.target.name === "checkbox") setContactUsData(prev=>({...prev, [e.target.name]:e.target.checked}))
+        else setContactUsData((prev) => ({ ...prev, [e.target.name]: e.target.value }))
     }
     const sendEmail = () => new Promise(async (resolve, reject) => {
         setLoading(true)
@@ -78,7 +87,8 @@ const ContactUs = () => {
                     mobile_no: "",
                     country: "",
                     industry: "",
-                    message: ""
+                    message: "",
+                    checkbox:false
                 }))
                 resolve(res.data.message)
             }
@@ -386,6 +396,13 @@ const ContactUs = () => {
                     <div className="md:col-span-2">
                         <textarea value={contactUsData.message} placeholder="How can we help you?" required onChange={handleChange} name="message" className="p-4 w-full rounded-lg outline-none  focus:outline-[#D2E9E9] placeholder:text-black" draggable={false} rows={2} style={{ resize: "none" }} />
                         <p className="text-sm text-red-400 font-bold">{errors.message}</p>
+                    </div>
+                    <div className="md:col-span-2">
+                        <div className="flex gap-2">
+                        <input type="checkbox" onChange={handleChange} checked={contactUsData.checkbox} name="checkbox"></input>
+                        <p className='text-xl'>By Providing your phone number, you agree to receive a text message from Saraca Solutions. Message and Data rates may apply, Message frequency varies.</p>
+                        </div>
+                        <p className="text-sm text-red-400 font-bold">{errors.checkbox}</p>
                     </div>
                 </div>
                 <button disabled={loading} className="rounded-lg bg-red-400 px-12 py-4 text-white text-xl mt-4" onClick={handleSubmit}>

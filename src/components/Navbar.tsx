@@ -94,11 +94,11 @@ const Navbar = () => {
         {
           "Digital": {
             sublinks: [
+              { name: "Artificial Intelligence", link: "/Service/Digital/ArtificialIntelligence" },
               { name: "IOT", link: "/Service/Digital/IOT" },
               { name: "Cyber Security", link: "/Service/Digital/CyberSecurity" },
               { name: "Sustainability", link: "/Service/Digital/Sustainability" },
-              { name: "Industry 4.0", link: "/Service/Digital/Industry4.0" },
-              { name: "Artificial Intelligence", link: "/Service/Digital/ArtificialIntelligence" }
+              { name: "Industry 4.0", link: "/Service/Digital/Industry4.0" }        
             ], link: "/Service/Digital"
           }
         },
