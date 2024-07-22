@@ -33,6 +33,7 @@ import { CalendarIcon } from "lucide-react"
 import { Calendar } from "@/components/ui/calendar"
 import { cn } from "@/lib/utils"
 import { format } from "date-fns"
+import ReactQuill from "react-quill"
 
 const AdminDashboard = () => {
 
@@ -89,6 +90,28 @@ const AdminDashboard = () => {
       console.log(error.message)
     }
   }
+
+  const modules = {
+    toolbar: [
+      ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+      ['blockquote', 'code-block'],
+      ['link', 'image', 'video', 'formula'],
+    
+      [{ 'header': 1 }, { 'header': 2 }],               // custom button values
+      [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+      [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
+      [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
+      [{ 'direction': 'rtl' }],                         // text direction
+    
+      [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+      [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+    
+      [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+      [{ 'align': [] }],
+    
+      ['clean']                                         // remove formatting button
+    ]
+};
 
 
   useEffect(() => {
@@ -210,15 +233,9 @@ const AdminDashboard = () => {
                     <FormItem>
                       <FormLabel>Content</FormLabel>
                       <FormControl>
-                      <Editor
-                            onEditorChange={(a)=>blogForm.setValue("content",a)}
-                            apiKey='rqvkfybyhlu42exb1mlmf4stf273nps45memnsxdh6xsiu0h'
-                            value={blogForm.getValues("content")}
-                            init={{
-                              plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount linkchecker',
-                              toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-                            }}
-                           
+                      <ReactQuill theme="snow" modules={modules} className="min-h-editor" onChange={(e)=>{
+                          blogForm.setValue("content",e)}}
+                          value={blogForm.getValues("content")}
                           />
                       </FormControl>
                       <FormMessage />

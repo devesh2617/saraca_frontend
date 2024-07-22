@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Editor } from '@tinymce/tinymce-react';
 import {
   Card,
   CardContent,
@@ -31,7 +30,6 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 import { cn } from "@/lib/utils"
-
 import { Calendar } from "@/components/ui/calendar"
 import AdminNavbar from "../components/AdminNavbar"
 import {
@@ -43,6 +41,8 @@ import { postApi } from '../api/adminApi';
 import { toast } from "sonner";
 import { useNavigate } from "react-router-dom"
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import ReactQuill from "react-quill";
+import 'react-quill/dist/quill.snow.css';
 
 const AdminDashboard = () => {
   const industries = [
@@ -258,6 +258,28 @@ const AdminDashboard = () => {
       console.log(error.message)
     }
   }
+  const modules = {
+    toolbar: [
+      ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+      ['blockquote', 'code-block'],
+      ['link', 'image', 'video', 'formula'],
+    
+      [{ 'header': 1 }, { 'header': 2 }],               // custom button values
+      [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+      [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
+      [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
+      [{ 'direction': 'rtl' }],                         // text direction
+    
+      [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+      [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+    
+      [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+      [{ 'align': [] }],
+    
+      ['clean']                                         // remove formatting button
+    ]
+};
+
 
   return (
     <div>
@@ -429,15 +451,9 @@ const AdminDashboard = () => {
                       <FormItem>
                         <FormLabel>Content</FormLabel>
                         <FormControl>
-                          <Editor
-                            onEditorChange={(a)=>whitePaperForm.setValue("content",a)}
-                            value={whitePaperForm.getValues("content")}
-                            apiKey='rqvkfybyhlu42exb1mlmf4stf273nps45memnsxdh6xsiu0h'
-                            init={{
-                              plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount linkchecker',
-                              toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-                            }}
-                           
+                        <ReactQuill theme="snow" modules={modules} className="min-h-editor" onChange={(e)=>{
+                          whitePaperForm.setValue("content",e)}}
+                          value={whitePaperForm.getValues("content")}
                           />
                         </FormControl>
                         <FormMessage />
@@ -549,15 +565,9 @@ const AdminDashboard = () => {
                       <FormItem>
                         <FormLabel>Project Scope</FormLabel>
                         <FormControl>
-                        <Editor
-                            onEditorChange={(a)=>caseStudiesForm.setValue("project_scope",a)}
-                            value={caseStudiesForm.getValues("project_scope")}
-                            apiKey='rqvkfybyhlu42exb1mlmf4stf273nps45memnsxdh6xsiu0h'
-                            init={{
-                              plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount linkchecker',
-                              toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-                            }}
-                           
+                        <ReactQuill theme="snow" modules={modules} className="min-h-editor" onChange={(e)=>{
+                          caseStudiesForm.setValue("project_scope",e)}}
+                          value={caseStudiesForm.getValues("project_scope")}
                           />
                         </FormControl>
                         <FormMessage />
@@ -572,15 +582,9 @@ const AdminDashboard = () => {
                       <FormItem>
                         <FormLabel>Project Deliverables</FormLabel>
                         <FormControl>
-                        <Editor
-                            onEditorChange={(a)=>caseStudiesForm.setValue("project_deliverables",a)}
-                            value={caseStudiesForm.getValues("project_deliverables")}
-                            apiKey='rqvkfybyhlu42exb1mlmf4stf273nps45memnsxdh6xsiu0h'
-                            init={{
-                              plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount linkchecker',
-                              toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-                            }}
-                          
+                        <ReactQuill theme="snow" modules={modules} className="min-h-editor" onChange={(e)=>{
+                          caseStudiesForm.setValue("project_deliverables",e)}}
+                          value={caseStudiesForm.getValues("project_deliverables")}
                           />
                         </FormControl>
                         <FormMessage />
@@ -595,15 +599,9 @@ const AdminDashboard = () => {
                       <FormItem>
                         <FormLabel>Key Tools</FormLabel>
                         <FormControl>
-                        <Editor
-                            onEditorChange={(a)=>caseStudiesForm.setValue("key_tools",a)}
-                            value={caseStudiesForm.getValues("key_tools")}
-                            apiKey='rqvkfybyhlu42exb1mlmf4stf273nps45memnsxdh6xsiu0h'
-                            init={{
-                              plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount linkchecker',
-                              toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-                            }}
-                            
+                        <ReactQuill theme="snow" modules={modules} className="min-h-editor" onChange={(e)=>{
+                          caseStudiesForm.setValue("key_tools",e)}}
+                          value={caseStudiesForm.getValues("key_tools")}
                           />
                         </FormControl>
                         <FormMessage />
@@ -714,15 +712,9 @@ const AdminDashboard = () => {
                         <FormItem>
                           <FormLabel>Content</FormLabel>
                           <FormControl>
-                          <Editor
-                            onEditorChange={(a)=>blogForm.setValue("content",a)}
-                            value={blogForm.getValues("content")}
-                            apiKey='rqvkfybyhlu42exb1mlmf4stf273nps45memnsxdh6xsiu0h'
-                            init={{
-                              plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount linkchecker',
-                              toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-                            }}
-                            
+                          <ReactQuill theme="snow" modules={modules} className="min-h-editor" onChange={(e)=>{
+                          blogForm.setValue("content",e)}}
+                          value={blogForm.getValues("content")}
                           />
                           </FormControl>
                           <FormMessage />

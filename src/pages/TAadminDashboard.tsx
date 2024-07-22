@@ -34,6 +34,7 @@ import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectVa
 import { toast } from "sonner";
 import TAadminNavbar from '../components/TAAdminNavbar'
 import { useNavigate } from "react-router-dom"
+import ReactQuill from "react-quill"
 
 const TAadminDashboard = () => {
   const navigate = useNavigate()
@@ -110,6 +111,28 @@ const TAadminDashboard = () => {
     }
 
   }
+
+  const modules = {
+    toolbar: [
+      ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+      ['blockquote', 'code-block'],
+      ['link', 'image', 'video', 'formula'],
+    
+      [{ 'header': 1 }, { 'header': 2 }],               // custom button values
+      [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+      [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
+      [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
+      [{ 'direction': 'rtl' }],                         // text direction
+    
+      [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+      [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+    
+      [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+      [{ 'align': [] }],
+    
+      ['clean']                                         // remove formatting button
+    ]
+};
   useEffect(() => {
     getApi('api/get_regions').then(
       res => {
@@ -297,19 +320,13 @@ const TAadminDashboard = () => {
                     <FormField
                       control={positionsForm.control}
                       name="description"
-                      render={({ field }) => (
+                      render={() => (
                         <FormItem>
                           <FormLabel>Description</FormLabel>
                           <FormControl>
-                          <Editor
-                            onEditorChange={(a)=>positionsForm.setValue("description",a)}
-                            value={positionsForm.getValues("description")}
-                            apiKey='rqvkfybyhlu42exb1mlmf4stf273nps45memnsxdh6xsiu0h'
-                            init={{
-                              plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount linkchecker',
-                              toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-                            }}
-                            
+                          <ReactQuill theme="snow" modules={modules} className="min-h-editor" onChange={(e)=>{
+                          positionsForm.setValue("description",e)}}
+                          value={positionsForm.getValues("description")}
                           />
                           </FormControl>
                           <FormMessage />

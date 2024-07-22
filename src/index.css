@@ -74,3 +74,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.min-h-editor .ql-container {
+  @apply h-96; /* Tailwind class for min-height: 16rem */
+}
