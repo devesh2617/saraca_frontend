@@ -26,7 +26,7 @@ const Navbar = () => {
         {
           "Life Sciences": {
             sublinks: [
-              { name: "Medical Devices", link: "/Industry/LifeSciences/MedicalDevices" },
+              { name: "Medical Devices & Diagnostics", link: "/Industry/LifeSciences/MedicalDevices" },
               { name: "Pharmaceuticals", link: "/Industry/LifeSciences/Pharmaceuticals" },
               { name: "Healthcare Applications", link: "/Industry/LifeSciences/HealthcareApplications" }
             ], link: "/Industry/LifeSciences"

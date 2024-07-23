@@ -129,7 +129,7 @@ const ServiceOfferings = [
       "Structural Testing (static and dynamic)",
       "Environmental Testing",
     ],
-    imageSrc: "1.jpg",
+    imageSrc: "Simulation and Testing.jpg",
   },
   {
     title: "Manufacturing and Production Support",
@@ -162,19 +162,14 @@ const ServiceOfferings = [
       "Technical Documentation",
       "IETP Development",
       "Illustrations and Graphics",
-    ],
-    imageSrc: "Product Lifecycle Management.jpg",
-  },
-  {
-    title: "Training and Support",
-    content: [
+      "Training and Support",
       "Translation and Localization",
       "Standards and Compliance",
       "Integration with PLM Systems",
       "Lifecycle Documentation Maintenance",
       "Content Management Solutions",
     ],
-    imageSrc: "Training and Support.jpg",
+    imageSrc: "Product Lifecycle Management.jpg",
   },
   {
     title: "Software and IT Services",
@@ -186,7 +181,7 @@ const ServiceOfferings = [
       "Simulation Software Development",
       "IT Infrastructure Management",
     ],
-    imageSrc: "7.jpg",
+    imageSrc: "Software and IT Services.jpg",
   },
   {
     title: "Certification and Regulatory Compliance",
@@ -208,7 +203,7 @@ const ServiceOfferings = [
       "Electric and Hybrid Propulsion Systems",
       "Renewable Energy Integration",
     ],
-    imageSrc: "10.jpg",
+    imageSrc: "Sustainability and Green Technologies.jpg",
   },
   {
     title: "Project Management and Consultancy",
@@ -219,7 +214,7 @@ const ServiceOfferings = [
       "Business Process Reengineering",
       "Cost Estimation and Budgeting",
     ],
-    imageSrc: "12.jpg",
+    imageSrc: "Project Management and Consultancy.jpg",
   },
 ];
 const Medical = () => {
@@ -281,7 +276,7 @@ const Medical = () => {
         {ServiceOfferings.map((data, index: number) => (
           <ServiceOfferingsCards
             cardsData={data}
-            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/${data.imageSrc}`}
+            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Defense/${data.imageSrc}`}
             imagePosition={index % 2 === 0 ? "left" : "right"}
           />
         ))}

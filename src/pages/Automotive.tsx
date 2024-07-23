@@ -180,7 +180,7 @@ const Industry = () => {
         Our team work closely with OEMs, technology providers, and artificial intelligent disrupters to find new solutions, resolve current challenges, and create strong value frameworks that last for the duration of the automobile lifecycle.
         <br />
         <br />
-        To take advantage of the expanding opportunities brought forth by new technologies like electrification, C2X, digital cockpit, and autonomous driving, automakers and suppliers are looking for engineering services partners. SARACA is equipped to adapt to shifting market demands and provide value to your product development process with our wide variety of automotive engineering and design services, products, and solution accelerators.
+        To take advantage of the expanding opportunities brought forth by new technologies like electrification, V2X, digital cockpit, and autonomous driving, automakers and suppliers are looking for engineering services partners. SARACA is equipped to adapt to shifting market demands and provide value to your product development process with our wide variety of automotive engineering and design services, products, and solution accelerators.
         </p>
         </div>
       </div>

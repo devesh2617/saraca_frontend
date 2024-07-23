@@ -17,7 +17,7 @@ const Card: FC<CardProps> = ({ cardsData, imageSrc }) => {
           className="aspect-[16/9] w-full mx-auto object-cover"
         />
       </div>
-      <div className="w-full">
+      
         <h1 className="text-5xl font-bold">
           {cardsData.heading || cardsData.title}
         </h1>
@@ -50,7 +50,6 @@ const Card: FC<CardProps> = ({ cardsData, imageSrc }) => {
           ""
         )}
       </div>
-    </div>
   );
 };
 
