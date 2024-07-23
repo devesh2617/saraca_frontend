@@ -6,7 +6,7 @@ const CaseStudyCard:FC = ({data}) => {
       <div className={`flex-1  p-12`}>
                     <div className="h-full flex flex-col gap-2">
                         <h1 className="lg:text-5xl text-4xl font-bold group-hover:text-white leading-relaxed text-black">{data?.title}</h1>
-                        <p dangerouslySetInnerHTML={{__html:data?.description}} className="text-gray-500 mt-8 group-hover:text-white text-3xl leading-relaxed"></p>
+                        <p className="text-gray-500 mt-8 group-hover:text-white text-3xl leading-relaxed editorText">{data.description}</p>
                         <div className="flex justify-between mt-auto">
                             <a href={`/white_paper/${data?.id}`}>
                                 <button className="bg-gradient-to-r from-blue-400 to-blue-700 px-8 py-2 text-2xl text-white mx-auto group-hover:from-white group-hover:to-white group-hover:text-blue-500">

@@ -30,6 +30,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { toast } from "sonner";
+import 'react-quill/dist/quill.snow.css';
 
 function validatePassword(password) {
   const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
@@ -285,7 +286,7 @@ export default function PositionPage() {
       <p className="text-2xl mb-4"><strong>Desired Qualification:</strong> {position?.desiredQualification}</p>
       <p className="text-2xl mb-4"><strong>Desired Experience:</strong> {position?.desiredExperience}</p>
 
-      <div className="text-2xl" dangerouslySetInnerHTML={{ __html: position?.description }} />
+      <div className="text-2xl editorText" dangerouslySetInnerHTML={{ __html: position?.description }} />
 
       {/* other position details */}
     </div>

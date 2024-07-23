@@ -58,7 +58,7 @@ const WhitePaper = () => {
 
             </div>
             <div aria-label='content-section' className='flex flex-col-reverse gap-4 lg:flex-row my-4 container'>
-                <div dangerouslySetInnerHTML={{ __html: blogData?.content }} className='mx-auto text-2xl flex-1'>
+                <div dangerouslySetInnerHTML={{ __html: blogData?.content }} className='mx-auto text-2xl flex-1 editorText'>
                 </div>
                 <div className='w-[30rem] mx-auto'>
                     <form onSubmit={handleSubmit(onSubmit)} className="bg-zinc-200 rounded-lg py-8 px-4 flex flex-col gap-8">

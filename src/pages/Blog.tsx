@@ -34,7 +34,7 @@ const Medical = () => {
                 </img>
 
             </div>
-            <div aria-label='content-section' dangerouslySetInnerHTML={{__html:blogData?.content}} className='container mx-auto py-24 text-2xl'>
+            <div aria-label='content-section' dangerouslySetInnerHTML={{__html:blogData?.content}} className='container mx-auto py-24 text-2xl editorText'>
                
                
             </div>

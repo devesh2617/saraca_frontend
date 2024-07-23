@@ -108,6 +108,7 @@ import HealthcareApplications from "./pages/SubIndustries/HealthcareApplications
 import Error404 from "./pages/Error404";
 import UnsubscribePage from "./components/Unsubscribe";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+
 function App() {
 
 

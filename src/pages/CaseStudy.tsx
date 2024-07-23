@@ -32,19 +32,19 @@ const CaseStudy = () => {
 
                     <div className="bg-stone-200 p-8 rounded-lg shadow-xl lg:border-l-2 border-sky-500">
                         <h1 className="font-semibold text-2xl text-center mb-4">Project Scope</h1>
-                        <div aria-label="project-scope" dangerouslySetInnerHTML={{ __html: caseStudy?.project_scope }} />
+                        <div aria-label="project-scope" dangerouslySetInnerHTML={{ __html: caseStudy?.project_scope }} className="editorText"/>
 
                     </div>
 
                     <div className="bg-gray-200 p-8 rounded-lg shadow-xl lg:border-l-2 border-sky-500">
                         <h1 className="font-semibold text-2xl text-center mb-4">Project Deliverables</h1>
-                        <div aria-label="project-deliverables" dangerouslySetInnerHTML={{ __html: caseStudy?.project_deliverables }} />
+                        <div aria-label="project-deliverables" dangerouslySetInnerHTML={{ __html: caseStudy?.project_deliverables }} className="editorText"/>
 
                     </div>
 
                     <div className=" bg-slate-200 p-8 rounded-lg shadow-xl lg:border-l-2 border-sky-500">
                         <h1 className="font-semibold text-2xl text-center mb-4">Key Tools</h1>
-                        <div aria-label="key-tools" dangerouslySetInnerHTML={{ __html: caseStudy?.key_tools }} />
+                        <div aria-label="key-tools" dangerouslySetInnerHTML={{ __html: caseStudy?.key_tools }} className="editorText"/>
 
                     </div>
 
