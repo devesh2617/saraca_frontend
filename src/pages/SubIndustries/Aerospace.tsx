@@ -148,7 +148,7 @@ const ServiceOfferings = [
       "Structural Testing (static and dynamic)",
       "Environmental Testing",
     ],
-    imageSrc: "Simulation and Testing.jpg",
+    imageSrc: "1.jpg",
   },
   {
     title: "Manufacturing and Production Support",
@@ -200,7 +200,7 @@ const ServiceOfferings = [
       "Simulation Software Development",
       "IT Infrastructure Management",
     ],
-    imageSrc: "Software and IT Services.jpg",
+    imageSrc: "7.jpg",
   },
   {
     title: "Certification and Regulatory Compliance",
@@ -222,7 +222,7 @@ const ServiceOfferings = [
       "Electric and Hybrid Propulsion Systems",
       "Renewable Energy Integration",
     ],
-    imageSrc: "Sustainability and Green Technologies.jpg",
+    imageSrc: "10.jpg",
   },
   {
     title: "Project Management and Consultancy",
@@ -233,10 +233,9 @@ const ServiceOfferings = [
       "Business Process Reengineering",
       "Cost Estimation and Budgeting",
     ],
-    imageSrc: "Project Management and Consultancy.jpg",
+    imageSrc: "12.jpg",
   },
 ];
-
 const Medical = () => {
   // const [selectedServicesOffering, setSelectedServicesOffering] = useState<ServicesOfferingsData | null>(null)
   // const handleSelect = (data: ServicesOfferingsData) => {

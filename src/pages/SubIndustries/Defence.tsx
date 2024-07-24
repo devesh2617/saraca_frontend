@@ -217,6 +217,7 @@ const ServiceOfferings = [
     imageSrc: "Project Management and Consultancy.jpg",
   },
 ];
+
 const Medical = () => {
   // const [selectedServicesOffering, setSelectedServicesOffering] = useState<ServicesOfferingsData | null>(null)
   // const handleSelect = (data: ServicesOfferingsData) => {

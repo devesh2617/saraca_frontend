@@ -18,12 +18,12 @@ const IndustryCards:FC<medicalCardsData> = (props) => {
             {
              props.points.map((point:string, index:number)=>{
                 return(
-                    <li key={index} className="lg:my-4 my-2 text-xl lg:text-3xl text-gray-600">{point}</li>
+                    <li key={index} className="lg:my-4 my-2 text-2xl lg:text-3xl text-gray-600">{point}</li>
                 )
              })
             }
           </ul>):(
-            <p className="lg:my-4 my-2 text-xl lg:text-3xl text-gray-600">{props.points[0]}</p>
+            <p className="lg:my-4 my-2 text-2xl lg:text-3xl text-gray-600">{props.points[0]}</p>
           )}
         </div>
     </div>
