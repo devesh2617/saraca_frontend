@@ -1,7 +1,6 @@
 import { getApi, postApi } from "@/api/adminApi"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Editor } from "@tinymce/tinymce-react"
 import {
   Card,
   CardContent,
