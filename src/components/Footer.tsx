@@ -146,14 +146,6 @@ const Footer = () => {
             <hr />
             <div className="flex flex-col gap-2">
               <div className="flex items-center text-2xl gap-2">
-                <Phone /> <strong>USA</strong> 
-                +1 (201) 479-1345
-              </div>
-              <div className="flex items-center text-2xl gap-2">
-                <Phone /> <strong>India</strong>
-                +91 8957682166
-              </div>
-              <div className="flex items-center text-2xl gap-2">
                 <Mails />
                 contact@saracasolutions.com
               </div>
