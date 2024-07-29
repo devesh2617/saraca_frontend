@@ -142,14 +142,6 @@ const Footer = () => {
                 </div>
               );
             })}
-
-            <hr />
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center text-2xl gap-2">
-                <Mails />
-                contact@saracasolutions.com
-              </div>
-            </div>
           </div>
         </div>
 
