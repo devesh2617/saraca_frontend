@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /private/
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
+
+Sitemap: https://www.saracasolutions.com/api/sitemap.xml

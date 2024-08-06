@@ -37,7 +37,7 @@ const whyChooseUsCardsData = [
 const mediaArray = [
   {
     type: "image",
-    name: "Automotive.png",
+    name: "Automotive.jpg",
     heading: "Automotive",
     subheading:
       "As the automotive landscape evolves towards future mobility, we stand ready to assist. Saraca's automotive engineering services, design expertise, and solution accelerators ensure your products align with evolving market expectations, adding value throughout the development lifecycle.",
@@ -45,7 +45,7 @@ const mediaArray = [
   },
   {
     type: "image",
-    name: "Semiconductor.png",
+    name: "Semiconductor.jpg",
     heading: "Semiconductor",
     subheading:
       "Companies are recognizing the significance of software and services linked to chipsets, facilitating swift adoption of hardware platforms by OEMs during this era of technological convergence. The AI chipset market is experiencing rapid growth due to widespread acceptance and accelerated development cycles driven by applications and associated technology stacks.",
@@ -61,7 +61,7 @@ const mediaArray = [
   },
   {
     type: "image",
-    name: "Aerospace.png",
+    name: "Aerospace.jpg",
     heading: "Aerospace",
     subheading:
       "Addressing technology challenges in unmanned aerial systems, SARACA leverages its deep domain knowledge in aerospace engineering. The skilled workforce excels in digital technologies, solving critical problems in aerospace, Défense, and space product development. Through a Design Thinking process, OEMs and suppliers can expedite design cycles, improve safety and efficiency, boost profit margins, and transition into a future-ready organization.",
@@ -69,7 +69,7 @@ const mediaArray = [
   },
   {
     type: "image",
-    name: "MedicalDevices.png",
+    name: "MedicalDevices.jpg",
     heading: "Medical Device",
     subheading:"Leveraging cutting-edge technologies, businesses are reducing operational costs and improving processes. Secure connectivity, automation, and data analytics have the potential to elevate patient value and alleviate the societal burden of disease.",
     link: "/Industry/LifeSciences/MedicalDevices",
