@@ -204,17 +204,17 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/Industry/LifeSciences" element={<Industries />} />
             <Route path="/Industry/Automotive" element={<Automotive />} />
-            <Route path="/Industry/Aerospace&Defense" element={<AerospaceDefence />} />
-            <Route path="/Industry/Aerospace&Defense/Aerospace" element={<Aerospace />} />
-            <Route path="/Industry/Aerospace&Defense/Defense" element={<Defense />} />
-            <Route path="/Industry/Aerospace&Defense/Space" element={<Space />} />
+            <Route path="/Industry/Aerospace_Defense" element={<AerospaceDefence />} />
+            <Route path="/Industry/Aerospace_Defense/Aerospace" element={<Aerospace />} />
+            <Route path="/Industry/Aerospace_Defense/Defense" element={<Defense />} />
+            <Route path="/Industry/Aerospace_Defense/Space" element={<Space />} />
             <Route path="/Industry/Automotive/ElectricVehicles" element={<ElectricVehicle />} />
             <Route path="/Industry/Automotive/PassengerCar" element={<PassengerCar />} />
             <Route path="/Industry/Automotive/TruckandBuses" element={<TruckBuses />} />
             <Route path="/Industry/Automotive/OffHighwayVehicles" element={<OffHighwayVehicle />} />
             <Route path="/Industry/Semiconductor" element={<Semiconductor />} />
-            <Route path="/Industry/Semiconductor/ASIC_FPGA_Design&Development" element={<DesignDevelopment />} />
-            <Route path="/Industry/Semiconductor/Verification&Validation" element={<VerificationValidation />} />
+            <Route path="/Industry/Semiconductor/ASIC_FPGA_Design_Development" element={<DesignDevelopment />} />
+            <Route path="/Industry/Semiconductor/Verification_Validation" element={<VerificationValidation />} />
             <Route path="/Industry/Semiconductor/PhysicalDesign" element={<PhysicalDesign />} />
             <Route path="/Industry/Semiconductor/DFT" element={<DFT />} />
             <Route path="/Industry/RailTransportation" element={<RailTransportation />} />

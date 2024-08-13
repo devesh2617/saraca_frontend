@@ -5,4 +5,4 @@ Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /junk/
 
-Sitemap: https://www.saracasolutions.com/api/sitemap.xml
+Sitemap: https://www.saracasolutions.com/sitemap.xml
