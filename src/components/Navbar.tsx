@@ -35,10 +35,10 @@ const Navbar = () => {
         {
           "Aerospace & Defense": {
             sublinks: [
-              { name: "Aerospace", link: "/Industry/Aerospace&Defense/Aerospace" },
-              { name: "Defense", link: "/Industry/Aerospace&Defense/Defense" },
-              { name: "Space", link: "/Industry/Aerospace&Defense/Space" }
-            ], link: "/Industry/Aerospace&Defense"
+              { name: "Aerospace", link: "/Industry/Aerospace_Defense/Aerospace" },
+              { name: "Defense", link: "/Industry/Aerospace_Defense/Defense" },
+              { name: "Space", link: "/Industry/Aerospace_Defense/Space" }
+            ], link: "/Industry/Aerospace_Defense"
           }
         },
         {
@@ -54,8 +54,8 @@ const Navbar = () => {
         {
           "Semiconductor": {
             sublinks: [
-              { name: "ASIC/FPGA Design & Development", link: "/Industry/Semiconductor/ASIC_FPGA_Design&Development" },
-              // { name: "V&V", link: "/Industry/Semiconductor/Verification&Validation" },
+              { name: "ASIC/FPGA Design & Development", link: "/Industry/Semiconductor/ASIC_FPGA_Design_Development" },
+              // { name: "V&V", link: "/Industry/Semiconductor/Verification_Validation" },
               { name: "Physical Design", link: "/Industry/Semiconductor/PhysicalDesign" },
               { name: "DFT", link: "/Industry/Semiconductor/DFT" }
             ], link: "/Industry/Semiconductor"
@@ -64,7 +64,7 @@ const Navbar = () => {
         // {
         //   "Industrial": {
         //     sublinks: [
-        //       { name: "Oil & Gas", link: "/Industry/Industrial/Oil&Gas" },
+        //       { name: "Oil & Gas", link: "/Industry/Industrial/Oil_Gas" },
         //       { name: "Infrastructure", link: "/Industry/Industrial/Infrastructure" },
         //       { name: "Renewables", link: "/Industry/Industrial/Renewables" }
         //     ], link: "/Industry/Industrial"
@@ -105,7 +105,7 @@ const Navbar = () => {
         {
           "Mechanical": {
             sublinks: [
-              { name: "Design & Development", link: "/Service/Mechanical/Design&Development" },
+              { name: "Design & Development", link: "/Service/Mechanical/Design_Development" },
               { name: "CAD/CAE/CFD/CAM", link: "/Service/Mechanical/CAD_CAM" },
               // { name: "CAx Automation", link: "/Service/Mechanical/CAxAutomation" }
             ], link: "/Service/Mechanical"
@@ -116,7 +116,7 @@ const Navbar = () => {
             sublinks: [
               { name: "Hardware", link: "/Service/Embedded/Hardware" },
               { name: "Firmware", link: "/Service/Embedded/Firmware" },
-              { name: "V&V", link: "/Service/Embedded/VerificationAndValidation" }
+              { name: "V&V", link: "/Service/Embedded/Verification_Validation" }
             ], link: "/Service/Embedded"
           }
         },

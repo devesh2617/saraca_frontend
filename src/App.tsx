@@ -243,7 +243,7 @@ function App() {
             <Route path="/Service/Embedded" element={<Embedded />} />
             <Route path="/Service/Embedded/Hardware" element={<Hardware />} />
             <Route path="/Service/Embedded/Firmware" element={<Firmware />} />
-            <Route path="/Service/Embedded/VerificationAndValidation" element={<VNVEmbedded />} />
+            <Route path="/Service/Embedded/Verification_Validation" element={<VNVEmbedded />} />
             <Route path="/Service/Software" element={<Software />} />
             <Route path="/Service/Software/ApplicationDevelopment" element={<ApplicationDevelopment />} />
             <Route path="/Service/Software/SoftwareTesting" element={<SoftwareTesting />} />
