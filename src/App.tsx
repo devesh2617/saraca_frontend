@@ -224,7 +224,7 @@ function App() {
             <Route path="/Industry/Consumer/Appliances" element={<Appliances />} />
             <Route path="/Industry/Consumer/SmartHomes" element={<SmartHomes />} />
             <Route path="/Industry/Industrial" element={<Industrial />} />
-            <Route path="/Industry/Industrial/Oil&Gas" element={<OilGas />} />
+            <Route path="/Industry/Industrial/Oil_Gas" element={<OilGas />} />
             <Route path="/Industry/Industrial/Infrastructure" element={<Infrastructure />} />
             <Route path="/Industry/Industrial/Renewables" element={<Renewables />} />
             <Route path="/Industry/LifeSciences/MedicalDevices" element={<MedicalDevices />} />
@@ -237,7 +237,7 @@ function App() {
             <Route path="/Service/Digital/Industry4.0" element={<Industry4 />} />
             <Route path="/Service/Digital/ArtificialIntelligence" element={<AI />} />
             <Route path="/Service/Mechanical" element={<Mechanical />} />
-            <Route path="/Service/Mechanical/Design&Development" element={<DNDMechanical />} />
+            <Route path="/Service/Mechanical/Design_Development" element={<DNDMechanical />} />
             <Route path="/Service/Mechanical/CAD_CAM" element={<CAD />} />
             <Route path="/Service/Mechanical/CAxAutomation" element={<CAxAutomation />} />
             <Route path="/Service/Embedded" element={<Embedded />} />
