@@ -1,4 +1,4 @@
-import DiscoverMoreCards from "../components/DiscoverMoreCards";
+// import DiscoverMoreCards from "../components/DiscoverMoreCards";
 import WhereWeServeCards from "../components/WhereWeServeCards";
 import { Helmet } from "react-helmet";
 import ServiceOfferingsCards from "../components/ServicesOfferingsCards";
@@ -7,10 +7,10 @@ type medicalCardsData = {
   link: string;
   imageSrc: string;
 };
-type DiscoverMoreCardsData = {
-  imageSrc: string;
-  link: string;
-};
+// type DiscoverMoreCardsData = {
+//   imageSrc: string;
+//   link: string;
+// };
 
 const ServiceOfferings = [
   {
@@ -85,7 +85,7 @@ const medicalCardsData = [
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
     }/Industries/Aerospace & Defense/aerospace.jpg`,
-    link: "/Industry/Aerospace&Defense/Aerospace",
+    link: "/Industry/Aerospace_Defense/Aerospace",
   },
 
   {
@@ -93,37 +93,37 @@ const medicalCardsData = [
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
     }/Industries/Aerospace & Defense/Defense.jpg`,
-    link: "/Industry/Aerospace&Defense/Defense",
+    link: "/Industry/Aerospace_Defense/Defense",
   },
   {
     title: "Space",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
     }/Industries/Aerospace & Defense/Space.jpg`,
-    link: "/Industry/Aerospace&Defense/Space",
+    link: "/Industry/Aerospace_Defense/Space",
   },
 ];
 
-const DiscoverMoreCardsData = [
-  {
-    imageSrc: `${
-      import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#",
-  },
-  {
-    imageSrc: `${
-      import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#",
-  },
-  {
-    imageSrc: `${
-      import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#",
-  },
-];
+// const DiscoverMoreCardsData = [
+//   {
+//     imageSrc: `${
+//       import.meta.env.VITE_REACT_APP_API_URL
+//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     link: "#",
+//   },
+//   {
+//     imageSrc: `${
+//       import.meta.env.VITE_REACT_APP_API_URL
+//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     link: "#",
+//   },
+//   {
+//     imageSrc: `${
+//       import.meta.env.VITE_REACT_APP_API_URL
+//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     link: "#",
+//   },
+// ];
 
 const Industry = () => {
   return (

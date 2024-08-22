@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import TestimonialCards from "../components/TestimonialCards"
 import { useEffect, useState } from "react";
 import Cards from "../components/Cards";
-import NewsBlogsCards from "../components/NewsBlogsCards";
+// import NewsBlogsCards from "../components/NewsBlogsCards";
 import WhyChooseUsCards from "../components/WhyChooseUsCards";
 
 type whyChooseUsCardsData = {
@@ -65,7 +65,7 @@ const mediaArray = [
     heading: "Aerospace",
     subheading:
       "Addressing technology challenges in unmanned aerial systems, SARACA leverages its deep domain knowledge in aerospace engineering. The skilled workforce excels in digital technologies, solving critical problems in aerospace, Défense, and space product development. Through a Design Thinking process, OEMs and suppliers can expedite design cycles, improve safety and efficiency, boost profit margins, and transition into a future-ready organization.",
-    link: "/Industry/Aerospace&Defense",
+    link: "/Industry/Aerospace_Defense",
   },
   {
     type: "image",
@@ -73,54 +73,11 @@ const mediaArray = [
     heading: "Medical Device",
     subheading:"Leveraging cutting-edge technologies, businesses are reducing operational costs and improving processes. Secure connectivity, automation, and data analytics have the potential to elevate patient value and alleviate the societal burden of disease.",
     link: "/Industry/LifeSciences/MedicalDevices",
-  },
-  // {
-  //   type: "image",
-  //   name: "Industrial.jpg",
-  //   heading: "Industrial",
-  //   subheading:"Elevate Your Projects with Precision: Tailored Infrastructure Engineering Solutions by Our Expert Team, Powered by Cutting-Edge Tools and Industry Best Practices.",
-  //   link: "/Industry/Industrial",
-  // },
-  // {
-  //   type: "image",
-  //   name: "pic5.png",
-  //   heading: "PER",
-  //   subheading:"EU 2017/746, the In Vitro Diagnostic Medical Devices Regulation (IVDR), replaces the IVDD with substantial changes for manufacturers. Effective on May 26, 2022, the transition involves addressing challenges in aligning clinical evidence with the intended device purpose, guided by a performance evaluation plan and resulting in a performance evaluation report.",
-  //   link: "",
-  // },
-  // {
-  //   type: "image",
-  //   name: "pic5.png",
-  //   heading: "Tech Pub",
-  //   subheading:"SARACA excels in providing essential technical publication services, focusing on functional, operational, and maintenance aspects. Our expertise in technical illustrations, authoring, data validation, and learning solutions transforms documentation processes, ensuring high-quality, user-friendly publications.",
-  //   link: "",
-  // },
-  // {
-  //   type: "image",
-  //   name: "pic5.png",
-  //   heading: "Mechanical Design",
-  //   subheading:"Explore Seamless Mechanical Design Solutions for Efficiency and Excellence. Where Form Meets Function – Elevate Your Engineering with Our Expertise.",
-  //   link: "",
-  // },
-  // {
-  //   type: "image",
-  //   name: "pic5.png",
-  //   heading: "A.I.",
-  //   subheading:"AI Revolution: Transforming Business with Intelligence. Unleash Growth, Resilience, and Seamless Human-AI Collaboration. Elevate Experiences, Drive Efficiency – Powering Tomorrow's Success.",
-  //   link: "",
-  // },  
+  }
 ];
 
 
 const cardsData = [
-  // {
-  //   logo: "QTST",
-  //   heading: "Quick Talent Search Tool",
-  //   description:
-  //     "It’s an idea to transform talent search method to more interactive and swift manner. With AI identifying the resumes best suited for position provides confidence to recruiters for sharing resumes to account managers. Interactive dashboard allows BU heads and Team Leads track account summary.",
-  //   link: "",
-  //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/qtst-laptop.png`,
-  // },
   {
     logo: "x1-logo.svg",
     heading: "Driving tomorrows innovation today",
@@ -149,45 +106,45 @@ const cardsData = [
   },
 ];
 
-const insightsCards = [
-  {
-    category: "Certificates",
-    title: "",
-    text: "",
-    link: "#",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/pic3.png`,
-    date: "12-Aug-2023"
-  },
-  {
-    category: "Case Studies",
-    title: "Design and Development of MALE UAV System",
-    text: "Emerging multinational aerospace & aero-structures and Unmanned Aerial Systems (UAV) system manufacturer has selected SARACA to design and develop their MALE UAV hardware, software, and mechanical system within challenging project timelines.",
-    link: "#",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/pic3.png`,
-    date: "12-Aug-2023"
-  }, {
-    category: "News",
-    title: "SARACA membership in SIDM showcases commitment to innovation & excellence in Indian Defence Industry",
-    text: "SARACA announced that it has become a proud member of the Society of Indian Defence Manufacturers (SIDM) on the 18th of January 2023.",
-    link: "#",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/pic3.png`,
-    date: "12-Aug-2023"
-  }, {
-    category: "Blogs",
-    title: "Role of Human Errors in CAPAs",
-    text: "What is a “HUMAN ERROR”? Is it a Human error? Can we prevent these error occurrences? What could be the possible cause or situation which leads to these “Human error”?",
-    link: "#",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/pic3.png`,
-    date: "19-Aug-2023"
-  }, {
-    category: "White Paper",
-    title: "Journey of IVDR: Insights of the Regulation (EU IVDR (2017/746)How to address current challenges?",
-    text: "The IVDR (In-Vitro Diagnostic Regulation) is a new set of regulations set forth by the European Union (EU) in 2017 to regulate medical devices and in-vitro diagnostic devices. The purpose of the IVDR is to improve patient safety by ensuring that all medical devices, including in-vitro diagnostic devices, are designed, manufactured, and marketed to meet the highest safety and quality standards.",
-    link: "#",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/pic3.png`,
-    date: "12-Aug-2023"
-  }
-]
+// const insightsCards = [
+//   {
+//     category: "Certificates",
+//     title: "",
+//     text: "",
+//     link: "#",
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/pic3.png`,
+//     date: "12-Aug-2023"
+//   },
+//   {
+//     category: "Case Studies",
+//     title: "Design and Development of MALE UAV System",
+//     text: "Emerging multinational aerospace & aero-structures and Unmanned Aerial Systems (UAV) system manufacturer has selected SARACA to design and develop their MALE UAV hardware, software, and mechanical system within challenging project timelines.",
+//     link: "#",
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/pic3.png`,
+//     date: "12-Aug-2023"
+//   }, {
+//     category: "News",
+//     title: "SARACA membership in SIDM showcases commitment to innovation & excellence in Indian Defence Industry",
+//     text: "SARACA announced that it has become a proud member of the Society of Indian Defence Manufacturers (SIDM) on the 18th of January 2023.",
+//     link: "#",
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/pic3.png`,
+//     date: "12-Aug-2023"
+//   }, {
+//     category: "Blogs",
+//     title: "Role of Human Errors in CAPAs",
+//     text: "What is a “HUMAN ERROR”? Is it a Human error? Can we prevent these error occurrences? What could be the possible cause or situation which leads to these “Human error”?",
+//     link: "#",
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/pic3.png`,
+//     date: "19-Aug-2023"
+//   }, {
+//     category: "White Paper",
+//     title: "Journey of IVDR: Insights of the Regulation (EU IVDR (2017/746)How to address current challenges?",
+//     text: "The IVDR (In-Vitro Diagnostic Regulation) is a new set of regulations set forth by the European Union (EU) in 2017 to regulate medical devices and in-vitro diagnostic devices. The purpose of the IVDR is to improve patient safety by ensuring that all medical devices, including in-vitro diagnostic devices, are designed, manufactured, and marketed to meet the highest safety and quality standards.",
+//     link: "#",
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/pic3.png`,
+//     date: "12-Aug-2023"
+//   }
+// ]
 
 const TestmonialCardsData = [
   {
@@ -229,14 +186,8 @@ const Home = () => {
         setScreenSize("md")
       } else setScreenSize("lg")
     }
-  //  const typed = new Typed('', {
-  //     strings: ["Contact Us", "Gmail"],
-  //     typeSpeed: 200,
-  //     loop:true
-  //   });
     window.addEventListener("resize", handleScreenSize)
     handleScreenSize()
-    return () => document.title = "SARACA"
   }, [])
 
   return (
