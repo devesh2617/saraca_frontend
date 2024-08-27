@@ -193,7 +193,7 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-      <title>Medical Devices Engineering Services | Contract Engineering| Product Development | Remediation Services | Outsourcing </title>
+      <title>SARACA | Product Engineering Services, Digital Engineering Services</title>
         <meta property="og:title" content="Medical Devices Engineering Services | Contract Engineering| Product Development | Remediation Services | Outsourcing " />
         <meta name="description" content="SARACA Solutions (SARACA) is an engineering services company which specializes in providing innovative, and cost effective deliverables with a core focus on customer satisfaction. Our business has a global reach and is wholly focused on the Medical Products/devices Market Segment. We possess significant expertise in the areas of: Spine, Trauma, ENT, Ophthalmic, Remote Monitoring Systems, IOT Gateways, Embedded electronics, Emergency Care and Single Use Devices." />
         <meta name="keywords" content="Medical device design, medical product design companies, medical product development, medical device engineer, product design services, engineering services, Medical Engineering, medical product engineering, Contract engineering, medical device outsourcing, medical device engineering consultants, Clinical Evaluation Report, EU MDR, CER writer, Regulatory affairs, Software development, software testing, Robotics" />

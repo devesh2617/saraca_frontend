@@ -108,6 +108,11 @@ import HealthcareApplications from "./pages/SubIndustries/HealthcareApplications
 import Error404 from "./pages/Error404";
 import UnsubscribePage from "./components/Unsubscribe";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Memberships from "./pages/Memberships";
+import TechPubAds from "./pages/TechpubAds"
+import Awards from "./pages/Awards";
+import PMCFAds from "./pages/PMCFAds";
+
 
 function App() {
 
@@ -137,34 +142,7 @@ function App() {
   }
   const Layout = ({ children }) => {
     const location = useLocation()
-  //   useEffect(() =>{
-  //     return () => {
-  //       {
-  //         const path = location.pathname;
-  //         let formattedPath = "";
-    
-        
-  //           // Split the path into parts using the '/' delimiter and filter out empty parts
-  //           const parts = path.split('/').filter(part => part !== "");
-    
-  //           // Join the parts with ' | ' to get the desired format
-  //           if (parts.length) {
-  //             formattedPath = parts.join(' | ');
-  //           }
-          
-    
-  //         // Replace underscores with spaces in the formatted path
-  //         if (formattedPath) {
-  //           formattedPath = formattedPath.replace(/_/g, " ");
-  //         }
-    
-  //         // Update the document's title with the formatted path
-  //         document.title = formattedPath;
-    
-  //       }
-  //     }
-  //   }
-  //  , [location.pathname])
+
     return (
       <div className={`relative overflow-x-hidden bg-background bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/background.svg')] bg-repeat w-full overflow-y-auto min-h-[100vh] flex flex-col`}
         style={{ backgroundImage: `url('${import.meta.env.VITE_REACT_APP_API_URL}/background.svg')` }}
@@ -265,6 +243,8 @@ function App() {
             <Route path="/About_Us" element={<AboutUs />} />
             <Route path="/Success_Stories/Client_Testimonials" element={<Client_Testimonials />} />
             <Route path="/Success_Stories/Case_Studies" element={<CaseStudies />} />
+            <Route path="/Success_Stories/Memberships" element={<Memberships />} />
+            <Route path="/Success_Stories/Awards" element={<Awards/>}/>
             <Route path="/Careers" element={<Careers />} />
             <Route path="/Careers/ApplicationForm/:positionId" element={<ApplicationForm />} />
             <Route path="/Careers/Positions/:region_name" element={<PositionCards />} />
@@ -286,6 +266,8 @@ function App() {
             <Route path="/Search" element={<SearchPage />} />
             <Route path="/Unsubscribe" element={<UnsubscribePage/>}/>
             <Route path="/Privacy_Policy" element={<PrivacyPolicy/>}/>
+            <Route path="/technical-publication-services" element={<TechPubAds/>}/>    
+            <Route path="/post-market-clinical-followup" element={<PMCFAds/>}/>  
             <Route path="*" element={<Error404 />} />
           </Routes>
         </Layout>} />

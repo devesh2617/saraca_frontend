@@ -25,7 +25,7 @@ const Client_Testimonials = () => {
   ]
   return (
     <div className="grid grid-col-1 md:grid-cols-2 container py-24 mt-12 gap-12">
-      {CertificatesCards.map((data, index)=> <CertificateCards key={index} cardsData={data}/>)}
+      {CertificatesCards.map((data, index)=> <CertificateCards key={index} imageSrc={data.imageSrc} name={data.name}/>)}
     </div>
   )
 }

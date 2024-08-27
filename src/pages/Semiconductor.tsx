@@ -58,7 +58,7 @@ const medicalCardsData = [
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
     }/Industries/Semiconductor/ASIC.jpg`,
-    link: "/Industry/Semiconductor/ASIC_FPGA_Design&Development",
+    link: "/Industry/Semiconductor/ASIC_FPGA_Design_Development",
   },
 
   // {

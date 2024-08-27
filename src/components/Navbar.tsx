@@ -17,7 +17,9 @@ const Navbar = () => {
     "Success Stories": {
       sublinks: [
         { "Case Studies": { sublinks: [], link: "/Success_Stories/Case_Studies" } },
-        { "Testimonials": { sublinks: [], link: "/Success_Stories/Client_Testimonials" } }
+        { "Testimonials": { sublinks: [], link: "/Success_Stories/Client_Testimonials" } },
+        { "Memberships": { sublinks: [], link: "/Success_Stories/Memberships" } },
+        { "Awards": { sublinks: [], link: "/Success_Stories/Awards" } }
       ], link: "#"
     },
 
@@ -211,7 +213,7 @@ const Navbar = () => {
             type="text"
             onKeyDown={(e)=>{
               if(e.key === "Enter"){
-                navigate(`/Search?query=${e.target?.value}`)
+                navigate(`/Search?query=${e.target.value}`)
               }
             }}
             placeholder="What are you trying to find?"

@@ -1,6 +1,6 @@
 import { getApi } from "@/api/adminApi"
 import { useEffect, useState } from "react"
-import { useParams, useSearchParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { Bars } from "react-loader-spinner"
 import { ShieldCheck, ShieldOff } from "lucide-react"
 
@@ -11,7 +11,7 @@ const VerifyEmail = () => {
     useEffect(() => {
         return () => {
             getApi(`api/career/verify_email/${id}`)
-                .then((res: any) => {
+                .then((res) => {
                     if (res instanceof Error) setError(res)
                 })
                 .catch((e) => {
@@ -29,7 +29,6 @@ const VerifyEmail = () => {
                     width="80"
                     color="#4fa94d"
                     ariaLabel="bars-loading"
-                    wrapperStyle={{}}
                     wrapperClass=""
                     visible={true}
                 />) : (error ? (<div className="lg:text-7xl text-5xl flex items-center gap-4 text-red-600 justify-center">
