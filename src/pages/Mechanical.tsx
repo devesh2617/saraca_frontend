@@ -16,7 +16,7 @@ const ServiceOfferings = [
 {
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Mechanical/1.webp`,
   title: "Design & Development",
-  link: "/Service/Mechanical/Design&Development"
+  link: "/Service/Mechanical/Design_Development"
 },
 {
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Mechanical/2.webp`,
