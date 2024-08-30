@@ -14,42 +14,42 @@ type ServiceOfferings = {
 
 const ServiceOfferings = [
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Application Development.png`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Application Development.webp`,
   title: "Application Development",
   link: "/Service/Software/ApplicationDevelopment"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Software testing.png`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Software testing.webp`,
   title: "Software Testing",
   link: "/Service/Software/SoftwareTesting"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud.png`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud.webp`,
   title: "Cloud",
   link: "/Service/Software/Cloud"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM .png`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM .webp`,
   title: "PLM",
   link: "/Service/Software/PLM"
 },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Artificial Intelligence.png`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Artificial Intelligence.webp`,
 //   title: "Artificial Intelligence",
 //   link: ""
 // }
 ]
 
 const DiscoverMoreCardsData = [{
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
   link: "#"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
   link: "#"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
   link: "#"
 }]
 
@@ -57,7 +57,7 @@ const serviceOfferingCards = (data: ServiceOfferings) => {
   return (
     <a href={data.link}>
       <div className='bg-white rounded-xl overflow-hidden'>
-          <img src={data.imageSrc} className='object-cover max-w-[30rem] aspect-square'/>
+          <img  loading = "lazy" src={data.imageSrc} className='object-cover max-w-[30rem] aspect-square'/>
           <h1 className=' font-bold text-center text-2xl py-4'>
             {data.title}
           </h1>
@@ -180,7 +180,7 @@ const Industry = () => {
 
       
       
-      {/* <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')]`}>
+      {/* <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.webp')]`}>
         <h1 className="text-white text-6xl text-center font-semibold pb-24">Discover More</h1>
         <div className="w-full flex justify-evenly flex-wrap gap-8">
           {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {

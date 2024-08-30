@@ -18,27 +18,27 @@ const TrendingTechnologiesData = [
     {
         heading: "Renewable Energy Integration",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/38.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/38.webp`,
     },
     {
         heading: "Internet of Things (IoT) for Environmental Monitoring",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/39.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/39.webp`,
     },
     {
         heading: "Artificial Intelligence (AI) for Predictive Analytics in Sustainability",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/40.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/40.webp`,
     },
     {
         heading: "Blockchain for Transparent and Traceable Supply Chains",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/41.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/41.webp`,
     },
     {
         heading: "Green Building Technologies and Energy Management Systems",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/42.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/42.webp`,
     }
 ];
 
@@ -49,39 +49,39 @@ const ServiceOfferings = [
         description:
             "  We collaborate with clients to design and develop eco-friendly products that meet market demands while adhering to sustainable principles. Our multidisciplinary team employs advanced engineering techniques to create innovative solutions that minimize resource consumption and environmental impact.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/Sustain.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/Sustain.webp`,
     },
     {
         heading: "Lifecycle Assessment",
         description:
             "Our lifecycle assessment services enable clients to evaluate the environmental impact of their products and processes across their entire lifecycle. By analyzing factors such as energy consumption, emissions, and waste generation, we help organizations identify opportunities for improvement and implement sustainable practices.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/Lifecycle.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/Lifecycle.webp`,
     },
     {
         heading: "Supply Chain Optimization",
         description:
             "We assist clients in optimizing their supply chains to reduce carbon footprint, improve resource efficiency, and enhance overall sustainability performance. Through data-driven analysis and strategic insights, we help organizations identify opportunities for collaboration, streamline processes, and implement sustainable sourcing practices.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/Supply.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/Supply.webp`,
     },
     {
         heading: "Sustainable Software Development",
         description: " From ideation to deployment, we specialize in developing software solutions that align with sustainability objectives. Our agile methodologies prioritize eco-friendly design principles, ensuring that digital solutions contribute to a more sustainable future.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/SD.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/SD.webp`,
     },
     {
         heading: "Environmental Impact Assessment",
         description: "Evaluate and mitigate environmental risks with Saraca's comprehensive impact assessment services. Leveraging advanced modeling and simulation techniques, we help businesses understand the environmental implications of their operations and implement strategies to minimize adverse effects.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/Environ.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/Environ.webp`,
     },
     {
         heading: "Green Data Centres and Cloud Services",
         description: "Transition to sustainable IT infrastructure with Saraca's green data centre and cloud services. We design and implement energy-efficient data centres powered by renewable energy sources, reducing carbon emissions, and optimizing resource utilization.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/Green Data.svg`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability/Green Data.webp`,
     }
 ];
 
@@ -89,7 +89,7 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
     return (
       <div className=" w-72 group">
         <div className="h-72 w-72 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300">
-          <img
+          <img loading = "lazy"
             src={data.imageSrc}
             className=" w-full h-full rounded-full object-cover"
             alt=""
@@ -103,15 +103,15 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
   };
 
 const DiscoverMoreCardsData = [{
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
     link: "#"
 },
 {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
     link: "#"
 },
 {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
     link: "#"
 }]
 
@@ -215,7 +215,7 @@ const Industry = () => {
                 </div>
             </div>
 
-            <div aria-label="trending-technologies-section" className={`w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.svg')] bg-cover`}>
+            <div aria-label="trending-technologies-section" className={`w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.webp')] bg-cover`}>
                 <h1 className="text-white text-5xl font-semibold text-center">Trending Technologies</h1>
                 <div className="container flex flex-wrap justify-evenly items-start mt-24 mx-auto gap-8">
                     {TrendingTechnologiesData.map((data: TrendingTechnologiesObject) => TrendingTechnologiesCards(data))}
@@ -245,7 +245,7 @@ const Industry = () => {
                 </div>
 
             </div>
-            {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24`}>
+            {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.webp')] py-24`}>
                 <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
                 <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
                     {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {

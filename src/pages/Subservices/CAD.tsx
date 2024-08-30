@@ -20,35 +20,35 @@ const TrendingTechnologiesData = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/CADCAM/5.svg`,
+    }/Services/Mechanical/CADCAM/5.webp`,
   },
   {
     heading: "Additive Manufacturing (3D Printing)",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/CADCAM/6.svg`,
+    }/Services/Mechanical/CADCAM/6.webp`,
   },
   {
     heading: "Digital Twins",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/CADCAM/7.svg`,
+    }/Services/Mechanical/CADCAM/7.webp`,
   },
   {
     heading: "Augmented Reality (AR) for Design Visualization",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/CADCAM/8.svg`,
+    }/Services/Mechanical/CADCAM/8.webp`,
   },
   {
     heading: "Cloud-Based Simulation and Collaboration Tools",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/CADCAM/9.svg`,
+    }/Services/Mechanical/CADCAM/9.webp`,
   },
 ];
 
@@ -60,7 +60,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/CADCAM/1.svg`,
+    }/Services/Mechanical/CADCAM/1.webp`,
   },
   {
     heading: "Finite Element Analysis (FEA)",
@@ -69,7 +69,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/CADCAM/2.svg`,
+    }/Services/Mechanical/CADCAM/2.webp`,
   },
   {
     heading: "Computational Fluid Dynamics (CFD)",
@@ -78,7 +78,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/CADCAM/3.svg`,
+    }/Services/Mechanical/CADCAM/3.webp`,
   },
   {
     heading: "CAM Programming and Optimization",
@@ -87,7 +87,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/CADCAM/4.svg`,
+    }/Services/Mechanical/CADCAM/4.webp`,
   },
 ];
 
@@ -95,7 +95,7 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
   return (
     <div className=" w-72 group">
       <div className="h-72 w-72 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300">
-        <img
+        <img loading = "lazy"
           src={data.imageSrc}
           className=" w-full h-full rounded-full object-cover"
           alt=""
@@ -274,7 +274,7 @@ const Industry = () => {
         aria-label="trending-technologies-section"
         className={`w-full bg-cyan-950 py-24 bg-[url('${
           import.meta.env.VITE_REACT_APP_API_URL
-        }/trending-technologies-pattern.svg')] bg-cover`}
+        }/trending-technologies-pattern.webp')] bg-cover`}
       >
         <h1 className="text-white text-5xl font-semibold text-center">
           Trending Technologies
@@ -309,7 +309,7 @@ const Industry = () => {
           </div>
         </div>
       </div>
-      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24`}>
+      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.webp')] py-24`}>
                 <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
                 <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
                     {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {

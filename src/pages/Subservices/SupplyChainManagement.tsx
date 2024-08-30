@@ -20,28 +20,28 @@ const TrendingTechnologiesData = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Manufacturing/Supply Chain Management/Blockchain Technology.jpg`,
+    }/Services/Manufacturing/Supply Chain Management/Blockchain Technology.webp`,
   },
   {
     heading: "Internet of Things (IoT)",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Manufacturing/Supply Chain Management/IOT.jpg`,
+    }/Services/Manufacturing/Supply Chain Management/IOT.webp`,
   },
   {
     heading: "Artificial Intelligence (AI) and Machine Learning",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Manufacturing/Supply Chain Management/AI and ML.jpg`,
+    }/Services/Manufacturing/Supply Chain Management/AI and ML.webp`,
   },
   {
     heading: "Robotics and Automation",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Manufacturing/Supply Chain Management/Robotics.jpg`,
+    }/Services/Manufacturing/Supply Chain Management/Robotics.webp`,
   },
 ];
 
@@ -53,7 +53,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Manufacturing/Supply Chain Management/Supply Chain Optimization.jpg`,
+    }/Services/Manufacturing/Supply Chain Management/Supply Chain Optimization.webp`,
   },
   {
     heading: "Supplier Relationship Management",
@@ -62,7 +62,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Manufacturing/Supply Chain Management/Supplier Relationship Management.jpg`,
+    }/Services/Manufacturing/Supply Chain Management/Supplier Relationship Management.webp`,
   },
   {
     heading: "Demand Forecasting and Planning",
@@ -71,7 +71,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Manufacturing/Supply Chain Management/Demand Forecasting.jpg`,
+    }/Services/Manufacturing/Supply Chain Management/Demand Forecasting.webp`,
   },
   {
     heading: "Supply Chain Integration",
@@ -80,7 +80,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Manufacturing/Supply Chain Management/Supply Chain Integration.jpg`,
+    }/Services/Manufacturing/Supply Chain Management/Supply Chain Integration.webp`,
   },
 ];
 
@@ -88,7 +88,7 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
   return (
     <div className=" w-72 group">
       <div className="h-72 w-72 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300">
-        <img
+        <img loading = "lazy"
           src={data.imageSrc}
           className=" w-full h-full rounded-full object-cover"
           alt=""
@@ -105,19 +105,19 @@ const DiscoverMoreCardsData = [
   {
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
     link: "#",
   },
   {
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
     link: "#",
   },
   {
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
     link: "#",
   },
 ];
@@ -244,7 +244,7 @@ const Industry = () => {
         aria-label="trending-technologies-section"
         className={`w-full bg-cyan-950 py-24 bg-[url('${
           import.meta.env.VITE_REACT_APP_API_URL
-        }/trending-technologies-pattern.svg')] bg-cover`}
+        }/trending-technologies-pattern.webp')] bg-cover`}
       >
         <h1 className="text-white text-5xl font-semibold text-center">
           Trending Technologies
@@ -279,7 +279,7 @@ const Industry = () => {
           </div>
         </div>
       </div>
-      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24`}>
+      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.webp')] py-24`}>
                 <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
                 <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
                     {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {

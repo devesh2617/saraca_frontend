@@ -20,35 +20,35 @@ const TrendingTechnologiesData = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/Design & Development/6.svg`,
+    }/Services/Mechanical/Design & Development/6.webp`,
   },
   {
     heading: "Simulation and Finite Element Analysis (FEA)",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/Design & Development/7.svg`,
+    }/Services/Mechanical/Design & Development/7.webp`,
   },
   {
     heading: "Internet of Things (IoT) Integration",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/Design & Development/8.svg`,
+    }/Services/Mechanical/Design & Development/8.webp`,
   },
   {
     heading: "Augmented Reality (AR) and Virtual Reality (VR)",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/Design & Development/9.svg`,
+    }/Services/Mechanical/Design & Development/9.webp`,
   },
   {
     heading: "Digital Twins",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/Design & Development/10.svg`,
+    }/Services/Mechanical/Design & Development/10.webp`,
   },
 ];
 
@@ -60,7 +60,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/Design & Development/1.svg`,
+    }/Services/Mechanical/Design & Development/1.webp`,
   },
   {
     heading: "Development Engineering Solutions",
@@ -69,7 +69,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/Design & Development/2.svg`,
+    }/Services/Mechanical/Design & Development/2.webp`,
   },
   {
     heading: "Digital Engineering Services",
@@ -78,7 +78,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/Design & Development/3.svg`,
+    }/Services/Mechanical/Design & Development/3.webp`,
   },
   {
     heading: "Rapid Prototyping",
@@ -87,7 +87,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/Design & Development/4.svg`,
+    }/Services/Mechanical/Design & Development/4.webp`,
   },
   {
     heading: "Design for Manufacturing (DFM)",
@@ -96,7 +96,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Mechanical/Design & Development/5.svg`,
+    }/Services/Mechanical/Design & Development/5.webp`,
   },
 ];
 
@@ -104,7 +104,7 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
   return (
     <div className=" w-72 group">
       <div className="h-72 w-72 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300">
-        <img
+        <img loading = "lazy"
           src={data.imageSrc}
           className=" w-full h-full rounded-full object-cover"
           alt=""
@@ -265,7 +265,7 @@ const Industry = () => {
         aria-label="trending-technologies-section"
         className={`w-full bg-cyan-950 py-24 bg-[url('${
           import.meta.env.VITE_REACT_APP_API_URL
-        }/trending-technologies-pattern.svg')] bg-cover`}
+        }/trending-technologies-pattern.webp')] bg-cover`}
       >
         <h1 className="text-white text-5xl font-semibold text-center">
           Trending Technologies
@@ -300,7 +300,7 @@ const Industry = () => {
           </div>
         </div>
       </div>
-      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24`}>
+      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.webp')] py-24`}>
                 <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
                 <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
                     {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {

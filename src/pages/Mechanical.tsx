@@ -14,12 +14,12 @@ type ServiceOfferings = {
 
 const ServiceOfferings = [
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Mechanical/1.svg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Mechanical/1.webp`,
   title: "Design & Development",
   link: "/Service/Mechanical/Design&Development"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Mechanical/2.svg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Mechanical/2.webp`,
   title: "CAD/CAE/CFD/CAM",
   link: "/Service/Mechanical/CAD_CAM"
 },

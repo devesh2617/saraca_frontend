@@ -20,35 +20,35 @@ const TrendingTechnologiesData = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/Hardware/14.svg`,
+    }/Services/Embedded/Hardware/14.webp`,
   },
   {
     heading: "Internet of Things (IoT) Integration",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/Hardware/15.svg`,
+    }/Services/Embedded/Hardware/15.webp`,
   },
   {
     heading: "Low-Power Design",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/Hardware/16.svg`,
+    }/Services/Embedded/Hardware/16.webp`,
   },
   {
     heading: "Field-Programmable Gate Arrays (FPGAs)",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/Hardware/17.svg`,
+    }/Services/Embedded/Hardware/17.webp`,
   },
   {
     heading: "Embedded Security",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/Hardware/18.svg`,
+    }/Services/Embedded/Hardware/18.webp`,
   },
 ];
 
@@ -60,7 +60,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/Hardware/Hardware Design and Development.jpg`,
+    }/Services/Embedded/Hardware/Hardware Design and Development.webp`,
   },
   {
     heading: "Hardware Testing and Validation",
@@ -69,7 +69,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/Hardware/Hardware Testing and Validation.jpg`,
+    }/Services/Embedded/Hardware/Hardware Testing and Validation.webp`,
   },
   {
     heading: "Legacy System Migration",
@@ -78,7 +78,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/Hardware/Legacy System Migration.jpg`,
+    }/Services/Embedded/Hardware/Legacy System Migration.webp`,
   },
   {
     heading: "Prototype Development",
@@ -87,7 +87,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/Hardware/Prototype Development.jpg`,
+    }/Services/Embedded/Hardware/Prototype Development.webp`,
   },
 ];
 
@@ -95,7 +95,7 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
   return (
     <div className=" w-72 group">
       <div className="h-72 w-72 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300">
-        <img
+        <img loading = "lazy"
           src={data.imageSrc}
           className=" w-full h-full rounded-full object-cover"
           alt=""
@@ -112,19 +112,19 @@ const DiscoverMoreCardsData = [
   {
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
     link: "#",
   },
   {
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
     link: "#",
   },
   {
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
     link: "#",
   },
 ];
@@ -243,7 +243,7 @@ const Industry = () => {
         aria-label="trending-technologies-section"
         className={`w-full bg-cyan-950 py-24 bg-[url('${
           import.meta.env.VITE_REACT_APP_API_URL
-        }/trending-technologies-pattern.svg')] bg-cover`}
+        }/trending-technologies-pattern.webp')] bg-cover`}
       >
         <h1 className="text-white text-5xl font-semibold text-center">
           Trending Technologies
@@ -278,7 +278,7 @@ const Industry = () => {
           </div>
         </div>
       </div>
-      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24`}>
+      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.webp')] py-24`}>
                 <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
                 <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
                     {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {

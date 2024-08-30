@@ -20,35 +20,35 @@ const TrendingTechnologiesData = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Software/App Development/AI & ML.png`,
+    }/Services/Software/App Development/AI & ML.webp`,
   },
   {
     heading: "Progressive Web Apps (PWAs)",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Software/App Development/Progressive Web Apps (PWAs).png`,
+    }/Services/Software/App Development/Progressive Web Apps (PWAs).webp`,
   },
   {
     heading: "DevOps and Continuous Integration/Continuous Deployment (CI/CD)",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Software/App Development/DevOps and Continuous IntegrationContinuous Deployment.png`,
+    }/Services/Software/App Development/DevOps and Continuous IntegrationContinuous Deployment.webp`,
   },
   {
     heading: "Microservices Architecture",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Software/App Development/Microservices Architecture.png`,
+    }/Services/Software/App Development/Microservices Architecture.webp`,
   },
   {
     heading: "Cross-Platform Mobile Development",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Software/App Development/Cross-Platform Mobile Development.png`,
+    }/Services/Software/App Development/Cross-Platform Mobile Development.webp`,
   },
 ];
 
@@ -60,7 +60,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Software/App Development/Custom Application Development.png`,
+    }/Services/Software/App Development/Custom Application Development.webp`,
   },
   {
     heading: "Legacy Application Modernization",
@@ -69,7 +69,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Software/App Development/Legacy Application Modernization.png`,
+    }/Services/Software/App Development/Legacy Application Modernization.webp`,
   },
   {
     heading: "Full-Cycle Development Services",
@@ -78,7 +78,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Software/App Development/Full-Cycle Development Services.png`,
+    }/Services/Software/App Development/Full-Cycle Development Services.webp`,
   },
   {
     heading: "Cross-Platform Development",
@@ -87,7 +87,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Software/App Development/Cross-Platform Development.png`,
+    }/Services/Software/App Development/Cross-Platform Development.webp`,
   },
   {
     heading: "Integration Services",
@@ -96,7 +96,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Software/App Development/Integration Services.png`,
+    }/Services/Software/App Development/Integration Services.webp`,
   },
   {
     heading: "Quality Assurance and Testing",
@@ -105,7 +105,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Software/App Development/Quality Assurance and Testing.png`,
+    }/Services/Software/App Development/Quality Assurance and Testing.webp`,
   },
 ];
 
@@ -113,7 +113,7 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
   return (
     <div className=" w-72 group">
       <div className="h-72 w-72 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300">
-        <img
+        <img loading = "lazy"
           src={data.imageSrc}
           className=" w-full h-full rounded-full object-cover"
           alt=""
@@ -130,19 +130,19 @@ const DiscoverMoreCardsData = [
   {
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
     link: "#",
   },
   {
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
     link: "#",
   },
   {
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
     link: "#",
   },
 ];
@@ -277,7 +277,7 @@ const Industry = () => {
         aria-label="trending-technologies-section"
         className={`w-full bg-cyan-950 py-24 bg-[url('${
           import.meta.env.VITE_REACT_APP_API_URL
-        }/trending-technologies-pattern.svg')] bg-cover`}
+        }/trending-technologies-pattern.webp')] bg-cover`}
       >
         <h1 className="text-white text-5xl font-semibold text-center">
           Trending Technologies
@@ -312,7 +312,7 @@ const Industry = () => {
           </div>
         </div>
       </div>
-      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24`}>
+      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.webp')] py-24`}>
                 <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
                 <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
                     {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {

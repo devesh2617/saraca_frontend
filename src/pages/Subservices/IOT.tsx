@@ -20,42 +20,42 @@ const TrendingTechnologiesData = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/IOT/5G.jpg`,
+    }/Services/Digital/IOT/5G.webp`,
   },
   {
     heading: "Edge Computing",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/IOT/Edge.jpg`,
+    }/Services/Digital/IOT/Edge.webp`,
   },
   {
     heading: "AI/ML",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/IOT/34.svg`,
+    }/Services/Digital/IOT/34.webp`,
   },
   {
     heading: "Blockchain Technology",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/IOT/35.svg`,
+    }/Services/Digital/IOT/35.webp`,
   },
   {
     heading: "LPWAN(Low-Power Wide-Area Network",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/IOT/36.svg`,
+    }/Services/Digital/IOT/36.webp`,
   },
   {
     heading: "Digital Twins",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/IOT/37.svg`,
+    }/Services/Digital/IOT/37.webp`,
   },
 ];
 

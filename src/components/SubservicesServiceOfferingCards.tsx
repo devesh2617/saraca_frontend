@@ -1,4 +1,4 @@
-import React, { FC, forwardRef } from "react";
+import { FC, forwardRef } from "react";
 
 interface CardProps {
   key:number;
@@ -16,7 +16,7 @@ const Card: FC<CardProps> = forwardRef(({ cardsData, contentPosition }, ref) => 
         <h1 className={`text-gray-500 font-semibold text-5xl px-4 w-2/3 text-center`}>{cardsData.heading}</h1>
       </div>
       <div aria-label="image" className="w-[24rem]">
-        <img src={cardsData.imageSrc} className="w-full aspect-[4/3] mx-auto object-fit" alt="" />
+        <img src={cardsData.imageSrc} className="w-full aspect-[4/3] mx-auto object-fit" alt="" loading="lazy"/>
       </div>
       <div aria-label="content" className={`flex-1 text-left md:flex md:flex-row md:justify-center`}>
         <div className={`md:w-[80%] md:flex md:flex-row md:justify-center`}>

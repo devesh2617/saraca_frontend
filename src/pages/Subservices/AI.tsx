@@ -1,15 +1,15 @@
 import { Helmet } from "react-helmet";
 import React, { useEffect, useRef } from "react";
-import DiscoverMoreCards from "../../components/DiscoverMoreCards";
+// import DiscoverMoreCards from "../../components/DiscoverMoreCards";
 import ServiceOfferingsCards from "../../components/SubservicesServiceOfferingCards";
 
-type DiscoverMoreCardsData = {
-  imageSrc: string;
-  link: string;
-};
+// type DiscoverMoreCardsData = {
+//   imageSrc: string;
+//   link: string;
+// };
 
 type TrendingTechnologiesObject = {
-  title: string;
+  heading: string;
   link: string;
   imageSrc: string;
 };
@@ -20,35 +20,35 @@ const TrendingTechnologiesData = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/AI/Explainable.jpg`,
+    }/Services/Digital/AI/Explainable.webp`,
   },
   {
     heading: "Edge AI",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/AI/Edge Ai.jpg`,
+    }/Services/Digital/AI/Edge Ai.webp`,
   },
   {
     heading: "Federated Learning",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/AI/Federated Learning.jpg`,
+    }/Services/Digital/AI/Federated Learning.webp`,
   },
   {
     heading: "Generative Adversarial Networks (GANs)",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/AI/Generative.jpg`,
+    }/Services/Digital/AI/Generative.webp`,
   },
   {
     heading: "Reinforcement Learning",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/AI/learning.jpg`,
+    }/Services/Digital/AI/learning.webp`,
   },
 ];
 
@@ -60,7 +60,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/AI/consult.svg`,
+    }/Services/Digital/AI/consult.webp`,
   },
   {
     heading: "AI Product Development",
@@ -69,7 +69,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/AI/Product.svg`,
+    }/Services/Digital/AI/Product.webp`,
   },
   {
     heading: "Natural Language Processing (NLP)",
@@ -78,7 +78,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/AI/nlp.svg`,
+    }/Services/Digital/AI/nlp.webp`,
   },
   {
     heading: "Computer Vision Solutions",
@@ -87,7 +87,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/AI/vision.svg`,
+    }/Services/Digital/AI/vision.webp`,
   },
   {
     heading: "AI-powered Automation",
@@ -96,7 +96,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/AI/powerd.svg`,
+    }/Services/Digital/AI/powerd.webp`,
   },
   {
     heading: "Machine Learning Engineering",
@@ -105,7 +105,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/AI/ml.svg`,
+    }/Services/Digital/AI/ml.webp`,
   },
   {
     heading: "AI Solution Design and Development",
@@ -114,7 +114,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/AI/Design.svg`,
+    }/Services/Digital/AI/Design.webp`,
   },
   {
     heading: "AI Infrastructure and Optimization",
@@ -123,7 +123,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/AI/opti.svg`,
+    }/Services/Digital/AI/opti.webp`,
   },
 ];
 
@@ -131,7 +131,7 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
   return (
     <div className=" w-72 group">
       <div className="h-72 w-72 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300">
-        <img
+        <img loading = "lazy"
           src={data.imageSrc}
           className=" w-full h-full rounded-full object-cover"
           alt=""
@@ -144,26 +144,26 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
   );
 };
 
-const DiscoverMoreCardsData = [
-  {
-    imageSrc: `${
-      import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#",
-  },
-  {
-    imageSrc: `${
-      import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#",
-  },
-  {
-    imageSrc: `${
-      import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#",
-  },
-];
+// const DiscoverMoreCardsData = [
+//   {
+//     imageSrc: `${
+//       import.meta.env.VITE_REACT_APP_API_URL
+//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
+//     link: "#",
+//   },
+//   {
+//     imageSrc: `${
+//       import.meta.env.VITE_REACT_APP_API_URL
+//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
+//     link: "#",
+//   },
+//   {
+//     imageSrc: `${
+//       import.meta.env.VITE_REACT_APP_API_URL
+//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
+//     link: "#",
+//   },
+// ];
 
 const Industry = () => {
   const cardsRefs = Array.from({ length: ServiceOfferings.length }, () =>
@@ -279,7 +279,7 @@ const Industry = () => {
         aria-label="trending-technologies-section"
         className={`w-full bg-cyan-950 py-24 bg-[url('${
           import.meta.env.VITE_REACT_APP_API_URL
-        }/trending-technologies-pattern.svg')] bg-cover`}
+        }/trending-technologies-pattern.webp')] bg-cover`}
       >
         <h1 className="text-white text-5xl font-semibold text-center">
           Trending Technologies
@@ -314,7 +314,7 @@ const Industry = () => {
           </div>
         </div>
       </div>
-      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24`}>
+      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.webp')] py-24`}>
                 <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
                 <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
                     {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {

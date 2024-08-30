@@ -13,42 +13,42 @@ type ServiceOfferings = {
 
 const ServiceOfferings = [
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/IOT.png`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/IOT.webp`,
   title: "IOT",
   link: "/Service/Digital/IOT"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/CyberSecurity.png`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/CyberSecurity.webp`,
   title: "CyberSecurity",
   link: "/Service/Digital/Cybersecurity"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability.png`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Sustainability.webp`,
   title: "Sustainability",
   link: "/Service/Digital/Sustainability"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Industry4.0.png`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Industry4.0.webp`,
   title: "Indutry 4.0",
   link: "/Service/Digital/Industry4.0"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Artificial Intelligence.png`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Artificial Intelligence.webp`,
   title: "Artificial Intelligence",
   link: "/Service/Digital/ArtificialIntelligence"
 }
 ]
 
 const DiscoverMoreCardsData = [{
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
   link: "#"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
   link: "#"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
   link: "#"
 }]
 
@@ -56,7 +56,7 @@ const serviceOfferingCards = (data: ServiceOfferings) => {
   return (
     <a href={data.link}>
       <div className='bg-white rounded-xl overflow-hidden'>
-          <img src={data.imageSrc} className='object-cover max-w-[30rem] aspect-square'/>
+          <img loading="lazy" src={data.imageSrc} className='object-cover max-w-[30rem] aspect-square'/>
           <h1 className=' font-bold text-center text-2xl py-4'>
             {data.title}
           </h1>
@@ -110,7 +110,7 @@ const Industry = () => {
               </div>
             </div>
         
-        <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Landing.png`} />
+        <img loading="lazy" className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Landing.webp`} />
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
         <div>

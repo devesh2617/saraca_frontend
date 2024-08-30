@@ -20,21 +20,21 @@ const TrendingTechnologiesData = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/V&V/6.svg`,
+    }/Services/Embedded/V&V/6.webp`,
   },
   {
     heading: "Continuous Integration and Continuous Testing (CI/CT)",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/V&V/7.svg`,
+    }/Services/Embedded/V&V/7.webp`,
   },
   {
     heading: "Hardware-in-the-Loop (HIL) Testing",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/V&V/8.svg`,
+    }/Services/Embedded/V&V/8.webp`,
   },
   {
     heading:
@@ -42,14 +42,14 @@ const TrendingTechnologiesData = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/V&V/9.svg`,
+    }/Services/Embedded/V&V/9.webp`,
   },
   {
     heading: "Cybersecurity Testing for Embedded Systems",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/V&V/10.svg`,
+    }/Services/Embedded/V&V/10.webp`,
   },
 ];
 
@@ -61,7 +61,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/V&V/1.svg`,
+    }/Services/Embedded/V&V/1.webp`,
   },
   {
     heading: "Test Automation",
@@ -70,7 +70,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/V&V/2.svg`,
+    }/Services/Embedded/V&V/2.webp`,
   },
   {
     heading: "Verification & Validation Protocols",
@@ -79,7 +79,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/V&V/3.svg`,
+    }/Services/Embedded/V&V/3.webp`,
   },
   {
     heading: "Risk Assessment & Mitigation",
@@ -88,7 +88,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/V&V/4.svg`,
+    }/Services/Embedded/V&V/4.webp`,
   },
   {
     heading: "Compliance & Certification Support",
@@ -97,7 +97,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Embedded/V&V/5.svg`,
+    }/Services/Embedded/V&V/5.webp`,
   },
 ];
 
@@ -105,7 +105,7 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
   return (
     <div className=" w-72 group">
       <div className="h-72 w-72 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300">
-        <img
+        <img loading = "lazy"
           src={data.imageSrc}
           className=" w-full h-full rounded-full object-cover"
           alt=""
@@ -122,19 +122,19 @@ const DiscoverMoreCardsData = [
   {
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
     link: "#",
   },
   {
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
     link: "#",
   },
   {
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
     link: "#",
   },
 ];
@@ -261,7 +261,7 @@ const Industry = () => {
         aria-label="trending-technologies-section"
         className={`w-full bg-cyan-950 py-24 bg-[url('${
           import.meta.env.VITE_REACT_APP_API_URL
-        }/trending-technologies-pattern.svg')] bg-cover`}
+        }/trending-technologies-pattern.webp')] bg-cover`}
       >
         <h1 className="text-white text-5xl font-semibold text-center">
           Trending Technologies
@@ -296,7 +296,7 @@ const Industry = () => {
           </div>
         </div>
       </div>
-      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24`}>
+      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.webp')] py-24`}>
                 <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
                 <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
                     {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {

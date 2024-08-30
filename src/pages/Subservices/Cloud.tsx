@@ -18,27 +18,27 @@ const TrendingTechnologiesData = [
     {
         heading: "Server less Computing",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Serverless Computing.png`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Serverless Computing.webp`,
     },
     {
         heading: "Hybrid and Multi-Cloud Solutions",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Hybrid and Multi-Cloud Solutions.png`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Hybrid and Multi-Cloud Solutions.webp`,
     },
     {
         heading: "Edge Computing",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Edge Computing.png`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Edge Computing.webp`,
     },
     {
         heading: "AI and Machine Learning as a Service",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/AI and Machine Learning.png`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/AI and Machine Learning.webp`,
     },
     {
         heading: "Cloud Security and Compliance",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Cloud Security.png`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Cloud Security.webp`,
     }
 ];
 
@@ -49,7 +49,7 @@ const ServiceOfferings = [
             "Seamlessly transition your applications and data to the cloud with our expert cloud migration services. We ensure minimal disruption and maximum efficiency throughout the migration process."
         ],
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Cloud Migration.jpg`
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Cloud Migration.webp`
     },
     {
         heading: "Cloud Architecture Design",
@@ -57,7 +57,7 @@ const ServiceOfferings = [
             "Our team of seasoned architects designs robust and scalable cloud architectures tailored to your specific needs. We optimize performance, reliability, and security to maximize the benefits of cloud computing."
         ],
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Cloud Architecture Design.jpg`
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Cloud Architecture Design.webp`
     },
     {
         heading: "Cloud Infrastructure Management",
@@ -65,7 +65,7 @@ const ServiceOfferings = [
             "SARACA provides comprehensive cloud infrastructure management services to keep your cloud environment running smoothly. From monitoring to optimization, we handle all aspects of cloud infrastructure maintenance."
         ],
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Cloud Infrastructure Management.jpg`
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Cloud Infrastructure Management.webp`
     },
     {
         heading: "DevOps Integration",
@@ -73,7 +73,7 @@ const ServiceOfferings = [
             "Accelerate your software development lifecycle with our DevOps integration services. We automate processes, streamline collaboration, and improve efficiency to deliver high-quality software at scale."
         ],
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/DevOps Integration.jpg`
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/DevOps Integration.webp`
     },
     {
         heading: "Cloud Security Solutions",
@@ -81,7 +81,7 @@ const ServiceOfferings = [
             "Protect your cloud assets and data with our advanced cloud security solutions. We implement robust security measures and best practices to mitigate risks and safeguard your valuable resources."
         ],
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Cloud Security Solutions.jpg`
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/Cloud/Cloud Security Solutions.webp`
     },
 ];
 
@@ -91,7 +91,7 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
     return (
       <div className=" w-72 group">
         <div className="h-72 w-72 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300">
-          <img
+          <img loading =  "lazy"
             src={data.imageSrc}
             className=" w-full h-full rounded-full object-cover"
             alt=""
@@ -105,15 +105,15 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
   };
 
 // const DiscoverMoreCardsData = [{
-//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //     link: "#"
 // },
 // {
-//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //     link: "#"
 // },
 // {
-//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //     link: "#"
 // }]
 
@@ -237,7 +237,7 @@ Cloud Engineering enables organizations to scale their operations seamlessly, ac
 
             </div>
 
-            <div aria-label="trending-technologies-section" className={`w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.svg')] bg-cover`}>
+            <div aria-label="trending-technologies-section" className={`w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.webp')] bg-cover`}>
                 <h1 className="text-white text-5xl font-semibold text-center">Trending Technologies</h1>
                 <div className="container flex flex-wrap justify-evenly items-start mt-24 mx-auto gap-8">
                     {TrendingTechnologiesData.map((data: TrendingTechnologiesObject) => TrendingTechnologiesCards(data))}
@@ -267,7 +267,7 @@ Cloud Engineering enables organizations to scale their operations seamlessly, ac
                 </div>
 
             </div>
-            {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24`}>
+            {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.webp')] py-24`}>
                 <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
                 <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
                     {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {

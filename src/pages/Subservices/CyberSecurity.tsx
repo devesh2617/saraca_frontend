@@ -20,35 +20,35 @@ const TrendingTechnologiesData = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/Cyber/Zero Trust Architecture.png`,
+    }/Services/Digital/Cyber/Zero Trust Architecture.webp`,
   },
   {
     heading: "AI- Powered Security Analysis",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/Cyber/AI- Powered Security Analysis.png`,
+    }/Services/Digital/Cyber/AI- Powered Security Analysis.webp`,
   },
   {
     heading: "Cloud Security",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/Cyber/Cloud Security.png`,
+    }/Services/Digital/Cyber/Cloud Security.webp`,
   },
   {
     heading: "Blockchain Security",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/Cyber/Blockchain Security.png`,
+    }/Services/Digital/Cyber/Blockchain Security.webp`,
   },
   {
     heading: "Identify and Access Management",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Services/Digital/Cyber/Identify and Access Management.png`,
+    }/Services/Digital/Cyber/Identify and Access Management.webp`,
   },
 ];
 
@@ -104,7 +104,7 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
   return (
     <div className=" w-72 group">
       <div className="h-72 w-72 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300">
-        <img
+        <img loading = "lazy"
           src={data.imageSrc}
           className=" w-full h-full rounded-full object-cover"
           alt=""

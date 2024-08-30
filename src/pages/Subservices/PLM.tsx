@@ -18,27 +18,27 @@ const TrendingTechnologiesData = [
     {
         heading: "Digital Twin Technology",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Digital Twin Technology.png`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Digital Twin Technology.webp`,
     },
     {
         heading: "Internet of Things (IoT) Integration",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Internet of Things (IoT) Integration.png`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Internet of Things (IoT) Integration.webp`,
     },
     {
         heading: "Cloud-Based PLM Solutions",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Cloud-Based PLM Solutions.png`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Cloud-Based PLM Solutions.webp`,
     },
     {
         heading: "Artificial Intelligence and Machine Learning",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Artificial Intelligence and Machine Learning.png`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Artificial Intelligence and Machine Learning.webp`,
     },
     {
         heading: "Augmented Reality (AR) and Virtual Reality (VR)",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Augmented Reality (AR) and Virtual Reality (VR).png`,
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Augmented Reality (AR) and Virtual Reality (VR).webp`,
     }
 ];
 
@@ -48,25 +48,25 @@ const ServiceOfferings = [
         heading: "Product Lifecycle Management (PLM)",
         description: "Our PLM services encompass the entire product lifecycle, from conceptualization and design to manufacturing and support. We employ industry-leading tools and methodologies to streamline processes, enhance collaboration, and drive innovation.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Product Lifecycle Management (PLM).jpg`
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Product Lifecycle Management (PLM).webp`
     },
     {
         heading: "Software Engineering Solutions",
         description: "SARACA offers a comprehensive suite of software engineering solutions, including software development, testing, maintenance, and optimization. Our team of seasoned engineers and developers is committed to delivering robust, scalable, and high-performance software solutions that exceed client expectations.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Software Engineering Solutions.jpg`
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Software Engineering Solutions.webp`
     },
     {
         heading: "Technology Integration",
         description: "We specialize in seamless technology integration, helping clients leverage the latest advancements to optimize operations, improve efficiency, and gain a competitive edge in the market. Whether it's integrating new technologies into existing systems or developing custom solutions from the ground up, SARACA has the expertise to deliver results.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Technology Integration.jpg`
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Technology Integration.webp`
     },
     {
         heading: "Quality Assurance and Compliance",
         description: "SARACA ensures adherence to the highest quality standards and regulatory compliance requirements throughout the product development lifecycle. Our rigorous quality assurance processes and compliance frameworks guarantee that deliverables meet the most stringent industry standards and certifications.",
         link: "",
-        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Quality Assurance and Compliance.jpg`
+        imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Software/PLM/Quality Assurance and Compliance.webp`
     },
    
 ];
@@ -77,7 +77,7 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
   return (
     <div className=" w-72 group">
       <div className="h-72 w-72 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300">
-        <img
+        <img loading = "lazy"
           src={data.imageSrc}
           className=" w-full h-full rounded-full object-cover"
           alt=""
@@ -91,15 +91,15 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
 };
 
 // const DiscoverMoreCardsData = [{
-//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //     link: "#"
 // },
 // {
-//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //     link: "#"
 // },
 // {
-//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //     link: "#"
 // }]
 
@@ -226,7 +226,7 @@ In the rapidly evolving digital landscape, effective PLM is crucial for driving 
 
             </div>
 
-            <div aria-label="trending-technologies-section" className={`w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.svg')] bg-cover`}>
+            <div aria-label="trending-technologies-section" className={`w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.webp')] bg-cover`}>
                 <h1 className="text-white text-5xl font-semibold text-center">Trending Technologies</h1>
                 <div className="container flex flex-wrap justify-evenly items-start mt-24 mx-auto gap-8">
                     {TrendingTechnologiesData.map((data: TrendingTechnologiesObject) => TrendingTechnologiesCards(data))}
@@ -256,7 +256,7 @@ In the rapidly evolving digital landscape, effective PLM is crucial for driving 
                 </div>
 
             </div>
-            {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24`}>
+            {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.webp')] py-24`}>
                 <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
                 <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
                     {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {

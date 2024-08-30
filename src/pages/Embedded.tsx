@@ -14,32 +14,32 @@ type ServiceOfferings = {
 
 const ServiceOfferings = [
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Embedded/5.svg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Embedded/5.webp`,
   title: "Hardware",
   link: "/Service/Embedded/Hardware"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Embedded/6.svg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Embedded/6.webp`,
   title: "Firmware",
   link: "/Service/Embedded/Firmware"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Embedded/7.svg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Embedded/7.webp`,
   title: "Verification & Validation",
   link: "/Service/Embedded/VerificationandValidation"
 }
 ]
 
 const DiscoverMoreCardsData = [{
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
   link: "#"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
   link: "#"
 },
 {
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
   link: "#"
 }]
 
@@ -47,7 +47,7 @@ const serviceOfferingCards = (data: ServiceOfferings) => {
   return (
     <a href={data.link}>
       <div className='bg-white rounded-xl overflow-hidden'>
-          <img src={data.imageSrc} className='object-cover max-w-[30rem] aspect-square'/>
+          <img loading = "lazy" src={data.imageSrc} className='object-cover max-w-[30rem] aspect-square'/>
           <h1 className=' font-bold text-center text-2xl py-4'>
             {data.title}
           </h1>
@@ -101,7 +101,7 @@ const Industry = () => {
               </div>
             </div>
         
-        <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Services/Embedded/landing.jpg`} />
+        <img loading = "lazy" className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Services/Embedded/landing.webp`} />
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
         <div>
@@ -140,7 +140,7 @@ const Industry = () => {
 
       
       
-      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')]`}>
+      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.webp')]`}>
         <h1 className="text-white text-6xl text-center font-semibold py-12">Discover More</h1>
         <div className=" mt-16 w-full flex justify-evenly flex-wrap gap-8">
           {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {
