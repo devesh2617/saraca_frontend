@@ -1,18 +1,26 @@
 import {Helmet} from "react-helmet"
-import React, { useEffect, useRef } from 'react';
-// import DiscoverMoreCards from '../../components/DiscoverMoreCards';
+import React, { useEffect, useRef, useState } from 'react';
+import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 import ServiceOfferingsCards from "../../components/SubservicesServiceOfferingCards";
+import getDiscoverMoreDataByIds from '@/utilities/getDiscoverMoreDataByIds';
 
 // type DiscoverMoreCardsData = {
 //     imageSrc: string,
 //     link: string
 // }
 
+type DiscoverMoreCardsType = {
+    img: string,
+    title:string,
+    link: string
+  }
 type TrendingTechnologiesObject = {
     title: string,
     link: string,
     imageSrc: string
 }
+
+const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-49ad-9275-94cf098ef05c']
 
 const TrendingTechnologiesData = [
     {
@@ -150,6 +158,14 @@ const Industry = () => {
     
         
     }, [])
+    const [discoverMore, setDiscoverMore] = useState<DiscoverMoreCardsType[]>([])
+  useEffect(()=>{
+   getDiscoverMoreDataByIds(discoverMoreIds).then(
+    res=>{
+      setDiscoverMore(res.data.data)
+    }
+   ).catch(e=>console.log(e))
+  },[])
 
 
     return (
@@ -217,7 +233,7 @@ const Industry = () => {
                     Cloud Engineering encompasses the design, development, deployment, and maintenance of software applications and systems that leverage cloud computing infrastructure. It involves harnessing the power of cloud resources, such as storage, computing power, and services, to create scalable, flexible, and cost-effective solutions.
                     <br />
                     <br />
-Cloud Engineering enables organizations to scale their operations seamlessly, accelerate time-to-market, enhance collaboration, and adapt to changing market demands with ease. By leveraging the cloud, businesses can unlock unprecedented opportunities for growth and transformation.
+                    Cloud Engineering enables organizations to scale their operations seamlessly, accelerate time-to-market, enhance collaboration, and adapt to changing market demands with ease. By leveraging the cloud, businesses can unlock unprecedented opportunities for growth and transformation.
                     </p>
                 </div>
                 <div>
@@ -267,17 +283,17 @@ Cloud Engineering enables organizations to scale their operations seamlessly, ac
                 </div>
 
             </div>
-            {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.webp')] py-24`}>
-                <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
-                <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
-                    {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {
-                        return (
-                            <DiscoverMoreCards key={index} imageSrc={data.imageSrc} link={data.link} />
-                        )
-                    })}
-                </div>
-            </div> */}
+            <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
+        <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
+        <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
+          {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
+            return (
+              <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} />
+            )
+          })}
         </div>
+      </div> 
+    </div>
     )
 }
 

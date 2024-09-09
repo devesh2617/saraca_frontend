@@ -2,16 +2,24 @@ import {Helmet} from "react-helmet"
 import DiscoverMoreCards from "../components/DiscoverMoreCards";
 import WhereWeServeCards from "../components/WhereWeServeCards";
 import ServiceOfferingsCards from "../components/ServicesOfferingsCards";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import getDiscoverMoreDataByIds from '@/utilities/getDiscoverMoreDataByIds';
 type medicalCardsData = {
   title: string;
   link: string;
   imageSrc: string;
 };
-type DiscoverMoreCardsData = {
-  imageSrc: string;
-  link: string;
-};
+// type DiscoverMoreCardsData = {
+//   imageSrc: string;
+//   link: string;
+// };
+type DiscoverMoreCardsType = {
+  img: string,
+  title:string,
+  link: string
+}
+
+const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-49ad-9275-94cf098ef05c']
 
 const ServiceOfferings = [
   {
@@ -82,31 +90,37 @@ const medicalCardsData = [
   },
 ];
 
-const DiscoverMoreCardsData = [
-  {
-    imageSrc: `${
-      import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#",
-  },
-  {
-    imageSrc: `${
-      import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#",
-  },
-  {
-    imageSrc: `${
-      import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-    link: "#",
-  },
-];
+// const DiscoverMoreCardsData = [
+//   {
+//     imageSrc: `${
+//       import.meta.env.VITE_REACT_APP_API_URL
+//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     link: "#",
+//   },
+//   {
+//     imageSrc: `${
+//       import.meta.env.VITE_REACT_APP_API_URL
+//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     link: "#",
+//   },
+//   {
+//     imageSrc: `${
+//       import.meta.env.VITE_REACT_APP_API_URL
+//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     link: "#",
+//   },
+// ];
 
 const Industry = () => {
   const ref = useRef<HTMLVideoElement | null>(null);
+  const [discoverMore, setDiscoverMore] = useState<DiscoverMoreCardsType[]>([])
   useEffect(() => {
     ref.current?.addEventListener("loadeddata", () => ref.current?.play());
+    getDiscoverMoreDataByIds(discoverMoreIds).then(
+      res=>{
+        setDiscoverMore(res.data.data)
+      }
+     ).catch(e=>console.log(e))
   }, [ref.current]);
   return (
     <div>
@@ -220,16 +234,16 @@ const Industry = () => {
           ))}
         </div>
       </div>
-      {/* <div aria-label="discover more section" className={`min-h-[80vh] w-full bg-cyan-700 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/cube-background.svg')] py-24`}>
+      <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
-          {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {
+          {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
             return (
-              <DiscoverMoreCards key={index} imageSrc={data.imageSrc} link={data.link} />
+              <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} />
             )
           })}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

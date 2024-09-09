@@ -23,9 +23,7 @@ const Card: FC<CardProps> = ({ cardsData, imageSrc }) => {
         </h1>
 
         {cardsData?.description && (
-          <p className="text-2xl lg:text-3xl text-white md:text-left font-extralight">
-            {cardsData.description}
-          </p>
+          <p className="text-2xl lg:text-3xl text-white md:text-left font-extralight" dangerouslySetInnerHTML={{__html:cardsData.description}}></p>
         )}
         {cardsData?.content ? (
           cardsData?.content?.length > 1 ? (
@@ -35,15 +33,15 @@ const Card: FC<CardProps> = ({ cardsData, imageSrc }) => {
                   <li
                     key={index}
                     className="lg:my-4 my-1 text-2xl lg:text-3xl text-white font-extralight"
+                    dangerouslySetInnerHTML={{__html:point}}
                   >
-                    {point}
                   </li>
                 );
               })}
             </ul>
           ) : (
-            <p className="lg:my-4 my-1 text-2xl lg:text-3xl text-white font-extralight">
-              {cardsData.content[0]}
+            <p className="lg:my-4 my-1 text-2xl lg:text-3xl text-white font-extralight" dangerouslySetInnerHTML={{__html:cardsData.content[0]}}>
+              
             </p>
           )
         ) : (

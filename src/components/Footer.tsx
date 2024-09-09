@@ -51,10 +51,10 @@ const Footer = () => {
       name: "Rail Transportation",
       link: "/Industry/RailTransportation",
     },
-    {
-      name: "Consumer",
-      link: "/Industry/Consumer",
-    },
+    // {
+    //   name: "Consumer",
+    //   link: "/Industry/Consumer",
+    // },
   ];
   const serviceLinks = [
     {

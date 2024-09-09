@@ -1,12 +1,21 @@
-// import { useState } from 'react';
-// import DiscoverMoreCards from '../../components/DiscoverMoreCards';
+import { useState,useEffect } from 'react';
+import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 // import IndustryCards from "../../components/IndustryCards";
 import {Helmet} from "react-helmet"
+import getDiscoverMoreDataByIds from '@/utilities/getDiscoverMoreDataByIds';
 type medicalCardsData = {
   title: string,
   points: string[],
   imageSrc: string
 }
+
+type DiscoverMoreCardsType = {
+  img: string,
+  title:string,
+  link: string
+}
+
+const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-49ad-9275-94cf098ef05c']
 
 // type DiscoverMoreCardsData = {
 //   imageSrc: string,
@@ -89,6 +98,14 @@ const Medical = () => {
   // const handleSelect = (data: ServicesOfferingsData) => {
   //   setSelectedServicesOffering(data)
   // }
+  const [discoverMore, setDiscoverMore] = useState<DiscoverMoreCardsType[]>([])
+  useEffect(()=>{
+   getDiscoverMoreDataByIds(discoverMoreIds).then(
+    res=>{
+      setDiscoverMore(res.data.data)
+    }
+   ).catch(e=>console.log(e))
+  },[])
   return (
     <div>
       <Helmet>
@@ -125,13 +142,13 @@ const Medical = () => {
         Saraca brings over a decade of deep expertise in the automotive sector, serving as a trusted partner for engineering services tailored to meet the diverse needs of the industry.
         <br />
         <br />
-1. <strong>Advanced Engineering Technologies:</strong> We enhance the efficiency and performance of passenger cars through advanced simulations, prototyping, and testing methodologies. From powertrain optimization to lightweighting strategies, we optimize every aspect of vehicle design to maximize fuel efficiency and reduce environmental impact.
-<br/>
-<br />
-2. <strong>Digital Integration and Connectivity:</strong> We specialize in integrating smart technologies and connectivity features into passenger cars, creating seamless and intuitive user experiences. From infotainment systems to advanced driver assistance systems (ADAS), we empower our customers with next-generation vehicle capabilities that enhance safety, convenience, and entertainment on the road.
-<br />
-<br />
-3. <strong>Sustainable Mobility Solutions:</strong> We're committed to developing eco-friendly solutions that minimize carbon footprint and promote environmental stewardship. From electric and hybrid vehicle development to sustainable materials sourcing, we're driving the transition towards cleaner, greener transportation options for a better tomorrow.
+        1. <strong>Advanced Engineering Technologies:</strong> We enhance the efficiency and performance of passenger cars through advanced simulations, prototyping, and testing methodologies. From powertrain optimization to lightweighting strategies, we optimize every aspect of vehicle design to maximize fuel efficiency and reduce environmental impact.
+        <br/>
+        <br />
+        2. <strong>Digital Integration and Connectivity:</strong> We specialize in integrating smart technologies and connectivity features into passenger cars, creating seamless and intuitive user experiences. From infotainment systems to advanced driver assistance systems (ADAS), we empower our customers with next-generation vehicle capabilities that enhance safety, convenience, and entertainment on the road.
+        <br />
+        <br />
+        3. <strong>Sustainable Mobility Solutions:</strong> We're committed to developing eco-friendly solutions that minimize carbon footprint and promote environmental stewardship. From electric and hybrid vehicle development to sustainable materials sourcing, we're driving the transition towards cleaner, greener transportation options for a better tomorrow.
 
         </p>
         </div>
@@ -201,12 +218,12 @@ const Medical = () => {
         </div>
       </div> */}
 
-<div aria-label="trending-technologies-section" className={`w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.svg')] bg-cover`}>
+      <div aria-label="trending-technologies-section" className={`w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.svg')] bg-cover`}>
                 <h1 className="text-white text-5xl font-semibold text-center">Service Offerings</h1>
                 <div className="container flex flex-wrap justify-center items-start mt-24 mx-auto gap-8">
                     {medicalCardsData.map((data) => TrendingTechnologiesCards(data))}
                 </div>
-</div>
+      </div>
     </div>
   )
 }

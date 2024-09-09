@@ -1,14 +1,22 @@
-// import { useState } from 'react';
-// import DiscoverMoreCards from '../../components/DiscoverMoreCards';
+import { useState,useEffect } from 'react';
+import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 // import { title } from "process";
 // import IndustryCards from "../../components/IndustryCards";
 // import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
+import getDiscoverMoreDataByIds from '@/utilities/getDiscoverMoreDataByIds';
 import {Helmet} from "react-helmet"
 type medicalCardsData = {
   title: string,
   points: string[],
   imageSrc: string
 }
+type DiscoverMoreCardsType = {
+  img: string,
+  title:string,
+  link: string
+}
+
+const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-49ad-9275-94cf098ef05c']
 
 // type DiscoverMoreCardsData = {
 //   imageSrc: string,
@@ -165,16 +173,16 @@ const medicalCardsData = [{
 //     imageSrc: "Quality.svg"
 //   }
 // ]  
-const TrendingTechnologiesCards = (data) => {
-  return (
-      <div className='w-48 group'>
-          <div className='h-48 w-48 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300'>
-              <img src={data.imageSrc} className=' w-full h-full rounded-full object-cover' alt="" />
-          </div>
-          <h6 className='text-md text-white w-full text-center mt-4 group-hover:font-semibold transition-all duration-300'>{data.title}</h6>
-      </div>
-  )
-}
+// const TrendingTechnologiesCards = (data) => {
+//   return (
+//       <div className='w-48 group'>
+//           <div className='h-48 w-48 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300'>
+//               <img src={data.imageSrc} className=' w-full h-full rounded-full object-cover' alt="" />
+//           </div>
+//           <h6 className='text-md text-white w-full text-center mt-4 group-hover:font-semibold transition-all duration-300'>{data.title}</h6>
+//       </div>
+//   )
+// }
 
 
 const Medical = () => {
@@ -182,6 +190,14 @@ const Medical = () => {
   // const handleSelect = (data: ServicesOfferingsData) => {
   //   setSelectedServicesOffering(data)
   // }
+  const [discoverMore, setDiscoverMore] = useState<DiscoverMoreCardsType[]>([])
+  useEffect(()=>{
+   getDiscoverMoreDataByIds(discoverMoreIds).then(
+    res=>{
+      setDiscoverMore(res.data.data)
+    }
+   ).catch(e=>console.log(e))
+  },[])
   return (
     <div>
       <Helmet>
@@ -263,16 +279,16 @@ const Medical = () => {
                     {medicalCardsData.map((data) => (<li className="text-white p-2">{data.title}</li>))}
                 </ul>
 </div>
-      {/* <div aria-label="discover more section" className="min-h-[80vh] w-full bg-cyan-900 bg-[url('../../public/cube-background.svg')] py-24">
+      <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
-        <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-8">
-          {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {
+        <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
+          {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
             return (
-              <DiscoverMoreCards key={index} imageSrc={data.imageSrc} link={data.link} />
+              <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} />
             )
           })}
         </div>
-      </div> */}
+      </div> 
     </div>
   )
 }

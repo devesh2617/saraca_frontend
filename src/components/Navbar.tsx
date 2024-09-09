@@ -19,7 +19,8 @@ const Navbar = () => {
         { "Case Studies": { sublinks: [], link: "/Success_Stories/Case_Studies" } },
         { "Testimonials": { sublinks: [], link: "/Success_Stories/Client_Testimonials" } },
         { "Memberships": { sublinks: [], link: "/Success_Stories/Memberships" } },
-        { "Awards": { sublinks: [], link: "/Success_Stories/Awards" } }
+        { "Awards": { sublinks: [], link: "/Success_Stories/Awards" } },
+        { "Events/Expo/Summit": { sublinks: [], link: "/Success_Stories/Case_Studies" } }
       ], link: "#"
     },
 
@@ -63,15 +64,15 @@ const Navbar = () => {
             ], link: "/Industry/Semiconductor"
           }
         },
-        // {
-        //   "Industrial": {
-        //     sublinks: [
-        //       { name: "Oil & Gas", link: "/Industry/Industrial/Oil_Gas" },
-        //       { name: "Infrastructure", link: "/Industry/Industrial/Infrastructure" },
-        //       { name: "Renewables", link: "/Industry/Industrial/Renewables" }
-        //     ], link: "/Industry/Industrial"
-        //   }
-        // },
+        {
+          "Industrial": {
+            sublinks: [
+              { name: "Oil & Gas", link: "/Industry/Industrial/Oil_Gas" },
+              // { name: "Infrastructure", link: "/Industry/Industrial/Infrastructure" },
+              // { name: "Renewables", link: "/Industry/Industrial/Renewables" }
+            ], link: "#"/*"/Industry/Industrial"*/
+          }
+        },
         {
           "Rail Transportation": {
             sublinks: [
