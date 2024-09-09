@@ -38,7 +38,7 @@ import PhysicalDesign from "./pages/SubIndustries/PhysicalDesign";
 import DFT from "./pages/SubIndustries/DFT";
 import Appliances from "./pages/SubIndustries/Appliances";
 // import SmartHomes from "./pages/SubIndustries/SmartHomes";
-// import OilGas from "./pages/SubIndustries/OilGas";
+import OilGas from "./pages/SubIndustries/OilGas";
 // import Infrastructure from "./pages/SubIndustries/Infrastructure";
 // import Renewables from "./pages/SubIndustries/Renewables";
 import RollingStocks from "./pages/SubIndustries/RollingStocks";
@@ -200,11 +200,11 @@ function App() {
             <Route path="/Industry/RailTransportation/Signalling" element={<Signalling />} />
             <Route path="/Industry/Consumer" element={<Consumer />} />
             <Route path="/Industry/Consumer/Appliances" element={<Appliances />} />
-            {/* <Route path="/Industry/Consumer/SmartHomes" element={<SmartHomes />} />
-            <Route path="/Industry/Industrial" element={<Industrial />} />
+            {/* <Route path="/Industry/Consumer/SmartHomes" element={<SmartHomes />} /> */}
+            {/* <Route path="/Industry/Industrial" element={<Industrial />} /> */}
             <Route path="/Industry/Industrial/Oil_Gas" element={<OilGas />} />
-            <Route path="/Industry/Industrial/Infrastructure" element={<Infrastructure />} />
-            <Route path="/Industry/Industrial/Renewables" element={<Renewables />} /> */}
+            {/* <Route path="/Industry/Industrial/Infrastructure" element={<Infrastructure />} /> */}
+            {/* <Route path="/Industry/Industrial/Renewables" element={<Renewables />} /> */}
             <Route path="/Industry/LifeSciences/MedicalDevices" element={<MedicalDevices />} />
             <Route path="/Industry/LifeSciences/Pharmaceuticals" element={<Pharmaceuticals />} />
             <Route path="/Industry/LifeSciences/HealthcareApplications" element={<HealthcareApplications />} />
