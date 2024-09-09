@@ -2,7 +2,7 @@ import { useState,useEffect } from 'react';
 import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 import {Helmet} from "react-helmet"
 import IndustryCards from "../../components/IndustryCards";
-//import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
+//// import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
 import getDiscoverMoreDataByIds from '@/utilities/getDiscoverMoreDataByIds';
 
 type medicalCardsData = {

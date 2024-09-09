@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";;
 import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 // import IndustryCards from "../../components/IndustryCards";
-import ServiceOfferingsCards from '@/components/ServicesOfferingsCards';
+import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
 import getDiscoverMoreDataByIds from '@/utilities/getDiscoverMoreDataByIds';
 // type medicalCardsData = {
 //   title: string,
@@ -45,7 +45,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //   ],
 //   imageSrc: "Avionics.png"
 // },
- 
+
 // {
 //   title: "Exteriors",
 //   points: [
@@ -106,7 +106,6 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //   link: "#"
 // }]
 
-
 const ServiceOfferings = [
   {
     title: "Design for Testability (DFT) Services",
@@ -115,9 +114,9 @@ const ServiceOfferings = [
       "Boundary scan (JTAG) implementation",
       "ATPG (Automatic Test Pattern Generation) development",
       "Fault simulation and analysis",
-      "Testability analysis and optimization"
+      "Testability analysis and optimization",
     ],
-    imageSrc: "Design for Testability (DFT) Services.jpg"
+    imageSrc: "Design for Testability (DFT) Services.jpg",
   },
   {
     title: "Embedded Systems Development",
@@ -126,9 +125,9 @@ const ServiceOfferings = [
       "Firmware development",
       "Device driver development",
       "Real-time operating system (RTOS) integration",
-      "IoT (Internet of Things) device development"
+      "IoT (Internet of Things) device development",
     ],
-    imageSrc: "Embedded Systems Development.png"
+    imageSrc: "Embedded Systems Development.png",
   },
   {
     title: "Electronic Hardware Design",
@@ -137,9 +136,9 @@ const ServiceOfferings = [
       "Analog and digital circuit design",
       "Signal integrity analysis",
       "EMC/EMI compliance testing",
-      "Prototyping and hardware debugging"
+      "Prototyping and hardware debugging",
     ],
-    imageSrc: "Electronic Hardware Design.jpg"
+    imageSrc: "Electronic Hardware Design.jpg",
   },
   {
     title: "Software Development and Integration",
@@ -148,9 +147,9 @@ const ServiceOfferings = [
       "Middleware development",
       "API development and integration",
       "Database design and optimization",
-      "System integration and testing"
+      "System integration and testing",
     ],
-    imageSrc: "Software Development and Integration.png"
+    imageSrc: "Software Development and Integration.png",
   },
   {
     title: "Machine Learning and AI Solutions",
@@ -159,9 +158,9 @@ const ServiceOfferings = [
       "Model development and training",
       "Deployment of ML/AI algorithms on embedded systems",
       "Performance optimization for inference",
-      "Continuous model monitoring and updates"
+      "Continuous model monitoring and updates",
     ],
-    imageSrc: "Machine Learning and AI Solutions.png"
+    imageSrc: "Machine Learning and AI Solutions.png",
   },
   {
     title: "Wireless Communication Solutions",
@@ -170,90 +169,20 @@ const ServiceOfferings = [
       "Protocol stack development",
       "Wireless sensor network deployment",
       "Antenna design and optimization",
-      "System-level simulation and testing"
+      "System-level simulation and testing",
     ],
-    imageSrc: "Wireless Communication Solutions.png"
+    imageSrc: "Wireless Communication Solutions.png",
   },
   {
     title: "Cybersecurity Services",
     content: [
       "Vulnerability assessment and testing",
       "Security architecture design",
-      "Encryption and authentication implementation"
+      "Encryption and authentication implementation",
     ],
-    imageSrc: "Cybersecurity Services.jpg"
+    imageSrc: "Cybersecurity Services.jpg",
   },
-  // {
-  //   title: "Embedded",
-  //   content: [
-  //     "New product development",
-  //     "Low level development – BSP, DD",
-  //     "Application development",
-  //     "ADAS",
-  //     "IOT Systems development"
-  //   ],
-  //   imageSrc: "Embedded.png"
-  // },
-  // {
-  //   title: "Technical Publications",
-  //   content: [
-  //     "Technical illustrations",
-  //     "Technical Authoring",
-  //     "Multimedia"
-  //   ],
-  //   imageSrc: "Technical Publications.png"
-  // },
-  // {
-  //   title: "Manufacturing Engineering",
-  //   content: [
-  //     "Concurrent/Process Engineering",
-  //     "Tools, Jigs and Fixture Designing",
-  //     "Transfer of Technology (TOT)",
-  //     "Manufacturing Transfers",
-  //     "Sourcing Activities",
-  //     "Assembly Engineering"
-  //   ],
-  //   imageSrc: "Manufacturing Engineering.png"
-  // },
-  // {
-  //   title: "Mechanical Engineering",
-  //   content: [
-  //     "New Product Development",
-  //     "Value Engineering",
-  //     "Reverse Engineering",
-  //     "Finite Element Analysis",
-  //     "Sustenance Engineering",
-  //     "Structural Engineering",
-  //     "Systems Engineering",
-  //     "Post Launch Follow-up"
-  //   ],
-  //   imageSrc: "Mechanical Engineering.jpg"
-  // },
-  // {
-  //   title: "Software Engineering",
-  //   content: [
-  //     "New product development",
-  //     "Safety critical software’s",
-  //     "HMI development",
-  //     "ATE Application development",
-  //     "Front and back end development",
-  //     "Full Stack development"
-  //   ],
-  //   imageSrc: "Software Engineering.jpg"
-  // },
-  // {
-  //   title: "Quality Engineering",
-  //   content: [
-  //     "Product design control",
-  //     "Supplier quality assurance",
-  //     "QMS development",
-  //     "DHF Remediation",
-  //     "Regulatory assessment"
-  //   ],
-  //   imageSrc: "Quality Engineering.jpg"
-  // }
-]
-
+];
 
 const Medical = () => {
   // const [selectedServicesOffering, setSelectedServicesOffering] = useState<ServicesOfferingsData | null>(null)
@@ -270,12 +199,9 @@ const Medical = () => {
   },[])
   return (
     <div>
-       <Helmet>
+      <Helmet>
         <title>Semiconductor – DFT</title>
-        <meta
-          property="og:title"
-          content="Semiconductor – DFT"
-        />
+        <meta property="og:title" content="Semiconductor – DFT" />
         <meta
           name="description"
           content="Saraca is at the forefront of Design for Testability (DFT) services, specializing in optimizing and simplifying the testing process for complex System on Chip (SoC) designs. With expertise tailored to modern SoC challenges—such as integrating multiple memory components, mixed-signal blocks, and IPs from diverse vendors—we employ advanced DFT solutions. Our approach includes hybrid algorithms with optimized scan compression ratios to maximize pattern counts while minimizing testing overhead. We conduct thorough testing across standalone test benches, covering diagnostic, hard repair, soft repair, and BIST verification modes prior to SoC integration. Our comprehensive methodology seamlessly integrates test structures into designs and existing IP, leveraging automation to minimize front-end design modifications. Saraca supports industry-standard features including IEEE 1687 IJTAG support, 1149.1/1149.6 boundary scan, memory BIST, scan stitching, and core wrapper insertion, with additional capabilities in MBIST, logic insertion, clock integration, logical equivalence checking, and multi-pass test pattern generation for extensive coverage analysis."
@@ -294,73 +220,69 @@ const Medical = () => {
         />
         <meta property="og:type" content="website" />
       </Helmet>
-      <div aria-label='landing-image' className=" aspect-video w-full relative">
+      <div aria-label="landing-image" className=" aspect-video w-full relative">
         <div className="absolute z-[1] w-full h-full">
-          <div className="h-full absolute w-full lg:w-2/3 text-left left-0 lg:text-9xl md:text-5xl text-2xl  bg-gradient-to-r from-black to-transparent text-white flex justify-center items-center p-36 font-semibold">Automated Integration, Minimal Modifications: DFT Made Easy</div>
+          <div className="h-full absolute w-full lg:w-2/3 text-left left-0 lg:text-9xl md:text-5xl text-2xl  bg-gradient-to-r from-black to-transparent text-white flex justify-center items-center p-36 font-semibold">
+            Automated Integration, Minimal Modifications: DFT Made Easy
+          </div>
         </div>
-        
-        <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/DFT/Landing.jpg`} />
-      
+
+        <img
+          className="h-full w-full object-cover"
+          src={`${
+            import.meta.env.VITE_REACT_APP_API_URL
+          }/Industries/Semiconductor/DFT/Landing.jpg`}
+        />
       </div>
-      <div aria-label='what-we-do' className='w-full py-24'>
+      <div aria-label="what-we-do" className="w-full py-24">
         <div>
-        <h1 className='text-5xl font-semibold text-center pb-24'>
-          DFT
-        </h1>
-        <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        Our focus is on simplifying and optimizing the testing process for System on Chip (SoC) designs, which have become increasingly complex due to advancements in processes, shrinking circuit sizes, and strict power consumption limits.
-We understand the challenges posed by modern SoC designs, which often feature multiple memory components, mixed-signal blocks, and IPs sourced from various vendors. Our DFT solutions are specific to address these complexities and streamline the testing process.
-Utilizing a hybrid algorithm with a balanced compression ratio scan, we consistently achieve high pattern counts while minimizing testing overhead. Our approach includes thorough testing on standalone test benches, covering diagnostic, hard repair, soft repair, and BIST verification modes before integration into the SoC.
-Our comprehensive DFT methodology involves seamlessly inserting test structures into designs and integrating existing test structures embedded in IP. Through automation and careful design analysis, we minimize the need for extensive modifications to the front-end design.
-We support a wide range of industry-standard features such as IEEE 1687 IJTAG support, 1149.1/1149.6 boundary scan, memory BIST and repair, scan stitching, scan compression, core wrapper insertion, and more. Additionally, our advanced features include MBIST wrappers and logic insertion, clock conditioning and control integration, automated logical equivalence checking, and multi-pass test pattern generation for comprehensive coverage analysis.   
+          <h1 className="text-5xl font-semibold text-center pb-24">DFT</h1>
+          <p className="container text-3xl mx-auto text-gray-600 leading-normal tracking-wide">
+            Our focus is on simplifying and optimizing the testing process for
+            System on Chip (SoC) designs, which have become increasingly complex
+            due to advancements in processes, shrinking circuit sizes, and
+            strict power consumption limits. We understand the challenges posed
+            by modern SoC designs, which often feature multiple memory
+            components, mixed-signal blocks, and IPs sourced from various
+            vendors. Our DFT solutions are specific to address these
+            complexities and streamline the testing process. Utilizing a hybrid
+            algorithm with a balanced compression ratio scan, we consistently
+            achieve high pattern counts while minimizing testing overhead. Our
+            approach includes thorough testing on standalone test benches,
+            covering diagnostic, hard repair, soft repair, and BIST verification
+            modes before integration into the SoC. Our comprehensive DFT
+            methodology involves seamlessly inserting test structures into
+            designs and integrating existing test structures embedded in IP.
+            Through automation and careful design analysis, we minimize the need
+            for extensive modifications to the front-end design. We support a
+            wide range of industry-standard features such as IEEE 1687 IJTAG
+            support, 1149.1/1149.6 boundary scan, memory BIST and repair, scan
+            stitching, scan compression, core wrapper insertion, and more.
+            Additionally, our advanced features include MBIST wrappers and logic
+            insertion, clock conditioning and control integration, automated
+            logical equivalence checking, and multi-pass test pattern generation
+            for comprehensive coverage analysis.
           </p>
         </div>
-        {/* <div>
-        <h1 className='text-5xl font-semibold text-center pt-24 pb-24'>
-          What We Do
-        </h1>
-        <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-        we are committed to driving innovation and excellence in the aerospace industry. Here's how we contribute to our customers' success:
-        <br />
-        <br />
-1. <strong>Expertise and Experience:</strong> Our team of experienced aerospace engineers brings deep domain expertise and hands-on experience in designing, testing, and certifying aerospace systems and components.
-<br/>
-<br />
-2.<strong>Advanced Technologies:</strong> We leverage cutting-edge technologies and industry best practices to develop next-generation aerospace solutions that meet the highest standards of safety, reliability, and performance.
-<br />
-<br />
-3.<strong>Customized Solutions:</strong> We work closely with our customers to understand their unique requirements and challenges, delivering customized engineering solutions that address their specific needs and objectives.
-<br />
-<br />
-4.<strong>Quality and Compliance:</strong> We adhere to rigorous quality standards and regulatory requirements to ensure compliance with industry regulations and certifications, maintaining the highest levels of safety and reliability in our aerospace solutions.
-        </p>
-        </div> */}
-       
+        
       </div>
 
-      {/* <div aria-label="medical-device-segments" className="min-h-[100vh] w-full bg-gradient-to-r from-cyan-950 to-cyan-700 py-24">
-        <h1 className="text-white text-6xl text-center font-semibold">Aerospace Segments</h1>
-        <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-16 mt-24">
-          {medicalCardsData.map((data: medicalCardsData, index: number) => {
-            return (
-              <IndustryCards key={index} title={data.title} points={data.points} imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Aerospace/`+data.imageSrc} />
-            )
-          })}
-        </div>
-      </div> */}
-     <div aria-label="Our Service Offerings" className="mb-24 container">
+    
+      <div aria-label="Our Service Offerings" className="mb-24 container">
         <h1 className="text-5xl md:text-8xl text-black text-center font-semibold">
           Our Service Offerings
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  mt-24 gap-12">
-        {ServiceOfferings.map((data, index: number) => (
-          <ServiceOfferingsCards
-            cardsData={data}
-            imageSrc={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/DFT/${data.imageSrc}`}
-            imagePosition={index % 2 === 0 ? "left" : "right"}
-          />
-        ))}
-        </div>   
+          {ServiceOfferings.map((data, index: number) => (
+            <ServiceOfferingsCards
+              cardsData={data}
+              imageSrc={`${
+                import.meta.env.VITE_REACT_APP_API_URL
+              }/Industries/Semiconductor/DFT/${data.imageSrc}`}
+              imagePosition={index % 2 === 0 ? "left" : "right"}
+            />
+          ))}
+        </div>
       </div>
 
       {/* <div aria-label='medical-device-service-offerings' className='min-h-[15=20vh]  w-full flex justify-center items-center relative my-24'>
@@ -414,7 +336,7 @@ We support a wide range of industry-standard features such as IEEE 1687 IJTAG su
         </div>
       </div> 
     </div>
-  )
-}
+  );
+};
 
-export default Medical
+export default Medical;

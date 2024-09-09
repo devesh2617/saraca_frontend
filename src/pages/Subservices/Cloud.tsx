@@ -212,8 +212,7 @@ const Industry = () => {
                     </div>
                 </div>
 
-                <video  
-                  
+                <video                   
                   className="h-full w-full object-fill"
                   autoPlay={true}
                   loop

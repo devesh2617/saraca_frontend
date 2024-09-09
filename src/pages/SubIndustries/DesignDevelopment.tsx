@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import {Helmet} from "react-helmet"
+import { Helmet } from "react-helmet";
 import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 //import IndustryCards from "../../components/IndustryCards";
 import getDiscoverMoreDataByIds from '@/utilities/getDiscoverMoreDataByIds';
@@ -106,70 +106,77 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //   link: "#"
 // }]
 
-
 const ServiceOfferings = [
   {
     title: "SoC/IP Functional Verification",
-    imageSrc: "137.jpg"
+    imageSrc: "137.jpg",
   },
   {
     title: "ARM Cortex series Processor Verification",
-    imageSrc: "138.jpg"
+    imageSrc: "138.jpg",
   },
   {
     title: "Analog Mixed-Signal Verification",
-    imageSrc: "139.jpg"
+    imageSrc: "139.jpg",
   },
   {
     title: "IP Development and Verification",
-    imageSrc: "140.jpg"
+    imageSrc: "140.jpg",
   },
   {
     title: "EDA Tool Validation",
-    imageSrc: "141.jpg"
+    imageSrc: "141.jpg",
   },
   {
     title: "FPGA Device Selection",
-    imageSrc: "142.jpg"
+    imageSrc: "142.jpg",
   },
   {
     title: "ASISC Prototyping",
-    imageSrc: "143.jpg"
+    imageSrc: "143.jpg",
   },
   {
     title: "Synthesis & Optimization",
-    imageSrc: "144.jpg"
+    imageSrc: "144.jpg",
   },
   {
     title: "SOC Integration",
-    imageSrc: "145.jpg"
+    imageSrc: "145.jpg",
   },
   {
     title: "Functional Verification",
-    imageSrc: "146.jpg"
+    imageSrc: "146.jpg",
   },
   {
     title: "FPGA Accelerator Implementation",
-    imageSrc: "147.jpg"
+    imageSrc: "147.jpg",
   },
   {
     title: "FPGA Validation",
-    imageSrc: "148.jpg"
-  }
-]
-
+    imageSrc: "148.jpg",
+  },
+];
 
 const TrendingTechnologiesCards = (data) => {
   return (
-      <div className='w-72 group'>
-          <div className='h-72 w-72 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300'>
-              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/ASICFPGADesignDevelopment/${data.imageSrc}`} className=' w-full h-full rounded-full object-cover' alt="" />
-          </div>
-          <h6 className='text-xl text-white w-full text-center mt-4 group-hover:font-semibold transition-all duration-300'>{data.title}</h6>
+    <div className="w-72 group">
+      <div className="h-72 w-72 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300">
+        <img
+          src={`${
+            import.meta.env.VITE_REACT_APP_API_URL
+          }/Industries/Semiconductor/ASICFPGADesignDevelopment/${
+            data.imageSrc
+          }`}
+          className=" w-full h-full rounded-full object-cover"
+          alt=""
+        />
       </div>
-  )
-}
-
+      <h6 className="text-xl text-white w-full text-center mt-4 group-hover:font-semibold transition-all duration-300">
+        {data.title}
+      </h6>
+    </div>
+  );
+};
 
 const Medical = () => {
   // const [selectedServicesOffering, setSelectedServicesOffering] = useState<ServicesOfferingsData | null>(null)
@@ -186,7 +193,7 @@ const Medical = () => {
   },[])
   return (
     <div>
-            <Helmet>
+      <Helmet>
         <title>Semiconductor – ASIC FPGA Design Development</title>
         <meta
           property="og:title"
@@ -210,23 +217,39 @@ const Medical = () => {
         />
         <meta property="og:type" content="website" />
       </Helmet>
-      <div aria-label='landing-image' className=" aspect-video w-full relative">
+      <div aria-label="landing-image" className=" aspect-video w-full relative">
         <div className="absolute z-[1] w-full h-full">
-          <div className="h-full absolute w-full lg:w-1/2 text-left left-0 lg:text-9xl md:text-5xl text-2xl  bg-gradient-to-r from-black to-transparent text-white flex justify-center items-center p-24 font-semibold">Expert ASIC/FPGA Design for Every Industry</div>
+          <div className="h-full absolute w-full lg:w-1/2 text-left left-0 lg:text-9xl md:text-5xl text-2xl  bg-gradient-to-r from-black to-transparent text-white flex justify-center items-center p-24 font-semibold">
+            Expert ASIC/FPGA Design for Every Industry
+          </div>
         </div>
 
-        <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/ASICFPGADesignDevelopment/Landing.jpg`} />
-
+        <img
+          className="h-full w-full object-cover"
+          src={`${
+            import.meta.env.VITE_REACT_APP_API_URL
+          }/Industries/Semiconductor/ASICFPGADesignDevelopment/Landing.jpg`}
+        />
       </div>
-      <div aria-label='what-we-do' className='w-full py-24'>
+      <div aria-label="what-we-do" className="w-full py-24">
         <div>
-          <h1 className='text-5xl font-semibold text-center pb-24'>
+          <h1 className="text-5xl font-semibold text-center pb-24">
             ASIC/FPGA
           </h1>
-          <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
-            We specialize in assisting clients across various sectors, including AI-driven data centres, aerospace, automotive, networking, consumer electronics, industrial, medical, and IoT.
-            Our team excels in digital and mixed-signal ASIC design, as well as FPGA-SoC development, catering to the growing demand for high-performance, low-power consumption, and compact form-factor designs. We leverage our strong expertise in mixed-signal solutions, covering design, verification, physical design, and validation, to deliver cutting-edge designs even at lower geometry nodes.
-            With a proven track record, we have successfully taped-out over 250+ silicon designs, ranging from mature 180nm processes to cutting-edge 3nm and beyond. We take pride in being the first engineering services company to achieve tape-out at the revolutionary 7nm and 10nm nodes.
+          <p className="container text-3xl mx-auto text-gray-600 leading-normal tracking-wide">
+            We specialize in assisting clients across various sectors, including
+            AI-driven data centres, aerospace, automotive, networking, consumer
+            electronics, industrial, medical, and IoT. Our team excels in
+            digital and mixed-signal ASIC design, as well as FPGA-SoC
+            development, catering to the growing demand for high-performance,
+            low-power consumption, and compact form-factor designs. We leverage
+            our strong expertise in mixed-signal solutions, covering design,
+            verification, physical design, and validation, to deliver
+            cutting-edge designs even at lower geometry nodes. With a proven
+            track record, we have successfully taped-out over 250+ silicon
+            designs, ranging from mature 180nm processes to cutting-edge 3nm and
+            beyond. We take pride in being the first engineering services
+            company to achieve tape-out at the revolutionary 7nm and 10nm nodes.
           </p>
         </div>
       </div>
@@ -310,7 +333,7 @@ const Medical = () => {
         </div>
       </div> 
     </div>
-  )
-}
+  );
+};
 
-export default Medical
+export default Medical;

@@ -258,7 +258,7 @@ const Industry = () => {
             extends far beyond mere functionality. It encompasses the imperative
             to delight consumers, educate children, enhance office productivity,
             bolster system security, and navigate the complexities of artificial
-            intelligence usage, among other vital functions.{" "}
+            intelligence usage, among other vital functions.
           </p>
           <br />
 

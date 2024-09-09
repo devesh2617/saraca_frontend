@@ -13,7 +13,7 @@ import Automotive from "./pages/Automotive";
 import Semiconductor from "./pages/Semiconductor";
 import RailTransportation from "./pages/RailTransportation";
 import Consumer from "./pages/Consumer";
-import Industrial from "./pages/Industrial";
+// import Industrial from "./pages/Industrial";
 import Digital from "./pages/Digital";
 import Mechanical from "./pages/Mechanical";
 import Embedded from "./pages/Embedded";
@@ -33,14 +33,14 @@ import TruckBuses from "./pages/SubIndustries/TrucksandBuses";
 import PassengerCar from "./pages/SubIndustries/PassengerCar";
 import Pharmaceuticals from "./pages/SubIndustries/Pharmaceuticals";
 import DesignDevelopment from "./pages/SubIndustries/DesignDevelopment";
-import VerificationValidation from "./pages/SubIndustries/VerificationValidation";
+// import VerificationValidation from "./pages/SubIndustries/VerificationValidation";
 import PhysicalDesign from "./pages/SubIndustries/PhysicalDesign";
 import DFT from "./pages/SubIndustries/DFT";
 import Appliances from "./pages/SubIndustries/Appliances";
-import SmartHomes from "./pages/SubIndustries/SmartHomes";
-import OilGas from "./pages/SubIndustries/OilGas";
-import Infrastructure from "./pages/SubIndustries/Infrastructure";
-import Renewables from "./pages/SubIndustries/Renewables";
+// import SmartHomes from "./pages/SubIndustries/SmartHomes";
+// import OilGas from "./pages/SubIndustries/OilGas";
+// import Infrastructure from "./pages/SubIndustries/Infrastructure";
+// import Renewables from "./pages/SubIndustries/Renewables";
 import RollingStocks from "./pages/SubIndustries/RollingStocks";
 import Signalling from "./pages/SubIndustries/Signalling";
 import Client_Testimonials from "./pages/Client_Testimonials";
@@ -51,7 +51,7 @@ import Sustainability from "./pages/Subservices/Sustainability";
 import Industry4 from "./pages/Subservices/Industry4";
 import DNDMechanical from "./pages/Subservices/DesignDevelopment";
 import CAD from "./pages/Subservices/CAD";
-import CAxAutomation from "./pages/Subservices/CAxAutomation";
+// import CAxAutomation from "./pages/Subservices/CAxAutomation";
 import Hardware from "./pages/Subservices/Hardware";
 import Firmware from "./pages/Subservices/Firmware";
 import VNVEmbedded from "./pages/Subservices/VerificationValidation";
@@ -64,11 +64,11 @@ import SystemTesting from "./pages/Subservices/SystemTesting";
 import MachiningStrategy from "./pages/Subservices/MachiningStrategy";
 import SupplyChainManagement from "./pages/Subservices/SupplyChainManagement";
 import ProcessEngineering from "./pages/Subservices/ProcessEngineering";
-import ProjectManagement from "./pages/Subservices/ProjectManagement";
-import ManufacturingTransfer from "./pages/Subservices/ManufacturingTransfer";
-import ARVR from "./pages/Subservices/ARVR";
-import CBT from "./pages/Subservices/CBT";
-import Authoring from "./pages/Subservices/Authoring";
+// import ProjectManagement from "./pages/Subservices/ProjectManagement";
+// import ManufacturingTransfer from "./pages/Subservices/ManufacturingTransfer";
+// import ARVR from "./pages/Subservices/ARVR";
+// import CBT from "./pages/Subservices/CBT";
+// import Authoring from "./pages/Subservices/Authoring";
 import X1Platform from "./pages/X1Platform";
 import FastPMCF from "./pages/FastPMCF"
 import { Toaster } from "sonner";
@@ -192,7 +192,7 @@ function App() {
             <Route path="/Industry/Automotive/OffHighwayVehicles" element={<OffHighwayVehicle />} />
             <Route path="/Industry/Semiconductor" element={<Semiconductor />} />
             <Route path="/Industry/Semiconductor/ASIC_FPGA_Design_Development" element={<DesignDevelopment />} />
-            <Route path="/Industry/Semiconductor/Verification_Validation" element={<VerificationValidation />} />
+            {/* <Route path="/Industry/Semiconductor/Verification_Validation" element={<VerificationValidation />} /> */}
             <Route path="/Industry/Semiconductor/PhysicalDesign" element={<PhysicalDesign />} />
             <Route path="/Industry/Semiconductor/DFT" element={<DFT />} />
             <Route path="/Industry/RailTransportation" element={<RailTransportation />} />
@@ -200,11 +200,11 @@ function App() {
             <Route path="/Industry/RailTransportation/Signalling" element={<Signalling />} />
             <Route path="/Industry/Consumer" element={<Consumer />} />
             <Route path="/Industry/Consumer/Appliances" element={<Appliances />} />
-            <Route path="/Industry/Consumer/SmartHomes" element={<SmartHomes />} />
+            {/* <Route path="/Industry/Consumer/SmartHomes" element={<SmartHomes />} />
             <Route path="/Industry/Industrial" element={<Industrial />} />
             <Route path="/Industry/Industrial/Oil_Gas" element={<OilGas />} />
             <Route path="/Industry/Industrial/Infrastructure" element={<Infrastructure />} />
-            <Route path="/Industry/Industrial/Renewables" element={<Renewables />} />
+            <Route path="/Industry/Industrial/Renewables" element={<Renewables />} /> */}
             <Route path="/Industry/LifeSciences/MedicalDevices" element={<MedicalDevices />} />
             <Route path="/Industry/LifeSciences/Pharmaceuticals" element={<Pharmaceuticals />} />
             <Route path="/Industry/LifeSciences/HealthcareApplications" element={<HealthcareApplications />} />
@@ -217,7 +217,7 @@ function App() {
             <Route path="/Service/Mechanical" element={<Mechanical />} />
             <Route path="/Service/Mechanical/Design_Development" element={<DNDMechanical />} />
             <Route path="/Service/Mechanical/CAD_CAM" element={<CAD />} />
-            <Route path="/Service/Mechanical/CAxAutomation" element={<CAxAutomation />} />
+            {/* <Route path="/Service/Mechanical/CAxAutomation" element={<CAxAutomation />} /> */}
             <Route path="/Service/Embedded" element={<Embedded />} />
             <Route path="/Service/Embedded/Hardware" element={<Hardware />} />
             <Route path="/Service/Embedded/Firmware" element={<Firmware />} />
@@ -234,12 +234,12 @@ function App() {
             <Route path="/Service/Manufacturing/MachiningStrategy" element={<MachiningStrategy />} />
             <Route path="/Service/Manufacturing/SupplyChainManagement" element={<SupplyChainManagement />} />
             <Route path="/Service/Manufacturing/ProcessEngineering" element={<ProcessEngineering />} />
-            <Route path="/Service/Manufacturing/ProjectManagement" element={<ProjectManagement />} />
-            <Route path="/Service/Manufacturing/ManufacturingTransfer" element={<ManufacturingTransfer />} />
+            {/* <Route path="/Service/Manufacturing/ProjectManagement" element={<ProjectManagement />} />
+            <Route path="/Service/Manufacturing/ManufacturingTransfer" element={<ManufacturingTransfer />} /> */}
             <Route path="/Service/TechPub" element={<TechPub />} />
-            <Route path="/Service/TechPub/ARVRMR" element={<ARVR />} />
+            {/* <Route path="/Service/TechPub/ARVRMR" element={<ARVR />} />
             <Route path="/Service/TechPub/CBTWBT" element={<CBT />} />
-            <Route path="/Service/TechPub/Authoring" element={<Authoring />} />
+            <Route path="/Service/TechPub/Authoring" element={<Authoring />} /> */}
             <Route path="/About_Us" element={<AboutUs />} />
             <Route path="/Success_Stories/Client_Testimonials" element={<Client_Testimonials />} />
             <Route path="/Success_Stories/Case_Studies" element={<CaseStudies />} />
