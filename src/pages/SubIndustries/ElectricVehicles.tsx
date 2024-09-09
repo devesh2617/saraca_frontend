@@ -95,93 +95,10 @@ const medicalCardsData = [{
 },
 ]
 
-// const DiscoverMoreCardsData = [{
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-//   link: "#"
-// },
-// {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-//   link: "#"
-// },
-// {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
-//   link: "#"
-// }]
-
-
-// const ServiceOfferings = [
-//   {
-//     title: "Component Design Services",
-//     content: [
-//       "We assist OEMs in streamlining vehicle architecture by standardizing and reducing the number of electrical components. Our goal is to enhance scalability and optimize production costs."
-//     ],
-//     imageSrc: "Embedded.svg"
-//   },
-//   {
-//     title: "Computational Fluid Dynamics (CFD)",
-//     content: [
-//       "We offer a complete range of CFD services, leveraging industry-leading tools and domain expertise to address all CFD simulation requirements."
-//     ],
-//     imageSrc: "TechPub.svg"
-//   },
-//   {
-//     title: "Finite Element Analysis (FEA)",
-//     content: [
-//       "Our FEA services offer precise calculations and resourceful evaluation methods tailored to the transportation sector's needs."
-//     ],
-//     imageSrc: "Manufacturing.svg"
-//   },
-//   {
-//     title: "Mechanical Engineering",
-//     content: [
-//       "New Product Development",
-//       "Value Engineering",
-//       "Reverse Engineering",
-//       "Finite Element Analysis",
-//       "Sustenance Engineering",
-//       "Structural Engineering",
-//       "Systems Engineering",
-//       "Post Launch Follow-up"
-//     ],
-//     imageSrc: "Mechnaical.svg"
-//   },
-//   {
-//     title: "Software Engineering",
-//     content: [
-//       "New product development",
-//       "Safety critical software’s",
-//       "HMI development",
-//       "ATE Application development",
-//       "Front and back end development",
-//       "Full Stack development"
-//     ],
-//     imageSrc: "Software.svg"
-//   },
-//   {
-//     title: "Value Add & Value Engineering (VA/VE)",
-//     content: [
-//       "We adopt VA/VE methodologies to enhance project efficiency, quality, and communication, delivering superior ROI for our clients."
-//     ],
-//     imageSrc: "Quality.svg"
-//   }
-// ]  
-const TrendingTechnologiesCards = (data) => {
-  return (
-      <div className='w-48 group'>
-          <div className='h-48 w-48 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300'>
-              <img src={data.imageSrc} className=' w-full h-full rounded-full object-cover' alt="" />
-          </div>
-          <h6 className='text-md text-white w-full text-center mt-4 group-hover:font-semibold transition-all duration-300'>{data.title}</h6>
-      </div>
-  )
-}
 
 
 const Medical = () => {
-  // const [selectedServicesOffering, setSelectedServicesOffering] = useState<ServicesOfferingsData | null>(null)
-  // const handleSelect = (data: ServicesOfferingsData) => {
-  //   setSelectedServicesOffering(data)
-  // }
+
   return (
     <div>
       <Helmet>

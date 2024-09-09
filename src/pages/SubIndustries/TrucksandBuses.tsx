@@ -2,7 +2,7 @@
 // import DiscoverMoreCards from '../../components/DiscoverMoreCards';
 import {Helmet} from "react-helmet"
 import IndustryCards from "../../components/IndustryCards";
-import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
+// import ServiceOfferingsCards from "@/components/ServicesOfferingsCards";
 
 type medicalCardsData = {
   title: string,
