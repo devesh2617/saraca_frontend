@@ -301,7 +301,7 @@ const Industry = () => {
           </div>
         </div>
       </div>
-      <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
+      {/*<div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
           {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
@@ -310,7 +310,7 @@ const Industry = () => {
             )
           })}
         </div>
-      </div> 
+      </div>*/} 
     </div>
   );
 };

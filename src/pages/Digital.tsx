@@ -162,7 +162,7 @@ const Industry = () => {
         At SARACA, we believe in a collaborative approach, working closely with our clients to understand their unique needs, challenges, and aspirations. Through transparent communication, meticulous planning, and agile methodologies, we ensure timely delivery of solutions that exceed expectations and drive tangible results.         </p>
         </div>
       </div>
-      <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
+      {/*<div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
           {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
@@ -171,7 +171,7 @@ const Industry = () => {
             )
           })}
         </div>
-      </div> 
+      </div>*/} 
     </div>
   )
 }

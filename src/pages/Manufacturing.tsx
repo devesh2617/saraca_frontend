@@ -68,7 +68,7 @@ const serviceOfferingCards = (data: ServiceOfferings) => {
     <a href={data.link}>
       <div className='bg-white rounded-xl overflow-hidden'>
           <img loading = "lazy" src={data.imageSrc} className='object-cover max-w-[30rem] aspect-square'/>
-          <h1 className=' font-bold text-center text-2xl py-4'>
+          <h1 className=' font-bold text-center text-3xl py-4'>
             {data.title}
           </h1>
          </div>
@@ -144,7 +144,7 @@ const Industry = () => {
         <h1 className='text-6xl font-semibold text-center mb-8'>
           Manufacturing Engineering
         </h1>
-        <p className='container text-2xl mx-auto p-8 text-gray-600 leading-normal'>
+        <p className='container text-3xl mx-auto p-8 text-gray-600 leading-normal'>
         In today's digital world, Manufacturing Engineering plays a pivotal role in driving competitiveness and sustainability for businesses. By leveraging cutting-edge technologies such as automation, robotics, IoT, and data analytics, Manufacturing Engineering enables organizations to streamline production, reduce costs, accelerate time-to-market, and adapt to rapidly changing market dynamics.
         <br/>
         <br/>
@@ -169,11 +169,11 @@ const Industry = () => {
         <h1 className='text-6xl font-semibold text-center mb-8'>
           Our Approach
         </h1>
-        <p className='container text-2xl mx-auto p-8 text-gray-600 leading-normal'>
+        <p className='container text-3xl mx-auto p-8 text-gray-600 leading-normal'>
         At Saraca, we are committed to pioneering significant innovations in the Manufacturing Engineering sector. Our focus lies in harnessing the power of digitalization and advanced engineering methodologies to revolutionize traditional manufacturing processes, paving the way for increased agility, scalability, and resilience in the industry.         </p>
         </div>
       </div>
-      <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
+      {/*<div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
           {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
@@ -182,7 +182,7 @@ const Industry = () => {
             )
           })}
         </div>
-      </div>
+      </div>*/}
     </div>
   )
 }

@@ -161,7 +161,7 @@ const Industry = () => {
         At Saraca, we are committed to spearheading advancements in Mechanical Engineering. Our team of skilled engineers harnesses cutting-edge technologies and best practices to deliver transformative solutions that elevate efficiency, productivity, and competitiveness for our clients.        </p>
         </div>
       </div>
-      <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
+      {/*<div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
           {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
@@ -170,7 +170,7 @@ const Industry = () => {
             )
           })}
         </div>
-      </div> 
+      </div>*/} 
     </div>
   )
 }

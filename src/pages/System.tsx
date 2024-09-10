@@ -158,7 +158,7 @@ const Industry = () => {
         At Saraca, we are committed to revolutionizing the System Engineering domain with our innovative solutions and cutting-edge technologies. Our team of experts combines industry expertise with technical excellence to deliver transformative solutions that address the evolving needs of our clients.         </p>
         </div>
       </div>
-      <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
+      {/*<div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
           {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
@@ -167,7 +167,7 @@ const Industry = () => {
             )
           })}
         </div>
-      </div>
+      </div>*/}
     </div>
   )
 }

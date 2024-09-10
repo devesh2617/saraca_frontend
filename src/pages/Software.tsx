@@ -66,7 +66,7 @@ const serviceOfferingCards = (data: ServiceOfferings) => {
     <a href={data.link}>
       <div className='bg-white rounded-xl overflow-hidden'>
           <img  loading = "lazy" src={data.imageSrc} className='object-cover max-w-[30rem] aspect-square'/>
-          <h1 className=' font-bold text-center text-2xl py-4'>
+          <h1 className=' font-bold text-center text-3xl py-4'>
             {data.title}
           </h1>
          </div>
@@ -196,7 +196,7 @@ const Industry = () => {
 
       
       
-      <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
+      {/*<div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
           {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
@@ -205,7 +205,7 @@ const Industry = () => {
             )
           })}
         </div>
-      </div> 
+      </div>*/} 
     </div>
   )
 }
