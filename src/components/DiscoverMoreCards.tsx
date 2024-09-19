@@ -21,7 +21,7 @@ const DiscoverMoreCards: FC<DiscoverMoreCardsData> = (props) => {
             </button>
           </a>
         </div>
-        <h1 className="text-black text-4xl break-words mt-4 font-semibold">{props.title}</h1>
+        <h1 className="text-white text-4xl break-words mt-4 font-semibold">{props.title}</h1>
       </div>
     </div>
   );

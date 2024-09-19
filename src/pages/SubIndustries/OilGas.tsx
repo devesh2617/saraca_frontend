@@ -199,8 +199,8 @@ const Industry = () => {
   return (
     <div>
       <div aria-label='landing-image' className="h-[100vh] w-full relative">
-        <div className="absolute z-[1] w-full h-full">
-          <div className="h-full absolute w-full left-0 text-8xl text-white flex justify-center items-center p-36 font-semibold text-center">
+        <div className="absolute z-[1] w-1/2 h-full">
+          <div className="h-full absolute w-full left-0 text-8xl text-white flex justify-center items-center p-36 font-semibold text-left">
           Transforming Oil & Gas Engineering with Integrated Solutions for Efficiency, Safety, and Sustainability
           </div>
         </div>

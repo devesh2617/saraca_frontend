@@ -43,18 +43,18 @@ const Footer = () => {
       name: "Semiconductors",
       link: "/Industry/Semiconductor",
     },
-    // {
-    //   name: "Industrial",
-    //   link: "/Industry/Industrial",
-    // },
+    {
+      name: "Industrial",
+      link: "/Industry/Industrial/Oil_Gas",
+    },
     {
       name: "Rail Transportation",
       link: "/Industry/RailTransportation",
     },
-    // {
-    //   name: "Consumer",
-    //   link: "/Industry/Consumer",
-    // },
+    {
+      name: "Consumer",
+      link: "/Industry/Consumer/Appliances",
+    },
   ];
   const serviceLinks = [
     {

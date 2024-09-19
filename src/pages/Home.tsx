@@ -6,17 +6,33 @@ import { useEffect, useState } from "react";
 import Cards from "../components/Cards";
 // import NewsBlogsCards from "../components/NewsBlogsCards";
 import WhyChooseUsCards from "../components/WhyChooseUsCards";
+import DiscoverMoreCards from '../components/DiscoverMoreCards';
+import getDiscoverMoreDataByIds from '@/utilities/getDiscoverMoreDataByIds';
 
 type whyChooseUsCardsData = {
   imageSrc: string;
   title: string;
   content:string;
 }
+
+type DiscoverMoreCardsType = {
+  img: string,
+  title:string,
+  link: string
+}
+
+const discoverMoreIds = [
+  'b9625a12-2bed-40d2-b2ad-67fc5ed150df',
+  '21b85b94-475c-4dfa-ba54-bc74ceffedc7', 
+  '8e026a12-7788-4ced-85f7-f5998ccd170b',
+  '4fd646bc-d101-47a1-abeb-86484844dcae', 
+]
+
 const whyChooseUsCardsData = [
   {
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/EngineeringDNA.svg`,
     title: "We have an",
-    content: "Engineering DNA",
+    content: "Engineering DNA", 
   },
   {
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/CustomerSatisfaction.png`,
@@ -189,6 +205,14 @@ const Home = () => {
     window.addEventListener("resize", handleScreenSize)
     handleScreenSize()
   }, [])
+  const [discoverMore, setDiscoverMore] = useState<DiscoverMoreCardsType[]>([])
+  useEffect(()=>{
+   getDiscoverMoreDataByIds(discoverMoreIds).then(
+    res=>{
+      setDiscoverMore(res.data.data)
+    }
+   ).catch(e=>console.log(e))
+  },[])
 
   return (
     <div>
@@ -266,7 +290,9 @@ const Home = () => {
         ))}
       </div>
       <div aria-label="Why Choose Us" className="lg:py-24 py-8 bg-gradient-to-tl from-black to-blue-950 bg-cover"
-      style={{background:`url(${import.meta.env.VITE_REACT_APP_API_URL}/whychooseus.png)`}}
+      style={{background:`url(${import.meta.env.VITE_REACT_APP_API_URL}/9.jpg)`,
+        backgroundSize: 'cover'
+      }}
       >
       <div className="container">
       <h1 className="text-7xl text-white font-semibold">
@@ -314,6 +340,20 @@ const Home = () => {
           }
         </div>
       </div> */}
+      <div aria-label="discover more section" className={`w-full bg-gradient-to-r from-gray-400 to-gray-700 py-24`}
+      style={{background:`url(${import.meta.env.VITE_REACT_APP_API_URL}/10.jpg)`,
+        backgroundPosition: 'cover',
+      }}
+      >
+        <h1 className="text-white text-7xl text-center font-semibold">Discover More</h1>
+        <div className=" mt-24 container grid grid-cols-3 place-items-stretch gap-12 ">
+          {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
+            return (
+              <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} />
+            )
+          })}
+        </div>
+      </div>
       
     </div>
   );
