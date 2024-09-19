@@ -20,7 +20,7 @@ const Navbar = () => {
         { "Testimonials": { sublinks: [], link: "/Success_Stories/Client_Testimonials" } },
         { "Memberships": { sublinks: [], link: "/Success_Stories/Memberships" } },
         { "Awards": { sublinks: [], link: "/Success_Stories/Awards" } },
-        { "Events/Expo/Summit": { sublinks: [], link: "/Success_Stories/Case_Studies" } }
+        // { "Events/Expo/Summit": { sublinks: [], link: "/Success_Stories/Case_Studies" } }
       ], link: "#"
     },
 

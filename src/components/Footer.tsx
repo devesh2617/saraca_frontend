@@ -33,7 +33,7 @@ const Footer = () => {
     },
     {
       name: "Aerospace and Defense",
-      link: "/Industry/Aerospace&Defense",
+      link: "/Industry/Aerospace_Defense",
     },
     {
       name: "Automotive",
