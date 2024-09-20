@@ -23,6 +23,7 @@ type DiscoverMoreCardsType = {
 
 const discoverMoreIds = [
   'b9625a12-2bed-40d2-b2ad-67fc5ed150df',
+  '3bb13daa-ce54-4507-8ff0-b473624d0516',
   '21b85b94-475c-4dfa-ba54-bc74ceffedc7', 
   '8e026a12-7788-4ced-85f7-f5998ccd170b',
   '4fd646bc-d101-47a1-abeb-86484844dcae', 
@@ -354,7 +355,6 @@ const Home = () => {
           })}
         </div>
       </div>
-      
     </div>
   );
 };
