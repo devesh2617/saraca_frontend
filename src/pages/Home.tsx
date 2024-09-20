@@ -13,6 +13,7 @@ type whyChooseUsCardsData = {
   imageSrc: string;
   title: string;
   content:string;
+  type: string;
 }
 
 type DiscoverMoreCardsType = {
@@ -350,7 +351,7 @@ const Home = () => {
         <div className=" mt-24 container grid grid-cols-3 place-items-stretch gap-12 ">
           {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
             return (
-              <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} />
+              <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} type={data.type} />
             )
           })}
         </div>
