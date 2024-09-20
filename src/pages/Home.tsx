@@ -347,7 +347,7 @@ const Home = () => {
       }}
       >
         <h1 className="text-white text-7xl text-center font-semibold">Discover More</h1>
-        <div className=" mt-24 container grid grid-cols-3 place-items-stretch gap-12 ">
+        <div className=" mt-24 container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 place-items-stretch gap-12 ">
           {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
             return (
               <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} type={data.type} />
