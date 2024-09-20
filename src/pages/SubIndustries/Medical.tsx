@@ -13,10 +13,18 @@ type medicalCardsData = {
 type DiscoverMoreCardsType = {
   img: string,
   title:string,
-  link: string
+  link: string,
+  type: string
 }
 
-const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-49ad-9275-94cf098ef05c']
+const discoverMoreIds = ['161b5837-358a-41b3-abb2-b5d6bab12afd',
+  'fb7f8e28-d102-47f1-ad78-ae341a73f8f7',
+  'cc8926ae-b731-4871-9ed5-e84eecfa8d81',
+  '72ecb3f0-83a2-4bb7-97bb-4c80ee0981a7',
+  '340b28eb-9740-41e0-8d92-170fd1919cb2',
+  '3282c363-f1aa-4f5a-bc3a-a839f2b245d2',
+  'eb86034c-2f28-4098-b89d-5d714fca17b3'
+]
 
 // type DiscoverMoreCardsData = {
 //   imageSrc: string,
@@ -357,16 +365,16 @@ We, at Saraca Solutions, have always been advancing along with industry trends a
           </div>
         </div>
       </div> */}
-      {/*<div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
+      <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
           {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
             return (
-              <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} />
+              <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} type={data.type} />
             )
           })}
         </div>
-      </div>*/} 
+      </div>
     </div>
   )
 }

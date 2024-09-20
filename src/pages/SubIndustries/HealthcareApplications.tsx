@@ -23,10 +23,13 @@ import getDiscoverMoreDataByIds from '@/utilities/getDiscoverMoreDataByIds';
 type DiscoverMoreCardsType = {
   img: string,
   title:string,
-  link: string
+  link: string,
+  type: string
 }
 
-const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-49ad-9275-94cf098ef05c']
+const discoverMoreIds = ['48d4892f-57f5-4301-9487-2a71b87b1753',
+  'c7fc5cf5-bfc9-46c0-9b35-f6a7136103eb'
+]
 
 // const medicalCardsData = [{
 //     title: "Orthopaedic, Spine, and Trauma",
@@ -291,16 +294,16 @@ const Medical = () => {
           </div>
         </div>
       </div> */}
-      {/*<div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
+      <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
           {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
             return (
-              <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} />
+              <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} type={data.type} />
             )
           })}
         </div>
-      </div>*/} 
+      </div> 
     </div>
   );
 };

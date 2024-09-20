@@ -13,10 +13,18 @@ type medicalCardsData = {
 type DiscoverMoreCardsType = {
   img: string,
   title:string,
-  link: string
+  link: string,
+  type: string
 }
 
-const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-49ad-9275-94cf098ef05c']
+const discoverMoreIds = [
+  '4fd646bc-d101-47a1-abeb-86484844dcae',
+  '28bbf14e-71ee-499a-834f-fff62fd8bd5f',
+  'c21ea5e6-dfd7-476e-a205-564b9a075ff3',
+  '166c327f-8d03-49ef-b267-53c830e21c8c',
+  '89378fc0-eba6-480b-8051-6d3f33763578',
+  '2de7bf5b-ae52-41ac-99c6-1ca8344af3b9'
+]
 
 const ServiceOfferings = [
   {
@@ -148,16 +156,16 @@ const Industry = () => {
         ))}
         </div>   
       </div>
-       {/*<div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
+      <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
           {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
             return (
-              <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} />
+              <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} type={data.type} />
             )
           })}
         </div>
-      </div>*/} 
+      </div> 
     </div>
   )
 }

@@ -13,20 +13,23 @@ type whyChooseUsCardsData = {
   imageSrc: string;
   title: string;
   content:string;
-  type: string;
 }
 
 type DiscoverMoreCardsType = {
   img: string,
   title:string,
-  link: string
+  link: string,
+  type: string
 }
 
 const discoverMoreIds = [
   'b9625a12-2bed-40d2-b2ad-67fc5ed150df',
+  '3bb13daa-ce54-4507-8ff0-b473624d0516',
   '21b85b94-475c-4dfa-ba54-bc74ceffedc7', 
   '8e026a12-7788-4ced-85f7-f5998ccd170b',
-  '4fd646bc-d101-47a1-abeb-86484844dcae', 
+  "23e40b87-dc6c-4810-b36c-58600a0b3218",
+  "2e85c762-42b1-4024-a20e-e7774cf1c70e",
+  
 ]
 
 const whyChooseUsCardsData = [
@@ -342,8 +345,8 @@ const Home = () => {
         </div>
       </div> */}
       <div aria-label="discover more section" className={`w-full bg-gradient-to-r from-gray-400 to-gray-700 py-24`}
-      style={{background:`url(${import.meta.env.VITE_REACT_APP_API_URL}/10.jpg)`,
-        backgroundPosition: 'cover',
+      style={{background:`url(${import.meta.env.VITE_REACT_APP_API_URL}/82.jpg)`,
+        backgroundPosition: 'cover'
       }}
       >
         <h1 className="text-white text-7xl text-center font-semibold">Discover More</h1>
@@ -355,7 +358,6 @@ const Home = () => {
           })}
         </div>
       </div>
-      
     </div>
   );
 };

@@ -22,10 +22,14 @@ import { Helmet } from "react-helmet";
 type DiscoverMoreCardsType = {
   img: string,
   title:string,
-  link: string
+  link: string,
+  type: string
 }
 
-const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-49ad-9275-94cf098ef05c']
+const discoverMoreIds = ['427f46e7-1c26-4519-b481-c3a9d5440380',
+  'ee04e69a-a249-41fd-bbef-ffb218a0dc1a',
+  'e27ce0bb-b759-4b31-ace3-f21dc9077c70'
+]
 
 const medicalCardsData = [
   {
@@ -362,16 +366,16 @@ const Medical = () => {
           ))}
         </div>
       </div>
-      {/*<div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
+      <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
           {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
             return (
-              <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} />
+              <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} type={data.type} />
             )
           })}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
