@@ -4,22 +4,22 @@ const Client_Testimonials = () => {
   const CertificatesCards = [ 
     {
       name:"ISO 27001",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Certificates/ISO 27001.jpg`,
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Certificates/ISO 27001.webp`,
       content: "",
     },
     {
       name:"ISO 13485",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Certificates/ISO 13485.jpg`,
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Certificates/ISO 13485.webp`,
       content: "",
     },
     {
       name:"ISO 9001",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Certificates/ISO 9001.jpg`,
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Certificates/ISO 9001.webp`,
       content: "",
     },
     {
       name:"Appendix to ISO 27001",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Certificates/Appendix ISO 27001.jpg`,  
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Certificates/Appendix ISO 27001.webp`,  
       content: "",
     },
   ]

@@ -33,7 +33,7 @@ const ServiceOfferings = [
       "Application Software Development/ porting/ integration",
       "Board Support Package(BSP) for a variety of processors like ARM and OS for Linux, VxWorks, Android, and FreeRTOS"
     ],
-    imageSrc: "HW_SW_Development.svg"
+    imageSrc: "HW_SW_Development.webp"
   },
   {
     title: "Technical Documentation",
@@ -47,7 +47,7 @@ const ServiceOfferings = [
       "Authoring new technical content on IFUs and related processes, including translation and version control management systems",
       "Production phase- Print, CD Proofing, and release"
     ],
-    imageSrc: "TechnicalDocumentation.svg"
+    imageSrc: "TechnicalDocumentation.webp"
   },
   {
     title: "System Development",
@@ -59,35 +59,35 @@ const ServiceOfferings = [
       "System Verification and Validation",
       "Product Certifications"
     ],
-    imageSrc: "SystemDevelopment.svg"
+    imageSrc: "SystemDevelopment.webp"
   },
 ];
 
 
 const medicalCardsData = [{
   title: "Rolling Stock",
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Rolling Stock.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Rolling Stock.webp`,
   link: "/Industry/RailTransportation/RollingStocks"
 },
 
 {
   title: "Signalling",
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling.webp`,
   link: "/Industry/RailTransportation/Signalling"
 },
 
 ]
 
 // const DiscoverMoreCardsData = [{
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // }]
 
@@ -143,7 +143,7 @@ const Industry = () => {
           </div>
         </div>
 
-        <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Landing.jpg`} />
+        <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Landing.webp`} />
 
 
       </div>

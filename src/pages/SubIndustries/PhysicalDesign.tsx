@@ -38,7 +38,7 @@ const medicalCardsData = [{
     "FPGA Design, Prototyping & Emulation",
     "SystemC & AMS Verification"
   ],
-  imageSrc: "151.jpg"
+  imageSrc: "151.webp"
 },
  
 {
@@ -49,7 +49,7 @@ const medicalCardsData = [{
     "SYNTHESIS, CDC, LINT, STA, LOW POWER",
     "SOC INTEGRATION"
   ],
-  imageSrc: "152.jpg"
+  imageSrc: "152.webp"
 },
 {
   title: "Verification",
@@ -59,21 +59,21 @@ const medicalCardsData = [{
     "Networking, Wireless, Memory, Processor, High Speed Interconnects, Mobile, Wireless",
     "UVM based verification, SV and UVM based verification"
   ],
-  imageSrc: "153.jpg"
+  imageSrc: "153.webp"
 }
 ]
 
 
 // const DiscoverMoreCardsData = [{
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // }]
 const TrendingTechnologiesCards = (data) => {
@@ -90,35 +90,35 @@ const TrendingTechnologiesCards = (data) => {
 const ServiceOfferings = [
   {
     title: "RTL Design",
-    imageSrc:"137.jpg"
+    imageSrc:"137.webp"
   },
   {
     title: "Post Silicon Validation",
-    imageSrc:"138.jpg"
+    imageSrc:"138.webp"
   },
   {
     title: "FPGA Design, Prototyping & Emulation",
-    imageSrc:"139.jpg"
+    imageSrc:"139.webp"
   },
   {
     title: "SytemC & AMS Verification",
-    imageSrc:"140.jpg"
+    imageSrc:"140.webp"
   },
   {
     title: "Design for Manufacturing/Design for Yield",
-    imageSrc:"141.jpg"
+    imageSrc:"141.webp"
   },
   {
     title: "Design for Test ",
-    imageSrc:"142.jpg"
+    imageSrc:"142.webp"
   },
   {
     title: "RTL Synthesis",
-    imageSrc:"146.jpg"
+    imageSrc:"146.webp"
   },
   {
     title: "Physical Verification",
-    imageSrc:"147.jpg"
+    imageSrc:"147.webp"
   },
  
  
@@ -233,7 +233,7 @@ const Medical = () => {
           })}
         </div>
       </div>
-      <div aria-label="trending-technologies-section" className={` w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.svg')] bg-cover`}>
+      <div aria-label="trending-technologies-section" className={` w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.webp')] bg-cover`}>
                 <h1 className="text-white text-5xl font-semibold text-center">Service Offerings</h1>
                 <div className="container flex flex-wrap justify-center items-start mt-24 mx-auto gap-8">
                     {ServiceOfferings.map((data) => TrendingTechnologiesCards(data))}

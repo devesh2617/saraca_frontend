@@ -36,7 +36,7 @@ const medicalCardsData = [{
   points: [
     "Leveraging cutting-edge additive manufacturing techniques, we facilitate the production of complex components and structures for space missions, revolutionizing the way spacecraft are designed and manufactured."
   ],
-  imageSrc: "Additive.jpg"
+  imageSrc: "Additive.webp"
 },
  
 {
@@ -44,47 +44,47 @@ const medicalCardsData = [{
   points: [
     "Our expertise in hypersonic engineering enables us to design and develop next-generation propulsion systems and vehicles capable of achieving unprecedented speeds, advancing the frontier of space exploration and travel."
   ],
-  imageSrc: "Hypersonic.jpg"
+  imageSrc: "Hypersonic.webp"
 },
 {
   title: "Carbon and Carbon Fiber Joining",
   points: [
     "With a focus on lightweight and high-strength materials, we specialize in carbon and carbon fiber joining techniques, ensuring the integrity and durability of critical components in space missions, from rocket stages to satellite structures."
   ],
-  imageSrc: "Carbon.jpg"
+  imageSrc: "Carbon.webp"
 },
 {
     title: "Data Science",
     points: [
       "Harnessing the power of data science, we extract actionable insights from vast volumes of space-related data, enabling informed decision-making, predictive analysis, and optimization of mission parameters for enhanced efficiency and success."
     ],
-    imageSrc: "Data Science.jpg"
+    imageSrc: "Data Science.webp"
   },
   {
     title: "Advanced Automation",
     points: [
       "Our advanced automation solutions streamline manufacturing processes, payload integration, and mission operations, maximizing productivity, reducing costs, and minimizing human error in space exploration endeavors."
     ],
-    imageSrc: "Advance Automation.jpg"
+    imageSrc: "Advance Automation.webp"
   },
   {
     title: "Battery and Fuel Cell Development",
     points: [
       "We spearhead the development of innovative battery and fuel cell technologies tailored to the demands of space missions, ensuring reliable power supply, energy storage, and propulsion for spacecraft and extraterrestrial habitats."
     ],
-    imageSrc: "Battery & Fuel.jpg"
+    imageSrc: "Battery & Fuel.webp"
   }]
 
 // const DiscoverMoreCardsData = [{
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // }]
 
@@ -95,49 +95,49 @@ const ServiceOfferings = [
     content: [
       "Planning a mission involves more than just developing a spacecraft. It also entails considering various aspects, including the disposal phase."
     ],
-    imageSrc:"Mission.svg"
+    imageSrc:"Mission.webp"
   },
   {
     title: "Thermal Analysis",
     content: [
       "A thorough thermal analysis is crucial and may prompt conceptual changes in your design. Therefore, it's advisable to address it from the outset."
     ],
-    imageSrc:"Thermal.svg"
+    imageSrc:"Thermal.webp"
   },
   {
     title: "Power Analysis",
     content: [
       "A comprehensive power analysis is necessary to determine the appropriate number of solar cells and battery size required for your spacecraft. "
     ],
-    imageSrc:"Powe.svg"
+    imageSrc:"Powe.webp"
   },
   {
     title: "Space Systems Engineering",
     content: [
       "We can assist you in turning your mission concept into the final revision, enabling you to commence manufacturing your product and prepare for launch!"
     ],
-    imageSrc:"Space systems.svg"
+    imageSrc:"Space systems.webp"
   },
   {
     title: "Formal Peer Reviews",
     content: [
       "Technical engineering peer reviews are crucial for ensuring the success of a mission. SARACA can join as a reviewer during your project milestones, offering expert feedback."
     ],
-    imageSrc:"Peer.svg"
+    imageSrc:"Peer.webp"
   },
   {
     title: "Structural and Stress Analysis",
     content: [
       "A thorough structural and stress analysis is essential to ensure your payload or spacecraft can withstand the harsh conditions imposed by launch vehicles, including bolt dimensioning."
     ],
-    imageSrc:"Stress.svg"
+    imageSrc:"Stress.webp"
   },
   {
     title: "Critical Software Development",
     content: [
       "Developing mission critical software differs from conventional embedded systems development. We can assist you in ensuring that you meet the highest standards or even develop the software for you."
     ],
-    imageSrc:"Software.svg"
+    imageSrc:"Software.webp"
   }
 ]
 const Medical = () => {
@@ -169,7 +169,7 @@ const Medical = () => {
           <div className="h-full absolute w-full left-0 lg:text-9xl md:text-5xl text-2xl text-white flex justify-center items-center p-36 font-semibold text-center">Engineering the Next Era of Space Exploration</div>
         </div>
         
-        <img className="h-full w-full object-cover brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Space/Landing.jpg`} />
+        <img className="h-full w-full object-cover brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Space/Landing.webp`} />
       
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>

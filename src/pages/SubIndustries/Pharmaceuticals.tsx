@@ -44,7 +44,7 @@ const medicalCardsData = [{
     "ICH Q9: Quality Risk Management",
     "Regulatory Compliance per WHO, USFDA, SAHPRA, MHRA, TGA, Health Canada and EMEA"
   ],
-  imageSrc: "QMS.png"
+  imageSrc: "QMS.webp"
 },
 
 {
@@ -58,7 +58,7 @@ const medicalCardsData = [{
     "Computer system validation (CSV) per US FDA 21 CFR Part 11 and Canadian requirements",
     "Resolution for FDA 483"
   ],
-  imageSrc: "Regulatory.png"
+  imageSrc: "RegulatoryCard.webp"
 },
 {
   title: "Quality Remediation and Compliance Verification",
@@ -72,19 +72,19 @@ const medicalCardsData = [{
     "Facility qualification and temperature mapping",
     "Aseptic technique SOP"
   ],
-  imageSrc: "remedastion.png"
+  imageSrc: "remedastion.webp"
 }]
 
 // const DiscoverMoreCardsData = [{
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // }]
 
@@ -95,35 +95,35 @@ const ServiceOfferings = [
     content: [
       "From initial concept to feasibility analysis, we offer comprehensive services to help you define and refine your pharmaceutical projects with precision and foresight."
     ],
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Feasibility.jpg`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Feasibility.webp`
   },
   {
     title: "Process Engineering",
     content: [
       "Our team of seasoned engineers excels in designing, optimizing, and implementing pharmaceutical processes to ensure efficiency, compliance, and product integrity throughout the production lifecycle."
     ],
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Process.jpg`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Process.webp`
   },
   {
     title: "Equipment Selection and Validation",
     content: [
       "Leveraging our expertise and industry insights, we assist in selecting the most suitable equipment and validating their performance to meet the stringent regulatory requirements of the pharmaceutical sector."
     ],
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Equipment.jpg`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Equipment.webp`
   },
   {
     title: "Facility Design and Commissioning",
     content: [
       "Whether it's the design of a new facility or the renovation of an existing one, we provide end-to-end solutions for facility design, commissioning, and qualification to meet the highest standards of safety, functionality, and compliance."
     ],
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Facility.jpg`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Facility.webp`
   },
   {
     title: "Regulatory Compliance and Documentation",
     content: [
       "Stay ahead of regulatory challenges with our specialized services in compliance assurance and documentation management, ensuring that your pharmaceutical operations adhere to global regulatory standards."
     ],
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Regulatory.jpg`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Regulatoryofferings.webp`
   }
 
 
@@ -159,7 +159,7 @@ const Medical = () => {
 
         <img
           className="h-full w-full object-cover"
-          src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Pharma.jpg`}
+          src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharmaceuticals/Pharma.webp`}
         >
 
         </img>

@@ -29,7 +29,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Semiconductor/Design and Prototypin.svg`,
+    }/Industries/Semiconductor/Design and Prototypin.webp`,
   },
   {
     heading: "Process Optimization",
@@ -38,7 +38,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Semiconductor/Process.svg`,
+    }/Industries/Semiconductor/Process.webp`,
   },
   {
     heading: "Digital Twin Implementation",
@@ -47,7 +47,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Semiconductor/Digital.svg`,
+    }/Industries/Semiconductor/Digital.webp`,
   },
   {
     heading: "Strategic Consultancy",
@@ -56,7 +56,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Semiconductor/Consulting.svg`,
+    }/Industries/Semiconductor/Consulting.webp`,
   },
 ];
 
@@ -65,27 +65,27 @@ const medicalCardsData = [
     title: "ASIC/FPGA Design & Development",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Semiconductor/ASIC.jpg`,
+    }/Industries/Semiconductor/ASIC.webp`,
     link: "/Industry/Semiconductor/ASIC_FPGA_Design_Development",
   },
 
   // {
   //   title: "Verification & Validation",
-  //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/V&V.jpg`,
+  //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/V&V.webp`,
   //   link: "/Industry/Semiconductor/Verification&Validation"
   // },
   {
     title: "Physical Design",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Semiconductor/Physical Design.jpg`,
+    }/Industries/Semiconductor/Physical Design.webp`,
     link: "/Industry/Semiconductor/PhysicalDesign",
   },
   {
     title: "DFT",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Semiconductor/Physical Design.jpg`,
+    }/Industries/Semiconductor/DFT.webp`,
     link: "/Industry/Semiconductor/DFT",
   },
 ];
@@ -94,19 +94,19 @@ const medicalCardsData = [
 //   {
 //     imageSrc: `${
 //       import.meta.env.VITE_REACT_APP_API_URL
-//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //     link: "#",
 //   },
 //   {
 //     imageSrc: `${
 //       import.meta.env.VITE_REACT_APP_API_URL
-//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //     link: "#",
 //   },
 //   {
 //     imageSrc: `${
 //       import.meta.env.VITE_REACT_APP_API_URL
-//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //     link: "#",
 //   },
 // ];

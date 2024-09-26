@@ -129,25 +129,25 @@ type TimeLineCards = {
 const TestmonialCardsData = [
   {
     name: "Tarun Kumar",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Employee Speaks/tarun.png`,
-    designation: "Sr. Corporate Quality Executive",
-    content: "At the start of joining, I had doubts about the company and corporate culture. But when I joined and time passed, I became more relaxed. After engineering, learning something new-in-service sector was adventurous as well as scary but Kuldepp, Ankit and Rahul helped me to sail through. I really like working in SARACA, I hope that I react good heights in..."
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Employee Speaks/tarun.webp`,
+    designation: "Sr. Team Lead",
+    content: "At the start of joining, I had doubts about the company and corporate culture. But when I joined and time passed, I became more relaxed. After engineering, learning something new-in-service sector was adventurous as well as scary but Kuldeep, Ankit and Rahul helped me to sail through. I really like working in SARACA, I hope that I reach good heights."
   },
   {
     name: "Sanjay Kumar Rajpoot",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Employee Speaks/sanjay.png`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Employee Speaks/sanjay.webp`,
     designation: "Recruitment Manager",
     content: "I have been associated with SARACA for the last 8 years as a Recruitment Manager. SARACA always recognizes my work ethic and contribution towards my job responsibilties. Leaders at SARACA are very helpful and hold our hand in an odd situation and problems..."
   },
   {
     name: "Bhanu Prakash Jena",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Employee Speaks/bhanu.jpg`,
-    designation: "Manager FA & A",
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Employee Speaks/bhanu.webp`,
+    designation: "Deputy General Manager",
     content: "A company that has its vision and mission clear & same has been communicated transparently to each & every employee. Diversity and inclusion are some of the key highlights observed while working in SARACA. Efforts have always been recognised in a..."
   },
   {
     name: "Kundan Kumar Mishra",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Employee Speaks/kundan.png`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Employee Speaks/kundan.webp`,
     designation: "Sr. QA/RA Executive",
     content: "I am working at SARACA for the last 3 years. As I experienced it is a good company with a great working culture and a lot of new opportunities to learn and grow. All staffs are helpful and supportive. Thank you so much SARACA. For freshers, SARACA is a good choice..."
   }

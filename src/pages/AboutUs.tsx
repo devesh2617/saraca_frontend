@@ -23,7 +23,7 @@ type ourLeadersCardsData = {
 
 const ourLeadersCardsData: ourLeadersCardsData[] = [
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Rohit Gupta.png`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Rohit Gupta.webp`,
     name: "Rohit Gupta",
     designation: "Associate Vice President",
     links: [
@@ -38,7 +38,7 @@ const ourLeadersCardsData: ourLeadersCardsData[] = [
     ]
   },
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Ankur Aggarwal.png`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Ankur Aggarwal.webp`,
     name: "Ankur Aggarwal",
     designation: "Vice President- BU Head",
     links: [
@@ -53,7 +53,7 @@ const ourLeadersCardsData: ourLeadersCardsData[] = [
     ]
   },
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Rahul Sisodhiya.png`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Rahul Sisodhiya.webp`,
     name: "Rahul Sisodiya",
     designation: "Asssociate Director",
     links: [
@@ -68,7 +68,7 @@ const ourLeadersCardsData: ourLeadersCardsData[] = [
     ]
   },
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Seema Tyagi.png`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Seema Tyagi.webp`,
     name: "Seema Tyagi",
     designation: "Director Human Resources",
     links: [
@@ -83,7 +83,7 @@ const ourLeadersCardsData: ourLeadersCardsData[] = [
     ]
   },
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Neeraj Kumar Gupta.png`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Neeraj Kumar Gupta.webp`,
     name: "Neeraj Kumar Gupta",
     designation: "Consultant",
     links: [
@@ -98,7 +98,7 @@ const ourLeadersCardsData: ourLeadersCardsData[] = [
     ]
   },
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Dan Wood.png`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Dan Wood.webp`,
     name: "Dan Wood",
     designation: "Director-Business Development",
     links: [
@@ -124,57 +124,57 @@ const TimeLineCards: TimeLineCards[] = [
   {
     year: "2014",
     tagline: "Won our first customer in orthopedics from Miami, Florida, USA.",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2014.png`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2014.webp`
   },
   {
     year: "2015",
     tagline: "Successfully delivered a mission-critical healthcare project for a prestigious Singapore-based client, ensuring top-tier performance and exceptional results.",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2015.png`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2015.webp`
   },
   {
     year: "2016",
     tagline: "Successfully achieved medical device certificate of design and development ",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2016.png`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2016.webp`
   },
   {
     year: "2017",
     tagline: "Established our USA subsidiary in the state of Delaware.",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2017.png`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2017.webp`
   },
   {
     year: "2018",
     tagline: "Won our first Fortune 500 customer of Aerospace & Defence Industry",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2018.png`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2018.webp`
   },
   {
     year: "2019",
     tagline: "Celebrated our first customer win in the automotive industry.",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2019.png`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2019.webp`
   },
   {
     year: "2020",
     tagline: "Won our first customer in Semiconductor industry.",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2020.png`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2020.webp`
   },
   {
     year: "2021",
     tagline: "Reached a significant milestone by securing 10 esteemed Fortune 500 customers.",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2021.png`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2021.webp`
   },
   {
     year: "2022",
     tagline: "Began our journey in the Rail Transportation industry.",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2022.png`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2022.webp`
   },
   {
     year: "2023",
     tagline: "Successfully filed groundbreaking patents in medical software innovations, setting new standards in the industry.",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2023.png`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2023.webp`
   },
   {
     year: "2024",
     tagline: "Launched X1 Platform for Automotive Industry.",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2024.png`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Timeline/2024.webp`
   }
 ]
 
@@ -296,7 +296,7 @@ const AboutUs = () => {
             Leaders instill in their people a hope for success and a belief in themselves.
           </p>
           <div className="my-12 bg-background py-6 px-12 flex flex-col lg:flex-row lg:items-stretch rounded-md border-b-4 border-blue-400 gap-12">
-            <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Kuldeep.png`} alt="" className="rounded-full w-96 h-96 object-cover" />
+            <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Kuldeep.webp`} alt="" className="rounded-full w-96 h-96 object-cover" />
             <div className="flex-1 flex flex-col">
               <h1 className=" text-4xl font-semibold text-sky-700">
                 KULDEEP TYAGI
@@ -400,7 +400,7 @@ With a focus on quality and compliance, we're trusted by over 25+ Fortune 500 cl
           <Swiper
             slidesPerView={screenSize===null?1:screenSize === "sm" ? 1 : screenSize === "md"?2: 3}
             spaceBetween={32}
-            autoplay={{ delay: 3000 }}
+            autoplay={{ delay: 6000 }}
             navigation={true}
             loop={true}
             modules={[Navigation, Autoplay]}

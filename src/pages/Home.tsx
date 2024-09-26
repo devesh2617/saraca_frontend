@@ -34,22 +34,22 @@ const discoverMoreIds = [
 
 const whyChooseUsCardsData = [
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/EngineeringDNA.svg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/EngineeringDNA.webp`,
     title: "We have an",
     content: "Engineering DNA", 
   },
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/CustomerSatisfaction.png`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/CustomerSatisfaction.webp`,
     title: "We have",
     content: "High Customer Satisfaction",
   },
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/Challenges.svg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/Challenges.webp`,
     title: "We",
     content: "Love Challanges",
   },
   {
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/Digital.svg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/WhyChooseUs/Digital.webp`,
     title: "We are",
     content: "Agile and Born Digital",
   },
@@ -57,7 +57,7 @@ const whyChooseUsCardsData = [
 const mediaArray = [
   {
     type: "image",
-    name: "Automotive.jpg",
+    name: "Automotive.webp",
     heading: "Automotive",
     subheading:
       "As the automotive landscape evolves towards future mobility, we stand ready to assist. Saraca's automotive engineering services, design expertise, and solution accelerators ensure your products align with evolving market expectations, adding value throughout the development lifecycle.",
@@ -65,7 +65,7 @@ const mediaArray = [
   },
   {
     type: "image",
-    name: "Semiconductor.jpg",
+    name: "Semiconductor.webp",
     heading: "Semiconductor",
     subheading:
       "Companies are recognizing the significance of software and services linked to chipsets, facilitating swift adoption of hardware platforms by OEMs during this era of technological convergence. The AI chipset market is experiencing rapid growth due to widespread acceptance and accelerated development cycles driven by applications and associated technology stacks.",
@@ -73,7 +73,7 @@ const mediaArray = [
   },
   {
     type: "image",
-    name: "Railway.jpg",
+    name: "Railway.webp",
     heading: "Railways",
     subheading:
       "The rail industry is experiencing significant transformation driven by technology convergence, aiming for cost-efficiency, robust designs, and safety compliance. Key areas of digitalization in rail encompass passenger interfaces, mobile apps, e-ticketing, automated train supervision, cybersecurity, driverless trains, and predictive maintenance.",
@@ -81,7 +81,7 @@ const mediaArray = [
   },
   {
     type: "image",
-    name: "Aerospace.jpg",
+    name: "Aerospace.webp",
     heading: "Aerospace",
     subheading:
       "Addressing technology challenges in unmanned aerial systems, SARACA leverages its deep domain knowledge in aerospace engineering. The skilled workforce excels in digital technologies, solving critical problems in aerospace, Défense, and space product development. Through a Design Thinking process, OEMs and suppliers can expedite design cycles, improve safety and efficiency, boost profit margins, and transition into a future-ready organization.",
@@ -89,7 +89,7 @@ const mediaArray = [
   },
   {
     type: "image",
-    name: "MedicalDevices.jpg",
+    name: "MedicalDevices.webp",
     heading: "Medical Device",
     subheading:"Leveraging cutting-edge technologies, businesses are reducing operational costs and improving processes. Secure connectivity, automation, and data analytics have the potential to elevate patient value and alleviate the societal burden of disease.",
     link: "/Industry/LifeSciences/MedicalDevices",
@@ -169,25 +169,25 @@ const cardsData = [
 const TestmonialCardsData = [
   {
     name:"Saurabh Aggarwal",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Saurabh_Aggarwal.png`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Saurabh_Aggarwal.webp`,
     designation: "Head, Napier Development Centre at Napier Healthcare",
     content: "Saraca was extremely helpful to our Product Team’s understanding of the requirements of ISO 13485 by presenting it to them in a simple and effective manner. They have also done a commendable job in helping us to align our deliverables in-line with the ISO 13485 requirements...."
   },
   {
     name:"Dr. Eduardo Gonzalez",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Educardo.jpg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Educardo.webp`,
     designation: "CEO-Toby Orthopaedics",
     content: "Toby has had a smooth journey with Saraca Solutions.  They have provided us with both a highly experienced Quality Manager and a very energetic Quality Engineer.  Specifically, I would like to thank Saraca for closing our NCs in a timely manner while simultaneously performing a gap...."
   },
   {
     name:"Patrick Ireland",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Patrick.jpg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Patrick.webp`,
     designation: "Vice President-Grace Medical",
     content: "Our team has partnered well with SARACA Solutions as we continue the development process for submitting one of ENT products for 510(k) review with US FDA. They constructed and maintain a Design History. They are also working on Risk Analysis as defined by our Quality Management...."
   },
   {
     name:"Manoj Kumar",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Manoj_Kumar.png`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Manoj_Kumar.webp`,
     designation: "VP, Head Engineering",
     content: "SARACA's commitment to delivering high-quality solutions has significantly contributed to the success of our projects. Their technical expertise, attention to detail, and proactive approach exceeded our expectations. Despite the tight timelines, Saraca's impressive speed in completing the...."
   }
@@ -294,7 +294,7 @@ const Home = () => {
         ))}
       </div>
       <div aria-label="Why Choose Us" className="lg:py-24 py-8 bg-gradient-to-tl from-black to-blue-950 bg-cover"
-      style={{background:`url(${import.meta.env.VITE_REACT_APP_API_URL}/9.jpg)`,
+      style={{background:`url(${import.meta.env.VITE_REACT_APP_API_URL}/whychooseus.webp)`,
         backgroundSize: 'cover'
       }}
       >
@@ -345,8 +345,10 @@ const Home = () => {
         </div>
       </div> */}
       <div aria-label="discover more section" className={`w-full bg-gradient-to-r from-gray-400 to-gray-700 py-24`}
-      style={{background:`url(${import.meta.env.VITE_REACT_APP_API_URL}/82.jpg)`,
-        backgroundPosition: 'cover'
+      style={{background:`url(${import.meta.env.VITE_REACT_APP_API_URL}/discover_more.webp)`,
+        backgroundPosition: 'center center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
       }}
       >
         <h1 className="text-white text-7xl text-center font-semibold">Discover More</h1>

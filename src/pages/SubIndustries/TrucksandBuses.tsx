@@ -34,7 +34,7 @@ const medicalCardsData = [{
   points: [
     "We employ engineering techniques and software to design trucks and buses that prioritize fuel efficiency, aerodynamics, and safety without compromising performance."
   ],
-  imageSrc: "Advanced Vehicle Design.png"
+  imageSrc: "Advanced Vehicle Design.webp"
 },
  
 {
@@ -42,33 +42,33 @@ const medicalCardsData = [{
   points: [
     "Our engineering solutions incorporate technologies such as IoT sensors, telematics, and predictive analytics to enable real-time monitoring, remote diagnostics, and predictive maintenance, enhancing fleet management capabilities."
   ],
-  imageSrc: "Digital Integration.png"
+  imageSrc: "Digital Integration.webp"
 },
 {
   title: "Electrification and Alternative Fuels",
   points: [
     "Recognizing the growing importance of sustainability, we focus on developing electric and hybrid propulsion systems as well as exploring alternative fuel options to reduce emissions and minimize environmental impact."
   ],
-  imageSrc: "Electrification and Alternative Fuels.png"
+  imageSrc: "Electrification and Alternative Fuels.webp"
 },
 {
     title: "Autonomous and Connected Vehicles",
     points: [
       "We are at the forefront of research and development in autonomous and connected vehicle technologies, paving the way for safer and more efficient transportation systems through features like adaptive cruise control, collision avoidance systems, and vehicle-to-vehicle communication."
     ],
-    imageSrc: "Autonomous and Connected Vehicles.png"
+    imageSrc: "Autonomous and Connected Vehicles.webp"
   }]
 
 // const DiscoverMoreCardsData = [{
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // }]
 
@@ -83,7 +83,7 @@ const medicalCardsData = [{
 //       "ADAS",
 //       "IOT Systems development"
 //     ],
-//     imageSrc:"Embedded.svg"
+//     imageSrc:"Embedded.webp"
 //   },
 //   {
 //     title: "Technical Publications",
@@ -92,7 +92,7 @@ const medicalCardsData = [{
 //       "Technical Authoring",
 //       "Multimedia"
 //     ],
-//     imageSrc:"TechPub.svg"
+//     imageSrc:"TechPub.webp"
 //   },
 //   {
 //     title: "Manufacturing Engineering",
@@ -104,7 +104,7 @@ const medicalCardsData = [{
 //       "Sourcing Activities",
 //       "Assembly Engineering"
 //     ],
-//     imageSrc:"Manufacturing.svg"
+//     imageSrc:"Manufacturing.webp"
 //   },
 //   {
 //     title: "Mechanical Engineering",
@@ -118,7 +118,7 @@ const medicalCardsData = [{
 //       "Systems Engineering",
 //       "Post Launch Follow-up"
 //     ],
-//     imageSrc:"Mechnaical.svg"
+//     imageSrc:"Mechnaical.webp"
 //   },
 //   {
 //     title: "Software Engineering",
@@ -130,7 +130,7 @@ const medicalCardsData = [{
 //       "Front and back end development",
 //       "Full Stack development"
 //     ],
-//     imageSrc:"Software.svg"
+//     imageSrc:"Software.webp"
 //   },
 //   {
 //     title: "Quality Engineering",
@@ -141,7 +141,7 @@ const medicalCardsData = [{
 //       "DHF Remediation",
 //       "Regulatory assessment"
 //     ],
-//     imageSrc:"Quality.svg"
+//     imageSrc:"Quality.webp"
 //   }
 // ]
 

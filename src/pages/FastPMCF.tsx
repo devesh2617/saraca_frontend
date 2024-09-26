@@ -11,7 +11,7 @@ const CaseStudies = () => {
 
       imageSrc: `${
         import.meta.env.VITE_REACT_APP_API_URL
-      }/Innovation/FastPMCF/1.png`,
+      }/Innovation/FastPMCF/1.webp`,
     },
     {
       title: "Custom questionnaire per PMCF plan",
@@ -20,7 +20,7 @@ const CaseStudies = () => {
 
       imageSrc: `${
         import.meta.env.VITE_REACT_APP_API_URL
-      }/Innovation/FastPMCF/2.png`,
+      }/Innovation/FastPMCF/2.webp`,
     },
     {
       title: "User friendly dashboard and real-time status for manufacturers",
@@ -29,7 +29,7 @@ const CaseStudies = () => {
 
       imageSrc: `${
         import.meta.env.VITE_REACT_APP_API_URL
-      }/Innovation/FastPMCF/3.png`,
+      }/Innovation/FastPMCF/3.webp`,
     },
     {
       title: "Survey analysis report based on geography",
@@ -37,7 +37,7 @@ const CaseStudies = () => {
         "Get dynamic survey analysis reports with slice and dice based on geography and profession of the survey participants to help you take critical decisions on the performance & safety of device",
       imageSrc: `${
         import.meta.env.VITE_REACT_APP_API_URL
-      }/Innovation/FastPMCF/4.png`,
+      }/Innovation/FastPMCF/4.webp`,
     },
     {
       title: "Unique link ensures data integrity",
@@ -46,7 +46,7 @@ const CaseStudies = () => {
 
       imageSrc: `${
         import.meta.env.VITE_REACT_APP_API_URL
-      }/Innovation/FastPMCF/5.png`,
+      }/Innovation/FastPMCF/5.webp`,
     },
     {
       title: "Launch survey to large number of participants in a single click",
@@ -55,7 +55,7 @@ const CaseStudies = () => {
 
       imageSrc: `${
         import.meta.env.VITE_REACT_APP_API_URL
-      }/Innovation/FastPMCF/6.png`,
+      }/Innovation/FastPMCF/6.webp`,
     },
     {
       title: "Data encryption at rest and on the fly",
@@ -63,7 +63,7 @@ const CaseStudies = () => {
         "Ensure data security with encrypted data of survey questions, device details, participant details, survey responses and survey analysis",
       imageSrc: `${
         import.meta.env.VITE_REACT_APP_API_URL
-      }/Innovation/FastPMCF/7.png`,
+      }/Innovation/FastPMCF/7.webp`,
     },
     {
       title: "In built review and approval process",
@@ -71,7 +71,7 @@ const CaseStudies = () => {
         "FastPMCFTM allows medical device manufacturer to review and approve the survey details (questions, device details, participant list etc.) before survey launch.",
       imageSrc: `${
         import.meta.env.VITE_REACT_APP_API_URL
-      }/Innovation/FastPMCF/8.png`,
+      }/Innovation/FastPMCF/8.webp`,
     },
   ];
 
@@ -110,7 +110,7 @@ const CaseStudies = () => {
           <img
             src={`${
               import.meta.env.VITE_REACT_APP_API_URL
-            }/Innovation/Fastpmcf Logo.svg`}
+            }/Innovation/Fastpmcf Logo.webp`}
             className="w-full h-full object-contain"
           ></img>
         </section>
@@ -189,7 +189,7 @@ const CaseStudies = () => {
         <img
           src={`${
             import.meta.env.VITE_REACT_APP_API_URL
-          }/Innovation/Fastpmcf Logo.svg`}
+          }/Innovation/Fastpmcf Logo.webp`}
           className="w-full aspect-square object-contain"
         ></img>
 
