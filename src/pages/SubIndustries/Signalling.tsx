@@ -38,7 +38,7 @@ const medicalCardsData = [{
     "Control centre solutions (Network management, HMI)",
     "Automatic train operation (ATO)"
   ],
-  imageSrc: "5.jpg"
+  imageSrc: "5.webp"
 },
  
 {
@@ -52,7 +52,7 @@ const medicalCardsData = [{
     "Algorithms for AI, ML, cyber security",
     "Connected technology."
   ],
-  imageSrc: "6.jpg"
+  imageSrc: "6.webp"
 },
 {
   title: "Urban Signalling",
@@ -65,19 +65,19 @@ const medicalCardsData = [{
     "Integrated control centre",
     "Optimised traffic management system."
   ],
-  imageSrc: "7.jpg"
+  imageSrc: "7.webp"
 }]
 
 // const DiscoverMoreCardsData = [{
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // }]
 
@@ -96,7 +96,7 @@ const ServiceOfferings = [
       "Signalling software design & development",
       "DMI Test Automation"
     ],
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling/On-board Equipment.jpg`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling/On-board Equipment.webp`
   },
   {
     title: "Control Centres",
@@ -106,7 +106,7 @@ const ServiceOfferings = [
      "Customizing railway applications",
      "Designing and programming user interfaces (HMI)"
     ],
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling/Control Centres.jpg`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling/Control Centres.webp`
   },
   {
     title: "Rail Communications",
@@ -114,7 +114,7 @@ const ServiceOfferings = [
       "Technical documentation handling",
       "Communication system management (passenger and assistant information system)"
     ],
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling/Rail Communications.jpg`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling/Rail Communications.webp`
   },
   {
     title: "Research & Development",
@@ -125,7 +125,7 @@ const ServiceOfferings = [
       "Application & infrastructure",
       "Application design & development"
     ],
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling/Research & Development.jpg`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling/Research & Development.webp`
   },
   {
     title: "Software & Hardware Track System",
@@ -136,7 +136,7 @@ const ServiceOfferings = [
       "Design & installation of track equipment",
       "Hardware design development of interlocking systems"
     ],
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling/Software & Hardware Track System.jpg`
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Rail Transportation/Signalling/Software & Hardware Track System.webp`
   }
  
 ]

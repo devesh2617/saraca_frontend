@@ -33,7 +33,7 @@ const medicalCardsData = [{
   points: [
     "Our team of expert engineers specializes in designing Off-Highway Vehicles equipped with state-of-the-art digital technologies, ensuring superior performance, reliability, and durability in rugged environments."
   ],
-  imageSrc: "90.jpg"
+  imageSrc: "90.webp"
 },
 
 {
@@ -41,33 +41,33 @@ const medicalCardsData = [{
   points: [
     "We leverage the power of digital integration and connectivity to equip Off-Highway Vehicles with IoT sensors, telematics systems, and data analytics platforms for real-time monitoring, remote diagnostics, and predictive maintenance."
   ],
-  imageSrc: "91.jpg"
+  imageSrc: "91.webp"
 },
 {
   title: "Safety and Autonomous Solutions",
   points: [
     "Saraca is at the forefront of developing safety-critical systems and autonomous solutions for Off-Highway Vehicles, including collision avoidance systems, operator assistance features, and autonomous operation capabilities, enhancing safety and efficiency on the job site."
   ],
-  imageSrc: "92.jpg"
+  imageSrc: "92.webp"
 },
 {
   title: "Environmental Sustainability",
   points: [
     "Through innovative engineering practices, we prioritize environmental sustainability by designing Off-Highway Vehicles with low emissions, energy-efficient components, and recyclable materials, contributing to a greener and more sustainable future."
   ],
-  imageSrc: "93.jpg"
+  imageSrc: "93.webp"
 }]
 
 // const DiscoverMoreCardsData = [{
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // }]
 
@@ -78,56 +78,56 @@ const ServiceOfferings = [
     content: [
       "Autonomous technology revolutionizes Off-Highway Vehicle operations. Saraca develops safety-critical systems and autonomous solutions, enhancing safety, efficiency, and productivity on job sites with collision avoidance and autonomous operation capabilities."
     ],
-    imageSrc: "95.jpg"
+    imageSrc: "95.webp"
   },
   {
     title: "Connected Systems for Off-Highway Vehicles",
     content: [
       "Seamless connectivity optimizes Off-Highway Vehicle performance. Saraca integrates IoT sensors, telematics systems, and data analytics platforms for real-time monitoring, remote diagnostics, and predictive maintenance, empowering informed decision-making."
     ],
-    imageSrc: "96.jpg"
+    imageSrc: "96.webp"
   },
   {
     title: "Displays and Information",
     content: [
       "Clear, intuitive information enhances operator control. Saraca designs and integrates advanced display systems and information interfaces, providing real-time feedback, diagnostic information, and control functionality for improved operator productivity and safety.",
     ],
-    imageSrc: "97.jpg"
+    imageSrc: "97.webp"
   },
   {
     title: "Sustenance & Value Engineering",
     content: [
       "Continuous improvement sustains competitiveness. Saraca optimizes product lifecycle management, enhances reliability, and maximizes value through systematic analysis, innovation, and process refinement, ensuring long-term success for our partners."
     ],
-    imageSrc: "98.jpg"
+    imageSrc: "98.webp"
   },
   {
     title: "Polymer Engineering",
     content: [
       "Polymer materials enhance Off-Highway Vehicle performance and sustainability. Saraca's expertise in advanced polymer solutions ensures superior mechanical properties and environmental performance in demanding operating conditions."
     ],
-    imageSrc: "99.jpg"
+    imageSrc: "99.webp"
   },
   {
     title: "Off-Highway Vehicle Electrification",
     content: [
       "Electric and hybrid powertrains are the future. Saraca pioneers electrification solutions for Off-Highway Vehicles, delivering enhanced performance, efficiency, and environmental sustainability through advanced technology and engineering."
     ],
-    imageSrc: "100.jpg"
+    imageSrc: "100.webp"
   },
   {
     title: "Embedded Engineering",
     content: [
       "Embedded systems enhance Off-Highway Vehicle functionality and intelligence. Saraca's solutions encompass advanced electronics and software, enabling real-time monitoring, control, and optimization for superior performance and efficiency in challenging environments."
     ],
-    imageSrc: "101.jpg"
+    imageSrc: "101.webp"
   },
   {
     title: "Powertrain",
     content: [
       "Efficient powertrains are essential for high-performance Off-Highway Vehicles. Saraca specializes in designing and optimizing robust, fuel-efficient propulsion systems, minimizing emissions and operating costs while meeting heavy-duty application demands."
     ],
-    imageSrc: "website image.jpg"
+    imageSrc: "website image.webp"
   }
 
 ]
@@ -160,7 +160,7 @@ const Medical = () => {
           <div className="h-full absolute lg:w-2/3 w-full left-0 lg:text-9xl md:text-5xl text-2xl  bg-gradient-to-r from-black to-transparent text-white flex justify-center items-center p-36 font-semibold text-left">Transforming Off-Road Challenges into Engineering Triumphs</div>
         </div>
         <img className="h-full w-full object-cover"
-          src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Off-Highway/Off Highway Landing.jpg`}
+          src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Off-Highway/Off Highway Landing.webp`}
         />
 
       </div>

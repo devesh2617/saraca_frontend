@@ -43,7 +43,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //     "Mission Computer",
 //     "Power Control Systems"
 //   ],
-//   imageSrc: "Avionics.png"
+//   imageSrc: "Avionics.webp"
 // },
 
 // {
@@ -55,7 +55,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //     "Lighting Systems",
 //     "Aerostructures"
 //   ],
-//   imageSrc: "Digital.jpg"
+//   imageSrc: "Digital.webp"
 // },
 // {
 //   title: "MRO",
@@ -68,7 +68,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //     "Quality Control/Assurance",
 //     "Manufacturing Engineering"
 //   ],
-//   imageSrc: "MRO.jpg"
+//   imageSrc: "MRO.webp"
 // },
 // {
 //     title: "Digital",
@@ -77,7 +77,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //       "Application Development",
 //       "Hybris Development"
 //     ],
-//     imageSrc: "Digital.jpg"
+//     imageSrc: "Digital.webp"
 //   },
 //   {
 //     title: "Interiors",
@@ -90,19 +90,19 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //       "Evacuation Systems",
 //       "Technical Publications"
 //     ],
-//     imageSrc: "Interiors.png"
+//     imageSrc: "Interiors.webp"
 //   }]
 
 // const DiscoverMoreCardsData = [{
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // }]
 
@@ -116,7 +116,7 @@ const ServiceOfferings = [
       "Fault simulation and analysis",
       "Testability analysis and optimization",
     ],
-    imageSrc: "Design for Testability (DFT) Services.jpg",
+    imageSrc: "Design for Testability (DFT) Services.webp",
   },
   {
     title: "Embedded Systems Development",
@@ -127,7 +127,7 @@ const ServiceOfferings = [
       "Real-time operating system (RTOS) integration",
       "IoT (Internet of Things) device development",
     ],
-    imageSrc: "Embedded Systems Development.png",
+    imageSrc: "Embedded Systems Development.webp",
   },
   {
     title: "Electronic Hardware Design",
@@ -138,7 +138,7 @@ const ServiceOfferings = [
       "EMC/EMI compliance testing",
       "Prototyping and hardware debugging",
     ],
-    imageSrc: "Electronic Hardware Design.jpg",
+    imageSrc: "Electronic Hardware Design.webp",
   },
   {
     title: "Software Development and Integration",
@@ -149,7 +149,7 @@ const ServiceOfferings = [
       "Database design and optimization",
       "System integration and testing",
     ],
-    imageSrc: "Software Development and Integration.png",
+    imageSrc: "Software Development and Integration.webp",
   },
   {
     title: "Machine Learning and AI Solutions",
@@ -160,7 +160,7 @@ const ServiceOfferings = [
       "Performance optimization for inference",
       "Continuous model monitoring and updates",
     ],
-    imageSrc: "Machine Learning and AI Solutions.png",
+    imageSrc: "Machine Learning and AI Solutions.webp",
   },
   {
     title: "Wireless Communication Solutions",
@@ -171,7 +171,7 @@ const ServiceOfferings = [
       "Antenna design and optimization",
       "System-level simulation and testing",
     ],
-    imageSrc: "Wireless Communication Solutions.png",
+    imageSrc: "Wireless Communication Solutions.webp",
   },
   {
     title: "Cybersecurity Services",
@@ -180,7 +180,7 @@ const ServiceOfferings = [
       "Security architecture design",
       "Encryption and authentication implementation",
     ],
-    imageSrc: "Cybersecurity Services.jpg",
+    imageSrc: "Cybersecurity Services.webp",
   },
 ];
 
@@ -231,7 +231,7 @@ const Medical = () => {
           className="h-full w-full object-cover"
           src={`${
             import.meta.env.VITE_REACT_APP_API_URL
-          }/Industries/Semiconductor/DFT/Landing.jpg`}
+          }/Industries/Semiconductor/DFT/Landing.webp`}
         />
       </div>
       <div aria-label="what-we-do" className="w-full py-24">

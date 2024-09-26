@@ -45,7 +45,7 @@ const medicalCardsData = [
       "Mission Computer",
       "Power Control Systems",
     ],
-    imageSrc: "Avionics.png",
+    imageSrc: "Avionics.webp",
   },
 
   {
@@ -58,7 +58,7 @@ const medicalCardsData = [
       "Lighting Systems",
       "Airframe",
     ],
-    imageSrc: "Exteriors.png",
+    imageSrc: "Exteriors.webp",
   },
   {
     title: "MRO",
@@ -72,7 +72,7 @@ const medicalCardsData = [
       "Quality Control/Assurance",
       "Manufacturing Engineering",
     ],
-    imageSrc: "MRO.jpg",
+    imageSrc: "MRO.webp",
   },
   {
     title: "Digital",
@@ -83,7 +83,7 @@ const medicalCardsData = [
       "Monitoring",
       "Aircraft Management System",
     ],
-    imageSrc: "Digital.jpg",
+    imageSrc: "Digital.webp",
   },
   {
     title: "Interiors",
@@ -96,20 +96,20 @@ const medicalCardsData = [
       "Overhead Structures",
       "Evacuation Systems",
     ],
-    imageSrc: "Interiors.png",
+    imageSrc: "Interiors.webp",
   },
 ];
 
 // const DiscoverMoreCardsData = [{
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // }]
 
@@ -123,7 +123,7 @@ const ServiceOfferings = [
       "ADAS",
       "IOT Systems development",
     ],
-    imageSrc: "Embedded.jpg",
+    imageSrc: "Embedded.webp",
   },
   {
     title: "Software Engineering",
@@ -135,7 +135,7 @@ const ServiceOfferings = [
       "Front and back end development",
       "Full Stack development",
     ],
-    imageSrc: "Software Engineering.jpg",
+    imageSrc: "Software Engineering.webp",
   },
   {
     title: "Design and Development",
@@ -150,7 +150,7 @@ const ServiceOfferings = [
       "Interiors Design and Configuration",
       "Materials and Process Engineering",
     ],
-    imageSrc: "Design and Development.jpg",
+    imageSrc: "Design and Development.webp",
   },
   {
     title: "Simulation and Testing",
@@ -161,7 +161,7 @@ const ServiceOfferings = [
       "Structural Testing (static and dynamic)",
       "Environmental Testing",
     ],
-    imageSrc: "1.jpg",
+    imageSrc: "1.webp",
   },
   {
     title: "Manufacturing and Production Support",
@@ -173,7 +173,7 @@ const ServiceOfferings = [
       "Quality Assurance and Control",
       "Lean Manufacturing and Process Optimization",
     ],
-    imageSrc: "Manufacturing and Production Support.jpg",
+    imageSrc: "Manufacturing and Production Support.webp",
   },
   {
     title: "Maintenance, Repair, and Overhaul (MRO)",
@@ -185,7 +185,7 @@ const ServiceOfferings = [
       "Modifications and Upgrades",
       "Condition Monitoring and Predictive Maintenance",
     ],
-    imageSrc: "Maintenance, Repair, and Overhaul (MRO).jpg",
+    imageSrc: "Maintenance, Repair, and Overhaul (MRO).webp",
   },
   {
     title: "Product Lifecycle Management",
@@ -201,7 +201,7 @@ const ServiceOfferings = [
       "Lifecycle Documentation Maintenance",
       "Content Management Solutions",
     ],
-    imageSrc: "Product Lifecycle Management.jpg",
+    imageSrc: "Product Lifecycle Management.webp",
   },
   {
     title: "Software and IT Services",
@@ -213,7 +213,7 @@ const ServiceOfferings = [
       "Simulation Software Development",
       "IT Infrastructure Management",
     ],
-    imageSrc: "7.jpg",
+    imageSrc: "7.webp",
   },
   {
     title: "Certification and Regulatory Compliance",
@@ -224,7 +224,7 @@ const ServiceOfferings = [
       "Environmental Compliance",
       "Risk Management",
     ],
-    imageSrc: "Certification and Regulatory Compliance.jpg",
+    imageSrc: "Certification and Regulatory Compliance.webp",
   },
   {
     title: "Sustainability and Green Technologies",
@@ -235,7 +235,7 @@ const ServiceOfferings = [
       "Electric and Hybrid Propulsion Systems",
       "Renewable Energy Integration",
     ],
-    imageSrc: "10.jpg",
+    imageSrc: "10.webp",
   },
   {
     title: "Project Management and Consultancy",
@@ -246,7 +246,7 @@ const ServiceOfferings = [
       "Business Process Reengineering",
       "Cost Estimation and Budgeting",
     ],
-    imageSrc: "12.jpg",
+    imageSrc: "12.webp",
   },
 ];
 const Medical = () => {
@@ -299,7 +299,7 @@ const Medical = () => {
           className="h-full w-full object-cover brightness-75"
           src={`${
             import.meta.env.VITE_REACT_APP_API_URL
-          }/Industries/Aerospace & Defense/Aerospace/Landing.png`}
+          }/Industries/Aerospace & Defense/Aerospace/Landing.webp`}
         />
       </div>
       <div aria-label="what-we-do" className="w-full py-24">

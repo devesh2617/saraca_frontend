@@ -32,50 +32,50 @@ const ServiceOfferings = [
     description:
       "  We offer end-to-end product design and development services, from concept generation to prototyping and manufacturing support. Our iterative approach ensures that your product not only meets regulatory standards but also exceeds user expectations.",
     link: "",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Product Design & Development.svg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Product Design & Development.webp`,
   },
   {
     heading: "Process Optimisation",
     description:
       "Through advanced process modeling, simulation, and optimization techniques, we help streamline manufacturing processes, enhance efficiency, and reduce costs without compromising quality or compliance.",
     link: "",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Process Optimisation.svg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Process Optimisation.webp`,
   },
   {
     heading: "Regulatory Compliances",
     description:
       "Navigating the regulatory landscape can be daunting. Our team is well-versed in regulatory requirements and standards, ensuring that your products and processes meet the rigorous demands of regulatory agencies worldwide.",
     link: "",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Regulatory.svg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Regulatory.webp`,
   },
   {
     heading: "Quality Assurance and Validation",
     description:" Quality is paramount in the life science industry. We provide comprehensive quality assurance and validation services to ensure that your products and processes adhere to the highest standards of reliability, safety, and efficacy.",
     link: "",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Quality.svg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Quality.webp`,
   },
 {
   heading: "Technical Consulting",
   description:"Whether you're facing technical challenges or seeking strategic guidance, our team is here to help. We offer expert technical consulting services tailored to your unique needs, providing insights and solutions that drive innovation and growth.",
   link: "",
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Technical.svg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Technical.webp`,
 }
 ];
 
 const medicalCardsData = [{
   title: "Medical Devices",
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.webp`,
   link: "/Industry/LifeSciences/MedicalDevices"
 },
 
 {
   title: "Pharmaceutical",
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharma.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Pharma.webp`,
   link: "/Industry/LifeSciences/Pharmaceuticals"
 },
 {
   title: "Healthcare Applications",
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Healthcare Application.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Healthcare Application.webp`,
   link: "/Industry/LifeSciences/HealthcareApplications"
 }]
 
@@ -119,7 +119,7 @@ const Industry = () => {
               </div>
             </div>
         
-        <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.jpg`} />
+        <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/Landing.webp`} />
       
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>

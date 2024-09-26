@@ -37,61 +37,61 @@ const discoverMoreIds = ['832b07ea-6542-4d0b-bbf2-be710e869378',
 const medicalCardsData = [{
   title: "Unmanned Aerial Vehicles",
   points: [],
-  imageSrc: "22.jpg"
+  imageSrc: "22.webp"
 },
 
 {
   title: "Armored Vehicles",
   points: [],
-  imageSrc: "Armored Vehicles.jpg"
+  imageSrc: "Armored Vehicles.webp"
 },
 {
   title: "Artillery Systems",
   points: [],
-  imageSrc: "Artillery Systems.jpg"
+  imageSrc: "Artillery Systems.webp"
 },
 {
   title: "Naval Systems",
   points: [],
-  imageSrc: "Naval Systems.jpg"
+  imageSrc: "Naval Systems.webp"
 },
 {
   title: "Air Systems",
   points: [],
-  imageSrc: "Air Systems.jpg"
+  imageSrc: "Air Systems.webp"
 },
 {
   title: "Cyber and Electronic Systems",
   points: [],
-  imageSrc: "15.jpg"
+  imageSrc: "15.webp"
 },
 {
   title: "Small Arms and Weapons",
   points: [],
-  imageSrc: "17.jpg"
+  imageSrc: "17.webp"
 },
 {
   title: "Homeland Security and Border Defense",
   points: [],
-  imageSrc: "18.jpg"
+  imageSrc: "18.webp"
 },
 {
   title: "Ground Control Systems",
   points: [],
-  imageSrc: "Ground Control Systems.jpg"
+  imageSrc: "Ground Control Systems.webp"
 }
 ]
 
 // const DiscoverMoreCardsData = [{
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // }]
 
@@ -106,7 +106,7 @@ const ServiceOfferings = [
       "ADAS",
       "IOT Systems development",
     ],
-    imageSrc: "Embedded.jpg",
+    imageSrc: "Embedded.webp",
   },
   {
     title: "Software Engineering",
@@ -118,7 +118,7 @@ const ServiceOfferings = [
       "Front and back end development",
       "Full Stack development",
     ],
-    imageSrc: "Software Engineering.jpg",
+    imageSrc: "Software Engineering.webp",
   },
   {
     title: "Design and Development",
@@ -133,7 +133,7 @@ const ServiceOfferings = [
       "Interiors Design and Configuration",
       "Materials and Process Engineering",
     ],
-    imageSrc: "Design and Development.jpg",
+    imageSrc: "Design and Development.webp",
   },
   {
     title: "Simulation and Testing",
@@ -144,7 +144,7 @@ const ServiceOfferings = [
       "Structural Testing (static and dynamic)",
       "Environmental Testing",
     ],
-    imageSrc: "Simulation and Testing.jpg",
+    imageSrc: "Simulation and Testing.webp",
   },
   {
     title: "Manufacturing and Production Support",
@@ -156,7 +156,7 @@ const ServiceOfferings = [
       "Quality Assurance and Control",
       "Lean Manufacturing and Process Optimization",
     ],
-    imageSrc: "Manufacturing and Production Support.jpg",
+    imageSrc: "Manufacturing and Production Support.webp",
   },
   {
     title: "Maintenance, Repair, and Overhaul (MRO)",
@@ -168,7 +168,7 @@ const ServiceOfferings = [
       "Modifications and Upgrades",
       "Condition Monitoring and Predictive Maintenance",
     ],
-    imageSrc: "Maintenance, Repair, and Overhaul (MRO).jpg",
+    imageSrc: "Maintenance, Repair, and Overhaul (MRO).webp",
   },
   {
     title: "Product Lifecycle Management",
@@ -184,7 +184,7 @@ const ServiceOfferings = [
       "Lifecycle Documentation Maintenance",
       "Content Management Solutions",
     ],
-    imageSrc: "Product Lifecycle Management.jpg",
+    imageSrc: "Product Lifecycle Management.webp",
   },
   {
     title: "Software and IT Services",
@@ -196,7 +196,7 @@ const ServiceOfferings = [
       "Simulation Software Development",
       "IT Infrastructure Management",
     ],
-    imageSrc: "Software and IT Services.jpg",
+    imageSrc: "Software and IT Services.webp",
   },
   {
     title: "Certification and Regulatory Compliance",
@@ -207,7 +207,7 @@ const ServiceOfferings = [
       "Environmental Compliance",
       "Risk Management",
     ],
-    imageSrc: "Certification and Regulatory Compliance.jpg",
+    imageSrc: "Certification and Regulatory Compliance.webp",
   },
   {
     title: "Sustainability and Green Technologies",
@@ -218,7 +218,7 @@ const ServiceOfferings = [
       "Electric and Hybrid Propulsion Systems",
       "Renewable Energy Integration",
     ],
-    imageSrc: "Sustainability and Green Technologies.jpg",
+    imageSrc: "Sustainability and Green Technologies.webp",
   },
   {
     title: "Project Management and Consultancy",
@@ -229,7 +229,7 @@ const ServiceOfferings = [
       "Business Process Reengineering",
       "Cost Estimation and Budgeting",
     ],
-    imageSrc: "Project Management and Consultancy.jpg",
+    imageSrc: "Project Management and Consultancy.webp",
   },
 ];
 
@@ -262,7 +262,7 @@ const Medical = () => {
           <div className="h-full absolute w-full left-0 lg:text-9xl md:text-5xl text-2xl text-white flex justify-center items-center p-36 font-semibold text-center">Empowering Defense through Engineering Excellence</div>
         </div>
 
-        <img className="h-full w-full object-fill brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Defense/Landing.jpg`} />
+        <img className="h-full w-full object-fill brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Aerospace & Defense/Defense/Landing.webp`} />
 
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>

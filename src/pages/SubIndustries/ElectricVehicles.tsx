@@ -123,21 +123,21 @@ const medicalCardsData = [{
 //     content: [
 //       "We assist OEMs in streamlining vehicle architecture by standardizing and reducing the number of electrical components. Our goal is to enhance scalability and optimize production costs."
 //     ],
-//     imageSrc: "Embedded.svg"
+//     imageSrc: "Embedded.webp"
 //   },
 //   {
 //     title: "Computational Fluid Dynamics (CFD)",
 //     content: [
 //       "We offer a complete range of CFD services, leveraging industry-leading tools and domain expertise to address all CFD simulation requirements."
 //     ],
-//     imageSrc: "TechPub.svg"
+//     imageSrc: "TechPub.webp"
 //   },
 //   {
 //     title: "Finite Element Analysis (FEA)",
 //     content: [
 //       "Our FEA services offer precise calculations and resourceful evaluation methods tailored to the transportation sector's needs."
 //     ],
-//     imageSrc: "Manufacturing.svg"
+//     imageSrc: "Manufacturing.webp"
 //   },
 //   {
 //     title: "Mechanical Engineering",
@@ -151,7 +151,7 @@ const medicalCardsData = [{
 //       "Systems Engineering",
 //       "Post Launch Follow-up"
 //     ],
-//     imageSrc: "Mechnaical.svg"
+//     imageSrc: "Mechnaical.webp"
 //   },
 //   {
 //     title: "Software Engineering",
@@ -163,14 +163,14 @@ const medicalCardsData = [{
 //       "Front and back end development",
 //       "Full Stack development"
 //     ],
-//     imageSrc: "Software.svg"
+//     imageSrc: "Software.webp"
 //   },
 //   {
 //     title: "Value Add & Value Engineering (VA/VE)",
 //     content: [
 //       "We adopt VA/VE methodologies to enhance project efficiency, quality, and communication, delivering superior ROI for our clients."
 //     ],
-//     imageSrc: "Quality.svg"
+//     imageSrc: "Quality.webp"
 //   }
 // ]  
 // const TrendingTechnologiesCards = (data) => {
@@ -214,7 +214,7 @@ const Medical = () => {
           <div className="h-full absolute w-full left-0 lg:text-9xl md:text-5xl text-2xl text-white flex justify-center items-center p-36 font-semibold text-center">Unlocking the Future of Electric Vehicles</div>
         </div>
 
-        <img className="h-full w-full object-cover brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Electric Vehicles/ElectricVehicle.png`} />
+        <img className="h-full w-full object-cover brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Electric Vehicles/ElectricVehicle.webp`} />
 
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
@@ -273,7 +273,7 @@ const Medical = () => {
       </div> */}
 
 
-<div aria-label="trending-technologies-section" className={`min-h-[30vh] w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.svg')] bg-cover`}>
+<div aria-label="trending-technologies-section" className={`min-h-[30vh] w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.webp')] bg-cover`}>
                 <h1 className="text-white text-5xl font-semibold text-center">Service Offerings</h1>
                 <ul className="container grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-4 text-2xl justify-evenly items-start mt-24 mx-auto list-outside list-disc">
                     {medicalCardsData.map((data) => (<li className="text-white p-2">{data.title}</li>))}

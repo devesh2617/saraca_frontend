@@ -6,43 +6,43 @@ const CaseStudies = () => {
     {
       title: "Touch Screen",
       content: "Enjoy an intuitive and interactive experience with our touch screen instrument cluster, allowing easy access to various functions and information on Full HD display. It is an capacitive touchscreen, providing a responsive and seamless user experience responsive and seamless user experience",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/X1Platform/1.svg`
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/X1Platform/1.webp`
     },
     {
       title: "Display Size",
       content: "Our instrument cluster supports various display sizes, including 5, 7, and 10 inches, providing flexibility to suit different vehicle models and driver preferences.",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/X1Platform/2.svg`
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/X1Platform/2.webp`
     },
     {
       title: "Wi-Fi/Bluetooth Enabled",
       content: "Stay connected on the go with built-in Wi-Fi and Bluetooth connectivity, enabling you to access online services and connect with your smart devices effortlessly.",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/X1Platform/3.svg`
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/X1Platform/3.webp`
     },
     {
       title: "Media Player",
       content: "Seamlessly connect your mobile devices and enjoy your favourite music or podcasts through the instrument cluster's Bluetooth media player support.",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/X1Platform/4.svg`
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/X1Platform/4.webp`
     },
     {
       title: "Google Support",
       content: "On-demand basis, our instrument cluster can integrate with Google services, expanding your access to a wealth of information and functionality.",
 
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/X1Platform/5.svg`
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/X1Platform/5.webp`
     },
     {
       title: "Navigation Support",
       content: "Our instrument cluster supports reliable navigation services, helping you navigate with confidence and reach your destination efficiently.",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/X1Platform/6.svg`
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/X1Platform/6.webp`
     },
     {
       title: "OTA Updates",
       content: "Our instrument cluster architecture supports Over-The-Air (OTA) updates, ensuring you receive the latest software enhancements and features conveniently.",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/X1Platform/7.svg`
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/X1Platform/7.webp`
     },
     {
       title: "Customized Themes",
       content: "Personalize your driving experience with various customized themes, allowing you to tailor the instrument cluster's appearance to your liking.      ",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/X1Platform/8.svg`
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/X1Platform/8.webp`
     }
   ]
 
@@ -74,7 +74,7 @@ const CaseStudies = () => {
       </Helmet>
       <HorizontalScroll reverseScroll={true} className='hidden lg:block'>
         <section className='w-[100vw] h-[100vh] relative flex items-center justify-center'>
-          <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/x1-logo.svg`} className='w-full h-[60%] object-contain'>
+          <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/x1-logo.webp`} className='w-full h-[60%] object-contain'>
 
           </img>
          
@@ -111,7 +111,7 @@ const CaseStudies = () => {
 
             </section>
             <section className='flex-[6]'>
-              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/ic3.png`} className='aspect-[16/9] object-cover w-[80%] mx-auto'></img>
+              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/ic3.webp`} className='aspect-[16/9] object-cover w-[80%] mx-auto'></img>
 
             </section>
 
@@ -127,7 +127,7 @@ const CaseStudies = () => {
 
             </section>
             <section className='flex-[6]'>
-              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/ic1.png`} className='aspect-[16/9] object-cover w-[80%] mx-auto'></img>
+              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/ic1.webp`} className='aspect-[16/9] object-cover w-[80%] mx-auto'></img>
             </section>
 
           </div>
@@ -186,7 +186,7 @@ const CaseStudies = () => {
       </HorizontalScroll>
       <div className='w-[90%] mx-auto'>
      
-          <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/x1-logo.svg`} className='w-full aspect-square object-contain'>
+          <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/x1-logo.webp`} className='w-full aspect-square object-contain'>
 
           </img>
          
@@ -223,7 +223,7 @@ const CaseStudies = () => {
 
             </section>
             <section className=''>
-              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/ic3.png`} className='aspect-[16/9] object-cover w-full'></img>
+              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/ic3.webp`} className='aspect-[16/9] object-cover w-full'></img>
 
             </section>
 
@@ -239,7 +239,7 @@ const CaseStudies = () => {
 
             </section>
             <section className=''>
-              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/ic1.png`} className='aspect-[16/9] object-cover w-full'></img>
+              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/ic1.webp`} className='aspect-[16/9] object-cover w-full'></img>
             </section>
 
           </div>

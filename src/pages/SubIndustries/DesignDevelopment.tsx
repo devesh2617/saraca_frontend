@@ -43,7 +43,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //     "Mission Computer",
 //     "Power Control Systems"
 //   ],
-//   imageSrc: "Avionics.png"
+//   imageSrc: "Avionics.webp"
 // },
 
 // {
@@ -55,7 +55,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //     "Lighting Systems",
 //     "Aerostructures"
 //   ],
-//   imageSrc: "Digital.jpg"
+//   imageSrc: "Digital.webp"
 // },
 // {
 //   title: "MRO",
@@ -68,7 +68,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //     "Quality Control/Assurance",
 //     "Manufacturing Engineering"
 //   ],
-//   imageSrc: "MRO.jpg"
+//   imageSrc: "MRO.webp"
 // },
 // {
 //   title: "Digital",
@@ -77,7 +77,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //     "Application Development",
 //     "Hybris Development"
 //   ],
-//   imageSrc: "Digital.jpg"
+//   imageSrc: "Digital.webp"
 // },
 // {
 //   title: "Interiors",
@@ -90,70 +90,70 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //     "Evacuation Systems",
 //     "Technical Publications"
 //   ],
-//   imageSrc: "Interiors.png"
+//   imageSrc: "Interiors.webp"
 // }]
 
 // const DiscoverMoreCardsData = [{
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // }]
 
 const ServiceOfferings = [
   {
     title: "SoC/IP Functional Verification",
-    imageSrc: "137.jpg",
+    imageSrc: "137.webp",
   },
   {
     title: "ARM Cortex series Processor Verification",
-    imageSrc: "138.jpg",
+    imageSrc: "138.webp",
   },
   {
     title: "Analog Mixed-Signal Verification",
-    imageSrc: "139.jpg",
+    imageSrc: "139.webp",
   },
   {
     title: "IP Development and Verification",
-    imageSrc: "140.jpg",
+    imageSrc: "140.webp",
   },
   {
     title: "EDA Tool Validation",
-    imageSrc: "141.jpg",
+    imageSrc: "141.webp",
   },
   {
     title: "FPGA Device Selection",
-    imageSrc: "142.jpg",
+    imageSrc: "142.webp",
   },
   {
     title: "ASISC Prototyping",
-    imageSrc: "143.jpg",
+    imageSrc: "143.webp",
   },
   {
     title: "Synthesis & Optimization",
-    imageSrc: "144.jpg",
+    imageSrc: "144.webp",
   },
   {
     title: "SOC Integration",
-    imageSrc: "145.jpg",
+    imageSrc: "145.webp",
   },
   {
     title: "Functional Verification",
-    imageSrc: "146.jpg",
+    imageSrc: "146.webp",
   },
   {
     title: "FPGA Accelerator Implementation",
-    imageSrc: "147.jpg",
+    imageSrc: "147.webp",
   },
   {
     title: "FPGA Validation",
-    imageSrc: "148.jpg",
+    imageSrc: "148.webp",
   },
 ];
 
@@ -228,7 +228,7 @@ const Medical = () => {
           className="h-full w-full object-cover"
           src={`${
             import.meta.env.VITE_REACT_APP_API_URL
-          }/Industries/Semiconductor/ASICFPGADesignDevelopment/Landing.jpg`}
+          }/Industries/Semiconductor/ASICFPGADesignDevelopment/Landing.webp`}
         />
       </div>
       <div aria-label="what-we-do" className="w-full py-24">
@@ -264,7 +264,7 @@ const Medical = () => {
           })}
         </div>
       </div> */}
-      <div aria-label="trending-technologies-section" className={`w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.svg')] bg-cover`}>
+      <div aria-label="trending-technologies-section" className={`w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.webp')] bg-cover`}>
                 <h1 className="text-white text-5xl font-semibold text-center">Service Offerings</h1>
                 <div className="container flex flex-wrap justify-center gap-8 items-start mt-24 mx-auto">
                     {ServiceOfferings.map((data) => TrendingTechnologiesCards(data))}

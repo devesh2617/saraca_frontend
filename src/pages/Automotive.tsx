@@ -12,9 +12,12 @@ type medicalCardsData = {
 type DiscoverMoreCardsType = {
   img: string,
   title:string,
-  link: string
+  link: string,
+  type: string
 }
-const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-49ad-9275-94cf098ef05c']
+const discoverMoreIds = ['dedaef8f-a441-4518-8d98-6ec9549ec054',
+
+]
 
 
 const ServiceOfferings = [
@@ -30,7 +33,7 @@ const ServiceOfferings = [
 "Digital Infotainment System"
     ],
     link: "",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Software Defined Vehicle.jpg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Software Defined Vehicle.webp`,
   },
   {
     heading: "Automotive Software Development",
@@ -42,7 +45,7 @@ const ServiceOfferings = [
 "Protocols such as J1939, CAN-FD, LIN, BLE, Automotive Ethernet."
     ],
     link: "",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Automotive Software Development.jpg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Automotive Software Development.webp`,
   },
   {
     heading: "Electronics Hardware Design",
@@ -56,7 +59,7 @@ const ServiceOfferings = [
 "Verification & Validation"
     ],
     link: "",
-    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Electronics Hardware Design.jpg`,
+    imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Electronics Hardware Design.webp`,
   },
 {
   heading: "UI/UX Design",
@@ -70,7 +73,7 @@ const ServiceOfferings = [
 "Techstack & Tools - Qt, Qml, Flutter, Dart, Figma, Adobe XD, MS Vision, Lucid Charts"
   ],
   link: "",
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/UIUX Design.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/UIUX Design.webp`,
 },
 {
   heading: "Testing",
@@ -84,7 +87,7 @@ const ServiceOfferings = [
 "Regression Testing"
   ],
   link: "",
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Testing.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Testing.webp`,
 },
 {
   heading: "Mechanical Design",
@@ -100,43 +103,43 @@ const ServiceOfferings = [
 "Prototyping"
   ],
   link: "",
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Mechanical Design.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Mechanical Design.webp`,
 }
 ];
 
 const medicalCardsData = [{
   title: "Passenger Car",
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car.webp`,
   link: "/Industry/Automotive/PassengerCar"
 },
 
 {
   title: "Trucks & Buses",
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Truck & Buses.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Truck & Buses.webp`,
   link: "/Industry/Automotive/TruckandBuses"
 },
 {
   title: "Off-Highway Vehicles",
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Off-Highway.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Off-Highway.webp`,
   link: "/Industry/Automotive/OffHighwayVehicles"
 },
 {
   title: "Electric Vehicle",
-  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Electric Vehcile.jpg`,
+  imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Electric Vehcile.webp`,
   link: "/Industry/Automotive/ElectricVehicles"
 },
 ]
 
 // const DiscoverMoreCardsData = [{
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // }]
 
@@ -177,7 +180,7 @@ const Industry = () => {
               </div>
             </div>
         
-        <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Landing.jpg`} />
+        <img className="h-full w-full object-cover" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Landing.webp`} />
       
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
@@ -221,16 +224,16 @@ const Industry = () => {
         ))}
         </div>   
       </div>
-      {/*<div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
+      <div aria-label="discover more section" className={`w-full bg-cyan-700 py-24`}>
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-16">
           {discoverMore?.map((data:DiscoverMoreCardsType, index: number) => {
             return (
-              <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} />
+              <DiscoverMoreCards key={index} img={data.img} title={data.title} link={data.link} type={data.type} />
             )
           })}
         </div>
-      </div>*/} 
+      </div> 
     </div>
   )
 }

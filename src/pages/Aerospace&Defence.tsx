@@ -36,7 +36,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Aerospace & Defense/Engineering.svg`,
+    }/Industries/Aerospace & Defense/Engineering.webp`,
   },
   {
     heading: "Research & Development",
@@ -50,7 +50,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Aerospace & Defense/R&D.svg`,
+    }/Industries/Aerospace & Defense/R&D.webp`,
   },
   {
     heading: "Digital Solutions",
@@ -64,7 +64,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Aerospace & Defense/digital.svg`,
+    }/Industries/Aerospace & Defense/digital.webp`,
   },
   {
     heading: "Tech Pub",
@@ -72,7 +72,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Aerospace & Defense/Tech Pub.png`,
+    }/Industries/Aerospace & Defense/Tech Pub.webp`,
   },
   {
     heading: "Consulting",
@@ -86,7 +86,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Aerospace & Defense/Consultng.svg`,
+    }/Industries/Aerospace & Defense/Consultng.webp`,
   },
 ];
 
@@ -95,7 +95,7 @@ const medicalCardsData = [
     title: "Aerospace",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Aerospace & Defense/aerospace.jpg`,
+    }/Industries/Aerospace & Defense/aerospace.webp`,
     link: "/Industry/Aerospace_Defense/Aerospace",
   },
 
@@ -103,14 +103,14 @@ const medicalCardsData = [
     title: "Defence",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Aerospace & Defense/Defense.jpg`,
+    }/Industries/Aerospace & Defense/Defense.webp`,
     link: "/Industry/Aerospace_Defense/Defense",
   },
   {
     title: "Space",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/Aerospace & Defense/Space.jpg`,
+    }/Industries/Aerospace & Defense/Space.webp`,
     link: "/Industry/Aerospace_Defense/Space",
   },
 ];
@@ -119,19 +119,19 @@ const medicalCardsData = [
 //   {
 //     imageSrc: `${
 //       import.meta.env.VITE_REACT_APP_API_URL
-//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //     link: "#",
 //   },
 //   {
 //     imageSrc: `${
 //       import.meta.env.VITE_REACT_APP_API_URL
-//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //     link: "#",
 //   },
 //   {
 //     imageSrc: `${
 //       import.meta.env.VITE_REACT_APP_API_URL
-//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//     }/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //     link: "#",
 //   },
 // ];
@@ -192,7 +192,7 @@ const Industry = () => {
           className="h-full w-full object-cover"
           src={`${
             import.meta.env.VITE_REACT_APP_API_URL
-          }/Industries/Aerospace & Defense/Landing.jpg`}
+          }/Industries/Aerospace & Defense/Landing.webp`}
         />
       </div>
       <div aria-label="what-we-do" className="w-full py-24">

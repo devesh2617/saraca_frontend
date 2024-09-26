@@ -46,7 +46,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //       "Mission Computer",
 //       "Power Control Systems",
 //     ],
-//     imageSrc: "Avionics.png",
+//     imageSrc: "Avionics.webp",
 //   },
 
 //   {
@@ -58,7 +58,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //       "Lighting Systems",
 //       "Aerostructures",
 //     ],
-//     imageSrc: "Digital.jpg",
+//     imageSrc: "Digital.webp",
 //   },
 //   {
 //     title: "MRO",
@@ -71,12 +71,12 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //       "Quality Control/Assurance",
 //       "Manufacturing Engineering",
 //     ],
-//     imageSrc: "MRO.jpg",
+//     imageSrc: "MRO.webp",
 //   },
 //   {
 //     title: "Digital",
 //     points: ["Data Analyst", "Application Development", "Hybris Development"],
-//     imageSrc: "Digital.jpg",
+//     imageSrc: "Digital.webp",
 //   },
 //   {
 //     title: "Interiors",
@@ -89,20 +89,20 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //       "Evacuation Systems",
 //       "Technical Publications",
 //     ],
-//     imageSrc: "Interiors.png",
+//     imageSrc: "Interiors.webp",
 //   },
 // ];
 
 // // const DiscoverMoreCardsData = [{
-// //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+// //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 // //   link: "#"
 // // },
 // // {
-// //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+// //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 // //   link: "#"
 // // },
 // // {
-// //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+// //   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 // //   link: "#"
 // // }]
 
@@ -116,12 +116,12 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //       "ADAS",
 //       "IOT Systems development",
 //     ],
-//     imageSrc: "Embedded.svg",
+//     imageSrc: "Embedded.webp",
 //   },
 //   {
 //     title: "Technical Publications",
 //     content: ["Technical illustrations", "Technical Authoring", "Multimedia"],
-//     imageSrc: "TechPub.svg",
+//     imageSrc: "TechPub.webp",
 //   },
 //   {
 //     title: "Manufacturing Engineering",
@@ -133,7 +133,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //       "Sourcing Activities",
 //       "Assembly Engineering",
 //     ],
-//     imageSrc: "Manufacturing.svg",
+//     imageSrc: "Manufacturing.webp",
 //   },
 //   {
 //     title: "Mechanical Engineering",
@@ -147,7 +147,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //       "Systems Engineering",
 //       "Post Launch Follow-up",
 //     ],
-//     imageSrc: "Mechnaical.svg",
+//     imageSrc: "Mechnaical.webp",
 //   },
 //   {
 //     title: "Software Engineering",
@@ -159,7 +159,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //       "Front and back end development",
 //       "Full Stack development",
 //     ],
-//     imageSrc: "Software.svg",
+//     imageSrc: "Software.webp",
 //   },
 //   {
 //     title: "Quality Engineering",
@@ -170,7 +170,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //       "DHF Remediation",
 //       "Regulatory assessment",
 //     ],
-//     imageSrc: "Quality.svg",
+//     imageSrc: "Quality.webp",
 //   },
 // ];
 const Medical = () => {

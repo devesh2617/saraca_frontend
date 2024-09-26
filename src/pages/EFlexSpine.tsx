@@ -10,7 +10,7 @@ const CaseStudies = () => {
 
       imageSrc: `${
         import.meta.env.VITE_REACT_APP_API_URL
-      }/Innovation/eFlexPine/1.svg`,
+      }/Innovation/eFlexPine/1.webp`,
     },
     {
       title: "Customization",
@@ -19,7 +19,7 @@ const CaseStudies = () => {
 
       imageSrc: `${
         import.meta.env.VITE_REACT_APP_API_URL
-      }/Innovation/eFlexPine/2.svg`,
+      }/Innovation/eFlexPine/2.webp`,
     },
     {
       title: "Elimination of Manual Force",
@@ -28,7 +28,7 @@ const CaseStudies = () => {
 
       imageSrc: `${
         import.meta.env.VITE_REACT_APP_API_URL
-      }/Innovation/eFlexPine/3.svg`,
+      }/Innovation/eFlexPine/3.webp`,
     },
     {
       title: "Enhanced Accuracy",
@@ -37,7 +37,7 @@ const CaseStudies = () => {
 
       imageSrc: `${
         import.meta.env.VITE_REACT_APP_API_URL
-      }/Innovation/eFlexPine/4.svg`,
+      }/Innovation/eFlexPine/4.webp`,
     },
     {
       title: "Streamlined Workflow",
@@ -46,7 +46,7 @@ const CaseStudies = () => {
 
       imageSrc: `${
         import.meta.env.VITE_REACT_APP_API_URL
-      }/Innovation/eFlexPine/5.svg`,
+      }/Innovation/eFlexPine/5.webp`,
     },
     {
       title: "Compatibility and Versatility",
@@ -55,7 +55,7 @@ const CaseStudies = () => {
 
       imageSrc: `${
         import.meta.env.VITE_REACT_APP_API_URL
-      }/Innovation/eFlexPine/6.svg`,
+      }/Innovation/eFlexPine/6.webp`,
     },
   ];
 
@@ -108,7 +108,7 @@ const CaseStudies = () => {
             <img
               src={`${
                 import.meta.env.VITE_REACT_APP_API_URL
-              }/Innovation/eFleXpine-logo.svg`}
+              }/Innovation/eFleXpine-logo.webp`}
               className="aspect-auto w-52 bg-white"
             />
           </div>
@@ -118,7 +118,7 @@ const CaseStudies = () => {
           <div className="h-full w-full flex gap-4 items-center">
             <section className="flex-1 flex flex-col">
               <img
-                src={`${import.meta.env.VITE_REACT_APP_API_URL}/image 6.png`}
+                src={`${import.meta.env.VITE_REACT_APP_API_URL}/image 6.webp`}
                 className="object-cover w-full acpect-[16/9] mx-auto"
               ></img>
 
@@ -195,7 +195,7 @@ const CaseStudies = () => {
             <img
               src={`${
                 import.meta.env.VITE_REACT_APP_API_URL
-              }/Innovation/eFleXpine-logo.svg`}
+              }/Innovation/eFleXpine-logo.webp`}
               className="aspect-auto w-52 bg-white"
             />
           </div>
@@ -204,7 +204,7 @@ const CaseStudies = () => {
         <section className="w-full pt-24">
           <div className="w-full aspect-video flex flex-col gap-16">
             <img
-              src={`${import.meta.env.VITE_REACT_APP_API_URL}/image 6.png`}
+              src={`${import.meta.env.VITE_REACT_APP_API_URL}/image 6.webp`}
               className="object-cover w-full acpect-[16/9] mx-auto"
             ></img>
 

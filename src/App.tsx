@@ -112,6 +112,7 @@ import Memberships from "./pages/Memberships";
 import TechPubAds from "./pages/TechpubAds"
 import Awards from "./pages/Awards";
 import PMCFAds from "./pages/PMCFAds";
+import Invitro from "./pages/InVitroDiagnostics";
 
 
 function App() {
@@ -267,7 +268,8 @@ function App() {
             <Route path="/Search" element={<SearchPage />} />
             <Route path="/Unsubscribe" element={<UnsubscribePage/>}/>
             <Route path="/Privacy_Policy" element={<PrivacyPolicy/>}/>
-            <Route path="/technical-publication-services" element={<TechPubAds/>}/>    
+            <Route path="/technical-publication-services" element={<TechPubAds/>}/>
+            <Route path="/in-vitro-diagnostics" element={<Invitro/>}/>     
             <Route path="/post-market-clinical-followup" element={<PMCFAds/>}/>  
             <Route path="*" element={<Error404 />} />
           </Routes>

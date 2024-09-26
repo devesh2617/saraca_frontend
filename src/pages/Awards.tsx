@@ -4,7 +4,7 @@ const Awards = () => {
   const AwardsData = [ 
     {
       name:"The ADAS Show",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Awards/ADAS.jpg`
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Awards/ADAS.webp`
     },
   ]
   return (

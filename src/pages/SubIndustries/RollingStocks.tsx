@@ -40,7 +40,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //     "Pipe routing and mounting",
 //     "Drawing release for component manufacturing"
 //   ],
-//   imageSrc: "Avionics.png"
+//   imageSrc: "Avionics.webp"
 // },
  
 // {
@@ -54,7 +54,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //     "Test engineering for TCMS",
 //     "TCMS HMI"
 //   ],
-//   imageSrc: "Digital.jpg"
+//   imageSrc: "Digital.webp"
 // },
 // {
 //   title: "Vehicle Engineering",
@@ -67,7 +67,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //     "Model based systems engineering",
 //     "Vehicle level validation on lab train"
 //   ],
-//   imageSrc: "MRO.jpg"
+//   imageSrc: "MRO.webp"
 // },
 // {
 //     title: "Automated Test Equipment/Test Rigs",
@@ -77,19 +77,19 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 //       "Lab Train Rig for train simulation",
 //       "Test Automation Framework"
 //     ],
-//     imageSrc: "Digital.jpg"
+//     imageSrc: "Digital.webp"
 //   }]
 
 // const DiscoverMoreCardsData = [{
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // }]
 
@@ -101,7 +101,7 @@ const ServiceOfferings = [
     content: [
       "Hardware-in-loop simulation"
     ],
-    imageSrc: "Verification & Validation.jpg"
+    imageSrc: "Verification & Validation.webp"
   },
   {
     title: "Cybersecurity",
@@ -110,7 +110,7 @@ const ServiceOfferings = [
       "FMEA, FTA",
       "Product Certification Management"
     ],
-    imageSrc: "Cybersecurity.jpg"
+    imageSrc: "Cybersecurity.webp"
   },
   {
     title: "Electronics",
@@ -119,7 +119,7 @@ const ServiceOfferings = [
       "Embedded software development",
       "Hardware development"
     ],
-    imageSrc: "Electronics.jpg"
+    imageSrc: "Electronics.webp"
   },
   {
     title: "AI/ML & Cloud",
@@ -127,7 +127,7 @@ const ServiceOfferings = [
       "AI/ML solution development",
       "Development of cloud applications"
     ],
-    imageSrc: "AIML & Cloud.jpg"
+    imageSrc: "AIML & Cloud.webp"
   },
   {
     title: "Vehicle System Engineering",
@@ -136,7 +136,7 @@ const ServiceOfferings = [
       "System Validation",
       "Functional Engineering"
     ],
-    imageSrc: "Vehicle System Engineering.jpg"
+    imageSrc: "Vehicle System Engineering.webp"
   },
   {
     title: "Physical Installation & Integration",
@@ -147,7 +147,7 @@ const ServiceOfferings = [
       "CAR body interiors & exteriors",
       "DFA & DFM"
     ],
-    imageSrc: "Physical Installation & Integration.jpg"
+    imageSrc: "Physical Installation & Integration.webp"
   },
   {
     title: "Signaling System Engineering",
@@ -156,7 +156,7 @@ const ServiceOfferings = [
       "CBTC",
       "Electronic interlocking"
     ],
-    imageSrc: "Signaling System Engineering.jpg"
+    imageSrc: "Signaling System Engineering.webp"
   },
   {
     title: "Industrial Design",
@@ -165,7 +165,7 @@ const ServiceOfferings = [
       "Modelling",
       "Passenger flow"
     ],
-    imageSrc: "Industrial Design.jpg"
+    imageSrc: "Industrial Design.webp"
   }
 ]
 

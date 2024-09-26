@@ -45,15 +45,15 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 }
 
 // const DiscoverMoreCardsData = [{
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // }]
 
@@ -61,35 +61,35 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
 const medicalCardsData = [
   {
     title: "Digital Benchmarking", 
-    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Benchmarking.jpg`
+    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Benchmarking.webp`
   },
   {
     title: "Finite Element Analysis (FEA)",  
-    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/FEA.jpg`
+    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/FEA.webp`
   },
   {
     title: "Database management",  
-    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Database.jpg`
+    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Database.webp`
   },
   {
     title: "Testing",
-    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Testing.jpg`
+    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Testing.webp`
   },
   {
     title: "Product digitalization and automation",
-    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Automation.jpg`
+    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Automation.webp`
   },
   {
     title: "CAE Solutions",
-    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/CAE.jpg`
+    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/CAE.webp`
   },
   {
     title: "Motion simulation",
-    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Motion.jpg`
+    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Motion.webp`
   },
   {
     title: "Flow & Thermal characterization (CFD)",
-    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Thermal.jpg`
+    imageSrc:`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Thermal.webp`
   }
  
 ]
@@ -122,7 +122,7 @@ const Medical = () => {
           <div className="h-full absolute w-full left-0 lg:text-9xl md:text-5xl text-2xl text-white flex justify-center items-center p-36 font-semibold text-center">Where Engineering Meets Mobility</div>
         </div>
         
-        <img className="h-full w-full object-fill brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Landing.png`} />
+        <img className="h-full w-full object-fill brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Automotive/Passenger Car/Landing.webp`} />
       
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
@@ -207,7 +207,7 @@ const Medical = () => {
           </div>
         </div>
       </div> */}
-      {/* <div aria-label="discover more section" className="min-h-[80vh] w-full bg-cyan-900 bg-[url('../../public/cube-background.svg')] py-24">
+      {/* <div aria-label="discover more section" className="min-h-[80vh] w-full bg-cyan-900 bg-[url('../../public/cube-background.webp')] py-24">
         <h1 className="text-white text-6xl text-center font-semibold">Discover More</h1>
         <div className=" mt-24 w-full flex justify-evenly flex-wrap gap-8">
           {DiscoverMoreCardsData.map((data: DiscoverMoreCardsData, index: number) => {
@@ -218,7 +218,7 @@ const Medical = () => {
         </div>
       </div> */}
 
-      <div aria-label="trending-technologies-section" className={`w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.svg')] bg-cover`}>
+      <div aria-label="trending-technologies-section" className={`w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.webp')] bg-cover`}>
                 <h1 className="text-white text-5xl font-semibold text-center">Service Offerings</h1>
                 <div className="container flex flex-wrap justify-center items-start mt-24 mx-auto gap-8">
                     {medicalCardsData.map((data) => TrendingTechnologiesCards(data))}

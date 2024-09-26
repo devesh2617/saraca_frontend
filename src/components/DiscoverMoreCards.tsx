@@ -10,7 +10,7 @@ const DiscoverMoreCards: FC<DiscoverMoreCardsData> = (props) => {
  
   return (<div className="flex flex-col gap-4">
     <h6 className=" uppercase text-5xl font-bold text-white">{props.type}</h6>
-    <div className="w-[40rem] relative group p-4 bg-white/30 backdrop-blur-md bg-opacity-20 rounded-xl overflow-hidden">
+    <div className="w-[40rem] h-[32rem] relative group p-4 bg-white/30 backdrop-blur-md bg-opacity-20 rounded-xl overflow-hidden">
       <div className="w-full">
         <img
           src={`${import.meta.env.VITE_REACT_APP_API_URL}${props.img}`}

@@ -4,11 +4,11 @@ const Memberships= () => {
   const MembershipCardsData = [ 
     {
       name:"Automotive Component Manufacturers Association of India",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Memberships/ACMA Membership.jpg`,
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Memberships/ACMA Membership.webp`,
     },
     {
       name:"Society of Indian Defence Manufacturers",
-      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Memberships/SIDM Membership.jpg`,
+      imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Memberships/SIDM Membership.webp`,
     }
   ]
   return (

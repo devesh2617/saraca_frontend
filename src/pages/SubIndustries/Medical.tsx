@@ -39,61 +39,61 @@ const discoverMoreIds = ['161b5837-358a-41b3-abb2-b5d6bab12afd',
 const medicalCardsData = [{
   title: "Cardiovascular Devices",
   points: [],
-  imageSrc: "Cardiovascular Devices.jpg"
+  imageSrc: "Cardiovascular Devices.webp"
 },
  
 {
   title: "Ear, Nose, and Throat Devices",
   points: [],
-  imageSrc: "Ear, Nose, and Throat Devices.jpg"
+  imageSrc: "Ear, Nose, and Throat Devices.webp"
 },
 {
   title: "Neurological Devices",
   points: [],
-  imageSrc: "Neurological Devices.jpg"
+  imageSrc: "Neurological Devices.webp"
 },
 {
   title: "Ophthalmic Devices",
   points: [],
-  imageSrc: "Ophthalmic Devices.jpg"
+  imageSrc: "Ophthalmic Devices.webp"
 },
 {
   title: "Orthopaedic Devices",
   points: [],
-  imageSrc: "Orthopaedic Devices.jpg"
+  imageSrc: "Orthopaedic Devices.webp"
 },
 {
   title: "Radiology Devices",
   points: [],
-  imageSrc: "Radiology Devices.jpg"
+  imageSrc: "Radiology Devices.webp"
 },
 {
   title: "Maxillofacial Devices",
   points: [],
-  imageSrc: "Maxillofacial Devices.jpg"
+  imageSrc: "Maxillofacial Devices.webp"
 },
 {
   title: "Sterile & non-sterile devices",
   points: [],
-  imageSrc: "Sterile & non-sterile devices.jpg"
+  imageSrc: "Sterile & non-sterile devices.webp"
 },
 {
   title: "In-vitro Diagnostic Devices",
   points: [],
-  imageSrc: "In-vitro Diagnostic Devices.jpg"
+  imageSrc: "In-vitro Diagnostic Devices.webp"
 }
 ]
 
 // const DiscoverMoreCardsData = [{
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // },
 // {
-//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.jpg`,
+//   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/stock-photo-on-a-factory-scientist-in-sterile-protective-clothing-work-on-a-modern-industrial-d-printing-1268263753.webp`,
 //   link: "#"
 // }]
 
@@ -110,7 +110,7 @@ const ServiceOfferings = [
       "Structural, Thermal and CFD analysis for Medical Devices",
       "Prototyping"
     ],
-    imageSrc: "40.jpg"
+    imageSrc: "40.webp"
   },
   {
     title: "Electronics Design",
@@ -124,7 +124,7 @@ const ServiceOfferings = [
       "RoHS, REACH and EMI/EMC Compliance support",
       "Prototyping"
     ],
-    imageSrc: "41.jpg"
+    imageSrc: "41.webp"
   },
   {
     title: "Embedded Software",
@@ -136,7 +136,7 @@ const ServiceOfferings = [
       "Standards: ISO 62304, IATF 16949, ASPICE, MISRA-C",
       "Driver Development: I/O, CAN, LIN, BLE, Crypto drivers, NVM, DMA, Sensors – Temperature, Pressure, Level, Proximity, J1939, Ethernet"
     ],
-    imageSrc: "42.jpg"
+    imageSrc: "42.webp"
   },
   {
     title: "Quality Assurance",
@@ -150,7 +150,7 @@ const ServiceOfferings = [
       "Manufacturing Process development and design transfer support",
       "Supplier and Internal Audits"
     ],
-    imageSrc: "43.jpg"
+    imageSrc: "43.webp"
   },
   {
     title: "Clinical Evaluation Report (CER)",
@@ -164,7 +164,7 @@ const ServiceOfferings = [
       "Compilation and conclusion of CER",
       "Support until document approval by notified body"
     ],
-    imageSrc: "44.jpg"
+    imageSrc: "44.webp"
   },
   {
     title: "Performance Evaluation Report (PER)",
@@ -178,7 +178,7 @@ const ServiceOfferings = [
       "IVDR Readiness Audits and Mock Audits",
       "Gap Assessments in the existing PER"
     ],
-    imageSrc: "45.jpg"
+    imageSrc: "45.webp"
   },
   {
     title: "Post Market Surveillance",
@@ -187,7 +187,7 @@ const ServiceOfferings = [
       "Adverse Event Reporting: Vigilance Search & Reporting, Trend Reporting, Field safety corrective actions, Field safety notice",
       "CAPA: Problem Identification, Root Cause Analysis, Corrective and Preventive Action Plan, Verification of Implementation, Closure"
     ],
-    imageSrc: "Post Market Surveillance.jpg"
+    imageSrc: "Post Market Surveillance.webp"
   },
   {
     title: "Software Quality Assurance",
@@ -198,7 +198,7 @@ const ServiceOfferings = [
       "Documentation preparation and review",
       "Quality support throughout phase gate process"
     ],
-    imageSrc: "46.jpg"
+    imageSrc: "46.webp"
   },
   {
     title: "Regulatory Affairs Consulting",
@@ -209,7 +209,7 @@ const ServiceOfferings = [
       "Labelling and Instructions for Use",
       "Remediation resulting in audits or inspections"
     ],
-    imageSrc: "47.jpg"
+    imageSrc: "47.webp"
   },
   {
     title: "EU MDR & EU IVDR",
@@ -224,7 +224,7 @@ const ServiceOfferings = [
       "Summary of Safety and Clinical Performance (SSCP)",
       "Vigilance search & reporting"
     ],
-    imageSrc: "EU IVDR.jpg"
+    imageSrc: "EU IVDR.webp"
   },
   {
     title: "EU IVDR",
@@ -240,7 +240,7 @@ const ServiceOfferings = [
       "Vigilance Reporting as per Article 82 of the IVDR",
       "Package insert/IFU"
     ],
-    imageSrc: "EU IVDR.jpg"
+    imageSrc: "EU IVDR.webp"
   }
 ];
 
@@ -274,7 +274,7 @@ const Medical = () => {
           <div className="h-full absolute w-full left-0 lg:text-9xl md:text-5xl text-2xl text-white flex justify-center items-center p-36 font-semibold text-center">Improving lives through medical technology</div>
         </div>
         
-        <img className="h-full w-full object-cover brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/MedicalDevices/Landing.png`} />
+        <img className="h-full w-full object-cover brightness-75" src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/LifeSciences/MedicalDevices/Landing.webp`} />
       
       </div>
       <div aria-label='what-we-do' className='w-full py-24'>
@@ -337,7 +337,7 @@ We, at Saraca Solutions, have always been advancing along with industry trends a
           </h1>
           <div className='flex gap-16 constainer justify-center items-center mt-24 min-h-24'>
             <div className='h-full'>
-              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/Medical Kit.svg`} alt="symbol" className='h-full w-full' />
+              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Medical/Medical Kit.webp`} alt="symbol" className='h-full w-full' />
             </div>
             <p className='text-8xl'>
               {selectedServicesOffering && selectedServicesOffering.title}
