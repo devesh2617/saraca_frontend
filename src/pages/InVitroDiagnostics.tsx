@@ -109,7 +109,7 @@
                             In vitro diagnostics (IVD) industry is experiencing a dynamic transformation driven by leading-edge software technologies and innovative advancements. This evolution is not just about enhanced capabilities, it’s about redefining patient care through smarter, more efficient diagnostic solutions
                             <br/>
                             <br/>
-                            We, at Saraca Solutions, embrace the technological breakthroughs in industry and navigate the rapidly transforming global regulations and international standards, ensuring that our customers meet the highest quality and safety benchmarks.
+                            We, at Saraca Solutions, embrace the technological breakthrough in industry and navigate the rapidly transforming global regulations and international standards, ensuring that our customers meet the highest quality and safety benchmarks.
                         </p>    
                             <br/>
                             <br/>
