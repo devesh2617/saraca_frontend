@@ -36,7 +36,7 @@ const ServiceOfferings = [
 {
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Embedded/7.webp`,
   title: "Verification & Validation",
-  link: "/Service/Embedded/VerificationandValidation"
+  link: "/Service/Embedded/Verification_Validation"
 }
 ]
 
