@@ -127,7 +127,7 @@ const CaseStudies = () => {
 
             </section>
             <section className='flex-[6]'>
-              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/ic1.webp`} className='aspect-[16/9] object-cover w-[80%] mx-auto'></img>
+              <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Innovation/ic1.webp`} className='aspect-[16/9] object-contain w-[80%] mx-auto'></img>
             </section>
 
           </div>
