@@ -37,7 +37,7 @@ const discoverMoreIds = ['5f443ee6-2919-41bf-9cd9-ac961bd31910', '2430a2d3-fcfa-
           alt=""
         />
       </div>
-      <h6 className="text-xl text-white w-full text-center mt-4 group-hover:font-semibold transition-all duration-300">
+      <h6 className="text-3xl text-white w-full text-center mt-4 group-hover:font-semibold transition-all duration-300">
         {data.title}
       </h6>
     </div>

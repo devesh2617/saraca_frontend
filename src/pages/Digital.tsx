@@ -38,7 +38,7 @@ const ServiceOfferings = [
 },
 {
   imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Services/Digital/Industry4.0.webp`,
-  title: "Indutry 4.0",
+  title: "Industry 4.0",
   link: "/Service/Digital/Industry4.0"
 },
 {
@@ -66,7 +66,7 @@ const serviceOfferingCards = (data: ServiceOfferings) => {
     <a href={data.link}>
       <div className='bg-white rounded-xl overflow-hidden'>
           <img loading="lazy" src={data.imageSrc} className='object-cover max-w-[30rem] aspect-square'/>
-          <h1 className=' font-bold text-center text-2xl py-4'>
+          <h1 className=' font-bold text-center text-3xl py-4'>
             {data.title}
           </h1>
          </div>
@@ -119,7 +119,7 @@ const Industry = () => {
                   <h1 className="text-white text-4xl md:text-7xl lg:text-9xl font-semibold text-left">
                    Digital
                   </h1>
-                  <p className="text-white text-2xl mt-16 w-full hidden lg:block leading-normal">
+                  <p className="text-white text-3xl mt-16 w-full hidden lg:block leading-normal">
                    Let's make the world digital
                   </p>
                   

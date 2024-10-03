@@ -13,7 +13,7 @@ const IndustryCards:FC<medicalCardsData> = (props) => {
     <img className="h-full w-full object-cover rounded-2xl" src={props.imageSrc}/>
 
     </div>
-    <h1 className="text-2xl text-white w-full text-center p-4 font-semibold">{props.title}</h1>
+    <h1 className="text-4xl text-white w-full text-center p-4 font-semibold">{props.title}</h1>
     </div>
     </a>
   )

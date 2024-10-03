@@ -137,19 +137,19 @@ const TestmonialCardsData = [
     name: "Sanjay Kumar Rajpoot",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Employee Speaks/sanjay.webp`,
     designation: "Recruitment Manager",
-    content: "I have been associated with SARACA for the last 8 years as a Recruitment Manager. SARACA always recognizes my work ethic and contribution towards my job responsibilties. Leaders at SARACA are very helpful and hold our hand in an odd situation and problems..."
+    content: "I have been associated with SARACA for the last 8 years as a Recruitment Manager. SARACA always recognizes my work ethic and contribution towards my job responsibilties. Leaders at SARACA are very helpful and hold our hand in an odd situation and problems."
   },
   {
     name: "Bhanu Prakash Jena",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Employee Speaks/bhanu.webp`,
     designation: "Deputy General Manager",
-    content: "A company that has its vision and mission clear & same has been communicated transparently to each & every employee. Diversity and inclusion are some of the key highlights observed while working in SARACA. Efforts have always been recognised in a..."
+    content: "SARACA has its vision and mission clear & same has been communicated transparently to each & every employee. Diversity and inclusion are some of the key highlights I had observed while working in SARACA."
   },
   {
     name: "Kundan Kumar Mishra",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Employee Speaks/kundan.webp`,
     designation: "Sr. QA/RA Executive",
-    content: "I am working at SARACA for the last 3 years. As I experienced it is a good company with a great working culture and a lot of new opportunities to learn and grow. All staffs are helpful and supportive. Thank you so much SARACA. For freshers, SARACA is a good choice..."
+    content: "I am working at SARACA for the last 3 years. It is a good company with a great working culture and a lot of new opportunities to learn and grow. All the employees are very helpful and supportive. For freshers, SARACA is a good choice."
   }
 ]
 const TimeLineCards: TimeLineCards[] = [
@@ -270,8 +270,10 @@ const AboutUs = () => {
               ourCultureCards.map((data: TimeLineCards, index: number) => {
                 return (
                   <SwiperSlide className={`w-full aspect-[16/9] relative transition-all duration-700`} key={index}>
-                    <div className="absolute h-[100%] w-[100%] rounded-lg">
-                      <img src={data.imageSrc} alt="timeline" className="absolute h-[100%] w-[100%] rounded-lg object-cover" />
+                    <div className="absolute w-[100%] h-[100%] rounded-lg">
+                      <img src={data.imageSrc} alt="timeline" className="absolute w-[100%] h-[100%] object-cover rounded-lg"
+                      style={{ objectPosition: '50% 30%' }}
+                      />
                     </div>
                   </SwiperSlide>
                 )
@@ -284,7 +286,7 @@ const AboutUs = () => {
       <div aria-label="Employee Speaks" className="bg-blue-100">
         <div className="container lg:pt-24 pt-8">
           <h1 className="text-sky-500 font-semibold lg:text-5xl text-4xl">Employee Speaks</h1>
-          <p className="text-xl mt-4">
+          <p className="lg:text-3xl text-xl mt-4">
             We have a culture where we are incredibly self-critical, we don't get comfortable with success.
           </p>
         </div>

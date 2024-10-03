@@ -121,7 +121,7 @@ const Industry = () => {
                   <h1 className="text-white text-4xl md:text-7xl lg:text-9xl font-semibold text-left">
                    Manufacturing
                   </h1>
-                  <p className="text-white text-2xl mt-16 w-full hidden lg:block leading-normal">
+                  <p className="text-white text-3xl mt-16 w-full hidden lg:block leading-normal">
                   Engineering Precision, Powering Progress
                   </p>
                   

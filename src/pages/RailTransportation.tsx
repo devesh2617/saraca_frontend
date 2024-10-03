@@ -158,7 +158,7 @@ const Industry = () => {
       </div>
 
       <div aria-label="medical-device-segments" className="min-h-[50vh] w-full bg-gradient-to-r from-cyan-950 to-cyan-700 py-24">
-        <h1 className="text-white text-5xl font-semibold text-center">Where We Serve</h1>
+        <h1 className="text-white text-6xl font-semibold text-center">Where We Serve</h1>
         <div className="container flex flex-wrap justify-evenly items-start mt-24 mx-auto gap-8">
           {medicalCardsData.map((data: medicalCardsData, index: number) => {
             return (

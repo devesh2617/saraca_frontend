@@ -56,7 +56,7 @@ const serviceOfferingCards = (data: ServiceOfferings) => {
     <a href={data.link}>
       <div className='bg-white rounded-xl overflow-hidden'>
           <img src={data.imageSrc} className='object-cover max-w-[30rem] aspect-square'/>
-          <h1 className=' font-bold text-center text-2xl py-4'>
+          <h1 className=' font-bold text-center text-3xl py-4'>
             {data.title}
           </h1>
          </div>

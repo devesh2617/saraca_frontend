@@ -24,7 +24,7 @@ const TestmonialCards:FC<TestimonialProps> = (props) => {
            </p>
           </div>
       </div>
-      <div className="text-xl px-6 text-left tracking-wide">
+      <div className="text-xl px-6 text-left tracking-normal leading-relaxed">
         {props.content}
       </div>
     

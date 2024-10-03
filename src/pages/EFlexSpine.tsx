@@ -125,7 +125,7 @@ const CaseStudies = () => {
               <h1 className=" text-5xl font-semibold text-white mt-12">
                 SPINAL ROD BENDING SOLUTION
               </h1>
-              <p className="text-3xl text-white mt-12">
+              <p className="text-2xl text-white mt-12">
                 SARACA is proud to introduce our innovative Automated Spinal Rod
                 Bending Solution, a game-changing system designed to transform
                 the treatment of degenerative disorders, deformities, and trauma

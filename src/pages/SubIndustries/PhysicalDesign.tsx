@@ -82,7 +82,7 @@ const TrendingTechnologiesCards = (data) => {
           <div className='h-72 w-72 rounded-full border-2 p-2 group-hover:border-none group-hover:scale-105 transition-transform duration-300'>
               <img src={`${import.meta.env.VITE_REACT_APP_API_URL}/Industries/Semiconductor/ASICFPGADesignDevelopment/${data.imageSrc}`} className=' w-full h-full rounded-full object-cover' alt="" />
           </div>
-          <h6 className='text-xl text-white w-full text-center mt-4 group-hover:font-semibold transition-all duration-300'>{data.title}</h6>
+          <h6 className='text-3xl text-white w-full text-center mt-4 group-hover:font-semibold transition-all duration-300'>{data.title}</h6>
       </div>
   )
 }
@@ -234,7 +234,7 @@ const Medical = () => {
         </div>
       </div>
       <div aria-label="trending-technologies-section" className={` w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.webp')] bg-cover`}>
-                <h1 className="text-white text-5xl font-semibold text-center">Service Offerings</h1>
+                <h1 className="text-white text-6xl font-semibold text-center">Service Offerings</h1>
                 <div className="container flex flex-wrap justify-center items-start mt-24 mx-auto gap-8">
                     {ServiceOfferings.map((data) => TrendingTechnologiesCards(data))}
                 </div>

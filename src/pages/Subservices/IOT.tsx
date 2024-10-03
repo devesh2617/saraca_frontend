@@ -75,7 +75,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/LifeSciences/Product Design & Development.svg`,
+    }/Industries/LifeSciences/Product Design & Development.webp`,
   },
   {
     heading: "Sensor Integration and Connectivity",
@@ -84,7 +84,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/LifeSciences/Process Optimisation.svg`,
+    }/Industries/LifeSciences/Process Optimisation.webp`,
   },
   {
     heading: "Data Analytics and Insights",
@@ -93,7 +93,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/LifeSciences/Regulatory.svg`,
+    }/Industries/LifeSciences/Regulatory.webp`,
   },
   {
     heading: "Security and Compliance",
@@ -102,7 +102,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/LifeSciences/Quality.svg`,
+    }/Industries/LifeSciences/Quality.webp`,
   },
   {
     heading: "IoT Strategy and Consulting",
@@ -111,7 +111,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/LifeSciences/Technical.svg`,
+    }/Industries/LifeSciences/Technical.webp`,
   },
   {
     heading: " IoT Engineering Service",
@@ -120,7 +120,7 @@ const ServiceOfferings = [
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
-    }/Industries/LifeSciences/Technical.svg`,
+    }/Industries/LifeSciences/Technical.webp`,
   },
 ];
 
@@ -134,7 +134,7 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
           alt=""
         />
       </div>
-      <h6 className="text-xl text-white w-full text-center mt-4 group-hover:font-semibold transition-all duration-300">
+      <h6 className="text-3xl text-white w-full text-center mt-4 group-hover:font-semibold transition-all duration-300">
         {data.heading}
       </h6>
     </div>
@@ -288,9 +288,9 @@ const Industry = () => {
         aria-label="trending-technologies-section"
         className={`w-full bg-cyan-950 py-24 bg-[url('${
           import.meta.env.VITE_REACT_APP_API_URL
-        }/trending-technologies-pattern.svg')] bg-cover`}
+        }/trending-technologies-pattern.webp')] bg-cover`}
       >
-        <h1 className="text-white text-5xl font-semibold text-center">
+        <h1 className="text-white text-6xl font-semibold text-center">
           Trending Technologies
         </h1>
         <div className="container flex flex-wrap justify-evenly items-start mt-24 mx-auto gap-8">

@@ -104,7 +104,7 @@ const TrendingTechnologiesCards = (data: TrendingTechnologiesObject) => {
             alt=""
           />
         </div>
-        <h6 className="text-xl text-white w-full text-center mt-4 group-hover:font-semibold transition-all duration-300">
+        <h6 className="text-3xl text-white w-full text-center mt-4 group-hover:font-semibold transition-all duration-300">
           {data.heading}
         </h6>
       </div>
@@ -229,7 +229,7 @@ const Industry = () => {
             </div>
 
             <div aria-label="trending-technologies-section" className={`w-full bg-cyan-950 py-24 bg-[url('${import.meta.env.VITE_REACT_APP_API_URL}/trending-technologies-pattern.webp')] bg-cover`}>
-                <h1 className="text-white text-5xl font-semibold text-center">Trending Technologies</h1>
+                <h1 className="text-white text-6xl font-semibold text-center">Trending Technologies</h1>
                 <div className="container flex flex-wrap justify-evenly items-start mt-24 mx-auto gap-8">
                     {TrendingTechnologiesData.map((data: TrendingTechnologiesObject) => TrendingTechnologiesCards(data))}
                 </div>

@@ -171,25 +171,25 @@ const TestmonialCardsData = [
     name:"Saurabh Aggarwal",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Saurabh_Aggarwal.webp`,
     designation: "Head, Napier Development Centre at Napier Healthcare",
-    content: "Saraca was extremely helpful to our Product Team’s understanding of the requirements of ISO 13485 by presenting it to them in a simple and effective manner. They have also done a commendable job in helping us to align our deliverables in-line with the ISO 13485 requirements...."
+    content: "Saraca was extremely helpful to our Product. The Team’s understanding of the requirements of ISO 13485 by presenting it to them in a simple and effective manner. They have also done a commendable job in helping us to align our deliverables in-line with the ISO 13485 requirements."
   },
   {
     name:"Dr. Eduardo Gonzalez",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Educardo.webp`,
     designation: "CEO-Toby Orthopaedics",
-    content: "Toby has had a smooth journey with Saraca Solutions.  They have provided us with both a highly experienced Quality Manager and a very energetic Quality Engineer.  Specifically, I would like to thank Saraca for closing our NCs in a timely manner while simultaneously performing a gap...."
+    content: "Toby has had a smooth journey with Saraca Solutions.  They have provided us with both a highly experienced Quality Manager and a very energetic Quality Engineer.  Specifically, I would like to thank Saraca for closing our NCs in a timely manner."
   },
   {
     name:"Patrick Ireland",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Patrick.webp`,
     designation: "Vice President-Grace Medical",
-    content: "Our team has partnered well with SARACA Solutions as we continue the development process for submitting one of ENT products for 510(k) review with US FDA. They constructed and maintain a Design History. They are also working on Risk Analysis as defined by our Quality Management...."
+    content: "Our team has partnered well with SARACA Solutions as we continue the development process for submitting one of ENT products for 510(k) review with US FDA. They constructed and maintained a Design History. They are also working on Risk Analysis as defined by our Quality Management."
   },
   {
     name:"Manoj Kumar",
     imageSrc: `${import.meta.env.VITE_REACT_APP_API_URL}/Manoj_Kumar.webp`,
     designation: "VP, Head Engineering",
-    content: "SARACA's commitment to delivering high-quality solutions has significantly contributed to the success of our projects. Their technical expertise, attention to detail, and proactive approach exceeded our expectations. Despite the tight timelines, Saraca's impressive speed in completing the...."
+    content: "SARACA's commitment to delivering high-quality solutions has significantly contributed to the success of our projects. Their technical expertise, attention to detail, and proactive approach exceeded our expectations."
   }
 ]
 

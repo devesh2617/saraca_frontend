@@ -14,7 +14,7 @@ const Card: FC<CardProps> = (props) => {
       <div aria-label="image" className="w-full flex flex-col gap-4">
         <img src={props.imageSrc} className="aspect-video w-full object-fill" />
       </div>
-      <div aria-label="content" className="pt-8">      
+      <div aria-label="content" className="pt-6">      
           <h1 className="md:text-5xl text-3xl font-bold text-center">{props.name}</h1>    
       </div>
     </div>
