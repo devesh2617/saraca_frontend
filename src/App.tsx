@@ -113,6 +113,7 @@ import TechPubAds from "./pages/TechpubAds"
 import Awards from "./pages/Awards";
 import PMCFAds from "./pages/PMCFAds";
 import Invitro from "./pages/InVitroDiagnostics";
+import PastEvents from "./pages/PastEvents";
 
 
 function App() {
@@ -271,6 +272,7 @@ function App() {
             <Route path="/technical-publication-services" element={<TechPubAds/>}/>
             <Route path="/in-vitro-diagnostics" element={<Invitro/>}/>     
             <Route path="/post-market-clinical-followup" element={<PMCFAds/>}/>  
+            <Route path="/events" element={<PastEvents />}/>  
             <Route path="*" element={<Error404 />} />
           </Routes>
         </Layout>} />
