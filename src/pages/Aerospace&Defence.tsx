@@ -100,7 +100,7 @@ const medicalCardsData = [
   },
 
   {
-    title: "Defence",
+    title: "Defense",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL
     }/Industries/Aerospace & Defense/Defense.webp`,
@@ -179,7 +179,7 @@ const Industry = () => {
           <div className="md:w-1/2 h-full flex justify-start items-center p-24 float-right">
             <div aria-label="content" className="md:text-right">
               <h1 className="text-white text-4xl md:text-7xl lg:text-9xl font-semibold text-right">
-                Aerospace & Defence
+                Aerospace & Defense
               </h1>
               <p className="text-white text-3xl mt-16 w-full hidden lg:block leading-normal">
                 Aviate, Navigate, Communicate
@@ -198,7 +198,7 @@ const Industry = () => {
       <div aria-label="what-we-do" className="w-full py-24">
         <div>
           <h1 className="text-5xl font-semibold text-center">
-            Engineering the future of Aerospace, Defence & Space
+            Engineering the future of Aerospace, Defense & Space
           </h1>
           <p className="container text-3xl mx-auto px-8 text-gray-600 mt-24 leading-normal">
             With over a decade of experience, SARACA is a global leader in

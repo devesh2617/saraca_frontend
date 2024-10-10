@@ -52,7 +52,7 @@ const TrendingTechnologiesData = [
     }/Services/Digital/Cyber/Blockchain Security.webp`,
   },
   {
-    heading: "Identify and Access Management",
+    heading: "Identity and Access Management",
     link: "",
     imageSrc: `${
       import.meta.env.VITE_REACT_APP_API_URL

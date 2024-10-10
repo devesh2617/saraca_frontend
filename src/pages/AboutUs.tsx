@@ -470,7 +470,9 @@ With a focus on quality and compliance, we're trusted by over 25+ Fortune 500 cl
                 return (
                   <SwiperSlide className={`w-full aspect-[16/9] relative transition-all duration-700`} key={index}>
                     <div className="absolute h-full w-full rounded-lg" onMouseOver={(e)=>console.log(e.target)}>
-                      <img src={data.imageSrc} alt="timeline" className="absolute h-full w-full rounded-lg object-cover" />
+                      <img src={data.imageSrc} alt="timeline" className="absolute h-full w-full rounded-lg object-cover"
+                      style={{ objectPosition: '50% 20%' }}
+                      />
                     </div>
                   </SwiperSlide>
                 )

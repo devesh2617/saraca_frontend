@@ -101,7 +101,7 @@ const ServiceOfferings = [
     imageSrc:"139.webp"
   },
   {
-    title: "SytemC & AMS Verification",
+    title: "SystemC & AMS Verification",
     imageSrc:"140.webp"
   },
   {
