@@ -272,7 +272,7 @@ const Medical = () => {
           </h1>
           <p className='container text-3xl mx-auto text-gray-600 leading-normal tracking-wide'>
 
-            Defence engineering involves applying engineering principles and technologies to design, develop, and maintain systems. Our services focus on the integration of advanced technologies like artificial intelligence, machine learning, cybersecurity, and data analytics to enhance defense systems' performance and resilience. We drive strategic innovation, developing next-generation defence platforms, weapons systems, communication networks, and surveillance technologies to maintain military superiority.
+            Defense engineering involves applying engineering principles and technologies to design, develop, and maintain systems. Our services focus on the integration of advanced technologies like artificial intelligence, machine learning, cybersecurity, and data analytics to enhance defense systems' performance and resilience. We drive strategic innovation, developing next-generation defense platforms, weapons systems, communication networks, and surveillance technologies to maintain military superiority.
             <br />
             <br />
             We equip defense forces with adaptive capabilities to anticipate, detect, and respond to emerging threats in real-time, ensuring proactive defense measures.  
