@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay, EffectCoverflow, Navigation } from "swiper/modules";
 
-import forest from './images/forest.png'
-import sun from './images/sun.png'
+import forest from '../public/Mechanical Design.jpg'
+import sun from '../public/Automotive Software Development.jpg'
 
 interface CardProps {
   name: string;
@@ -16,21 +16,23 @@ const PastEventCard: FC<CardProps> = (props) => {
     <div className="flex flex-col w-[75%] justify-start gap-12 mx-auto">
       <div className="flex justify-start">
             <Swiper
-                modules={[ Navigation, Autoplay]}
-                slidesPerView={1}
-                spaceBetween={20}
+                modules={[ Navigation, Autoplay, EffectCoverflow]}
+                slidesPerView={1.5}
+                spaceBetween={100}
                 loop
                 navigation
                 autoplay={{delay:6000}}
+                centeredSlides
+                effect="coverflow"
                 >
                 <SwiperSlide className="">
-                  <img className="object-cover object-center aspect-[2.35/1]"  style={{ }}  src={forest} />
+                  <img className="object-cover object-center aspect-[2.35/1] rounded-xl" src={forest} />
                 </SwiperSlide>
                 <SwiperSlide className="">
-                  <img className="object-cover object-center aspect-[2.35/1]" style={{  }} src={sun} />
+                  <img className="object-cover object-center aspect-[2.35/1] rounded-xl" src={sun} />
                 </SwiperSlide>
                 <SwiperSlide className="" >
-                  <img className="object-cover object-center aspect-[2.35/1]" style={{  }} src={sun} />
+                  <img className="object-cover object-center aspect-[2.35/1] rounded-xl" src={forest} />
                 </SwiperSlide>
                 
             </Swiper>
