@@ -114,6 +114,7 @@ import Awards from "./pages/Awards";
 import PMCFAds from "./pages/PMCFAds";
 import Invitro from "./pages/InVitroDiagnostics";
 import PastEvents from "./pages/PastEvents";
+import ThankYou from "./pages/ThankYou";
 
 
 function App() {
@@ -273,6 +274,7 @@ function App() {
             <Route path="/in-vitro-diagnostics" element={<Invitro/>}/>     
             <Route path="/post-market-clinical-followup" element={<PMCFAds/>}/>  
             <Route path="/events" element={<PastEvents />}/>  
+            <Route path="/thank-you" element={<ThankYou />}/>  
             <Route path="*" element={<Error404 />} />
           </Routes>
         </Layout>} />

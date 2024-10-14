@@ -3,6 +3,8 @@ import { codes } from "../utilities/mobilecodes"
 import { objectToFormData } from "../utilities/objectToFormData";
 import axios from "axios";
 import { toast } from "sonner";
+import { useNavigate } from "react-router-dom";
+
 const ContactUs = () => {
     const [errors, setErrors] = useState({
         name: "",
@@ -13,6 +15,8 @@ const ContactUs = () => {
         organisation: "",
         checkbox: ""
     })
+
+    const navigate = useNavigate();
     const [loading, setLoading] = useState(false)
     const validations = () => {
         function validateEmail(email: string) {
@@ -90,6 +94,7 @@ const ContactUs = () => {
                     message: "",
                     checkbox:false
                 }))
+                navigate(`/thank-you`)
                 resolve(res.data.message)
             }
         } catch (error) {

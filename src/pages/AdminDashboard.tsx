@@ -43,6 +43,7 @@ import { useNavigate } from "react-router-dom"
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import ReactQuill from "react-quill";
 import 'react-quill/dist/quill.snow.css';
+import { Textarea } from "@chakra-ui/react"
 
 const AdminDashboard = () => {
   const industries = [
@@ -61,7 +62,8 @@ const AdminDashboard = () => {
   const [newsImg, setNewsImg] = useState<File | undefined>()
   const [blogImg, setBlogImg] = useState<File | undefined>()
   const [webinarImg, setWebinarImg] = useState<File | undefined>()
- 
+  const [eventImages, setEventImages] = useState();
+
   const htmlContentRegex = /[^\s]/;
   const imgFormats = ["jpg", "jpeg", "png", "svg", "webp"]
   // Example function to check HTML content
@@ -167,6 +169,21 @@ const AdminDashboard = () => {
     date: z.date().transform(date => date.toString()),
   })
 
+  const EventSchema = z.object({
+  name: z.string().refine((val) => val.trim().length > 0, {
+    message: "Title cannot be empty",
+  }),
+  description: z.string().refine((val) => val.trim().length > 0, {
+    message: "Description cannot be empty",
+  }),
+  location: z.string().refine((val) => val.trim().length > 0, {
+    message: "Location cannot be empty",
+  }),
+  images: z.string(),
+  from_date: z.date().transform((date) => date.toString()),
+  to_date: z.date().transform((date) => date.toString()),
+});
+
   const whitePaperForm = useForm<z.infer<typeof whitePaperSchema>>({
     resolver: zodResolver(whitePaperSchema)
   });
@@ -177,6 +194,10 @@ const AdminDashboard = () => {
 
   const webinarForm = useForm<z.infer<typeof WebinarSchema>>({
     resolver: zodResolver(WebinarSchema)
+  });
+
+  const eventForm = useForm<z.infer<typeof EventSchema>>({
+    resolver: zodResolver(EventSchema)
   });
 
   const newsForm = useForm<z.infer<typeof newsSchema>>({
@@ -245,6 +266,20 @@ const AdminDashboard = () => {
     }
   }
 
+  const onSubmitEvent = async (data) => {
+    try {
+      const { images, ...newData } = data
+      newData.images = eventImages
+      const res: any = await postApi("admin/create_event", newData)
+      if (res?.data?.message) {
+        toast.success(res.data.message)
+        navigate(`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/events`)
+      }
+    } catch (error: any) {
+      console.log(error.message)
+    }
+  }
+
   const onSubmitCaseStudy = async (data) => {
     try {
       const { img, ...newData } = data
@@ -285,12 +320,13 @@ const AdminDashboard = () => {
     <div>
       <AdminNavbar />
       <Tabs defaultValue="white papers" className="max-w-3xl mx-auto my-4">
-        <TabsList className="grid w-full grid-cols-5 h-16 mb-4">
+        <TabsList className="grid w-full grid-cols-6 h-16 mb-4">
           <TabsTrigger className="h-12" value="white papers">White Papers</TabsTrigger>
           <TabsTrigger className="h-12" value="case studies">Case Studies</TabsTrigger>
           <TabsTrigger className="h-12" value="news">News</TabsTrigger>
           <TabsTrigger className="h-12" value="blogs">Blogs</TabsTrigger>
           <TabsTrigger className="h-12" value="webinar">Webinar</TabsTrigger>
+          <TabsTrigger className="h-12" value="events">Events</TabsTrigger>
         </TabsList>
         <TabsContent value="white papers">
           <Card>
@@ -968,6 +1004,178 @@ const AdminDashboard = () => {
                     <Button type="submit" className="mt-4">Submit</Button>
                   </form>
                 </Form>
+              }
+            </CardContent>
+            <CardFooter>
+
+            </CardFooter>
+          </Card>
+        </TabsContent>
+
+        <TabsContent value="events">
+          <Card>
+            <CardHeader>
+              <CardTitle>Events</CardTitle>
+              <CardDescription>
+                Add a new Event!
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-2">
+              {
+                <Form {...eventForm}>
+                <form onSubmit={eventForm.handleSubmit(onSubmitEvent)}>
+                  
+                  {/* Title Field */}
+                  <FormField
+                    control={eventForm.control}
+                    name="name"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Title</FormLabel>
+                        <FormControl>
+                          <Input {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  
+                  {/* Description Field */}
+                  <FormField
+                    control={eventForm.control}
+                    name="description"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Description</FormLabel>
+                        <FormControl>
+                          <Input {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  {/* From Date Field */}
+                  <FormField
+                    control={eventForm.control}
+                    name="from_date"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>From Date</FormLabel>
+                        <Popover>
+                          <PopoverTrigger asChild>
+                            <FormControl>
+                              <Button
+                                variant={"outline"}
+                                className={cn(
+                                  "pl-3 text-left font-normal w-full",
+                                  !field.value && "text-muted-foreground"
+                                )}
+                              >
+                                {field.value ? format(field.value, "PP") : <span>Pick a start date</span>}
+                                <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
+                              </Button>
+                            </FormControl>
+                          </PopoverTrigger>
+                          <PopoverContent className="w-auto p-0" align="start">
+                            <Calendar
+                              mode="single"
+                              className="w-full"
+                              selected={field.value}
+                              onSelect={field.onChange}
+                              initialFocus
+                            />
+                          </PopoverContent>
+                        </Popover>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  {/* To Date Field */}
+                  <FormField
+                    control={eventForm.control}
+                    name="to_date"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>To Date</FormLabel>
+                        <Popover>
+                          <PopoverTrigger asChild>
+                            <FormControl>
+                              <Button
+                                variant={"outline"}
+                                className={cn(
+                                  "pl-3 text-left font-normal w-full",
+                                  !field.value && "text-muted-foreground"
+                                )}
+                              >
+                                {field.value ? format(field.value, "PP") : <span>Pick an end date</span>}
+                                <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
+                              </Button>
+                            </FormControl>
+                          </PopoverTrigger>
+                          <PopoverContent className="w-auto p-0" align="start">
+                            <Calendar
+                              mode="single"
+                              className="w-full"
+                              selected={field.value}
+                              onSelect={field.onChange}
+                              initialFocus
+                            />
+                          </PopoverContent>
+                        </Popover>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  {/* Location Field */}
+                  <FormField
+                    control={eventForm.control}
+                    name="location"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Location</FormLabel>
+                        <FormControl>
+                          <Input {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  {/* Multiple Images Field */}
+                  <FormField
+                    control={eventForm.control}
+                    name="images"
+                    render={({ field: { onChange }, ...rest }) => (
+                      <FormItem>
+                        <FormLabel>Images</FormLabel>
+                        <FormControl>
+                          <Input
+                            type="file"
+                            accept="image/*"
+                            multiple
+                            {...rest}
+                            onChange={e => {
+                              onChange(e);
+                              const files = e.target.files
+                              console.log(files)
+                              setEventImages(files); // Store raw File objects for further processing
+                            }}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  {/* Submit Button */}
+                  <Button type="submit" className="mt-4">Submit</Button>
+                  
+                </form>
+              </Form>
+
               }
             </CardContent>
             <CardFooter>
