@@ -43,7 +43,6 @@ import { useNavigate } from "react-router-dom"
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import ReactQuill from "react-quill";
 import 'react-quill/dist/quill.snow.css';
-import { Textarea } from "@chakra-ui/react"
 
 const AdminDashboard = () => {
   const industries = [
@@ -179,9 +178,9 @@ const AdminDashboard = () => {
   location: z.string().refine((val) => val.trim().length > 0, {
     message: "Location cannot be empty",
   }),
-  images: z.string(),
+  images: z.string().transform(val=>console.log("image is",val)),
   from_date: z.date().transform((date) => date.toString()),
-  to_date: z.date().transform((date) => date.toString()),
+  to_date: z.date().transform((date) => date.toString()).optional(),
 });
 
   const whitePaperForm = useForm<z.infer<typeof whitePaperSchema>>({
@@ -273,7 +272,7 @@ const AdminDashboard = () => {
       const res: any = await postApi("admin/create_event", newData)
       if (res?.data?.message) {
         toast.success(res.data.message)
-        navigate(`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/events`)
+        // navigate(`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/events`)
       }
     } catch (error: any) {
       console.log(error.message)
@@ -1160,7 +1159,6 @@ const AdminDashboard = () => {
                             onChange={e => {
                               onChange(e);
                               const files = e.target.files
-                              console.log(files)
                               setEventImages(files); // Store raw File objects for further processing
                             }}
                           />
