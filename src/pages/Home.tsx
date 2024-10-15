@@ -8,6 +8,8 @@ import Cards from "../components/Cards";
 import WhyChooseUsCards from "../components/WhyChooseUsCards";
 import DiscoverMoreCards from '../components/DiscoverMoreCards';
 import getDiscoverMoreDataByIds from '@/utilities/getDiscoverMoreDataByIds';
+import UpcomingEventsCard from "@/components/UpcomingEventsCard";
+import { getApi } from "@/api/adminApi";
 
 type whyChooseUsCardsData = {
   imageSrc: string;
@@ -197,6 +199,8 @@ const TestmonialCardsData = [
 const Home = () => {
 
   const [screenSize, setScreenSize] = useState<string | null>(null)
+  const [discoverMore, setDiscoverMore] = useState<DiscoverMoreCardsType[]>([])
+  const [eventData, setEventData] = useState([])
 
   useEffect(() => {
     const handleScreenSize = () => {
@@ -208,15 +212,19 @@ const Home = () => {
     }
     window.addEventListener("resize", handleScreenSize)
     handleScreenSize()
+
+    getDiscoverMoreDataByIds(discoverMoreIds).then(
+      res=>{
+        setDiscoverMore(res.data.data)
+      }
+     ).catch(e=>console.log(e))
+
+    getApi(`api/upcoming_events`).then((res) => {
+      // console.log(res.data.data)
+      setEventData(res.data.data)
+    }).catch(e=>console.log(e))
   }, [])
-  const [discoverMore, setDiscoverMore] = useState<DiscoverMoreCardsType[]>([])
-  useEffect(()=>{
-   getDiscoverMoreDataByIds(discoverMoreIds).then(
-    res=>{
-      setDiscoverMore(res.data.data)
-    }
-   ).catch(e=>console.log(e))
-  },[])
+  
 
   return (
     <div>
@@ -281,6 +289,14 @@ const Home = () => {
           </>
         ))}
       </Carousel>
+
+      <div aria-label="stories" className="my-24 flex flex-col gap-8">
+        <h1 className="text-5xl md:text-8xl text-black text-center mb-24 lg:mb-0 font-semibold">
+          Upcoming Events
+        </h1>
+        {eventData.map((data: object, index: number) => <UpcomingEventsCard key={index} eventData={data} />
+        )}
+      </div>
      
       <div aria-label="stories" className="my-24 flex flex-col gap-8">
         <h1 className="text-5xl md:text-8xl text-black text-center mb-24 lg:mb-0 font-semibold">
@@ -293,6 +309,7 @@ const Home = () => {
           />
         ))}
       </div>
+
       <div aria-label="Why Choose Us" className="lg:py-24 py-8 bg-gradient-to-tl from-black to-blue-950 bg-cover"
       style={{background:`url(${import.meta.env.VITE_REACT_APP_API_URL}/whychooseus.webp)`,
         backgroundSize: 'cover'
