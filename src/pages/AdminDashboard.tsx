@@ -43,6 +43,7 @@ import { useNavigate } from "react-router-dom"
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import ReactQuill from "react-quill";
 import 'react-quill/dist/quill.snow.css';
+import { Value } from "@radix-ui/react-select"
 
 const AdminDashboard = () => {
   const industries = [
@@ -168,20 +169,31 @@ const AdminDashboard = () => {
     date: z.date().transform(date => date.toString()),
   })
 
-  const EventSchema = z.object({
-  name: z.string().refine((val) => val.trim().length > 0, {
-    message: "Title cannot be empty",
-  }),
-  description: z.string().refine((val) => val.trim().length > 0, {
-    message: "Description cannot be empty",
-  }),
-  location: z.string().refine((val) => val.trim().length > 0, {
-    message: "Location cannot be empty",
-  }),
-  images: z.string().transform(val=>console.log("image is",val)),
-  from_date: z.date().transform((date) => date.toString()),
-  to_date: z.date().transform((date) => date.toString()).optional(),
-});
+  const EventSchema = z
+  .object({
+    name: z.string().refine((val) => val.trim().length > 0, {
+      message: "Title cannot be empty",
+    }),
+    description: z.string().refine((val) => val.trim().length > 0, {
+      message: "Description cannot be empty",
+    }),
+    location: z.string().refine((val) => val.trim().length > 0, {
+      message: "Location cannot be empty",
+    }),
+    images: z.string().refine((val) => val.length > 0, {
+      message: "Please select at least one image",
+    }),
+    from_date: z.date().transform((date) => date.toString()),
+    to_date: z.date().transform((date) => date.toString()).optional(),
+  })
+  .refine(
+    (data) => !data.to_date || new Date(data.from_date) <= new Date(data.to_date),
+    {
+      message: "From date cannot be greater than To date",
+      path: ["to_date"], // This points to the specific field where the error will be attached
+    }
+  );
+
 
   const whitePaperForm = useForm<z.infer<typeof whitePaperSchema>>({
     resolver: zodResolver(whitePaperSchema)
