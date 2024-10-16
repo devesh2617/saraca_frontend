@@ -290,13 +290,15 @@ const Home = () => {
         ))}
       </Carousel>
 
-      <div aria-label="stories" className="my-24 flex flex-col gap-8">
-        <h1 className="text-5xl md:text-8xl text-black text-center mb-24 lg:mb-0 font-semibold">
+      {eventData.length&&(<div aria-label="events" className="flex flex-col container">
+        <h1 className="text-5xl md:text-8xl text-black text-center my-24 font-semibold">
           Upcoming Events
         </h1>
+        <div className="flex flex-col gap-12">
         {eventData.map((data: object, index: number) => <UpcomingEventsCard key={index} eventData={data} />
         )}
-      </div>
+        </div>
+      </div>)}
      
       <div aria-label="stories" className="my-24 flex flex-col gap-8">
         <h1 className="text-5xl md:text-8xl text-black text-center mb-24 lg:mb-0 font-semibold">

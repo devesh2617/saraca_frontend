@@ -21,7 +21,7 @@ const PastEventCard: FC<PastEventCardProps> = ({ data }) => {
   return (
     <div className="flex flex-col container justify-start gap-12 mx-auto">
       <div className="flex justify-start">
-        <Swiper
+        {images.length>1?(<Swiper
           modules={[Navigation, Autoplay, EffectCoverflow]}
           slidesPerView={1.5}
           spaceBetween={25}
@@ -34,13 +34,16 @@ const PastEventCard: FC<PastEventCardProps> = ({ data }) => {
           {images.map((image, index) => (
             <SwiperSlide key={index}>
               <img
-                className="object-cover object-center aspect-video rounded-xl"
+                className="object-cover object-center w-full aspect-video rounded-xl"
                 src={`${import.meta.env.VITE_REACT_APP_API_URL}${image}`}
                 alt={`Event image ${index + 1}`}
               />
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper>):(<img
+                className="object-cover object-center w-full aspect-video rounded-xl"
+                src={`${import.meta.env.VITE_REACT_APP_API_URL}${images[0]}`}
+              />)}
       </div>
       <div className="flex flex-col justify-start">
         <p className="text-5xl font-semibold pb-10">{name}</p>
