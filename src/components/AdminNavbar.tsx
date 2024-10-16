@@ -37,8 +37,11 @@ const Navbar = () => {
                     <a href={`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/white_papers`} className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-200 mr-4">
                         White Papers
                     </a>
-                    <a href={`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/case_studies`} className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-200">
+                    <a href={`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/case_studies`} className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-200 mr-4">
                         Case Studies
+                    </a>
+                    <a href={`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/events`} className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-200">
+                        Events
                     </a>
                 </div>
             </div>

@@ -115,6 +115,8 @@ import PMCFAds from "./pages/PMCFAds";
 import Invitro from "./pages/InVitroDiagnostics";
 import PastEvents from "./pages/PastEvents";
 import ThankYou from "./pages/ThankYou";
+import AdminEvents from "./pages/AdminEvents";
+import AdminEditEvent from "./pages/AdminEditEvent";
 
 
 function App() {
@@ -130,11 +132,13 @@ function App() {
         <Route path="/admin/webinars" element={<AdminWebinar />} />
         <Route path="/admin/blogs" element={<AdminBlog />} />
         <Route path="/admin/white_papers" element={<AdminWhitePapers />} />
+        <Route path="/admin/events" element={<AdminEvents />} />
         <Route path="/admin/edit_white_paper/:id" element={<AdminEditWhitePaper />} />
         <Route path="/admin/edit_case_study/:id" element={<AdminEditCaseStudy />} />
         <Route path="/admin/edit_blog/:id" element={<AdminEditBlog />} />
         <Route path="/admin/edit_news/:id" element={<AdminEditNews />} />
         <Route path="/admin/edit_webinar/:id" element={<AdminEditWebinar />} />
+        <Route path="/admin/edit_event/:id" element={<AdminEditEvent />} />
         <Route path="/admin/case_studies" element={<AdminCaseStudy />} />
         <Route path="/TAadmin/regions" element={<TAadminRegions />} />
         <Route path="/TAadmin/positions" element={<TAadminPositions />} />
