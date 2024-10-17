@@ -284,7 +284,7 @@ const AdminDashboard = () => {
       const res: any = await postApi("admin/create_event", newData)
       if (res?.data?.message) {
         toast.success(res.data.message)
-        // navigate(`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/events`)
+        navigate(`/${import.meta.env.VITE_ADMIN_ROUTES_STRING}/admin/events`)
       }
     } catch (error: any) {
       console.log(error.message)
