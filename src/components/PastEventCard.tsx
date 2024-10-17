@@ -1,3 +1,4 @@
+import { Calendar, MapPin } from "lucide-react";
 import { FC } from "react";
 import { Autoplay, EffectCoverflow, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -47,7 +48,8 @@ const PastEventCard: FC<PastEventCardProps> = ({ data }) => {
       </div>
       <div className="flex flex-col justify-start">
         <p className="text-5xl font-semibold pb-10">{name}</p>
-        <p className="text-3xl font-semibold tracking-wide">
+        <p className="flex items-center gap-4 text-2xl tracking-wide">
+          <Calendar />
           {new Date(from_date).toLocaleString("en-IN", {
             weekday: "long",
             month: "long",
@@ -65,7 +67,9 @@ const PastEventCard: FC<PastEventCardProps> = ({ data }) => {
               })}`
             : ""}
         </p>
-        <p className="text-3xl font-semibold tracking-wide">{location}</p>
+        <p className="flex items-center gap-4 text-2xl font-semibold tracking-wide">
+          <MapPin />
+          {location}</p>
         <p className="text-2xl mt-4 text-gray-500 font-semibold tracking-wide">
           {description}
         </p>
